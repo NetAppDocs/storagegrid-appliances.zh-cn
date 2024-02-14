@@ -1,0 +1,54 @@
+---
+permalink: sg100-1000/shut-down-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg1000, SG100, power off, turn off, shut off, shutdown, shut down, 
+summary: 关闭服务设备以执行硬件维护。 
+---
+= 关闭SG100或SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+关闭服务设备以执行硬件维护。
+
+.开始之前
+* 您拥有物理上的 link:locating-controller-in-data-center.html["已找到服务设备"] 需要在数据中心进行维护。
+
+
+.关于此任务
+为了防止服务中断、请在计划维护时段内可接受服务中断时关闭服务设备。
+
+.步骤
+. 关闭产品：
++
+
+CAUTION: 您必须输入以下指定的命令，以有控制的方式关闭设备。最佳做法是、尽可能执行可控关闭、以避免不必要的警报、确保完整日志可用并避免服务中断。
+
++
+.. 如果尚未登录到网格节点、请使用PuTTY或其他ssh客户端登录：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 关闭服务设备：+
+`*shutdown -h now*`
++
+此命令可能需要长达 10 分钟才能完成。
+
+
+
+. 使用以下方法之一验证设备是否已关闭：
++
+** 查看设备正面的电源 LED ，确认其已关闭。
+** 检查 BMC 界面的电源控制页面，确认设备已关闭。
+
+
+

@@ -1,0 +1,78 @@
+---
+permalink: sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: SG6100系列设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。 
+---
+= 更换SGF6112中的一个或两个电源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GF6112设备具有两个电源、用于实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。
+
+.开始之前
+* 您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位设备"] 更换电源。
+* 您已拥有 link:verify-component-to-replace.html["已确定要更换的电源的位置"]。
+* 如果仅更换一个电源：
++
+** 您已卸载更换用的电源设备，并确保其型号和功率与要更换的电源设备相同。
+** 您已确认另一个电源已安装且正在运行。
+
+
+* 如果要同时更换两个电源：
++
+** 您已卸载替代电源设备，并确保其型号和功率相同。
+
+
+
+
+.关于此任务
+此图显示了SGF6112的两个电源设备。电源可从产品背面进行操作。
+
+image::../media/sgf6112_power_supplies.png[带有两个电源的GF6112背面]
+
+.步骤
+. 如果您只更换一个电源，则无需关闭设备。转至 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
++
+.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭设备"]。
++
+
+CAUTION: 如果您使用的ILM规则仅创建一个对象的一个副本、而您要同时更换两个电源、则必须在计划的维护时段更换这些电源。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+
+
+
+. 【拔掉电源线， start=2]] 从要更换的每个电源中拔下电源线。
++
+从产品背面看，电源A (PSU0)位于右侧，电源B (PSU1)位于左侧。
+
+. 提起要更换的第一个耗材的手柄。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起手柄以卸下PSU]
+
+. 按下蓝色闩锁并拉出电源。
++
+image::../media/sg6000_cn_remove_power_supply.gif[卸下电源设备]
+
+. 使蓝色闩锁位于右侧，将替代电源滑入机箱。
++
+
+NOTE: 安装的两个电源必须具有相同的型号和功率。
+
++
+在中滑动更换部件时，请确保蓝色闩锁位于右侧。
+
++
+当电源锁定到位时、您会感觉到卡嗒声。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[滑动电源输入]
+
+. 向下按压手柄、使其紧靠PSU主体。
+. 如果要更换这两个电源，请重复步骤 2 到 6 以更换第二个电源。
+. link:../installconfig/connecting-power-cords-and-applying-power.html["将电源线连接到更换的设备并接通电源"]。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

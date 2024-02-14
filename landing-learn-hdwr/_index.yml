@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: 入门
+    links:
+    - title: 设备新增功能
+      url: "../whats-new-appliances.html"
+    - title: 了解StorageGRID
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+    - title: StorageGRID 快速入门
+      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+    - title: 设备安装快速入门
+      url: "../installconfig/index.html"
+  - title: 了解存储设备
+    links:
+    - title: SG5700 存储设备
+      url: "../installconfig/hardware-description-sg5700.html"
+    - title: SG6000 存储设备
+      url: "../installconfig/hardware-description-sg6000.html"
+    - title: SG6100存储设备
+      url: "../installconfig/hardware-description-sg6100.html"
+  - title: 了解服务设备
+    links:
+    - title: SG100 和 SG1000 服务设备
+      url: "../installconfig/hardware-description-sg100-and-1000.html"

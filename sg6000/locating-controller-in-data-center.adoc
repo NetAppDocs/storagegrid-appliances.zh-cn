@@ -1,0 +1,50 @@
+---
+permalink: sg6000/locating-controller-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
+summary: 找到控制器，以便执行硬件维护或升级。 
+---
+= 在数据中心中找到SG6000-CN控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+找到控制器，以便执行硬件维护或升级。
+
+.开始之前
+* 您已确定哪个控制器需要维护。
++
+（可选）为了帮助您查找数据中心中的控制器， link:turning-controller-identify-led-on-and-off.html["打开蓝色标识 LED"]。
+
+
+
+.步骤
+. 在数据中心中查找需要维护的控制器。
++
+** 查看控制器正面或背面的蓝色标识 LED 是否亮起。
++
+正面识别 LED 位于控制器前挡板后面，如果已安装挡板，可能很难查看。
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[正面识别 LED —亮起]
+
+** 检查每个控制器正面附加的标签，以获取匹配的部件号。
+
+
+. 卸下控制器前挡板（如果已安装），以访问前面板控件和指示灯。
+. 可选： link:turning-controller-identify-led-on-and-off.html["关闭蓝色的识别LED"] 如果您使用它来查找控制器。
++
+** 按下控制器前面板上的识别 LED 开关。
+** 使用控制器 BMC 界面。
+
+
+
+
+.相关信息
+link:reinstalling-fibre-channel-hba.html#remove-fibre-channel-hba["删除光纤通道 HBA"]
+
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["从机柜或机架中卸下 SG6000-CN 控制器"]
+
+link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["关闭 SG6000-CN 控制器"]

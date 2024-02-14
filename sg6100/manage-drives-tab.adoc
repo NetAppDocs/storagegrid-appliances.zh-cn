@@ -1,0 +1,96 @@
+---
+permalink: sg6100/manage-drives-tab.html 
+sidebar: sidebar 
+keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。 
+---
+= 使用管理驱动器选项卡
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。
+
+.开始之前
+* 您将使用登录到网格管理器 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+
+
+.关于此任务
+如果您有一个GF6112设备以及 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/admin-group-permissions.html["存储设备管理员或root访问权限"]，则设备详细信息页面上将显示管理驱动器选项卡。
+
+管理驱动器选项卡包含以下视图：
+
+布局:: 设备中的数据存储驱动器布局。选择一个驱动器以查看驱动器详细信息。
++
+--
+image:../media/manage_drives_tab.png["管理驱动器选项卡布局视图"]
+
+--
+表:: 列出每个驱动器的信息。选择一个驱动器以查看驱动器详细信息。
++
+--
+image:../media/manage_drives_tab_table.png["管理驱动器选项卡表视图"]
+
+--
+驱动器详细信息:: 每个驱动器的摘要。选择相应的任务按钮、如以下步骤所述。
++
+--
+image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器详细信息"]
+
+--
+
+
+
+
+== 打开或关闭定位灯
+
+要在设备中物理定位驱动器、请执行以下操作：
+
+. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
++
+此时将显示驱动器详细信息面板。
+
+. 选择*打开定位灯*。
++
+** 灯泡图标 image:../media/icon_drive-light-bulb.png["驾驶灯灯泡"] 显示驱动器的。
+** 物理驱动器上的琥珀色LED闪烁。
+
+
+. 要关闭定位灯时，请选择*关闭定位灯*。
+
+
+
+
+== [[逻辑 替换驱动器]]逻辑替换驱动器
+
+如果存储设备中的驱动器需要重建或重新初始化：
+
+. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
++
+此时将显示驱动器详细信息面板。
+
+. 选择*逻辑替换*。
++
+在驱动器详细信息面板上、驱动器状态指示_reon建设_。重建驱动器可能需要长达5分钟的时间。
+
+
+
+
+
+== 驱动器发生故障
+
+要进行故障排除、您可以手动对怀疑有故障的驱动器进行"故障排除"。然后、系统将在没有该驱动器的情况下运行。
+
+. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
++
+此时将显示驱动器详细信息面板。
+
+. 选择*故障驱动器*。
+
+
+驱动器发生故障后、您必须物理更换驱动器或 <<logically-replace-drive,以逻辑方式更换驱动器>>。

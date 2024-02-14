@@ -1,0 +1,62 @@
+---
+permalink: installconfig/overview-of-installation-rest-apis.html 
+sidebar: sidebar 
+keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
+summary: StorageGRID 提供了两个用于执行安装任务的 REST API ： StorageGRID 安装 API 和 StorageGRID 设备安装程序 API 。 
+---
+= 安装 REST API 概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 提供了两个用于执行安装任务的 REST API ： StorageGRID 安装 API 和 StorageGRID 设备安装程序 API 。
+
+这两个 API 都使用 Swagger 开源 API 平台来提供 API 文档。Swagger 允许开发人员和非开发人员在用户界面中与 API 进行交互，以说明 API 如何响应参数和选项。本文档假定您熟悉标准Web技术和JSON数据格式。
+
+
+CAUTION: 使用 API 文档网页执行的任何 API 操作均为实时操作。请注意，不要错误地创建，更新或删除配置数据或其他数据。
+
+每个 REST API 命令都包括 API 的 URL ， HTTP 操作，任何必需或可选的 URL 参数以及预期的 API 响应。
+
+
+
+== StorageGRID 安装 API
+
+StorageGRID 安装API仅在最初配置StorageGRID 系统时以及需要执行主管理节点恢复时可用。可以从网格管理器通过 HTTPS 访问安装 API 。
+
+要访问API文档，请转到主管理节点上的安装网页，然后从菜单栏中选择*HELP*>*API documents*。
+
+StorageGRID 安装 API 包括以下部分：
+
+* *config*：与产品版本和API版本相关的操作。您可以列出该版本支持的产品版本和主要 API 版本。
+* *GRIE*:网格级配置操作。您可以获取和更新网格设置，包括网格详细信息，网格网络子网，网格密码以及 NTP 和 DNS 服务器 IP 地址。
+* *节点*：节点级配置操作。您可以检索网格节点列表，删除网格节点，配置网格节点，查看网格节点以及重置网格节点的配置。
+* *配置*：配置操作。您可以启动配置操作并查看配置操作的状态。
+* *恢复*：主管理节点恢复操作。您可以重置信息，上传恢复软件包，启动恢复以及查看恢复操作的状态。
+* *恢复包*：用于下载恢复软件包的操作。
+* *站点*：站点级配置操作。您可以创建，查看，删除和修改站点。
+
+
+
+
+== StorageGRID 设备安装程序 API
+
+可以从通过HTTPS访问StorageGRID 设备安装程序API `_Controller_IP_:8443`。
+
+要访问 API 文档，请转到设备上的 StorageGRID 设备安装程序，然后从菜单栏中选择 * 帮助 * > * API 文档 * 。
+
+StorageGRID 设备安装程序 API 包括以下部分：
+
+* *克隆*：用于配置和控制节点克隆的操作。
+* *加密*：用于管理加密和查看加密状态的操作。
+* *hardware config*：用于在连接的硬件上配置系统设置的操作。
+* *安装*：用于启动设备安装和监控安装状态的操作。
+* *网络*：与StorageGRID 设备的网格、管理和客户端网络配置以及设备端口设置相关的操作。
+* *setup*：帮助初始设备安装设置的操作，包括获取系统信息和更新主管理节点IP的请求。
+* *support*：用于重新启动控制器和获取日志的操作。
+* *update-config*：用于更新StorageGRID 设备配置的操作。
+* *升级*：与升级设备固件相关的操作。
+* *上传sg*：用于上传StorageGRID 安装文件的操作。
+

@@ -1,0 +1,167 @@
+---
+permalink: installconfig/obtaining-additional-equipment-and-tools.html 
+sidebar: sidebar 
+keywords: equipment to install appliance, tools for installation 
+summary: 安装StorageGRID 设备之前、请确认您已具备所需的所有附加设备和工具。 
+---
+= 获取其他设备和工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装StorageGRID 设备之前、请确认您已具备所需的所有附加设备和工具。
+
+
+
+== 所有设备
+
+要安装和配置所有设备、您需要以下设备。
+
+螺丝刀::
++
+--
+* 十字线编号2 把螺丝刀
+* 中型平口螺丝刀
+
+
+--
+ESD 腕带::
++
+--
+* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]
+* SSH 客户端，例如 PuTTY
+* 1 GbE （ RJ-45 ）端口
+
+
+--
+
+
+
+NOTE: 某些端口可能不支持 10/100 以太网速度。
+
+可选工具::
++
+--
+* 带十字头的电钻
+* Flashlight
+
+
+--
+
+
+
+
+== 设备专用设备和工具
+
+[role="tabbed-block"]
+====
+.SG100和SG1000
+--
+要安装和配置SG100和SG1000硬件、您还需要以下设备。
+
+光缆和收发器::
++
+--
+* 缆线、1到4个：
++
+** 双轴电缆/铜线
+** 光纤/光纤
+
+
+* 收发器/适配器、每个收发器/适配器1到4个、具体取决于链路速度(不支持混合速度)：
++
+** SG100 ：
++
+*** 10GbE SFP+
+*** 25 GbE SFP28
+
+
+** SG1000 ：
++
+*** 10GbE QSFP-SFP适配器(QSA)和SFP+
+*** 25-GbE QSFP-SFP适配器(QSA)和SFP28
+*** 40-GbE QSFP+
+*** 100-GbE QSP28
+
+
+
+
+
+
+--
+以太网缆线:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+
+
+--
+.SG5700
+--
+要安装和配置SG5700硬件、您还需要以下附加设备。
+
+光缆和SFP收发器::
++
+--
+* 您计划使用的 10/25/GbE 端口的光缆
+* 可选：如果要使用 25 GbE 链路速度，请使用 SFP28 收发器
+
+
+--
+以太网缆线:: SG5760 的机械升降机
+
+
+--
+.SG6000
+--
+要安装和配置SG6000硬件、您还需要以下设备。
+
+光缆和SFP收发器::
++
+--
+* 缆线、1到4个：
++
+** 双轴电缆/铜线
+** 光纤/光纤
+
+
+* 收发器/适配器、每个收发器/适配器1到4个、具体取决于链路速度(不支持混合速度)：
++
+** 10GbE SFP+
+** 25 GbE SFP28
+
+
+
+
+--
+以太网缆线:: RJ-45 (Cat5/Cat5e/Cat6)
+可选工具:: 适用于 60 个驱动器磁盘架的机械升降机
+
+
+--
+.SG6100
+--
+要安装和配置SGF6112硬件、您还需要以下设备。
+
+光缆和收发器::
++
+--
+* 缆线、1到4个：
++
+** 双轴电缆/铜线
+** 光纤/光纤
+
+
+* 收发器/适配器、每个收发器/适配器1到4个、具体取决于链路速度(不支持混合速度)：
++
+** 10GbE SFP+
+** 25 GbE SFP28
+
+
+
+
+--
+以太网缆线:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+
+
+--
+====

@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
+summary: 您可能需要更换扩展架中的输入 / 输出模块，电源或风扇。 
+---
+= 更换可选SG6000 (60个驱动器)扩展架中的硬件组件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更换扩展架中的输入 / 输出模块，电源或风扇。
+
+.开始之前
+* 您已安装 E 系列硬件更换操作步骤 。
+* 您已在物理上找到要在数据中心更换扩展架硬件组件的存储设备。
++
+link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+
+
+
+.关于此任务
+要更换包含60个驱动器的扩展架中的输入/输出模块(IOM)、请参见说明中的步骤 link:replacing-storage-controller-sg6000.html["更换存储控制器"]。
+
+要更换 60 驱动器扩展架中的电源或风扇，请访问 E 系列维护 60 驱动器硬件的过程。
+
+|===
+| FRU | 请参见 E 系列说明 
+
+
+ a| 
+输入 / 输出模块（ IOM ）
+ a| 
+更换 IOM
+
+
+
+ a| 
+动力箱
+ a| 
+更换电源箱（ 60 个驱动器）
+
+
+
+ a| 
+风扇箱
+ a| 
+更换风扇箱（ 60 个驱动器）
+
+|===

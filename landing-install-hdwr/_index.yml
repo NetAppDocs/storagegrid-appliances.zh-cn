@@ -1,0 +1,23 @@
+---
+indexpage:
+  tiles:
+  - title: 将存储设备安装在机柜或机架中
+    links:
+    - title: SG5700
+      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SG6000
+      url: "../installconfig/installing-hardware-sg6000.html"
+    - title: SG6100
+      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+  - title: 在机柜或机架中安装服务设备
+    links:
+    - title: SG100和SG1000
+      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+  - title: 连接缆线并接通电源
+    links:
+    - title: 连接缆线
+      url: "../installconfig/cabling-appliance.html"
+    - title: 连接并接通电源
+      url: "../installconfig/connecting-power-cords-and-applying-power.html"
+    - title: 查看状态指示灯和代码
+      url: "../installconfig/viewing-status-indicators.html"

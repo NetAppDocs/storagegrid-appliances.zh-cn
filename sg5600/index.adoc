@@ -1,0 +1,16 @@
+---
+permalink: sg5600/index.html 
+sidebar: sidebar 
+keywords: 'storagegrid, sg5600, storage node, storage appliance"' 
+summary: SG5600设备已停止支持。有关硬件更新选项、请联系您的NetApp销售代表。 
+---
+= 维护 SG5600 设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG5600设备已停止支持。有关硬件更新选项、请联系您的NetApp销售代表。
+
+如果需要对SG5600硬件执行维护过程、请使用 https://docs.netapp.com/us-en/storagegrid-116/sg5600/maintaining-sg5600-appliance.html["StorageGRID 11.6说明"^]。

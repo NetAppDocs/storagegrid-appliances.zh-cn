@@ -1,0 +1,81 @@
+---
+indexpage:
+  lead: NetApp StorageGRID 是一款软件定义的对象存储套件、支持公共、私有和混合多云环境中的各种用例。StorageGRID 为Amazon
+    S3 API提供本机支持、并提供行业领先的创新技术、例如自动化生命周期管理、以便长期经济高效地存储、保护和保留非结构化数据。
+  tiles:
+  - title: 入门
+    links:
+    - title: 了解StorageGRID
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+    - title: StorageGRID 快速入门
+      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+    - title: 设备安装快速入门
+      url: "/installconfig/index.html"
+    - title: 自动执行安装和配置
+      url: "/installconfig/automating-appliance-installation-and-configuration.html"
+    - title: 自动执行StorageGRID 配置
+      url: "/installconfig/automating-configuration-of-storagegrid.html"
+  - title: 设备概述
+    links:
+    - title: SG100和SG1000
+      url: "/installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG5700
+      url: "/installconfig/hardware-description-sg5700.html"
+    - title: SG6000
+      url: "/installconfig/hardware-description-sg6000.html"
+    - title: SG6100 (新)
+      url: "/installconfig/hardware-description-sg6100.html"
+  - title: 安装硬件
+    links:
+    - title: 准备安装
+      url: "/landing-install-prep/index.html"
+    - title: 安装硬件
+      url: "/landing-install-hdwr/index.html"
+    - title: 设置硬件
+      url: "/installconfig/configuring-hardware.html"
+    - title: 部署设备节点
+      url: "/landing-deploy-appliance/index.html"
+  - title: 维护设备硬件
+    links:
+    - title: SG100和SG1000
+      url: "/landing-maintain-sg1000-100/index.html"
+    - title: SG5600
+      url: "/sg5600/index.html"
+    - title: SG5700
+      url: "/landing-maintain-sg5700/index.html"
+    - title: SG6000
+      url: "/landing-maintain-sg6000/index.html"
+    - title: SG6100
+      url: "/landing-maintain-sgf6112/index.html"
+  - title: StorageGRID 软件
+    links:
+    - title: StorageGRID 1.18文档
+      url: https://docs.netapp.com/us-en/storagegrid-118/index.html
+    - title: StorageGRID 11.7文档
+      url: https://docs.netapp.com/us-en/storagegrid-117/index.html
+    - title: StorageGRID 11.6文档
+      url: https://docs.netapp.com/us-en/storagegrid-116/index.html
+    - title: StorageGRID 11.5 文档
+      url: https://docs.netapp.com/us-en/storagegrid-115/index.html
+  - title: 启用StorageGRID
+    links:
+    - title: 集成其他应用程序
+      url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
+  - title: 演示和教程
+    links:
+    - title: StorageGRID 视频库
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
+    - title: NetApp 学习服务
+      url: https://www.netapp.com/support-and-training/netapp-university/
+  - title: 更多资源
+    links:
+    - title: StorageGRID 支持页面
+      url: https://mysupport.netapp.com/site/products/all/details/5d9f1107e01d9c0001ee50f6/downloads-tab
+    - title: NetApp 互操作性表工具（ IMT ）
+      url: https://imt.netapp.com/matrix/#welcome
+    - title: StorageGRID 知识库
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID
+    - title: NetApp 博客
+      url: https://netapp.com/blog/
+    - title: NetApp 社区
+      url: https://community.netapp.com/

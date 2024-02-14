@@ -1,0 +1,32 @@
+---
+permalink: installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, service appliance, services appliance, gateway Node, admin node, reboot, restart 
+summary: 您可能需要在StorageGRID 设备安装程序运行时重新启动设备。例如、如果安装失败、您可能需要重新启动设备。 
+---
+= 在StorageGRID 设备安装程序运行期间重新启动设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在StorageGRID 设备安装程序运行时重新启动设备。例如、如果安装失败、您可能需要重新启动设备。
+
+.关于此任务
+只有当设备运行StorageGRID 设备安装程序时、此操作步骤 才适用。安装完成后，此步骤将不再起作用，因为 StorageGRID 设备安装程序不再可用。
+
+.步骤
+. 在 StorageGRID 设备安装程序中，单击 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID * 以在节点重新加入网格的情况下重新启动控制器。如果您已完成维护模式下的工作并准备好将节点恢复正常运行，请选择此选项。
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。（只有当控制器处于维护模式时，此选项才可用。） 如果在重新加入网格之前需要对节点执行其他维护操作，请选择此选项。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
++
+设备将重新启动。
+
+
+
+

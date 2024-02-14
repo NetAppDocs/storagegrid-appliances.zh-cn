@@ -1,0 +1,71 @@
+---
+permalink: sg100-1000/changing-link-configuration-of-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
+summary: 您可以更改服务设备的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。 
+---
+= 更改SG100或SG1000的链路配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改服务设备的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。
+
+.开始之前
+* 您已拥有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已将设备置于维护模式"]。
+
+
+
+NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。
+
+.关于此任务
+用于更改服务设备的以太网链路配置的选项包括：
+
+* 将 * 端口绑定模式 * 从 " 固定 " 更改为 " 聚合 " 或从 " 聚合 " 更改为 " 固定 "
+* 将 * 网络绑定模式 * 从主动备份更改为 LACP 或从 LACP 更改为主动备份
+* 启用或禁用 VLAN 标记，或者更改 VLAN 标记的值
+* 更改链路速度
+
+
+.步骤
+. 从 StorageGRID 设备安装程序中，选择 * 配置网络连接 * > * 链路配置 * 。
++
+image::../media/link_configuration_option.gif[链路配置]
+
+. 对链路配置进行所需的更改。
++
+有关这些选项的详细信息、请参见 link:../installconfig/configuring-network-links.html["配置网络链路"]。
+
+. 对所做的选择感到满意后，单击 * 保存 * 。
++
+
+NOTE: 如果更改了所连接的网络或链路，则可能会断开连接。如果您未在1分钟内重新连接、请使用分配给设备的其他IP地址之一重新输入StorageGRID 设备安装程序的URL：+
+`*https://_services_appliance_IP_:8443*`
+
+. 对设备的 IP 地址进行任何必要的更改。
++
+如果更改了 VLAN 设置，则设备的子网可能已更改。如果需要更改设备的 IP 地址，请参见 link:../installconfig/setting-ip-configuration.html["配置 StorageGRID IP 地址"]。
+
+. 从菜单中选择 * 配置网络连接 * > * Ping 测试 * 。
+. 使用 Ping 测试工具检查与任何网络上的 IP 地址的连接，这些网络可能已受到您在配置设备时所做的链路配置更改的影响。
++
+除了您选择执行的任何其他测试之外，请确认您可以对主管理节点的网格网络 IP 地址以及至少一个其他节点的网格网络 IP 地址执行 ping 操作。如有必要，请返回到有关配置网络链路的说明，并更正任何问题。
+
+. 在您确信链路配置更改正常运行后，请重新启动节点。在 StorageGRID 设备安装程序中，选择 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID * 以在节点重新加入网格的情况下重新启动控制器。如果您已完成维护模式下的工作并准备好将节点恢复正常运行，请选择此选项。
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。（只有当控制器处于维护模式时，此选项才可用。） 如果在重新加入网格之前需要对节点执行其他维护操作，请选择此选项。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
++
+设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。n节点*页面应显示正常状态(绿色复选标记图标 image:../media/icon_alert_green_checkmark.png["绿色复选标记"] 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。
+
++
+image::../media/nodes_menu.png[设备节点已重新加入网格]
+
+
+
+

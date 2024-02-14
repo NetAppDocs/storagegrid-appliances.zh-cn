@@ -1,0 +1,67 @@
+---
+permalink: installconfig/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连接。  
+---
+= 设置硬件：概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为设备通电后、您可以配置StorageGRID 要使用的网络连接。
+
+
+
+== 配置所需的网络连接
+
+对于所有设备、您可以执行多项任务来配置所需的网络连接、例如：
+
+* 访问设备安装程序
+* 配置网络链路
+* 验证端口级别的网络连接
+
+
+
+
+== 可能需要的其他配置
+
+根据您要配置的设备类型、可能需要进行其他硬件配置。
+
+
+
+=== SANtricity 系统管理器
+
+对于SG6000和SG5700、您需要配置SANtricity 系统管理器。SANtricity 软件用于监控这些设备的硬件。
+
+
+
+=== BMC 接口
+
+以下设备具有必须配置的BMC界面：
+
+* SG100
+* SG1000
+* SG6000
+* SG6100
+
+
+
+
+== 可选配置
+
+* 存储设备
++
+** 为SANtricity系统管理器(SG5700和SG6000)配置要用于监控硬件的软件
+** 更改RAID模式
+** 访问SG6000-CN控制器的BMC接口
+
+
+* 服务设备
++
+** 访问SG100或SG1000的BMC接口
+
+
+

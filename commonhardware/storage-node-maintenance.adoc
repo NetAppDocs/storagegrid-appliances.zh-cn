@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: commonhardware/storage-node-maintenance.html 
+keywords: stub, layered 
+summary: 存储节点维护。 
+---
+= 存储节点维护
+:allow-uri-read: 
+
+
+[role="lead"]
+存储节点维护。这对于整合是否有意义？
+
+(新的简介主题)
+
+
+
+== 升级存储控制器(存储节点)上的SANtricity 操作系统
+
+(从现有设备主题中选取-需要组合)
+
+
+
+=== 使用网格管理器升级存储控制器上的SANtricity 操作系统
+
+(从现有设备主题中选取-需要组合)
+
+
+
+=== 使用维护模式升级存储控制器上的SANtricity 操作系统
+
+(从现有设备主题中选取-需要组合)
+
+
+
+== 使用SANtricity 系统管理器升级驱动器固件
+
+(从现有设备主题中选取-已组合)

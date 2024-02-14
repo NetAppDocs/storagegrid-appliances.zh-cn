@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: landing-install-prep/index.html 
+summary: 准备安装StorageGRID系统的站点。 
+---
+= 准备StorageGRID安装
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

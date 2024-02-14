@@ -1,0 +1,19 @@
+---
+indexpage:
+  tiles:
+  - title: 经常执行的过程
+    links:
+    - title: 更改链路配置
+      url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
+    - title: 升级SANtricity
+      url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: 升级驱动器固件
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 硬件过程
+    links:
+    - title: 更换E2800系列存储控制器
+      url: "../sg5700/replacing-e2800-controller.html"
+    - title: 更换E5700SG计算控制器
+      url: "../sg5700/replacing-e5700sg-controller.html"
+    - title: 更换其他SG5700组件
+      url: "../sg5700/replacing-other-hardware-components-sg5700.html"

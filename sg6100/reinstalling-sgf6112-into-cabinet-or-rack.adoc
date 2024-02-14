@@ -1,0 +1,84 @@
+---
+permalink: sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, storage node, storage appliance, install, installing, installation, cabinet, rack 
+summary: 从机柜或机架中卸下SGF6112以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。 
+---
+= 在机柜或机架中重新定位SGF6112
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从机柜或机架中卸下SGF6112以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。
+
+
+
+== 从机柜或机架中卸下GF6112
+
+.开始之前
+* 您可以使用标签来标识连接到SGF6112的每个缆线。
+* 您已拥有 link:locating-sgf6112-in-data-center.html["物理位置为GF6112"] 在数据中心执行维护的位置。
+* 您已拥有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭SGF6112"]。
++
+
+CAUTION: 切勿使用电源开关关闭产品。
+
+
+
+.步骤
+. 贴上标签，然后断开产品电源线的连接。
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 贴上标签、然后断开设备数据电缆和任何SFP+或SFP28收发器的连接。
++
+
+NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+. 拧松产品前面板上的两颗固定螺钉。
++
+image::../media/sg6060_rack_retaining_screws.png[GF6112机架固定螺钉]
+
+. 将SGF6112向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。
++
+产品顶盖可操作。
+
+. 可选：如果要从机柜或机架中完全卸下设备、请按照导轨套件的说明从导轨中卸下设备。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+
+
+
+== 将GF6112重新安装到机柜或机架中
+
+.开始之前
+您已拥有 link:reinstalling-sgf6112-cover.html["已重新安装产品护盖"]。
+
+.步骤
+. 同时按下蓝色导轨可释放两个机架导轨、然后将SGF6112滑入机架、直至其完全就位。
++
+如果无法再移动控制器、请拉动机箱两侧的蓝色闩锁、将控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[在导轨上滑动 SG6000]
+
++
+
+NOTE: 在打开控制器电源之前、请勿连接前挡板。
+
+. 拧紧控制器前面板上的固定螺钉，将控制器固定在机架中。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
+
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. link:../installconfig/cabling-appliance.html["重新连接控制器数据电缆和任何SFP+或SFP28收发器"]。
++
+
+NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["重新连接控制器电源线"]。
+
+
+.完成后
+link:powering-on-sgf6112-and-verifying-operation.html["重新启动设备"]。

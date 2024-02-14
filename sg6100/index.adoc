@@ -1,0 +1,43 @@
+---
+permalink: sg6100/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100 storage appliance, SGF6112 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要在设备上执行维护过程。本节将介绍维护SG6100设备的特定过程。 
+---
+= 维护SG6100设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在设备上执行维护过程。本节将介绍维护SG6100设备的特定过程。
+
+本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
+
+*配置维护过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：
+
+* link:turning-sgf6112-identify-led-on-and-off.html["打开和关闭设备识别LED"]
+* link:locating-sgf6112-in-data-center.html["在数据中心内找到设备"]
+* link:power-sgf6112-off-on.html["关闭设备"]
+* link:changing-link-configuration-of-sgf6112-appliance.html["更改设备的链接配置"]
+
+
+*硬件维护程序*要求物理操作特定的GF6112组件。
+
+
+
+== 驱动器固件升级
+
+每次重新启动设备时、系统都会自动检查SGF6112中驱动器上的固件。必要时、固件会自动升级到当前StorageGRID 版本所需的版本。通常、固件升级会在StorageGRID 软件升级期间进行。修补程序中将包括现有StorageGRID 版本所需的任何驱动器固件升级。按照每个修补程序提供的说明进行操作、确保升级应用于可从中受益的所有驱动器。
+
+
+NOTE: 无需使用SANtricity System Manager来维护SGF6112设备。
+
+
+
+== 常规维护程序
+
+请参见 link:../commonhardware/index.html["通用维护流程"] 适用于所有设备的相同过程、例如应用修补程序、恢复节点或站点以及执行网络维护。
+
+请参见 link:../installconfig/configuring-hardware.html["设置设备硬件"] 用于在初始设备安装和配置期间执行的设备维护过程。

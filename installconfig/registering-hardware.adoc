@@ -1,0 +1,58 @@
+---
+permalink: installconfig/registering-hardware.html 
+sidebar: sidebar 
+keywords: register, registering, registration, support 
+summary: 注册设备硬件具有支持优势。 
+---
+= 注册硬件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+注册设备硬件具有支持优势。
+
+.步骤
+. 找到设备的机箱序列号。对于SG6000设备、机箱序列号位于存储控制器架上。
++
+您可以在装箱单上，确认电子邮件中或打开设备包装后在设备上找到此编号。
+
++
+image::../media/appliance_label.gif[标签，包括序列号]
+
++
+
+NOTE: SG6000存储设备上有多个序列号。如果您致电SG6000设备寻求服务或支持、则必须注册并使用存储控制器架上的序列号。
+
+. 访问 NetApp 支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 确定是否需要注册硬件：
++
+[cols="1a,2a"]
+|===
+| 如果您是 ... | 请按照以下步骤操作 ... 
+
+
+ a| 
+现有 NetApp 客户
+ a| 
+.. 使用您的用户名和密码登录。
+.. 选择 * 产品 * > * 我的产品 * 。
+.. 确认新序列号已列出。
+.. 如果不是，请按照适用于新 NetApp 客户的说明进行操作。
+
+
+
+
+ a| 
+NetApp 新客户
+ a| 
+.. 单击 * 立即注册 * ，然后创建帐户。
+.. 选择 * 产品 * > * 注册产品 * 。
+.. 输入产品序列号和请求的详细信息。
+
+
+注册获得批准后，您可以下载所需的任何软件。审批过程可能需要长达 24 小时。
+
+|===
+

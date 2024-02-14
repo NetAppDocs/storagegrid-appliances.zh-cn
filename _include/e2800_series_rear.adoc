@@ -1,0 +1,47 @@
+= 
+:allow-uri-read: 
+
+
+这些图显示了E2800A控制器和E2800B控制器。用于更换E2800系列控制器和EF570控制器的操作步骤 是相同的。
+
+E2800A存储控制器：
+
+image::../media/e2800_labels_on_controller.gif[E2800A控制器上的MAC和FRU标签]
+
+E2800B存储控制器：
+
+image::../media/e2800B_labels_on_controller.gif[E2800A控制器上的MAC和FRU标签]
+
+[cols="1a,2a,4a"]
+|===
+| Label | 组件 | Description 
+
+
+ a| 
+1.
+ a| 
+MAC 地址
+ a| 
+管理端口1的MAC地址(E2800A上的"`P1"和E2800B`上的0a)。如果您使用 DHCP 获取原始控制器的 IP 地址，则需要使用此地址连接到新控制器。
+
+
+
+ a| 
+2.
+ a| 
+FRU 部件号
+ a| 
+FRU 部件号。此编号必须与当前安装的控制器的更换部件号匹配。
+
+
+
+ a| 
+3.
+ a| 
+4端口HIC
+ a| 
+4端口主机接口卡(HIC)。在执行更换时、必须将此卡移至新控制器。
+
+*注*：E2800A控制器没有HIC。
+
+|===

@@ -1,0 +1,70 @@
+---
+permalink: sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: 此服务设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。在控制器中运行的两个电源必须具有相同的型号和功率。 
+---
+= 更换SG100或SG1000中的一个或两个电源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此服务设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保计算控制器具有冗余电源。在控制器中运行的两个电源必须具有相同的型号和功率。
+
+.开始之前
+* 您已拥有 link:locating-controller-in-data-center.html["已物理定位控制器"] 更换电源。
+* 如果仅更换一个电源：
++
+** 您已卸载更换用的电源设备，并确保其型号和功率与要更换的电源设备相同。
+** 您已确认另一个电源已安装且正在运行。
+
+
+* 如果要同时更换两个电源：
++
+** 您已卸载替代电源设备，并确保其型号和功率相同。
+
+
+
+
+.关于此任务
+此图显示了 SG100 的两个电源设备，这些设备可从设备背面访问。
+
+image::../media/sg1000_power_supplies.png[带有两个电源的 SG100 的背面]
+
+
+NOTE: SG1000 的电源相同。
+
+.步骤
+. 如果您只更换一个电源，则无需关闭设备。转至 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
++
+.. link:shut-down-sg100-and-sg1000.html["关闭设备"]。
+
+
+. 【拔掉电源线， start=2]] 从要更换的每个电源中拔下电源线。
+. 提起要更换的第一个电源上的凸轮把手。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起凸轮把手以卸下 SG6000-CN PSU]
+
+. 按下蓝色闩锁并拉出电源。
++
+image::../media/sg6000_cn_remove_power_supply.gif[卸下 SG6000-CN 电源]
+
+. 使蓝色闩锁位于右侧，将替代电源滑入机箱。
++
+
+NOTE: 两个电源的型号和功率必须相同。
+
++
+在中滑动更换部件时，请确保蓝色闩锁位于右侧。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[将电源滑入 SG6000-CN]
+
+. 向下推凸轮把手以固定更换用的电源。
+. 如果要更换这两个电源，请重复步骤 2 到 6 以更换第二个电源。
+. link:../installconfig/connecting-power-cords-and-applying-power.html["将电源线连接到更换的设备并接通电源"]。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

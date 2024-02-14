@@ -1,0 +1,79 @@
+---
+permalink: installconfig/optional-changing-raid-mode.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
+summary: 在某些型号的设备上、您可以更改为设备上的其他RAID模式、以满足您的存储和恢复要求。您只能在部署设备存储节点之前更改此模式。 
+---
+= 可选：更改RAID模式(SG5760和SG6000)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在某些型号的设备上、您可以更改为设备上的其他RAID模式、以满足您的存储和恢复要求。您只能在部署设备存储节点之前更改此模式。
+
+如果使用ConfigBuilder生成JSON文件、则可以自动更改RAID模式。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
+
+.关于此任务
+如果您的设备支持、您可以选择以下卷配置选项之一：
+
+* *动态磁盘池(DDP)*：此模式对每八个数据驱动器使用两个奇偶校验驱动器。这是所有设备的默认和建议模式。与RAID 6相比、DDP可提供更高的系统性能、减少驱动器发生故障后的重建时间、并简化管理。DDP还在SG5760设备中提供抽盒丢失保护。
++
+
+NOTE: 由于有两个SSD、DDP不会在SG6060设备中提供抽盒丢失保护。对于添加到SG6060中的任何扩展架、抽屉丢失保护功能均有效。
+
+* * DDP16* ：此模式每 16 个数据驱动器使用两个奇偶校验驱动器，因此与 DDP 相比，存储效率更高。与RAID 6相比、DDP16可提供更好的系统性能、减少驱动器发生故障后的重建时间、简化管理并具有同等的存储效率。要使用 DDP16 模式，您的配置必须至少包含 20 个驱动器。DDP16 不提供抽盒丢失保护。
+* * RAID6* ：此模式每 16 个或更多数据驱动器使用两个奇偶校验驱动器。这是一种硬件保护方案、它会在每个磁盘上使用奇偶校验条带、并允许RAID集中出现两个磁盘故障、以免丢失任何数据。要使用 RAID 6 模式，您的配置必须至少包含 20 个驱动器。虽然与DDP相比、RAID 6可以提高设备的存储效率、但不建议在大多数StorageGRID 环境中使用。
+
+
+
+CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAID 模式会删除和更换这些卷。这些卷上的所有数据都将丢失。
+
+[role="tabbed-block"]
+====
+.SG5760
+--
+.开始之前
+* 您有一个SG5760、其中包含60个驱动器。如果您使用的是SG5712、则必须使用默认DDP模式。
+* 您正在使用可以连接到 StorageGRID 的任何客户端。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+
+
+.步骤
+. 使用服务笔记本电脑打开Web浏览器并访问StorageGRID 设备安装程序：+
+`*https://_E5700SG_Controller_IP_:8443*`
++
+其中 `_E5700SG_Controller_IP_` 是E5700SG控制器的任何IP地址。
+
+. 选择 * 高级 * > * RAID 模式 * 。
+. 在 * 配置 RAID 模式 * 页面上，从模式下拉列表中选择所需的 RAID 模式。
+. 单击 * 保存 * 。
+
+
+--
+.SG6000
+--
+.开始之前
+* 您正在使用可以连接到 StorageGRID 的任何客户端。
+* 客户端具有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+
+
+.步骤
+. 打开浏览器，然后输入设备计算控制器的 IP 地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
+. 选择 * 高级 * > * RAID 模式 * 。
+. 在 * 配置 RAID 模式 * 页面上，从模式下拉列表中选择所需的 RAID 模式。
+. 单击 * 保存 * 。
+
+
+--
+====

@@ -1,0 +1,799 @@
+---
+permalink: installconfig/viewing-status-indicators.html 
+sidebar: sidebar 
+keywords: status, indicators, lights, leds, light, led, display, switch , button, power, reset, identify, alarm, ssd, indicator, boot codes, boot, code, start, startup, start up, start-up, progress 
+summary: 设备和控制器包括一些指示灯、可帮助您确定设备组件的状态。 
+---
+= 查看状态指示灯和代码
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+设备和控制器包括一些指示灯、可帮助您确定设备组件的状态。
+
+[role="tabbed-block"]
+====
+.SG100和SG1000
+--
+此设备包含一些指示灯、可帮助您确定设备控制器和两个SSD的状态：
+
+* <<appliance_indicators_SG100_1000,设备指示灯和按钮>>
+* <<general_boot_codes_SG100_1000,常规启动代码>>
+* <<ssd_indicators_SG100_1000,SSD 指示灯>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation-sg100-and-sg1000.html["对SG100和SG1000硬件安装进行故障排除"]。
+
+[[appliance_indicators_SG100_1000]]
+设备指示灯和按钮::
++
+--
+下图显示了SG100和SG1000上的状态指示灯和按钮。
+
+image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
+
+[cols="1a,2a,2a"]
+|===
+| Callout | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：设备已启动。
+* off ：设备已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+此按钮可以设置为闪烁，打开（稳定）或关闭。
+
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+
+
+ a| 
+4.
+ a| 
+警报 LED
+ a| 
+* 琥珀色，稳定亮起：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+|===
+--
+
+
+[[general_boot_codes_SG100_1000]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[ssd_indicators_SG100_1000]]
+SSD 指示灯::
++
+--
+下图显示了SG100和SG1000上的SSD指示灯。
+
+image::../media/ssd_indicators.png[SSD 指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| LED | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+驱动器状态 / 故障
+ a| 
+* 蓝色（实心）：驱动器已联机
+* 琥珀色(稳定亮起)：驱动器出现故障
+* 琥珀色(闪烁)：驱动器定位器指示灯亮起
+* off ：插槽为空
+
+
+
+
+ a| 
+2.
+ a| 
+驱动器处于活动状态
+ a| 
+蓝色（闪烁）：正在访问驱动器
+
+|===
+--
+
+
+--
+.SG5700
+--
+设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：
+
+* <<boot_codes_sg5700,SG5700启动状态代码>>
+* <<status_indicators_e5700sg_controller,E5700SG 控制器上的状态指示灯>>
+* <<general_boot_codes_sg5700,常规启动代码>>
+* <<boot_codes_e5700sg_controller,E5700SG 控制器启动代码>>
+* <<error_codes_e5700sg_controller,E5700SG 控制器错误代码>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation.html["对SG5700硬件安装进行故障排除"]。
+
+[[boot_codes_sg5700]]
+SG5700启动状态代码::
++
+--
+设备启动时，每个控制器上的七段显示状态和错误代码。
+
+E2800 控制器和 E5700SG 控制器显示不同的状态和错误代码。
+
+要了解这些代码的含义，请参见以下资源：
+
+[cols="1a,2a"]
+|===
+| 控制器 | 参考 
+
+
+ a| 
+E2800 控制器
+ a| 
+_E5700 和 E2800 系统监控指南 _
+
+*注：*所列的E系列E5700控制器代码不适用于设备中的E5700SG控制器。
+
+
+
+ a| 
+E5700SG 控制器
+ a| 
+" `s5700SG 控制器上的状态指示符` "
+
+|===
+--
+
+
+.步骤
+. 在启动期间，通过查看七段显示器上显示的代码来监控进度。
++
+** E2800控制器上的七段显示重复顺序为*操作系统*、* SD *、 `*_blank_*` 以指示它正在执行每日开始处理。
+** E5700SG 控制器上的七段显示屏显示一系列代码，以 * AA* 和 * FF* 结尾。
+
+
+. 控制器启动后，确认七段显示内容如下：
++
+image::../media/seven_segment_display_codes.gif[控制器启动后，将显示七段。]
+
++
+[cols="1a,2a"]
+|===
+| 控制器 | 七段式显示 
+
+
+ a| 
+E2800 控制器
+ a| 
+显示 99 ，这是 E 系列控制器架的默认 ID 。
+
+
+
+ a| 
+E5700SG 控制器
+ a| 
+显示了 * 何 * ，后跟两个数字的重复序列。
+
+[listing]
+----
+HO -- IP address for Admin Network -- IP address for Grid Network HO
+----
+在此序列中，第一组数字是为控制器的管理端口 1 分配的 DHCP IP 地址。此地址用于将控制器连接到 StorageGRID 的管理网络。第二组数字是 DHCP 分配的 IP 地址，用于将设备连接到用于 StorageGRID 的网格网络。
+
+* 注： * 如果无法使用 DHCP 分配 IP 地址，则会显示 0.0.0.0 。
+
+|===
+. 如果显示的七段显示其他值，请参见 link:troubleshooting-hardware-installation.html["排除硬件安装故障(SG6000或SG5700)"] 并确认您已正确完成安装步骤。如果无法解决此问题，请联系技术支持。
+
+
+[[status_indicators_e5700sg_controller]]
+E5700SG 控制器上的状态指示灯::
++
+--
+在设备启动和硬件初始化期间， E5700SG 控制器上的七段显示屏和 LED 会显示状态和错误代码。您可以使用这些显示来确定状态并对错误进行故障排除。
+
+启动 StorageGRID 设备安装程序后，您应定期查看 E5700SG 控制器上的状态指示灯。
+
+下图显示了E5700SG控制器上的状态指示灯。
+
+image::../media/e5700sg_leds.gif[E5700SG 控制器上的状态指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| Callout | 显示 | Description 
+
+
+ a| 
+1.
+ a| 
+警示 LED
+ a| 
+琥珀色：控制器出现故障，需要操作员注意，或者未找到安装脚本。
+
+off ：控制器运行正常。
+
+
+
+ a| 
+2.
+ a| 
+七段式显示
+ a| 
+显示诊断代码
+
+通过七段显示序列，您可以了解设备的错误和运行状态。
+
+
+
+ a| 
+3.
+ a| 
+扩展端口警示 LED
+ a| 
+琥珀色：这些 LED 始终为琥珀色（未建立链路），因为设备不使用扩展端口。
+
+
+
+ a| 
+4.
+ a| 
+主机端口链路状态 LED
+ a| 
+绿色：链路已启动。
+
+off ：链路已关闭。
+
+
+
+ a| 
+5.
+ a| 
+以太网链路状态 LED
+ a| 
+绿色：已建立链路。
+
+off ：未建立任何链路。
+
+
+
+ a| 
+6.
+ a| 
+以太网活动 LED
+ a| 
+绿色：管理端口与其连接的设备（例如以太网交换机）之间的链路已启动。
+
+off ：控制器与连接的设备之间没有链路。
+
+呈绿色闪烁：存在以太网活动。
+
+|===
+--
+
+
+[[general_boot_codes_sg5700]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. E5700SG 控制器上的七段显示显示了一个常规代码序列，这些代码不是特定于控制器的。常规序列以代码 AA 和 FF 结尾。
+. 此时将显示特定于 E5700SG 控制器的启动代码。
+
+
+--
+
+
+[[boot_codes_e5700sg_controller]]
+E5700SG 控制器启动代码::
++
+--
+在设备正常启动期间， E5700SG 控制器上的七段显示屏将按所列顺序显示以下代码：
+
+[cols="1a,3a"]
+|===
+| 代码 | 表示 
+
+
+ a| 
+您好
+ a| 
+主启动脚本已启动。
+
+
+
+ a| 
+p
+ a| 
+系统正在检查是否需要更新 FPGA 。
+
+
+
+ a| 
+HP
+ a| 
+系统正在检查 10/225-GbE 控制器固件是否需要更新。
+
+
+
+ a| 
+RB
+ a| 
+应用固件更新后，系统正在重新启动。
+
+
+
+ a| 
+FP
+ a| 
+硬件子系统固件更新检查已完成。控制器间通信服务正在启动。
+
+
+
+ a| 
+他
+ a| 
+系统正在等待与 E2800 控制器建立连接并与 SANtricity 操作系统同步。
+
+* 注： * 如果此启动操作步骤 在此阶段未进行，请检查两个控制器之间的连接。
+
+
+
+ a| 
+HC
+ a| 
+系统正在检查现有 StorageGRID 安装数据。
+
+
+
+ a| 
+好的
+ a| 
+StorageGRID 设备安装程序正在运行。
+
+
+
+ a| 
+HA
+ a| 
+StorageGRID 正在运行。
+
+|===
+--
+
+
+[[error_codes_e5700sg_controller]]
+E5700SG 控制器错误代码::
++
+--
+这些代码表示设备启动时 E5700SG 控制器上可能显示的错误情况。如果发生特定的低级硬件错误，则会显示其他两位十六进制代码。如果其中任何一个代码持续一两秒以上，或者您无法通过执行规定的故障排除过程之一来解决此错误，请联系技术支持。
+
+[cols="1a,3a"]
+|===
+| 代码 | 表示 
+
+
+ a| 
+22.
+ a| 
+在任何启动设备上均未找到主启动记录。
+
+
+
+ a| 
+23
+ a| 
+内部闪存磁盘未连接。
+
+
+
+ a| 
+2A ， 2B
+ a| 
+总线卡滞，无法读取 DIMM SPD 数据。
+
+
+
+ a| 
+40
+ a| 
+DIMM 无效。
+
+
+
+ a| 
+41.
+ a| 
+DIMM 无效。
+
+
+
+ a| 
+42
+ a| 
+内存测试失败。
+
+
+
+ a| 
+51
+ a| 
+SPD 读取失败。
+
+
+
+ a| 
+92 到 96
+ a| 
+PCI 总线初始化。
+
+
+
+ a| 
+A0 到 A3
+ a| 
+SATA 驱动器初始化。
+
+
+
+ a| 
+AB
+ a| 
+备用启动代码。
+
+
+
+ a| 
+AE
+ a| 
+正在启动操作系统。
+
+
+
+ a| 
+EA
+ a| 
+DDR4 训练失败。
+
+
+
+ a| 
+E8.
+ a| 
+未安装内存。
+
+
+
+ a| 
+欧盟
+ a| 
+未找到安装脚本。
+
+
+
+ a| 
+EP
+ a| 
+安装 E2800 控制器或与 E2800 控制器通信失败。
+
+|===
+--
+
+
+.相关信息
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+* https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]
+
+
+--
+.SG6000
+--
+SG6000设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：
+
+* <<status_indicators_sg6000cn,SG6000-CN控制器上的状态指示灯和按钮>>
+* <<general_boot_codes_sg6000,常规启动代码>>
+* <<boot_codes_sg6000_storage_controller,SG6000存储控制器的启动状态代码>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation.html["对SG6000安装进行故障排除"]。
+
+[[status_indicators_sg6000cn]]
+SG6000-CN控制器上的状态指示灯和按钮::
++
+--
+SG6000-CN 控制器包含一些指示灯，可帮助您确定控制器的状态，其中包括以下指示灯和按钮。
+
+下图显示了SG6000-CN控制器上的状态指示灯和按钮。
+
+image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | 显示 | Description 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：控制器已启动。
+* off ：控制器已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+无指示符 _
+
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+* 闪烁或稳定蓝色：标识机柜或机架中的控制器。
+* off ：无法在机柜或机架中直观地识别控制器。
+
+
+此按钮可以设置为闪烁，打开（稳定）或关闭。
+
+
+
+ a| 
+4.
+ a| 
+警报 LED
+ a| 
+* 琥珀色：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+|===
+--
+
+
+[[general_boot_codes_sg6000]]
+常规启动代码::
++
+--
+在启动期间或在对 SG6000-CN 控制器进行硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[boot_codes_sg6000_storage_controller]]
+SG6000存储控制器的启动状态代码::
++
+--
+每个存储控制器都有一个七段显示器，可在控制器启动时提供状态代码。E2800 控制器和 EF570 控制器的状态代码相同。
+
+有关这些代码的说明，请参见适用于您的存储控制器类型的 E 系列系统监控信息。
+
+--
+
+
+.步骤
+. 在启动期间，通过查看每个存储控制器的七段显示器上显示的代码来监控进度。
++
+每个存储控制器上的七段显示重复顺序为*操作系统*、* SD *、 `*_blank_*` 指示控制器正在执行每日开始处理。
+
+. 控制器启动后，确认每个存储控制器显示 99 ，这是 E 系列控制器架的默认 ID 。
++
+确保此值显示在两个存储控制器上，如本示例 E2800 控制器所示。
+
++
+image::../media/seven_segment_display_codes_for_e2800.gif[E2800 的七段显示代码]
+
+. 如果一个或两个控制器显示其他值，请参见 link:troubleshooting-hardware-installation.html["排除硬件安装故障(SG6000或SG5700)"] 并确认您已正确完成安装步骤。如果无法解决此问题，请联系技术支持。
+
+
+.相关信息
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+* link:../sg6000/power-sg6000-cn-controller-off-on.html#power-on-sg6000-cn-controller-and-verify-operation["打开 SG6000-CN 控制器的电源并验证其运行情况"]
+
+
+--
+.SG6100
+--
+此设备包含一些指示灯、可帮助您确定设备控制器和SSD的状态：
+
+* <<appliance_indicators_SG6100,设备指示灯和按钮>>
+* <<general_boot_codes_SG6100,常规启动代码>>
+* <<ssd_indicators_SG6100,SSD 指示灯>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation-sg6100.html["对SG6100硬件安装进行故障排除"]。
+
+[[appliance_indicators_SG6100]]
+设备指示灯和按钮::
++
+--
+下图显示了GF6112设备上的指示灯和按钮。
+
+image::../media/sgf6112_front_indicators.png[前指示灯- SGF6112]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：设备已启动。
+* off ：设备已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+使用BMC、可以将此按钮设置为闪烁、亮起(稳定亮起)或熄灭。
+
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+
+
+ a| 
+4.
+ a| 
+状态LED
+ a| 
+* 琥珀色，稳定亮起：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+
+
+ a| 
+5.
+ a| 
+。
+ a| 
+此指示灯不会由SGF6112产品使用，并且会保持熄灭状态。
+
+|===
+--
+
+
+[[general_boot_codes_SG6100]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[ssd_indicators_SG6100]]
+SSD 指示灯::
++
+--
+下图显示了SGF6112设备上的SSD指示灯。
+
+image::../media/ssd_indicators.png[SSD 指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| LED | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+驱动器状态 / 故障
+ a| 
+* 蓝色（实心）：驱动器已联机
+* 琥珀色(稳定亮起)：驱动器出现故障
+* off ：插槽为空
+
+
+*注意：*如果将新的正常工作的SSD插入正常工作的StorageGRID 节点、SSD上的LED最初应闪烁、但一旦系统确定驱动器具有足够的容量且正常工作、则会停止闪烁。
+
+
+
+ a| 
+2.
+ a| 
+驱动器处于活动状态
+ a| 
+蓝色（闪烁）：正在访问驱动器
+
+|===
+--
+
+
+--
+====

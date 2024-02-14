@@ -1,0 +1,39 @@
+---
+permalink: installconfig/reviewing-appliance-network-connections.html 
+sidebar: sidebar 
+keywords: network connections, appliance, grid, admin, client, bmc, management 
+summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到此设备。 
+---
+= StorageGRID 网络类型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到设备，以及如何使用每个控制器上的端口。中详细介绍了StorageGRID 网络要求 https://docs.netapp.com/us-en/storagegrid-118/network/index.html["网络连接准则"^]。
+
+请参阅设备的说明以确定所需的信息：
+
+* link:gathering-installation-information-sg100-and-sg1000.html["SG100和SG1000"]
+* link:gathering-installation-information-sg5700.html["SG5700"]
+* link:gathering-installation-information-sg6000.html["SG6000"]
+* link:gathering-installation-information-sg6100.html["SG6100"]
+
+
+或者、您也可以与NetApp专业服务顾问合作、使用NetApp ConfigBuilder工具简化和自动执行配置步骤。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
+
+将 StorageGRID 设备部署为 StorageGRID 系统中的节点时，您可以将其连接到以下网络：
+
+* * 适用于 StorageGRID 的网格网络 * ：网格网络用于所有内部 StorageGRID 流量。它可以在网格中的所有节点之间以及所有站点和子网之间建立连接。网格网络为必填项。
+* * 适用于 StorageGRID 的管理网络 * ：管理网络是一个用于系统管理和维护的封闭网络。管理网络通常是一个专用网络，不需要在站点之间进行路由。管理网络是可选的。
+* * 适用于 StorageGRID 的客户端网络： * 客户端网络是一种开放网络，用于访问包括 S3 和 Swift 在内的客户端应用程序。客户端网络可提供对网格的客户端协议访问，从而可以隔离和保护网格网络。您可以配置客户端网络，以便仅使用您选择打开的端口通过此网络访问设备。客户端网络是可选的。
+* * SG6100*的管理网络(可选用于存储设备、SG6100不需要)：通过此网络可以访问SANtricity SANtricity系统管理器、从而可以监控和管理设备和存储控制器架中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
+* *BMC管理网络*(SG100、SG1000、SG6000和SG6100可选)：通过此网络可以访问SG100、SG1000、SG6000和SG6100设备中的底板管理控制器，从而可以监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
++
+如果未连接可选的 BMC 管理网络，则某些支持和维护过程将更难执行。除非出于支持目的需要，否则您可以使 BMC 管理网络保持未连接状态。
+
+
+
+
+NOTE: 有关StorageGRID 网络的详细信息、请参见 https://docs.netapp.com/us-en/storagegrid-118/network/storagegrid-network-types.html["StorageGRID 网络类型"^]。

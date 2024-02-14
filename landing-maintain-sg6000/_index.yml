@@ -1,0 +1,39 @@
+---
+indexpage:
+  tiles:
+  - title: 经常执行的过程
+    links:
+    - title: 打开或关闭位置LED
+      url: "../sg6000/turning-controller-identify-led-on-and-off.html"
+    - title: 在数据中心内找到设备
+      url: "../sg6000/locating-controller-in-data-center.html"
+    - title: 关闭和打开设备电源
+      url: "../sg6000/power-sg6000-cn-controller-off-on.html"
+    - title: 更改链路配置
+      url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
+    - title: 升级SANtricity
+      url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    - title: 升级驱动器固件
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 机架过程
+    links:
+    - title: 更换机架中的控制器
+      url: "../sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
+    - title: 添加扩展架
+      url: "../sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
+  - title: 硬件过程
+    links:
+    - title: 装回控制器护盖
+      url: "../sg6000/reinstalling-sg6000-cn-controller-cover.html"
+    - title: 更换存储控制器
+      url: "../sg6000/replacing-storage-controller-sg6000.html"
+    - title: 更换存储控制器组件
+      url: "../sg6000/replacing-hardware-components-in-storage-controller-shelf.html"
+    - title: 更换包含60个驱动器的扩展架组件
+      url: "../sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html"
+    - title: 更换 SG6000-CN 控制器
+      url: "../sg6000/replacing-sg6000-cn-controller.html"
+    - title: 更换电源
+      url: "../sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+    - title: 更换光纤通道HBA
+      url: "../sg6000/reinstalling-fibre-channel-hba.html"

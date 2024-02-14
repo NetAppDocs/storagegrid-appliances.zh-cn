@@ -1,0 +1,51 @@
+---
+permalink: installconfig/sg6060-installing-drives.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
+summary: 将包含60个驱动器的磁盘架安装到机柜或机架中后、将所有60个驱动器安装到该磁盘架中。E2860 控制器架的发货包含两个 SSD 驱动器，您应将其安装在控制器架的顶部抽屉中。每个可选扩展架都包含 60 个 HDD 驱动器，而不包含 SSD 驱动器。 
+---
+= 安装驱动器(SG6060)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+将包含60个驱动器的磁盘架安装到机柜或机架中后、将所有60个驱动器安装到该磁盘架中。E2860 控制器架的发货包含两个 SSD 驱动器，您应将其安装在控制器架的顶部抽屉中。每个可选扩展架都包含 60 个 HDD 驱动器，而不包含 SSD 驱动器。
+
+.开始之前
+您已在机柜或机架中安装 E2860 控制器架或可选扩展架（一个或两个）。
+
+
+CAUTION: 为避免损坏硬件，如果安装了驱动器，请勿移动磁盘架。移动磁盘架之前，必须先卸下所有驱动器。
+
+.步骤
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 将驱动器从其包装中取出。
+. 释放顶部驱动器抽盒上的拉杆，然后使用拉杆将抽盒滑出。
+. 找到两个 SSD 驱动器。
++
+
+NOTE: 扩展架不使用SSD驱动器。
+
+. 将每个驱动器把手提起至垂直位置。
+. 将两个 SSD 驱动器安装在插槽 0 和 1 中（前两个插槽沿抽盒左侧）。
+. 将每个驱动器轻轻放入其插槽中，然后放低凸起的驱动器把手，直到其卡入到位。
++
+image::../media/install_drives_in_e2860.gif[安装驱动器]
+
+. 将 10 个 HDD 驱动器安装到顶部抽盒中。
+. 推中间并轻轻合上两个拉杆，将抽盒滑回原位。
++
+
+CAUTION: 如果您感到绑定，请停止推动抽盒。Use the release levers at the front of the drawer to slide the drawer back out.然后，小心地将抽盒重新插入插槽。
+
+. 重复上述步骤，将 HDD 驱动器安装到其他四个抽盒中。
++
+
+NOTE: 您必须安装全部 60 个驱动器，以确保正常运行。
+
+. 将前挡板连接到磁盘架。
+. 如果您有扩展架，请重复上述步骤，在每个扩展架的每个抽盒中安装 12 个 HDD 驱动器。
+. 按照说明将 SG6000-CN 安装到机柜或机架中。
+

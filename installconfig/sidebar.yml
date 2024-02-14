@@ -1,0 +1,124 @@
+---
+section: installconfig
+title: 安装设备
+url: "/landing-appl-install/index.html"
+entries:
+- title: 快速入门
+  pdf-filename: 安装StorageGRID 设备硬件
+  url: "/installconfig/index.html"
+- title: 准备安装
+  url: "/landing-install-prep/index.html"
+  entries:
+  - title: 准备站点
+    url: "/installconfig/preparing-site.html"
+  - title: 打开包装箱
+    url: "/installconfig/unpacking-boxes.html"
+  - title: 获取其他设备和工具
+    url: "/installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: 收集网络信息
+    entries:
+    - title: StorageGRID 网络类型
+      url: "/installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100和SG1000
+      url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000
+      url: "/installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "/installconfig/gathering-installation-information-sg6100.html"
+- title: 自动安装和配置设备
+  url: "/installconfig/automating-appliance-installation-and-configuration.html"
+- title: 自动执行StorageGRID 配置
+  url: "/installconfig/automating-configuration-of-storagegrid.html"
+- title: 安装 REST API 概述
+  url: "/installconfig/overview-of-installation-rest-apis.html"
+- title: 安装设备硬件
+  url: "/landing-install-hdwr/index.html"
+  entries:
+  - title: 注册硬件
+    url: "/installconfig/registering-hardware.html"
+  - title: 安装到机柜或机架中
+    entries:
+    - title: SG100和SG1000
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SG6000
+      entries:
+      - title: 概述
+        pdf-filename: 将SG6000安装到机柜或机架中
+        url: "/installconfig/installing-hardware-sg6000.html"
+      - title: 安装包含60个驱动器的磁盘架(SG6060)
+        url: "/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安装驱动器(SG6060)
+        url: "/installconfig/sg6060-installing-drives.html"
+      - title: 安装包含24个驱动器的磁盘架(GF6024)
+        url: "/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安装SG6000-CN控制器(SG6024和SG6060)
+        url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+    - title: SG6100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+  - title: 电缆设备
+    url: "/installconfig/cabling-appliance.html"
+  - title: 连接并接通电源
+    url: "/installconfig/connecting-power-cords-and-applying-power.html"
+  - title: 查看状态指示灯和代码
+    url: "/installconfig/viewing-status-indicators.html"
+- title: 设置硬件
+  entries:
+  - title: 概述
+    url: "/installconfig/configuring-hardware.html"
+  - title: 配置StorageGRID 连接
+    entries:
+    - title: 访问 StorageGRID 设备安装程序
+      url: "/installconfig/accessing-storagegrid-appliance-installer.html"
+    - title: 验证并升级 StorageGRID 设备安装程序版本
+      url: "/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: 配置网络链路
+      url: "/installconfig/configuring-network-links.html"
+    - title: 配置 StorageGRID IP 地址
+      url: "/installconfig/setting-ip-configuration.html"
+    - title: 验证网络连接
+      url: "/installconfig/verifying-network-connections.html"
+    - title: 验证端口级别的网络连接
+      url: "/installconfig/verifying-port-level-network-connections.html"
+  - title: 设置SANtricity系统管理器(SG5700和SG6000)
+    url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
+  - title: 配置BMC接口(SG100、SG1000、SG6000和SG6100)
+    entries:
+    - title: 概述
+      url: "/installconfig/configuring-bmc-interface.html"
+    - title: 更改root密码
+      url: "/installconfig/changing-root-password-for-bmc-interface.html"
+    - title: 设置 BMC 管理端口的 IP 地址
+      url: "/installconfig/setting-ip-address-for-bmc-management-port.html"
+    - title: 访问 BMC 界面
+      url: "/installconfig/accessing-bmc-interface.html"
+    - title: 配置SNMP设置
+      url: "/installconfig/configuring-snmp-settings-for-bmc.html"
+    - title: 设置电子邮件通知
+      url: "/installconfig/setting-up-email-notifications-for-alerts.html"
+  - title: 可选：启用节点或驱动器加密
+    url: "/installconfig/optional-enabling-node-encryption.html"
+  - title: 可选：更改RAID模式(SG5760和SG6000)
+    url: "/installconfig/optional-changing-raid-mode.html"
+  - title: 可选：重新映射网络端口
+    url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
+- title: 部署设备节点
+  url: "/landing-deploy-appliance/index.html"
+  entries:
+  - title: 部署设备存储节点
+    url: "/installconfig/deploying-appliance-storage-node.html"
+  - title: 部署服务设备节点
+    url: "/installconfig/deploying-services-appliance-node.html"
+  - title: 监控设备安装
+    url: "/installconfig/monitoring-appliance-installation.html"
+  - title: 在StorageGRID 设备安装程序运行期间重新启动设备
+    url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: 排除安装故障(SG100和SG1000)
+    url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: 排除安装故障(SG5700或SG6000)
+    url: "/installconfig/troubleshooting-hardware-installation.html"
+  - title: 安装故障排除(SG6100)
+    url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"

@@ -1,0 +1,58 @@
+---
+settings:
+  name: StorageGRID Appliances
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: false
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+    hide_language_selector: true
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: StorageGRID设备文档
+    url: "/index.html"
+  - title: 入门
+    url: "/landing-learn-hdwr/index.html"
+    entries:
+    - title: 设备新增功能
+      url: "/whats-new-appliances.html"
+    - title: 了解StorageGRID设备
+      entries:
+      - title: SG100 和 SG1000 服务设备
+        url: "/installconfig/hardware-description-sg100-and-1000.html"
+      - title: SG5700 存储设备
+        url: "/installconfig/hardware-description-sg5700.html"
+      - title: SG6000 存储设备
+        url: "/installconfig/hardware-description-sg6000.html"
+      - title: SG6100存储设备
+        url: "/installconfig/hardware-description-sg6100.html"
+  - section: installconfig
+  - title: 维护设备硬件
+    url: "/landing-maintain-hdwr/index.html"
+    entries:
+    - section: commonhardware
+    - title: 设备节点克隆
+      entries:
+      - title: 概述
+        pdf-filename: 设备节点克隆
+        url: "/commonhardware/how-appliance-node-cloning-works.html"
+      - title: 设备节点克隆的注意事项和要求
+        url: "/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html"
+      - title: 克隆设备节点
+        url: "/commonhardware/appliance-node-cloning-procedure.html"
+    - section: sg100-1000
+    - section: sg5600
+    - section: sg5700
+    - section: sg6000
+    - section: sg6100
+  - title: StorageGRID软件文档
+    url: "/storagegrid-documentation.html"
+  - title: 启用StorageGRID
+    url: "/storagegrid-enable.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+product-family:
+  name: StorageGRID documentation
+  repo: storagegrid-family

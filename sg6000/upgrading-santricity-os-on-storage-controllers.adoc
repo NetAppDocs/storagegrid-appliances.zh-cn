@@ -1,0 +1,33 @@
+---
+permalink: sg6000/upgrading-santricity-os-on-storage-controllers.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。 
+---
+= 升级SG6000存储控制器上的SANtricity操作系统
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。
+
+请参见 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 以确定应使用的版本。
+
+从下载新的SANtricity OS软件文件 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
+
+根据当前安装的 SANtricity OS 版本，使用以下过程之一：
+
+* 如果存储控制器使用的是 SANtricity OS 08.42.20.00 （ 11.42 ）或更高版本，请使用网格管理器执行升级。
++
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]
+
+* 如果存储控制器使用的 SANtricity 操作系统版本早于 08.42.20.00 （ 11.42 ），请使用维护模式执行升级。
++
+link:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["使用维护模式升级存储控制器上的 SANtricity 操作系统"]
+
+
+
+
+CAUTION: 升级存储设备的 SANtricity 操作系统时，必须按照 StorageGRID 文档中的说明进行操作。如果您使用任何其他说明，则设备可能无法运行。

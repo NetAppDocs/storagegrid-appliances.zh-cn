@@ -1,0 +1,55 @@
+---
+permalink: sg6100/reinstalling-sgf6112-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
+summary: 卸下产品盖板以接触内部组件进行维护，完成后更换盖板。 
+---
+= 更换SGF6112盖板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卸下产品盖板以接触内部组件进行维护，完成后更换盖板。
+
+
+
+== 拆下盖板
+
+.开始之前
+link:reinstalling-sgf6112-into-cabinet-or-rack.html["从机柜或机架中取出产品"] 以检修顶盖。
+
+.步骤
+. 确保产品护盖闩锁未锁定。如有必要，将蓝色塑料闩锁按解锁方向转动四分之一圈，如闩锁上所示。
+. 将闩锁向上并向后朝产品机箱背面旋转，直至其停止；然后小心地将机箱盖从机箱中提起并放在一旁。
++
+image::../media/sg6060_cover_latch_open.jpg[产品盖闩锁打开]
+
++
+
+CAUTION: 将ESD腕带的腕带端缠绕在手腕上，并将扣具端固定到金属接地，以防止在产品内部工作时发生静电释放。
+
+
+
+
+
+== 重新安装盖板
+
+.开始之前
+您已完成设备内部的所有维护过程。
+
+.步骤
+. 打开主机盖闩锁后，握住机箱上方的主机盖，并将顶部主机盖闩锁中的孔与机箱中的销对齐。对齐后，将其放低到机箱上。
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060 盖板闩锁对齐销]
+
+. 向前和向下旋转机箱盖闩锁，直到其停止，并且机箱盖完全就位到机箱中。确认外盖前边缘没有间隙。
++
+如果护盖未完全就位，您可能无法将产品滑入机架。
+
+. 可选：将蓝色塑料闩锁按锁定方向转动四分之一圈，如闩锁上所示，以将其锁定。
+
+
+.完成后
+link:reinstalling-sgf6112-into-cabinet-or-rack.html["将产品重新安装到机柜或机架中"]。

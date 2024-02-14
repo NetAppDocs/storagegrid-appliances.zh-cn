@@ -1,0 +1,76 @@
+---
+permalink: sg6000/replacing-hardware-components-in-storage-controller-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, storage controller shelf, Battery, Drive, Power canister, power supply, Fan canister, fan, Drive drawer 
+summary: 如果发生硬件问题，您可能需要更换存储控制器架中的组件。 
+---
+= 更换SG6000存储控制器架中的硬件组件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果发生硬件问题，您可能需要更换存储控制器架中的组件。
+
+.开始之前
+* 您已安装 E 系列硬件更换操作步骤 。
+* 您已在物理上找到要在数据中心中更换存储架硬件组件的存储设备。
++
+link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+
+
+
+.关于此任务
+要更换存储控制器中的电池、请参见说明中的步骤 link:replacing-storage-controller-sg6000.html["更换存储控制器"]。这些说明介绍了如何从设备中卸下控制器，从控制器中取出电池，安装电池以及更换控制器。
+
+有关控制器架中其他现场可更换单元(Field可更换单元、FRU)的说明、请访问 http://mysupport.netapp.com/info/web/ECMP1658252.html["E系列系统维护流程"^]。
+
+[cols="1a,3a"]
+|===
+| FRU | 请参见说明 
+
+
+ a| 
+电池
+ a| 
+StorageGRID （以下说明）：更换存储控制器
+
+
+
+ a| 
+驱动器
+ a| 
+E 系列：
+
+* 更换驱动器（ 60 个驱动器）
+* 更换驱动器（ 12 个或 24 个驱动器）
+
+
+
+
+ a| 
+动力箱
+ a| 
+E 系列
+
+* 更换电源箱（ 60 个驱动器）
+* 更换电源（ 12 个或 24 个驱动器）
+
+
+
+
+ a| 
+风扇箱（仅限 60 驱动器架）
+ a| 
+E 系列：更换风扇箱（ 60 个驱动器）
+
+
+
+ a| 
+驱动器抽盒（仅限 60 驱动器磁盘架）
+ a| 
+E 系列：更换驱动器抽盒（ 60 个驱动器）
+
+|===
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

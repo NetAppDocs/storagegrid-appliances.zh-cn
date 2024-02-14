@@ -1,0 +1,71 @@
+---
+permalink: sg100-1000/replacing-drive-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: 服务设备中的 SSD 包含 StorageGRID 操作系统。此外，如果将设备配置为管理节点，则 SSD 还包含审核日志，指标和数据库表。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。 
+---
+= 更换SG100或SG1000中的驱动器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服务设备中的 SSD 包含 StorageGRID 操作系统。此外，如果将设备配置为管理节点，则 SSD 还包含审核日志，指标和数据库表。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。
+
+.开始之前
+* 您已拥有 link:locating-controller-in-data-center.html["已物理定位设备"]。
+* 您已通过注意到左侧 LED 呈琥珀色闪烁来验证哪个驱动器出现故障。
++
+两个SSD将按下图所示放置在插槽中：
+
++
+image::../media/drive_locations_sg1000_front_with_ssds.png[驱动器位置]
+
++
+
+CAUTION: 如果您删除工作正常的驱动器，则会关闭设备节点。请参见有关查看状态指示器的信息以验证故障。
+
+* 您已获得替代驱动器。
+* 您已获得适当的 ESD 保护。
+
+
+.步骤
+. 验证要更换的驱动器的左侧指示灯是否呈琥珀色闪烁。如果网格管理器或BMC用户界面中报告了驱动器问题描述 、则HDD02或HDD2指上部插槽中的驱动器、HDD03或HDD3指下部插槽中的驱动器。
++
+您还可以使用网格管理器监控 SSD 的状态。选择 * 节点 * 。然后选择 `*Appliance Node*` >*硬件*。如果某个驱动器发生故障，则存储 RAID 模式字段会显示一条消息，指出哪个驱动器发生故障。
+
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 拆开备用驱动器的包装，并将其放在设备附近的无静电水平表面上。
++
+节省所有包装材料。
+
+. 按下故障驱动器上的释放按钮。
++
+image::../media/h600s_driveremoval.gif[驱动器删除]
+
++
+驱动器弹出器上的手柄部分打开，驱动器从插槽中释放。
+
+. 打开手柄，滑出驱动器，然后将其放在无静电的水平表面上。
+. 在将替代驱动器插入驱动器插槽之前，请按此驱动器上的释放按钮。
++
+闩锁会弹开。
+
++
+image::../media/h600s_driveinstall.gif[驱动器安装]
+
+. 将替代驱动器插入插槽，然后合上驱动器手柄。
++
+
+CAUTION: 合上手柄时不要用力过大。
+
++
+驱动器完全插入后，您会听到卡嗒声。
+
++
+驱动器会使用工作驱动器中的镜像数据自动重建。您可以使用网格管理器检查重建的状态。选择 * 节点 * 。然后选择 `*Appliance Node*` >*硬件*。存储 RAID 模式字段包含一条消息 `re构建` ，直到驱动器完全重建为止。
+
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

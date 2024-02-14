@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: landing-appl-install/index.html 
+summary: 要向StorageGRID系统添加存储或服务设备、请安装和配置设备硬件。然后、在每个设备上安装StorageGRID软件、并将设备节点连接到网格。 
+---
+= 安装StorageGRID 设备硬件
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

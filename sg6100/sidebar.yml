@@ -1,0 +1,42 @@
+---
+section: sg6100
+title: 维护SG6100硬件
+url: "/landing-maintain-sgf6112/index.html"
+entries:
+- title: 概述
+  pdf-filename: SG6100硬件维护
+  url: "/sg6100/index.html"
+- title: 配置维护过程
+  pdf-filename: 配置维护过程- SG6100
+  entries:
+  - title: 使用管理驱动器选项卡
+    url: "/sg6100/manage-drives-tab.html"
+  - title: 打开和关闭识别LED
+    url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
+  - title: 在数据中心内找到设备
+    url: "/sg6100/locating-sgf6112-in-data-center.html"
+  - title: 关闭并打开产品电源
+    url: "/sg6100/power-sgf6112-off-on.html"
+  - title: 更改链路配置
+    url: "/sg6100/changing-link-configuration-of-sgf6112-appliance.html"
+- title: 硬件维护过程
+  pdf-filename: 硬件维护流程- SG6100
+  entries:
+  - title: 验证要更换的组件
+    url: "/sg6100/verify-component-to-replace.html"
+  - title: 更换一个或多个电源
+    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+  - title: 更换风扇
+    url: "/sg6100/replacing-fan-in-sgf6112.html"
+  - title: 更换驱动器
+    url: "/sg6100/replacing-drive-in-sgf6112.html"
+  - title: 更换NIC
+    url: "/sg6100/replace-nic-in-sgf6112.html"
+  - title: 更换CMOS电池
+    url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: 装回护盖
+    url: "/sg6100/reinstalling-sgf6112-cover.html"
+  - title: 更换GF6112设备
+    url: "/sg6100/replacing-sgf6112-appliance.html"
+  - title: 在机架中重新定位SGF6112
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"

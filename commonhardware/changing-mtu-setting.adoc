@@ -1,0 +1,65 @@
+---
+permalink: commonhardware/changing-mtu-setting.html 
+sidebar: sidebar 
+keywords: mtu, change, changing 
+summary: 您可以更改在为设备节点配置 IP 地址时分配的 MTU 设置。 
+---
+= 更改 MTU 设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改在为设备节点配置 IP 地址时分配的 MTU 设置。
+
+.关于此任务
+
+CAUTION: 网络的 MTU 值必须与节点所连接的交换机端口上配置的值匹配。否则，可能会发生网络性能问题或数据包丢失。
+
+
+NOTE: 为了获得最佳网络性能，应在所有节点的网格网络接口上配置类似的 MTU 值。如果网格网络在各个节点上的 MTU 设置有明显差异，则会触发 * 网格网络 MTU 不匹配 * 警报。并非所有网络类型的MTU值都必须相同。
+
+要在不重新启动设备节点的情况下更改 MTU 设置， <<使用更改 IP 工具更改 MTU 设置,使用更改 IP 工具>>。
+
+如果在初始安装期间未在 StorageGRID 设备安装程序中配置客户端或管理网络， <<使用维护模式更改 MTU 设置,使用维护模式更改 MTU 设置>>。
+
+
+
+== 使用更改 IP 工具更改 MTU 设置
+
+.开始之前
+您拥有 `Passwords.txt` 文件以使用更改IP工具。
+
+.步骤
+访问更改 IP 工具并按中所述更新 MTU 设置 https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["更改节点网络配置"^]。
+
+
+
+== 使用维护模式更改 MTU 设置
+
+如果无法使用更改 IP 工具访问这些设置，请使用维护模式更改 MTU 设置。
+
+.开始之前
+此设备已运行 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已置于维护模式"]。
+
+.步骤
+. 从 StorageGRID 设备安装程序中，选择 * 配置网络连接 * > * IP 配置 * 。
+. 对网格网络，管理网络和客户端网络的 MTU 设置进行所需的更改。
+. 如果对设置感到满意，请选择 * 保存 * 。
+. 如果此操作步骤 已成功完成，并且您在节点处于维护模式时还需要执行其他过程，请立即执行。完成后，或者如果遇到任何故障并希望重新启动，请选择 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID *
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。  如果您在操作步骤 期间遇到任何故障并希望重新启动，请选择此选项。节点重新启动至维护模式后，从出现故障的操作步骤 中的相应步骤重新启动。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
++
+设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。n节点*页面应显示正常状态(绿色复选标记图标 image:../media/icon_alert_green_checkmark.png["绿色复选标记"] 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。
+
++
+image::../media/nodes_menu.png[设备节点已重新加入网格]
+
+
+
+

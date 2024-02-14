@@ -1,0 +1,246 @@
+---
+permalink: installconfig/optional-enabling-node-encryption.html 
+sidebar: sidebar 
+keywords: node encryption, encryption, kms, key management server, drive encryption, self-encrypting drives, sed, full-disk encryption, fde 
+summary: 您可以在节点和磁盘级别启用加密、以防止设备中的磁盘物理丢失或从站点中删除。 
+---
+= 可选：启用节点或驱动器加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在节点和磁盘级别启用加密、以防止设备中的磁盘物理丢失或从站点中删除。
+
+* <<启用节点加密,节点加密>> 使用软件加密来保护设备中的所有磁盘。它不需要特殊的驱动器硬件。节点加密由设备软件使用外部密钥管理服务器(KMS)管理的密钥执行。
+* <<启用驱动器加密,驱动器加密>> 使用硬件加密来保护自加密驱动器(SED)、也称为全磁盘加密(FED)驱动器、包括符合联邦信息处理标准(FIPS)的驱动器。驱动器加密在每个驱动器中使用由StorageGRID密钥管理器管理的加密密钥执行。
+
+
+您可以对受支持的驱动器执行这两个加密级别、以提高安全性。
+
+请参见 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^] 有关可用于StorageGRID设备的所有加密方法的信息。
+
+
+
+== 启用节点加密
+
+如果启用了节点加密，则可以通过安全密钥管理服务器（ KMS ）加密来保护设备中的磁盘，防止物理丢失或从站点中删除。您必须在设备安装期间选择并启用节点加密。在KMS加密过程启动后、您无法禁用节点加密。
+
+如果使用ConfigBuilder生成JSON文件、则可以自动启用节点加密。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
+
+.开始之前
+查看有关的信息 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["正在配置KMS"^]。
+
+.关于此任务
+启用了节点加密的设备将连接到为 StorageGRID 站点配置的外部密钥管理服务器（ KMS ）。每个 KMS （或 KMS 集群）负责管理站点上所有设备节点的加密密钥。这些密钥对启用了节点加密的设备中每个磁盘上的数据进行加密和解密。
+
+可以在 StorageGRID 中安装 KMS 之前或之后在网格管理器中设置此设备。有关更多详细信息，请参见管理 StorageGRID 的说明中有关 KMS 和设备配置的信息。
+
+* 如果在安装设备之前设置了 KMS ，则在设备上启用节点加密并将其添加到配置了 KMS 的 StorageGRID 站点时， KMS 控制的加密将开始。
+* 如果在安装此设备之前未设置 KMS ，则在为包含此设备节点的站点配置了 KMS 并可使用此 KMS 后，将对启用了节点加密的每个设备执行 KMS 控制的加密。
+
+
+
+CAUTION: 如果在安装设备时启用了节点加密、则会分配一个临时密钥。设备上的数据在连接到密钥管理系统(Key Management System、KMS)并设置KMS安全密钥之前不会受到保护。请参见 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html["Kms设备配置概述"^] 适用于追加信息 。
+
+如果没有解密磁盘所需的KMS密钥、则无法检索设备上的数据、并且实际上会丢失。如果无法从KMS中检索到解密密钥、则会出现这种情况。如果客户清除 KMS 配置， KMS 密钥过期，与 KMS 的连接断开或从安装了 KMS 密钥的 StorageGRID 系统中删除设备，则无法访问此密钥。
+
+.步骤
+. 打开浏览器，然后输入设备计算控制器的 IP 地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
++
+
+CAUTION: 使用KMS密钥对设备加密后、如果不使用同一个KMS密钥、则无法对设备磁盘进行解密。
+
+. 选择 * 配置硬件 * > * 节点加密 * 。
++
+image::../media/kms_fde_enabled.png[已启用 Kms FDE]
+
+. 选择 * 启用节点加密 * 。
++
+在安装设备之前，您可以清除*启用节点加密*，而不会丢失数据。安装开始时、设备节点会访问StorageGRID 系统中的KMS加密密钥并开始磁盘加密。安装此设备后、您将无法禁用节点加密。
+
++
+
+CAUTION: 在将启用了节点加密的设备添加到具有KMS的StorageGRID 站点之后、您无法停止对此节点使用KMS加密。
+
+. 选择 * 保存 * 。
+. 将设备部署为 StorageGRID 系统中的节点。
++
+当设备访问为 StorageGRID 站点配置的 KMS 密钥时，便会开始使用由 KMS 控制的加密。安装程序会在 KMS 加密过程中显示进度消息，此过程可能需要几分钟时间，具体取决于设备中的磁盘卷数。
+
++
+
+NOTE: 设备最初会配置一个随机的非 KMS 加密密钥，该密钥会分配给每个磁盘卷。磁盘会使用此临时加密密钥进行加密，这种加密密钥不安全，直到启用了节点加密的设备访问为 StorageGRID 站点配置的 KMS 密钥为止。
+
+
+
+.完成后
+您可以查看节点加密状态， KMS 详细信息以及设备节点处于维护模式时正在使用的证书。请参见 link:../commonhardware/monitoring-node-encryption-in-maintenance-mode.html["监控维护模式下的节点加密"] 以了解相关信息。
+
+
+
+== 驱动器加密
+
+在写入和读取过程中、驱动器加密在自加密驱动器(SED)硬件上进行管理。对这些驱动器上数据的访问由用户定义的密码短语控制。驱动器加密用于在StorageGRID设备中缓存所用的直连固态驱动器(SSD)。
+
+当设备关闭或从设备中删除驱动器时、加密的SRD会自动锁定。加密的SED在恢复供电后保持锁定状态、直到输入正确的密码短语为止。要允许在不手动重新输入密码短语的情况下访问驱动器、此密码短语会存储在StorageGRID设备上、以便在设备重新启动时解锁设备中保留的加密驱动器。知道SED密码短语的任何人都可以访问使用SED密码短语加密的驱动器。
+
+驱动器加密不适用于SANtricity-managed驱动器。如果您的设备具有StorageGRID和SANtricity控制器、则可以在中启用驱动器安全性 link:../installconfig/accessing-and-configuring-santricity-system-manager.html["SANtricity 系统管理器"]。
+
+您可以在初始设备安装期间启用驱动器加密、然后再加载Grid Manager。您还可以通过将设备置于维护模式来启用节点加密或更改密码短语。
+
+.开始之前
+查看有关的信息 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^]。
+
+.关于此任务
+首次启用驱动器加密时会设置密码短语。如果更换了某个计算节点或将加密的SED移至新计算节点、则必须手动重新输入密码短语。
+
+
+CAUTION: 请确保将驱动器加密密码短语存储在安全位置。如果加密的SED安装在另一个StorageGRID设备中、则在不手动输入相同密码短语的情况下、无法访问该SED。
+
+
+
+=== 启用驱动器加密
+
+. 访问StorageGRID设备安装程序。
++
+** 在初始设备安装期间、打开浏览器并输入设备计算控制器的IP地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
+** 对于现有StorageGRID设备、 link:../commonhardware/placing-appliance-into-maintenance-mode.html["将产品置于维护模式"]。
+
+
+. 从StorageGRID设备安装程序的主页页面中，选择*Configure Harder*>*Drive Encryption。
+. 选择*启用驱动器加密*。
++
+
+CAUTION: 启用驱动器加密并设置密码短语后、SED驱动器将进行硬件加密。如果不使用相同的密码短语、则无法访问驱动器的内容。
+
+. 选择 * 保存 * 。
++
+驱动器加密后、将显示驱动器密码短语信息。
+
++
+
+NOTE: 在对驱动器进行初始加密时、密码短语会设置为默认空值、并且当前密码短语文本会指示"default (not sSecure)"。 虽然此驱动器上的数据已加密、但在设置唯一密码之前、无需输入密码短语即可访问此驱动器。
+
+. 输入用于加密驱动器访问的唯一密码短语、然后再次输入密码短语进行确认。密码短语必须至少为8个字符、长度不得超过32个字符。
+. 输入密码短语显示文本、以帮助您重新调用密码短语。
++
+将密码短语和密码短语显示文本保存在安全位置、例如密码管理应用程序。
+
+. 选择 * 保存 * 。
+
+
+
+
+=== 查看驱动器加密状态
+
+. link:../commonhardware/placing-appliance-into-maintenance-mode.html["将设备置于维护模式"]。
+. 从StorageGRID设备安装程序中，选择*配置硬件*>*驱动器加密*。
+
+
+
+
+=== 访问加密驱动器
+
+在更换计算节点或将驱动器移至新计算节点后、您必须输入密码短语才能访问加密驱动器。
+
+. 访问StorageGRID设备安装程序。
++
+** 打开浏览器、然后输入设备计算控制器的IP地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["将设备置于维护模式"]。
+
+
+. 从StorageGRID设备安装程序中，选择警告横幅中的*Drive Encryption (驱动器加密)*链接。
+. 输入先前在*新密码短语*和*重新键入新密码短语*中设置的驱动器加密密码短语。
++
+
+NOTE: 如果为密码短语和密码短语显示文本输入值、而这些值与先前输入的值不匹配、则驱动器身份验证将失败。您需要重新启动设备并输入正确的密码短语和密码短语显示文本。
+
+. 输入先前在*新密码短语显示文本*中设置的密码短语显示文本。
+. 选择 * 保存 * 。
++
+驱动器解锁后、将不再显示警告横幅。
+
+. 返回StorageGRID设备安装程序主页页面、并在安装部分横幅中选择*重新启动*、以重新启动计算节点并访问加密驱动器。
+
+
+
+
+=== 更改驱动器加密密码短语
+
+. 访问StorageGRID设备安装程序。
++
+** 打开浏览器、然后输入设备计算控制器的IP地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["将设备置于维护模式"]。
+
+
+. 从StorageGRID设备安装程序中，选择*配置硬件*>*驱动器加密*。
+. 输入新的唯一驱动器访问密码短语、然后再次输入密码短语进行确认。密码短语必须至少为8个字符、长度不得超过32个字符。
++
+
+NOTE: 您必须事先通过驱动器访问权限的身份验证、然后才能更改驱动器加密密码短语。
+
+. 输入密码短语显示文本、以帮助您重新调用密码短语。
+. 选择 * 保存 * 。
++
+
+CAUTION: 设置新密码短语后、如果不使用新密码短语和密码短语显示文本、则无法对加密的驱动器解密。
+
+. 将新密码短语和密码短语显示文本保存在安全位置、例如密码管理应用程序。
+
+
+
+
+=== 禁用驱动器加密
+
+. 访问StorageGRID设备安装程序。
++
+** 打开浏览器、然后输入设备计算控制器的IP地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["将设备置于维护模式"]。
+
+
+. 从StorageGRID设备安装程序中，选择*配置硬件*>*驱动器加密*。
+. 清除*启用驱动器加密*。
+. 要在禁用驱动器加密后擦除所有驱动器数据，请选择*擦除驱动器上的所有数据。*
++
+
+NOTE: 只有在将设备添加到网格之前、才能从StorageGRID设备安装程序中使用数据清理选项。从维护模式访问StorageGRID设备安装程序时、您无法访问此选项。
+
+. 选择 * 保存 * 。
+
+
+驱动器内容将被加密或以加密方式擦除、加密密码短语将被擦除、现在无需密码短语即可访问SED。

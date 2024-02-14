@@ -1,0 +1,83 @@
+---
+permalink: sg5700/replacing-other-hardware-components-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, controller battery, battery, drive, fan, power supply 
+summary: 您可能需要更换 StorageGRID 设备中的控制器电池，驱动器，风扇或电源。 
+---
+= 更换SG5700中的其他硬件组件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更换 StorageGRID 设备中的控制器电池，驱动器，风扇或电源。
+
+.开始之前
+* 您已安装 E 系列硬件更换操作步骤 。
+* 此设备已运行 link:../commonhardware/placing-appliance-into-maintenance-mode.html["置于维护模式"] 如果组件更换操作步骤 要求您关闭设备。
+
+
+.关于此任务
+要更换E2800控制器中的电池、请参见这些说明中的说明 link:replacing-e2800-controller.html["更换E2800控制器"]。这些说明介绍了如何从设备中卸下控制器，从控制器中取出电池，安装电池以及更换控制器。
+
+要更换产品中的驱动器、电源风扇箱、风扇箱、电源箱或驱动器抽盒、请访问 http://mysupport.netapp.com/info/web/ECMP1658252.html["E系列维护E2800硬件的过程"^]。
+
+
+
+== SG5712 组件更换说明
+
+[cols="1a,3a"]
+|===
+| FRU | 请参见 E 系列说明 
+
+
+ a| 
+驱动器
+ a| 
+更换 E2800 12 驱动器或 24 驱动器磁盘架中的驱动器
+
+
+
+ a| 
+电源风扇箱
+ a| 
+更换 E2800 磁盘架中的电源风扇箱
+
+|===
+
+
+== SG5760 组件更换说明
+
+[cols="1a,3a"]
+|===
+| FRU | 请参见 E 系列说明 
+
+
+ a| 
+驱动器
+ a| 
+更换 E2860 磁盘架中的驱动器
+
+
+
+ a| 
+动力箱
+ a| 
+更换 E2860 磁盘架中的电源箱
+
+
+
+ a| 
+风扇箱
+ a| 
+更换 E2860 磁盘架中的风扇箱
+
+
+
+ a| 
+Drive drawer
+ a| 
+更换 E2860 磁盘架中的驱动器抽盒
+
+|===

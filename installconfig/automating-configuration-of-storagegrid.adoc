@@ -1,0 +1,90 @@
+---
+permalink: installconfig/automating-configuration-of-storagegrid.html 
+sidebar: sidebar 
+keywords: automate, automating, automation, automatic, configuration, configure 
+summary: 安装并配置网格节点后、您可以自动配置StorageGRID 系统。 
+---
+= 自动执行StorageGRID 配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装并配置网格节点后、您可以自动配置StorageGRID 系统。
+
+.开始之前
+* 您可以从安装归档中了解以下文件的位置。
++
+[cols="1a,1a"]
+|===
+| 文件名 | Description 
+
+
+| configure-storagegrid.py  a| 
+用于自动配置的 Python 脚本
+
+
+
+| configure-storaggrid.sample.json  a| 
+用于脚本的配置文件示例
+
+
+
+| configure-storaggrid.blank.json  a| 
+用于脚本的空配置文件
+
+|===
+* 您已创建 `configure-storagegrid.json` 配置文件。要创建此文件、您可以修改示例配置文件 (`configure-storagegrid.sample.json`)或空白配置文件 (`configure-storagegrid.blank.json`）。
+
+
+.关于此任务
+您可以使用 `configure-storagegrid.py` Python脚本和 `configure-storagegrid.json` 用于自动配置StorageGRID 系统的配置文件。
+
+
+NOTE: 您也可以使用配置系统 https://docs.netapp.com/us-en/storagegrid-118/primer/exploring-grid-manager.html["网格管理器"^] 或 link:overview-of-installation-rest-apis.html["安装 API"]。
+
+.步骤
+. 登录到用于运行 Python 脚本的 Linux 计算机。
+. 更改为提取安装归档的目录。
++
+例如：+
+`cd StorageGRID-Webscale-_version/platform_`
+
++
+其中： `_platform_` 为 `debs`， `rpms`或 `vsphere`。
+
+. 运行 Python 脚本并使用您创建的配置文件。
++
+例如：
+
++
+[listing]
+----
+./configure-storagegrid.py ./configure-storagegrid.json --start-install
+----
+
+
+.完成后
+一个恢复包 `.zip` 文件将在配置过程中生成、并下载到运行安装和配置过程的目录中。您必须备份恢复软件包文件，以便在一个或多个网格节点发生故障时恢复 StorageGRID 系统。例如，将其复制到安全的备份网络位置和安全的云存储位置。
+
+
+CAUTION: 恢复包文件必须受到保护，因为它包含可用于从 StorageGRID 系统获取数据的加密密钥和密码。
+
+如果您指定应生成随机密码、则需要提取 `Passwords.txt` 归档并查找访问StorageGRID 系统所需的密码。
+
+[listing]
+----
+######################################################################
+##### The StorageGRID "recovery package" has been downloaded as: #####
+#####           ./sgws-recovery-package-994078-rev1.zip          #####
+#####   Safeguard this file as it will be needed in case of a    #####
+#####                 StorageGRID node recovery.                 #####
+######################################################################
+----
+系统会在显示确认消息时安装并配置 StorageGRID 系统。
+
+[listing]
+----
+StorageGRID has been configured and installed.
+----

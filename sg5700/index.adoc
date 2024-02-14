@@ -1,0 +1,20 @@
+---
+permalink: sg5700/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要升级 E2800 控制器上的 SANtricity 操作系统软件，更改 E5700SG 控制器的以太网链路配置，更换 E2800 控制器或 E5700SG 控制器或更换特定组件。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。 
+---
+= 维护 SG5700 设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要升级 E2800 控制器上的 SANtricity 操作系统软件，更改 E5700SG 控制器的以太网链路配置，更换 E2800 控制器或 E5700SG 控制器或更换特定组件。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
+
+本节将介绍维护SG5700设备的特定过程。
+
+请参见 link:../commonhardware/index.html["通用过程"] 适用于所有设备使用的维护过程。
+
+请参见 link:../installconfig/configuring-hardware.html["设置硬件"] 用于在初始设备安装和配置期间执行的维护过程。

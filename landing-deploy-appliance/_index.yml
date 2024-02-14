@@ -1,0 +1,21 @@
+---
+indexpage:
+  tiles:
+  - title: 部署设备
+    links:
+    - title: 部署设备存储节点
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: 部署服务设备节点
+      url: "../installconfig/deploying-services-appliance-node.html"
+    - title: 监控设备安装
+      url: "../installconfig/monitoring-appliance-installation.html"
+    - title: 在安装程序运行期间重新启动设备
+      url: "../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: 排除设备安装故障
+    links:
+    - title: SG100和SG1000
+      url: "../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+    - title: SG5700和SG6000
+      url: "../installconfig/troubleshooting-hardware-installation.html"
+    - title: SG6100
+      url: "../installconfig/troubleshooting-hardware-installation-sg6100.html"

@@ -1,0 +1,117 @@
+---
+permalink: sg100-1000/replacing-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, remove, removing, removal, install, installing, installation 
+summary: 如果设备运行不正常或出现故障，您可能需要更换设备。 
+---
+= 更换SG100或SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果设备运行不正常或出现故障，您可能需要更换设备。
+
+.开始之前
+* 您的更换设备的部件号与要更换的设备相同。
+* 您可以通过标签来识别连接到设备的每个缆线。
+* 您已拥有 link:locating-controller-in-data-center.html["已物理定位设备"]。
+
+
+.关于此任务
+更换设备时，无法访问 StorageGRID 节点。如果设备运行正常，您可以在此操作步骤 开始时执行受控关闭。
+
+
+NOTE: 如果在安装 StorageGRID 软件之前更换设备，则在完成此操作步骤 后，您可能无法立即访问 StorageGRID 设备安装程序。虽然您可以从与设备位于同一子网上的其他主机访问StorageGRID 设备安装程序、但不能从其他子网上的主机访问该安装程序。此情况应在 15 分钟内自行解决（当原始设备的任何 ARP 缓存条目超时），或者您也可以通过手动从本地路由器或网关清除任何旧的 ARP 缓存条目来立即清除此情况。
+
+.步骤
+. 显示并记录设备的当前配置。
++
+.. 登录到要更换的设备：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 输入 ... `*run-host-command ipmitool lan print*` 以显示设备的当前BMC配置。
+
+
+. 关闭产品： `shutdown -h now`
+. 如果此StorageGRID 设备上的任何网络接口配置了DHCP、则可能需要更新DHCP服务器上的永久DHCP租约分配、以引用替代设备的MAC地址。此更新可确保为设备分配预期的IP地址。请参见 link:../commonhardware/locate-mac-address.html["更新MAC地址引用"]。
+. 卸下并更换设备：
++
+.. 为缆线贴上标签，然后断开缆线和任何网络收发器的连接。
++
+
+NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+.. 从机柜或机架中取出故障设备。
+.. 将故障设备中的两个电源，八个散热风扇和两个 SSD 传输到更换设备。
++
+两个SSD将按下图所示放置在插槽中：
+
++
+image::../media/drive_locations_sg1000_front_with_ssds.png[驱动器位置]
+
++
+HDD02或HDD2指上部插槽中的驱动器，HDD03或HDD3指下部插槽中的驱动器。
+
++
+按照提供的说明更换这些组件。
+
+.. 将替代设备安装到机柜或机架中。
+.. 更换缆线和任何光纤收发器。
+.. 启动设备并等待其重新加入网格。
+.. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+. 登录到更换的设备：
++
+.. 输入以下命令： `ssh admin@_grid_node_IP_`
+.. 输入中列出的密码 `Passwords.txt` 文件
+.. 输入以下命令切换到root： `su -`
+.. 输入中列出的密码 `Passwords.txt` 文件
+
+
+. 还原已更换设备的BMC网络连接。有两个选项：
++
+** 使用静态IP、网络掩码和网关
+** 使用DHCP获取IP、网络掩码和网关
++
+... 要还原BMC配置以使用静态IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... 要还原BMC配置以使用DHCP获取IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. 还原BMC网络连接后、连接到BMC界面以审核和还原可能已应用的任何其他自定义BMC配置。例如、您应确认SNMP陷阱目标和电子邮件通知的设置。请参见 link:../installconfig/configuring-bmc-interface.html["配置BMC接口"]。
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+
+.相关信息
+link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+
+link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["查看设备的启动代码"]

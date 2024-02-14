@@ -1,0 +1,45 @@
+---
+permalink: commonhardware/index.html 
+sidebar: sidebar 
+keywords: maintain overview, maintenance overview, about maintain, about maintenance 
+summary: 按照以下说明维护StorageGRID 系统。 
+---
+= 节点维护的通用过程：概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+按照以下说明维护StorageGRID 系统。
+
+
+
+== 关于这些说明
+
+这些说明介绍了所有节点通用的过程、例如、如何应用软件修补程序、恢复网格节点、恢复故障站点、停用网格节点或整个站点、执行网络维护、执行主机级和中间件维护过程以及执行网格节点过程。
+
+
+NOTE: 在这些说明中，“`Linux`”是指Red Hat®Enterprise Linux®、Ubuntu®或Debian®部署。使用 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 以获取支持的版本列表。
+
+
+
+== 开始之前
+
+* 您对 StorageGRID 系统有着广泛的了解。
+* 您已查看 StorageGRID 系统的拓扑并了解网格配置。
+* 您知道必须严格按照所有说明进行操作，并注意所有警告。
+* 您了解、未介绍的维护过程不受支持或不需要服务项目。
+
+
+
+
+== 设备的维护过程
+
+每种类型的StorageGRID 设备的特定维护过程请参见设备维护部分：
+
+* link:../sg6100/index.html["维护SG6100设备"]
+* link:../sg6000/index.html["维护 SG6000 设备"]
+* link:../sg5700/index.html["维护 SG5700 设备"]
+* link:../sg100-1000/index.html["维护SG100和SG1000设备"]
+

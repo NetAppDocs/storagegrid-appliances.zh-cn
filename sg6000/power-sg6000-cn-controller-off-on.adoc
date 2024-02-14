@@ -1,0 +1,189 @@
+---
+permalink: sg6000/power-sg6000-cn-controller-off-on.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, power off, turn off, shut off, shutdown, shut down, sg6000-cn, controller, power on, turn on, start 
+summary: 您可以关闭SG6000-CN控制器并重新打开其电源以执行维护。 
+---
+= 关闭并打开SG6000-CN控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以关闭SG6000-CN控制器并重新打开其电源以执行维护。
+
+
+
+== 关闭 SG6000-CN 控制器
+
+关闭 SG6000-CN 控制器以执行硬件维护。
+
+.开始之前
+* 您已将需要维护的 SG6000-CN 控制器物理定位在数据中心。请参见 link:locating-controller-in-data-center.html["在数据中心中找到控制器"]。
+
+
+.关于此任务
+要防止服务中断，请在可以接受服务中断期间的计划维护窗口期间关闭控制器或关闭控制器之前，确认所有其他存储节点均已连接到网格。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
+
+
+CAUTION: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划的维护窗口期间关闭控制器。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。+
+请参见有关使用信息生命周期管理管理管理对象的信息。
+
+.步骤
+. 关闭SG6000-CN控制器。
++
+
+CAUTION: 您必须输入以下指定的命令，以有控制的方式关闭设备。最佳做法是、尽可能执行可控关闭、以避免不必要的警报、确保完整日志可用并避免服务中断。
+
++
+.. 如果尚未登录到网格节点、请使用PuTTY或其他ssh客户端登录：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 关闭SG6000-CN控制器：+
+`*shutdown -h now*`
++
+此命令可能需要长达 10 分钟才能完成。
+
+
+
+. 使用以下方法之一验证 SG6000-CN 控制器是否已关闭：
++
+** 查看控制器正面的蓝色电源 LED ，确认其已关闭。
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 前面板电源 LED —关闭]
+
+** 查看控制器背面两个电源上的绿色 LED ，确认它们以正常速率闪烁（大约每秒闪烁一次）。
++
+image::../media/sg6060_rear_panel_power_led_on.jpg[SG6060 后面板电源 LED]
+
+** 使用控制器 BMC 界面：
++
+... 访问控制器 BMC 界面。
++
+link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]
+
+... 选择 * 电源控制 * 。
+... 验证电源操作是否指示主机当前已关闭。
++
+image::../media/bmc_power_control_page_controller_off.png[BMC 电源控制页面—控制器关闭]
+
+
+
+
+
+
+
+
+
+== 打开 SG6000-CN 控制器的电源并验证其运行情况
+
+完成维护后，打开控制器电源。
+
+.开始之前
+* 您已将控制器安装在机柜或机架中并连接了数据和电源线。
++
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["将 SG6000-CN 控制器重新安装到机柜或机架中"]
+
+* 您已将控制器物理定位在数据中心中。
++
+link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+
+
+
+.步骤
+. 启动 SG6000-CN 控制器，并使用以下方法之一监控控制器 LED 和启动代码：
++
+** 按下控制器正面的电源开关。
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 前面板电源 LED —关闭]
+
+** 使用控制器 BMC 界面：
++
+... 访问控制器 BMC 界面。
++
+link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]
+
+... 选择 * 电源控制 * 。
+... 选择 * 启动服务器 * ，然后选择 * 执行操作 * 。
++
+image::../media/sg6060_power_on_from_bmc.png[从 BMC 启动控制器]
+
++
+使用 BMC 界面监控启动状态。
+
+
+
+
+
+. 确认设备控制器显示在网格管理器中且未显示任何警报。
++
+控制器可能需要长达 20 分钟才能显示在网格管理器中。
+
+. 确认新的 SG6000-CN 控制器已完全正常运行：
++
+.. 使用 PuTTY 或其他 ssh 客户端登录到网格节点：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 输入以下命令并验证其是否返回预期输出：+
+`cat /sys/class/fc_host/*/port_state`
++
+预期输出：
+
++
+[listing]
+----
+Online
+Online
+Online
+Online
+----
++
+如果未返回预期输出，请联系技术支持。
+
+.. 输入以下命令并验证其是否返回预期输出：+
+`cat /sys/class/fc_host/*/speed`
++
+预期输出：
+
++
+[listing]
+----
+16 Gbit
+16 Gbit
+16 Gbit
+16 Gbit
+----
++
+如果未返回预期输出，请联系技术支持。
+
+.. 在网格管理器的节点页面中，确保设备节点已连接到网格，并且没有任何警报。
++
+
+CAUTION: 除非此设备具有绿色图标、否则请勿使其他设备节点脱机。
+
+
+
+. 可选：如果已卸下前挡板，请安装前挡板。
+
+
+.相关信息
+* link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["从机柜或机架中卸下 SG6000-CN 控制器"]
+* link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+

@@ -1,0 +1,53 @@
+---
+permalink: installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html 
+sidebar: sidebar 
+keywords: verifying, verify, upgrading, upgrade, update, updating, Appliance Installer, version, release 
+summary: 设备上的 StorageGRID 设备安装程序版本必须与 StorageGRID 系统上安装的软件版本匹配，以确保所有 StorageGRID 功能均受支持。 
+---
+= 验证并升级 StorageGRID 设备安装程序版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+设备上的 StorageGRID 设备安装程序版本必须与 StorageGRID 系统上安装的软件版本匹配，以确保所有 StorageGRID 功能均受支持。
+
+.开始之前
+您已访问 StorageGRID 设备安装程序。
+
+.关于此任务
+StorageGRID 设备出厂时预安装了 StorageGRID 设备安装程序。如果要将设备添加到最近升级的 StorageGRID 系统，则可能需要先手动升级 StorageGRID 设备安装程序，然后再将设备安装为新节点。
+
+升级到新的 StorageGRID 版本时， StorageGRID 设备安装程序会自动升级。您无需升级已安装设备节点上的StorageGRID 设备安装程序。只有在安装包含早期版本的 StorageGRID 设备安装程序的设备时，才需要此操作步骤 。
+
+.步骤
+. 从 StorageGRID 设备安装程序中，选择 * 高级 * > * 升级固件 * 。
+. 将当前固件版本与 StorageGRID 系统上安装的软件版本进行比较。（从网格管理器的顶部，选择帮助图标并选择 * 关于 * 。）
++
+两个版本中的第二位数字应匹配。例如，如果您的 StorageGRID 系统运行的是 11.* 6* 。 _x_._y_ ，则 StorageGRID 设备安装程序版本应为 3.* 6* 。 _z_ 。
+
+. 如果设备安装了StorageGRID 设备安装程序的低级版本、请转到 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
++
+使用您的 NetApp 帐户的用户名和密码登录。
+
+. 下载适当版本的 * StorageGRID Appliances * 支持文件以及相应的校验和文件。
++
+StorageGRID 设备的支持文件为 `.zip` 归档文件、其中包含所有StorageGRID 设备型号的当前和先前固件版本。
+
++
+下载StorageGRID 设备的支持文件后、解压缩 `.zip` 归档并查看README文件、了解有关安装StorageGRID 设备安装程序的重要信息。
+
+. 按照StorageGRID 设备安装程序的升级固件页面上的说明执行以下步骤：
++
+.. 上传适用于您的控制器类型的支持文件(固件映像)。某些固件版本还需要上传校验和文件。如果系统提示您输入校验和文件、也可以在StorageGRID 设备的支持文件中找到该文件。
+.. 升级非活动分区。
+.. 重新启动和交换分区。
+.. 重新上传适用于您的控制器类型的支持文件(固件映像)。某些固件版本还需要上传校验和文件。如果系统提示您输入校验和文件、也可以在StorageGRID 设备的支持文件中找到该文件。
+.. 升级第二个（非活动）分区。
+
+
+
+
+.相关信息
+link:../installconfig/accessing-storagegrid-appliance-installer.html["访问 StorageGRID 设备安装程序"]

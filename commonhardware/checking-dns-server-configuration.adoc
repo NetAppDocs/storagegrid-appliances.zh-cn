@@ -1,0 +1,65 @@
+---
+permalink: commonhardware/checking-dns-server-configuration.html 
+sidebar: sidebar 
+keywords: DNS, server, servers, check, checking, change, changing, modify, modifying, modification 
+summary: 您可以检查并临时更改此设备节点当前正在使用的DNS服务器。 
+---
+= 检查 DNS 服务器配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以检查并临时更改此设备节点当前正在使用的DNS服务器。
+
+.开始之前
+此设备已运行 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已置于维护模式"]。
+
+.关于此任务
+如果加密设备无法连接到密钥管理服务器(KMS)或KMS集群、因为KMS的主机名指定为域名而非IP地址、则可能需要更改DNS服务器设置。对设备的 DNS 设置所做的任何更改都是临时的，在退出维护模式时将丢失。要使这些更改永久生效，请在网格管理器中指定 DNS 服务器（ * 维护 * > * 网络 * > * DNS 服务器 * ）。
+
+* 只有在节点加密的设备中，使用完全限定域名（而不是 IP 地址）为主机名定义 KMS 服务器时，才需要临时更改 DNS 配置。
+* 当节点加密设备使用域名连接到 KMS 时，它必须连接到为网格定义的一个 DNS 服务器。然后，其中一个 DNS 服务器会将域名转换为 IP 地址。
+* 如果节点无法访问网格的DNS服务器、或者您在节点加密设备节点脱机时更改了网格范围的DNS设置、则该节点将无法连接到KMS。解析DNS问题描述 之前、无法对设备上的加密数据进行解密。
+
+
+要解决 DNS 问题描述 阻止 KMS 连接的问题，请在 StorageGRID 设备安装程序中指定一个或多个 DNS 服务器的 IP 地址。通过这些临时 DNS 设置，设备可以连接到 KMS 并对节点上的数据进行解密。
+
+例如、如果在加密节点脱机时网格的DNS服务器发生更改、则该节点在恢复联机后将无法访问KMS、因为它仍在使用先前的DNS值。在 StorageGRID 设备安装程序中输入新的 DNS 服务器 IP 地址后，可以通过临时 KMS 连接对节点数据进行解密。
+
+.步骤
+. 从 StorageGRID 设备安装程序中，选择 * 配置网络连接 * > * DNS 配置 * 。
+. 验证指定的 DNS 服务器是否正确。
++
+image::../media/dns_configuration.png[DNS 配置]
+
+. 如果需要，请更改 DNS 服务器。
++
+
+NOTE: 对 DNS 设置所做的更改是临时的，当您退出维护模式时，这些更改将丢失。
+
+. 对临时 DNS 设置感到满意后，请选择 * 保存 * 。
++
+节点使用此页面上指定的 DNS 服务器设置重新连接到 KMS ，从而可以解密节点上的数据。
+
+. 解密节点数据后，重新启动节点。在 StorageGRID 设备安装程序中，选择 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID * 以在节点重新加入网格的情况下重新启动控制器。如果您已完成维护模式下的工作并准备好将节点恢复正常运行，请选择此选项。
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。（只有当控制器处于维护模式时，此选项才可用。） 如果在重新加入网格之前需要对节点执行其他维护操作，请选择此选项。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
++
+
+NOTE: 当节点重新启动并重新加入网格时，它将使用网格管理器中列出的系统范围的 DNS 服务器。重新加入网格后，在设备处于维护模式时，设备将不再使用 StorageGRID 设备安装程序中指定的临时 DNS 服务器。
+
++
+设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。n节点*页面应显示正常状态(绿色复选标记图标 image:../media/icon_alert_green_checkmark.png["绿色复选标记"] 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。
+
++
+image::../media/nodes_menu.png[设备节点已重新加入网格]
+
+
+
+

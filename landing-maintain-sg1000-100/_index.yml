@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: 经常执行的过程
+    links:
+    - title: 打开或关闭位置LED
+      url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
+    - title: 在数据中心内找到设备
+      url: "../sg100-1000/locating-controller-in-data-center.html"
+    - title: 关闭设备电源
+      url: "../sg100-1000/shut-down-sg100-and-sg1000.html"
+    - title: 更改链路配置
+      url: "../sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: 机架过程
+    links:
+    - title: 更换产品
+      url: "../sg100-1000/replacing-services-appliance.html"
+  - title: 硬件过程
+    links:
+    - title: 更换电源
+      url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+    - title: 更换风扇
+      url: "../sg100-1000/replacing-fan-in-services-appliance.html"
+    - title: 更换驱动器
+      url: "../sg100-1000/replacing-drive-in-services-appliance.html"

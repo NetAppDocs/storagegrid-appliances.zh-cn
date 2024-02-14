@@ -1,0 +1,30 @@
+---
+section: sg100-1000
+title: 维护SG100和SG1000硬件
+url: "/landing-maintain-sg1000-100/index.html"
+entries:
+- title: 概述
+  pdf-filename: SG100和SG1000硬件维护
+  url: "/sg100-1000/index.html"
+- title: 维护配置过程
+  pdf-filename: 维护配置过程—SG100和SG1000
+  entries:
+  - title: 打开和关闭识别LED
+    url: "/sg100-1000/turning-controller-identify-led-on-and-off.html"
+  - title: 在数据中心中找到控制器
+    url: "/sg100-1000/locating-controller-in-data-center.html"
+  - title: 关闭设备
+    url: "/sg100-1000/shut-down-sg100-and-sg1000.html"
+  - title: 更改链路配置
+    url: "/sg100-1000/changing-link-configuration-of-services-appliance.html"
+- title: 硬件过程
+  pdf-filename: 硬件过程—SG100和SG1000
+  entries:
+  - title: 更换一个或两个电源
+    url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+  - title: 更换风扇
+    url: "/sg100-1000/replacing-fan-in-services-appliance.html"
+  - title: 更换驱动器
+    url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: 更换产品
+    url: "/sg100-1000/replacing-services-appliance.html"

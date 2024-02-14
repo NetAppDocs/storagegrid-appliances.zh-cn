@@ -1,0 +1,99 @@
+= 重新安装CMOS电池
+:allow-uri-read: 
+
+
+.关于此任务
+为防止服务中断、请在开始更换CMOS电池之前确认所有其他存储节点均已连接到网格、或者在计划维护时段(服务中断时间可接受)更换电池。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
+
+
+CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换电池。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+
+.步骤
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 找到产品背面的双插槽提升板组件。
++
+image::../media/SGF6112-two-slot-riser-position.png[双插槽提升板位置]
+
+. 抓住竖板部件并穿过蓝色标记的孔，然后小心地将其向上提起。提起提升板部件时，将其朝机箱正面移动，以使其安装的NIC中的外部连接器能够脱离机箱。
+. 将提升板放在平坦的防静电表面上、使金属框架面朝下。
+. 在已卸下的提升板部件下方的位置找到系统板上的CMOS电池。
++
+image::../media/SGF6112-cmos-position.png[CMOS电池位置]
+
+. 使用手指或塑料撬起工具将固定夹(突出显示)从电池上按离、以将其从插槽中弹簧弹出。
++
+image::../media/SGF6112-battery-cmos.png[CMOS电池夹]
+
+. 取出电池并正确处置。
+
+
+
+
+== 重新安装CMOS电池
+
+将更换用的CMOS电池安装到系统板上的插槽中。
+
+.开始之前
+* 您拥有正确的CMOS电池更换件(CR2032)。
+* 您已取出故障CMOS电池。
+
+
+.步骤
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 从包装中取出CMOS电池。
+. 将替代电池按入系统板上的空插槽中，使正极(+)面朝上，直至电池卡入到位。
+. 找到与系统板上的导销对齐的双插槽提升板部件上的定位孔(圈出)、以确保提升板部件正确定位。
++
+image::../media/sgf6112_two-slot-riser_alignment_hole.png[大提升板部件上的定位孔]
+
+. 找到系统板上的导销。
++
+image::../media/sgf6112_two-slot-riser_guide-pin.png[系统板上用于双插槽提升板部件的导销]
+
+. 将提升板部件置于机箱中、确保其与系统板上的连接器和导销对齐。
+. 沿着中间线(靠近蓝色标记的孔)小心地将双插槽提升板部件按入到位，直至其完全就位。
+. 如果您不需要对设备执行其他维护步骤、请重新安装设备盖、将设备装回机架、连接电缆并接通电源。
+. 如果您更换的设备已为SED驱动器启用驱动器加密、则必须执行此操作 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
+. 如果您更换的设备使用密钥管理服务器(KMS)管理节点加密的加密密钥、则可能需要进行其他配置、节点才能加入网格。如果节点未自动加入网格、请确保这些配置设置已传输到新设备、并手动配置任何不具有预期配置的设置：
++
+** link:../installconfig/accessing-storagegrid-appliance-installer.html["配置StorageGRID 连接"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["为此设备配置节点加密"^]
+
+
+. 登录到设备：
++
+.. 输入以下命令： `ssh admin@_grid_node_IP_`
+.. 输入中列出的密码 `Passwords.txt` 文件
+.. 输入以下命令切换到root： `su -`
+.. 输入中列出的密码 `Passwords.txt` 文件
+
+
+. 使用以下选项之一还原设备的BMC网络连接：
++
+** 使用静态IP、网络掩码和网关
+** 使用DHCP获取IP、网络掩码和网关
++
+... 要还原BMC配置以使用静态IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... 要还原BMC配置以使用DHCP获取IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. 还原BMC网络连接后、连接到BMC界面以审核和还原可能已应用的任何其他自定义BMC配置。例如、您应确认SNMP陷阱目标和电子邮件通知的设置。请参见 link:../installconfig/configuring-bmc-interface.html["配置BMC接口"]。
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+

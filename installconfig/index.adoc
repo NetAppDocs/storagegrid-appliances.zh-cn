@@ -1,0 +1,77 @@
+---
+permalink: installconfig/index.html 
+sidebar: sidebar 
+keywords: Installation, deployment, Install, deploy, Installing, deploying 
+summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其部署为StorageGRID 系统中的节点。 
+---
+= 设备安装快速入门
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+按照以下简要步骤安装和设置StorageGRID 设备、并将其部署为StorageGRID 系统中的节点。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 准备安装
+[role="quick-margin-list"]
+. 与NetApp专业服务顾问合作、自动执行安装和配置。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
++
+此步骤为可选步骤。但是、简化和自动化配置步骤可以节省时间、并在配置多个设备时保持一致性。
+
+. link:preparing-site.html["准备站点"]
+. link:unpacking-boxes.html["打开包装箱"]
+. link:obtaining-additional-equipment-and-tools.html["获取其他设备和工具"]
+. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["查看Web浏览器要求"^]
+. link:reviewing-appliance-network-connections.html["收集网络信息"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 安装硬件
+[role="quick-margin-list"]
+. link:registering-hardware.html["注册硬件"]
+. 安装到机柜或机架中
++
+** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100和SG1000"]
+** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
+** link:installing-hardware-sg6000.html["SG6000"]
+** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
+
+
+. link:cabling-appliance.html["电缆设备"]
+. link:connecting-power-cords-and-applying-power.html["连接电源线并接通电源"]
+. link:viewing-status-indicators.html["查看状态指示灯和代码"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置硬件
+[role="quick-margin-para"]
+如果要配置和部署多个设备、请使用NetApp ConfigBuilder工具自动执行以下配置和部署步骤。如需指导、请联系您的NetApp专业服务顾问。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
+
+[role="quick-margin-list"]
+. 配置StorageGRID 连接
++
+** link:accessing-storagegrid-appliance-installer.html["访问 StorageGRID 设备安装程序"] 并确认您运行的是最新版本
+** link:configuring-network-links.html["配置网络链路"]
+** link:setting-ip-configuration.html["配置 StorageGRID IP 地址"]
+** link:verifying-network-connections.html["验证网络连接"]
+** link:verifying-port-level-network-connections.html["验证端口级别的网络连接"]
+
+
+. link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG6000和SG5700)
+. link:configuring-bmc-interface.html["配置BMC接口"] (SG100、SG1000、SG6000和SG6100)
+. 执行可选的设置步骤
++
+** link:optional-enabling-node-encryption.html["启用节点或驱动器加密"]
+** link:optional-changing-raid-mode.html["更改RAID模式(SG6000和SG5700)"]
+** link:optional-remapping-network-ports-for-appliance.html["重新映射网络端口"]
+
+
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 部署设备节点
+[role="quick-margin-para"]
+将此设备部署为StorageGRID 系统中的新节点。
+
+[role="quick-margin-list"]
+* link:deploying-appliance-storage-node.html["部署设备存储节点"]
+* link:deploying-services-appliance-node.html["部署服务设备节点"]
+

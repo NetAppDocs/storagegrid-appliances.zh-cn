@@ -1,0 +1,556 @@
+---
+permalink: installconfig/troubleshooting-hardware-installation-sg6100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112,troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
+summary: 如果您在安装期间遇到问题，查看与硬件设置和连接问题相关的故障排除信息可能会很有帮助。 
+---
+= 排除硬件安装故障(SG6100)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在安装期间遇到问题，查看与硬件设置和连接问题相关的故障排除信息可能会很有帮助。
+
+
+
+== 查看启动代码
+
+在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。
+
+.开始之前
+* 您知道如何操作 link:accessing-bmc-interface.html["访问BMC信息板"]。
+* 如果您要使用 LAN 上串行（ Serial Over LAN ，故障转移），则具有使用 IPMI 故障转移控制台应用程序的经验。
+
+
+.步骤
+. 选择以下方法之一以查看设备控制器的启动代码，并收集所需的设备。
++
+[cols="1a,2a"]
+|===
+| 方法 | 所需设备 
+
+
+ a| 
+VGA 控制台
+ a| 
+** 支持 VGA 的显示器
+** VGA 缆线
+
+
+
+
+ a| 
+KVM
+ a| 
+** RJ-45 缆线
+
+
+
+
+ a| 
+串行端口
+ a| 
+** DB-9 串行缆线
+** 虚拟串行终端
+
+
+
+
+ a| 
+解决
+ a| 
+** 虚拟串行终端
+
+
+|===
+. 如果您使用的是 VGA 控制台，请执行以下步骤：
++
+.. 将支持 VGA 的显示器连接到设备背面的 VGA 端口。
+.. 查看监控器上显示的代码。
+
+
+. 如果您使用的是 BMC KVM ，请执行以下步骤：
++
+.. 连接到BMC管理端口并登录到BMC Web界面。
+.. 选择 * 远程控制 * 。
+.. 启动 KVM 。
+.. 在虚拟监控器上查看代码。
+
+
+. 如果您使用的是串行端口和终端，请执行以下步骤：
++
+.. 连接到设备背面的串行USB端口。
+.. 使用设置 `115200 8-N-1`。
+.. 查看通过串行终端打印的代码。
+
+
+. 如果您使用的是 SOL ，请执行以下步骤：
++
+.. 使用 BMC IP 地址和登录凭据连接到 IPMI SOL 。
++
+`ipmitool -I lanplus -H _BMC_Port_IP_ -U root -P _Password_ sol activate`
+
+.. 查看虚拟串行终端上的代码。
+
+
+. 使用下表查找您的设备的代码。
++
+[cols="1a,3a"]
+|===
+| 代码 | 表示 
+
+
+ a| 
+您好
+ a| 
+主启动脚本已启动。
+
+
+
+ a| 
+HP
+ a| 
+系统正在检查是否需要更新网络接口卡（ Network Interface Card ， NIC ）固件。
+
+
+
+ a| 
+RB
+ a| 
+应用固件更新后，系统正在重新启动。
+
+
+
+ a| 
+FP
+ a| 
+硬件子系统固件更新检查已完成。控制器间通信服务正在启动。
+
+
+
+ a| 
+HC
+ a| 
+系统正在检查现有 StorageGRID 安装数据。
+
+
+
+ a| 
+好的
+ a| 
+StorageGRID 设备正在运行。
+
+
+
+ a| 
+HA
+ a| 
+StorageGRID 正在运行。
+
+|===
+
+
+
+
+== 查看错误代码
+
+如果在设备启动时发生硬件错误， BMC 将记录一个错误代码。您可以根据需要使用 BMC 界面查看这些错误代码，然后与技术支持联系以解决此问题描述 。
+
+.开始之前
+* 您知道如何操作 link:accessing-bmc-interface.html["访问BMC信息板"]。
+
+
+.步骤
+. 从 BMC 信息板中，选择 * BIOS POST Code* 。
+. 查看为当前代码和先前代码显示的信息。
++
+如果显示以下任一错误代码，请与技术支持联系以解决此问题描述 。
+
++
+[cols="1a,3a"]
+|===
+| 代码 | 表示 
+
+
+ a| 
+0x0E
+ a| 
+未找到微代码
+
+
+
+ a| 
+0x0F
+ a| 
+未加载微代码
+
+
+
+ a| 
+0x50
+ a| 
+内存初始化错误。内存类型无效或内存速度不兼容。
+
+
+
+ a| 
+0x51
+ a| 
+内存初始化错误。SPD 读取失败。
+
+
+
+ a| 
+0x52
+ a| 
+内存初始化错误。内存大小无效或内存模块不匹配。
+
+
+
+ a| 
+0x53
+ a| 
+内存初始化错误。未检测到可用内存。
+
+
+
+ a| 
+0x54
+ a| 
+未指定的内存初始化错误
+
+
+
+ a| 
+0x55
+ a| 
+未安装内存
+
+
+
+ a| 
+0x56
+ a| 
+CPU 类型或速度无效
+
+
+
+ a| 
+0x57
+ a| 
+CPU 不匹配
+
+
+
+ a| 
+0x58
+ a| 
+CPU 自检失败或可能出现 CPU 缓存错误
+
+
+
+ a| 
+0x59
+ a| 
+未找到 CPU 微代码或微代码更新失败
+
+
+
+ a| 
+0x5A
+ a| 
+内部 CPU 错误
+
+
+
+ a| 
+0x5B
+ a| 
+重置 PPI 不可用
+
+
+
+ a| 
+0x5C
+ a| 
+PEI 阶段 BMC 自检失败
+
+
+
+ a| 
+0xD0
+ a| 
+CPU 初始化错误
+
+
+
+ a| 
+0xD1
+ a| 
+北网桥初始化错误
+
+
+
+ a| 
+0xD2
+ a| 
+南桥初始化错误
+
+
+
+ a| 
+0xD3
+ a| 
+某些架构协议不可用
+
+
+
+ a| 
+0xd4
+ a| 
+PCI 资源分配错误。资源不足。
+
+
+
+ a| 
+0xD5
+ a| 
+原有选项 ROM 没有空间
+
+
+
+ a| 
+0xD6
+ a| 
+未找到控制台输出设备
+
+
+
+ a| 
+0xD7
+ a| 
+未找到控制台输入设备
+
+
+
+ a| 
+0xD8
+ a| 
+密码无效
+
+
+
+ a| 
+0xD9
+ a| 
+加载启动选项时出错（ LoadImage 返回错误）
+
+
+
+ a| 
+0xDA
+ a| 
+启动选项失败（ StartImage 返回错误）
+
+
+
+ a| 
+0xDB
+ a| 
+闪存更新失败
+
+
+
+ a| 
+0xDC
+ a| 
+重置协议不可用
+
+
+
+ a| 
+0xDD
+ a| 
+Dxe 阶段 BMC 自检失败
+
+
+
+ a| 
+0xE8
+ a| 
+MRC ： err_no_memory
+
+
+
+ a| 
+0xE9
+ a| 
+MRC ： err_lt_lock
+
+
+
+ a| 
+0xEA
+ a| 
+MRC ： err_DDR_init
+
+
+
+ a| 
+0xEB
+ a| 
+MRC ： ERR_MEM_TEST
+
+
+
+ a| 
+0xEC
+ a| 
+MRC ： err_vendor_specific
+
+
+
+ a| 
+0xED
+ a| 
+MRC ： ERR_DIMM_COMPAT
+
+
+
+ a| 
+0xEE
+ a| 
+MRC ： err_MRC_compatibility
+
+
+
+ a| 
+0xEF
+ a| 
+MRC ： err_MRC_struct
+
+
+
+ a| 
+0xF0
+ a| 
+MRC ： ERR_SET_VDD
+
+
+
+ a| 
+0xF1
+ a| 
+MRC ： ERR_IOT_MEM_buffer
+
+
+
+ a| 
+0xF2
+ a| 
+MRC ： err_rc_internal
+
+
+
+ a| 
+0xF
+ a| 
+MRC ： err_invalid_REG_access
+
+
+
+ a| 
+0xf4
+ a| 
+MRC ： ERR_SET_MC_FRQ
+
+
+
+ a| 
+0xf5
+ a| 
+MRC ： err_read_mc_fREQ
+
+
+
+ a| 
+0x70
+ a| 
+MRC ： err_DIMM_channel
+
+
+
+ a| 
+0x74
+ a| 
+MRC ： err_smix_check
+
+
+
+ a| 
+0xf6
+ a| 
+MRC ： err_SMBUS
+
+
+
+ a| 
+0xF7
+ a| 
+MRC ： ERR_PCU
+
+
+
+ a| 
+0xf8.
+ a| 
+MRC ： err_NGN
+
+
+
+ a| 
+0xf9
+ a| 
+MRC ： err_interlef_failure
+
+|===
+
+
+
+
+== 硬件设置似乎挂起
+
+如果硬件故障或布线错误阻止 StorageGRID 设备完成启动处理，则此设备安装程序可能不可用。
+
+.步骤
+. 查看设备上的 LED 以及 BMC 中显示的启动和错误代码。
+. 如果您需要有关解决问题描述 的帮助，请联系技术支持。
+
+
+
+
+== 连接问题
+
+如果无法连接到服务设备、则可能存在网络问题描述 、或者硬件安装可能未成功完成。
+
+.步骤
+. 尝试使用设备的IP地址对设备执行ping操作：+
+`*ping _appliance_IP_*`
+. 如果 ping 未收到任何响应，请确认您使用的 IP 地址正确无误。
++
+您可以使用网格网络，管理网络或客户端网络上设备的 IP 地址。
+
+. 如果 IP 地址正确，请检查设备布线， QSFP 或 SFP 收发器以及网络设置。
+. 如果可以物理访问设备、则可以直接连接到永久链路本地IP `169.254.0.1` 检查控制器网络配置并根据需要进行更新。有关详细说明，请参见中的步骤 2 link:accessing-storagegrid-appliance-installer.html["访问 StorageGRID 设备安装程序"]。
++
+如果无法解决问题描述 问题，请联系技术支持。
+
+. 如果 ping 成功，请打开 Web 浏览器。
+. 输入StorageGRID 设备安装程序的URL：+
+`*https://_appliances_controller_IP_:8443*`
++
+此时将显示主页页面。
+
+

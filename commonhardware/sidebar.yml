@@ -1,0 +1,17 @@
+---
+section: commonhardware
+title: 维护设备配置
+entries:
+- title: 概述
+  pdf-filename: 维护设备配置(所有节点)
+  url: "/commonhardware/index.html"
+- title: 将设备置于维护模式
+  url: "/commonhardware/placing-appliance-into-maintenance-mode.html"
+- title: 更改 MTU 设置
+  url: "/commonhardware/changing-mtu-setting.html"
+- title: 检查 DNS 服务器配置
+  url: "/commonhardware/checking-dns-server-configuration.html"
+- title: 更新MAC地址引用
+  url: "/commonhardware/locate-mac-address.html"
+- title: 监控维护模式下的节点加密
+  url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"

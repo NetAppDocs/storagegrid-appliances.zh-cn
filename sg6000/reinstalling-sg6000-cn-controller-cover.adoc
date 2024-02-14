@@ -1,0 +1,63 @@
+---
+permalink: sg6000/reinstalling-sg6000-cn-controller-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, controller, cover, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal 
+summary: 卸下产品盖板以接触内部组件进行维护，完成后更换盖板。 
+---
+= 更换SG6000控制器护盖
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卸下产品盖板以接触内部组件进行维护，完成后更换盖板。
+
+
+
+== 拆下 SG6000-CN 控制器盖板
+
+拆下控制器盖板，以便检修内部组件以进行维护。
+
+.开始之前
+从机柜或机架中卸下控制器，以便检修顶盖。
+
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["从机柜或机架中卸下 SG6000-CN 控制器"]
+
+.步骤
+. 确保 SG6000-CN 控制器盖板闩锁未锁定。如有必要，将蓝色塑料闩锁按解锁方向转动四分之一圈，如闩锁上所示。
+. 将闩锁向 SG6000-CN 控制器机箱的后部来回旋转，直到其停止为止；然后，小心地将机箱盖从机箱中提起并放在一旁。
++
+image::../media/sg6060_cover_latch_open.jpg[SG6060 盖板闩锁打开]
+
++
+
+CAUTION: 将 ESD 腕带的腕带一端绑在腕带周围，并将扣具一端固定到金属接地，以防止在 SG6000-CN 控制器内部工作时发生静电放电。
+
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+
+
+
+== 重新安装 SG6000-CN 控制器盖板
+
+内部硬件维护完成后，重新安装控制器盖板。
+
+.开始之前
+您已完成控制器内部的所有维护过程。
+
+.步骤
+. 打开主机盖闩锁后，握住机箱上方的主机盖，并将顶部主机盖闩锁中的孔与机箱中的销对齐。对齐后，将其放低到机箱上。
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060 盖板闩锁对齐销]
+
+. 向前和向下旋转机箱盖闩锁，直到其停止，并且机箱盖完全就位到机箱中。确认外盖前边缘没有间隙。
++
+如果外盖未完全就位，则可能无法将 SG6000-CN 控制器滑入机架。
+
+. 可选：将蓝色塑料闩锁按锁定方向转动四分之一圈，如闩锁上所示，以将其锁定。
+
+
+.完成后
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["在机柜或机架中重新安装控制器。"]

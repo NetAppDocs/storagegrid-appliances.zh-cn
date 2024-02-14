@@ -1,0 +1,85 @@
+---
+permalink: sg100-1000/replacing-fan-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, fan, remove, removing, removal, install, installing, installation 
+summary: 此服务设备具有八个散热风扇。如果其中一个风扇发生故障，您必须尽快更换，以确保设备具有适当的散热效果。 
+---
+= 更换SG100或SG1000中的风扇
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此服务设备具有八个散热风扇。如果其中一个风扇发生故障，您必须尽快更换，以确保设备具有适当的散热效果。
+
+.开始之前
+* 您已卸载替代风扇。
+* 您已拥有 link:locating-controller-in-data-center.html["已物理定位设备"]。
+* 您已确认其他风扇已安装并正在运行。
+
+
+.关于此任务
+更换风扇时，无法访问设备节点。
+
+图中显示了服务设备的风扇。从产品上取下顶盖后，即可接触到冷却风扇。
+
+
+NOTE: 两个电源设备中的每个设备都包含一个风扇。这些风扇不包括在此操作步骤 中。
+
+image::../media/fan_fru.png[风扇 FRU]
+
+.步骤
+. 关闭产品。
++
+.. 登录到网格节点：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 关闭服务设备：+
+`*shutdown -h now*`
+
+
+. 使用以下两种方法之一验证服务设备的电源是否已关闭：
++
+** 设备正面的电源指示灯 LED 熄灭。
+** BMC 界面的电源控制页面指示设备已关闭。
+
+
+. 将设备从机架中拉出。
+. 提起顶盖上的闩锁，然后从设备中卸下此盖板。
+. 找到出现故障的风扇。
++
+image::../media/fan_location.png[风扇位置]
+
+. 将故障风扇从机箱中提出。
++
+image::../media/fan_removal.png[风扇拆卸]
+
+. 将替代风扇滑入机箱中的打开插槽。
++
+将风扇边缘与导销对中。此销在照片中圈出。
+
++
+image::../media/fan_guide_pin.png[风扇导向销]
+
+. 将风扇连接器稳固地按入电路板。
++
+image::../media/fan_connector_check.png[风扇连接器检查]
+
+. 将顶盖重新放在设备上，然后向下按压闩锁以将盖固定到位。
+. 打开设备电源并监控控制器 LED 和启动代码。
++
+使用 BMC 界面监控启动状态。
+
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

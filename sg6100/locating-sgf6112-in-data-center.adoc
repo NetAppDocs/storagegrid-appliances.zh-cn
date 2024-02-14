@@ -1,0 +1,43 @@
+---
+permalink: sg6100/locating-sgf6112-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
+summary: 找到设备、以便执行硬件维护或升级。 
+---
+= 在数据中心中找到GF6112设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+找到设备、以便执行硬件维护或升级。
+
+.开始之前
+* 您已确定哪个设备需要维护。
+* 为了帮助您在数据中心内找到该设备、 link:turning-sgf6112-identify-led-on-and-off.html["打开蓝色标识 LED"]。
+
+
+.步骤
+. 在数据中心内查找设备。
++
+** 查看产品正面或背面的蓝色标识LED指示灯。
++
+前标识LED位于前挡板后面、可能很难看出是否已安装挡板。
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[正面识别 LED —亮起]
+
++
+后部的识别LED指示灯位于设备中央、位于Micro SD插槽下方。
+
+** 检查产品正面的标签上是否有匹配的部件号，以确认您找到了正确的产品。
+
+
+. 卸下前挡板(如果已安装)以接触前面板控件和指示灯。
+
+
+.完成后
+link:turning-sgf6112-identify-led-on-and-off.html["关闭蓝色的识别LED"] 如果您使用它来定位产品。
+ **按下产品前面板上的识别LED开关。
+ **使用设备BMC界面。

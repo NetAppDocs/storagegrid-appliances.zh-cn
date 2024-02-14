@@ -1,0 +1,43 @@
+---
+permalink: installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, storage node, install, installing, installation, cabinet, rack, rail, rails 
+summary: 您可以在机柜或机架中为设备安装一组滑轨、然后将设备滑入滑轨上。 
+---
+= 安装到机柜或机架中(GF6112)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在机柜或机架中为设备安装一组滑轨、然后将设备滑入滑轨上。
+
+.开始之前
+* 您已阅读包装盒中的"安全通知"文档、并了解移动和安装硬件的预防措施。
+* 导轨套件随附了相关说明。
+
+
+.步骤
+. 请仔细按照导轨套件的说明在机柜或机架中安装导轨。
+. 在机柜或机架中安装的两个导轨上，展开导轨的可移动部分，直到听到卡嗒声为止。
++
+image::../media/rails_extended_out.gif[设备导轨已扩展]
+
+. 将设备插入导轨。
+. 将设备滑入机柜或机架。
++
+如果无法再移动产品，请拉动机箱两侧的蓝色闩锁，将产品滑入最深的位置。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[设备滑轨滑动]
+
+. 拧紧产品前面板上的固定螺钉，将产品固定在机架中。
++
+image::../media/sg6060_rack_retaining_screws.png[设备机架固定螺钉]
+
++
+
+NOTE: 在打开产品电源之前，请勿连接前挡板。
+
+

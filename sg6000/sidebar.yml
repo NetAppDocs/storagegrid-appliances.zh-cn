@@ -1,0 +1,49 @@
+---
+section: sg6000
+title: 维护SG6000硬件
+url: "/landing-maintain-sg6000/index.html"
+entries:
+- title: 概述
+  pdf-filename: SG6000硬件维护
+  url: "/sg6000/index.html"
+- title: 维护配置过程
+  pdf-filename: 维护配置过程- SG6000
+  entries:
+  - title: 升级存储控制器上的 SANtricity 操作系统
+    url: "/sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    entries:
+    - title: 使用网格管理器升级存储控制器上的 SANtricity 操作系统
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"
+    - title: 使用维护模式升级存储控制器上的 SANtricity 操作系统
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
+  - title: 使用 SANtricity 系统管理器升级驱动器固件
+    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 打开和关闭控制器标识 LED
+    url: "/sg6000/turning-controller-identify-led-on-and-off.html"
+  - title: 在数据中心中找到控制器
+    url: "/sg6000/locating-controller-in-data-center.html"
+  - title: 关闭并打开控制器电源
+    url: "/sg6000/power-sg6000-cn-controller-off-on.html"
+  - title: 更改 SG6000-CN 控制器的链路配置
+    url: "/sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
+- title: 硬件过程
+  pdf-filename: 硬件过程- SG6000
+  entries:
+  - title: 将扩展架添加到已部署的 SG6060
+    url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
+  - title: 更换存储控制器
+    url: "/sg6000/replacing-storage-controller-sg6000.html"
+  - title: 更换存储控制器架中的硬件组件
+    url: "/sg6000/replacing-hardware-components-in-storage-controller-shelf.html"
+  - title: 更换可选 60 驱动器扩展架中的硬件组件
+    url: "/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html"
+  - title: 更换 SG6000-CN 控制器
+    url: "/sg6000/replacing-sg6000-cn-controller.html"
+  - title: 更换 SG6000-CN 控制器中的一个或两个电源
+    url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: 更换机架中的控制器
+    url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
+  - title: 装回控制器护盖
+    url: "/sg6000/reinstalling-sg6000-cn-controller-cover.html"
+  - title: 更换 SG6000-CN 控制器中的光纤通道 HBA
+    url: "/sg6000/reinstalling-fibre-channel-hba.html"

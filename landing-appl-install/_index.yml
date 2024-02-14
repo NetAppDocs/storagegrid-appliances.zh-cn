@@ -1,0 +1,45 @@
+---
+indexpage:
+  tiles:
+  - title: 快速入门
+    links:
+    - title: 设备安装快速入门
+      url: "../installconfig/index.html"
+    - title: 自动安装和配置设备
+      url: "../installconfig/automating-appliance-installation-and-configuration.html"
+    - title: 自动执行StorageGRID 配置
+      url: "../installconfig/automating-configuration-of-storagegrid.html"
+    - title: 安装REST API (高级用户)
+      url: "../installconfig/overview-of-installation-rest-apis.html"
+  - title: 准备安装
+    links:
+    - title: 准备站点
+      url: "../installconfig/preparing-site.html"
+    - title: 打开包装箱
+      url: "../installconfig/unpacking-boxes.html"
+    - title: 获取其他设备和工具
+      url: "../installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: 收集网络信息
+    links:
+    - title: StorageGRID 网络类型
+      url: "../installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100和SG1000
+      url: "../installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "../installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000
+      url: "../installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "../installconfig/gathering-installation-information-sg6100.html"
+  - title: 安装硬件
+    links:
+    - title: 注册硬件
+      url: "../installconfig/registering-hardware.html"
+    - title: 安装设备
+      url: "../landing-install-hdwr/index.html"
+    - title: 设置硬件
+      url: "../installconfig/configuring-hardware.html"
+    - title: 部署设备存储节点
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: 部署服务设备节点
+      url: "../installconfig/deploying-services-appliance-node.html"
