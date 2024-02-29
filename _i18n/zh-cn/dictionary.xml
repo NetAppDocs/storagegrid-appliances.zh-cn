@@ -1837,7 +1837,6 @@
   <block id="05c9534a4968bb692db6c477bda3216e" category="list-text"><block ref="af9633264dfe5a57796032ab701180e5" category="inline-xref-macro-rx"></block> 使用硬件加密来保护自加密驱动器(SED)、也称为全磁盘加密(FED)驱动器、包括符合联邦信息处理标准(FIPS)的驱动器。驱动器加密在每个驱动器中使用由StorageGRID密钥管理器管理的加密密钥执行。</block>
   <block id="0f8b6d1e008864add25c54498d52b95d" category="paragraph">您可以对受支持的驱动器执行这两个加密级别、以提高安全性。</block>
   <block id="3222848370401de62a0389566cdc6e45" category="inline-link">StorageGRID加密方法</block>
-  <block id="d2ff273ea38e1c87a7e75159cbc94cb5" category="paragraph">请参见<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block> 有关可用于StorageGRID设备的所有加密方法的信息。</block>
   <block id="18c6ba3c5dc613670300302d6b6e13e8" category="section-title">启用节点加密</block>
   <block id="1c2a7c57450bd0841ba8af585da8e2e7" category="paragraph">如果启用了节点加密，则可以通过安全密钥管理服务器（ KMS ）加密来保护设备中的磁盘，防止物理丢失或从站点中删除。您必须在设备安装期间选择并启用节点加密。在KMS加密过程启动后、您无法禁用节点加密。</block>
   <block id="df20a5800890fb9c6f211a466c532c76" category="paragraph">如果使用ConfigBuilder生成JSON文件、则可以自动启用节点加密。请参见 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -1865,7 +1864,6 @@
   <block id="f4b6f694a5501888787381e6a815ab2e" category="paragraph">当设备关闭或从设备中删除驱动器时、加密的SRD会自动锁定。加密的SED在恢复供电后保持锁定状态、直到输入正确的密码短语为止。要允许在不手动重新输入密码短语的情况下访问驱动器、此密码短语会存储在StorageGRID设备上、以便在设备重新启动时解锁设备中保留的加密驱动器。知道SED密码短语的任何人都可以访问使用SED密码短语加密的驱动器。</block>
   <block id="0ffb3b992e7b67a3cf4b6e86c5e6d58e" category="paragraph">驱动器加密不适用于SANtricity-managed驱动器。如果您的设备具有StorageGRID和SANtricity控制器、则可以在中启用驱动器安全性 <block ref="26de6fd427efcc81f7ad7cd6aad9003d" category="inline-link-macro-rx"></block>。</block>
   <block id="0fb0c001659e1b8d7876247f8c4b3eac" category="paragraph">您可以在初始设备安装期间启用驱动器加密、然后再加载Grid Manager。您还可以通过将设备置于维护模式来启用节点加密或更改密码短语。</block>
-  <block id="fd8cd1fe2d84ec18c3b56eff1070e866" category="paragraph">查看有关的信息<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block>。</block>
   <block id="d112382db4537727ec6a38fd83f7931d" category="paragraph">首次启用驱动器加密时会设置密码短语。如果更换了某个计算节点或将加密的SED移至新计算节点、则必须手动重新输入密码短语。</block>
   <block id="68054e05b3829648df9f1eed60b84a85" category="admonition">请确保将驱动器加密密码短语存储在安全位置。如果加密的SED安装在另一个StorageGRID设备中、则在不手动输入相同密码短语的情况下、无法访问该SED。</block>
   <block id="a7168e3fce65db38199c759024bcc6ad" category="section-title">启用驱动器加密</block>
@@ -3499,9 +3497,7 @@
   <block id="8a319d9f1f8fa62d913f59ab432b8f1a" category="list-text">输入以下命令：<block ref="604b3aa6831925c337f9cec38597d65a" prefix=" " category="inline-code"></block></block>
   <block id="4a4df9fcde02f4c20df662c4d87783a1" category="summary">您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。</block>
   <block id="e525b6b4f718b6369b2fa00ac33b215b" category="doc">使用管理驱动器选项卡</block>
-  <block id="dd646486f335d66fb3729899cbdd1d43" category="list-text">您将使用登录到网格管理器<block ref="42eb699be885105e5a08932567501037" category="inline-link-rx"></block>。</block>
   <block id="bf8542827bf52ff1d2d3ca74de649b6a" category="inline-link">存储设备管理员或root访问权限</block>
-  <block id="4b1bc73909f0b7b1282d782289068051" category="paragraph">如果您有一个GF6112设备以及<block ref="3b6eef8d5dca76558b5505ffa4aa79b9" category="inline-link-rx"></block>，则设备详细信息页面上将显示管理驱动器选项卡。</block>
   <block id="bf5f327428f0175033f3cbe43e6e7b3e" category="paragraph">管理驱动器选项卡包含以下视图：</block>
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">布局</block>
   <block id="a92cd291617f14a6abada995fa7b9a3f" category="list-text">设备中的数据存储驱动器布局。选择一个驱动器以查看驱动器详细信息。</block>
@@ -4230,4 +4226,7 @@
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">更换可选 60 驱动器扩展架中的硬件组件</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">更换 SG6000-CN 控制器中的光纤通道 HBA</block>
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
+  <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">请参见<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> 有关可用于StorageGRID设备的所有加密方法的信息。</block>
+  <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">查看有关的信息<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
+  <block id="00480567d9c91f7b7ba44e21f754f737" category="paragraph">如果您有一个GF6112设备以及<block ref="646dc3cd3bd62a6be1690aac96e1dd08" category="inline-link-rx"></block>，则设备详细信息页面上将显示管理驱动器选项卡。</block>
 </blocks>

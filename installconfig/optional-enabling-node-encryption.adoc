@@ -19,7 +19,7 @@ summary: 您可以在节点和磁盘级别启用加密、以防止设备中的�
 
 您可以对受支持的驱动器执行这两个加密级别、以提高安全性。
 
-请参见 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^] 有关可用于StorageGRID设备的所有加密方法的信息。
+请参见 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^] 有关可用于StorageGRID设备的所有加密方法的信息。
 
 
 
@@ -100,7 +100,7 @@ NOTE: 设备最初会配置一个随机的非 KMS 加密密钥，该密钥会分
 您可以在初始设备安装期间启用驱动器加密、然后再加载Grid Manager。您还可以通过将设备置于维护模式来启用节点加密或更改密码短语。
 
 .开始之前
-查看有关的信息 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^]。
+查看有关的信息 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID加密方法"^]。
 
 .关于此任务
 首次启用驱动器加密时会设置密码短语。如果更换了某个计算节点或将加密的SED移至新计算节点、则必须手动重新输入密码短语。
