@@ -2773,8 +2773,6 @@
   <block id="bba366c7647bbe1d5257439c4c705de2" category="list-text">如果序列号不匹配、请从树视图中选择其他节点。</block>
   <block id="b5ede840d77243156ecf58a68049831a" category="list-text">找到需要更换组件的节点后、记下StorageGRID 设备部分列出的设备BMC IP地址。</block>
   <block id="ed14a9b16ba1bf2269212f09e6a7d6d2" category="paragraph">为了帮助您在数据中心中找到设备、您可以使用BMC IP地址打开设备标识LED。</block>
-  <block id="3265f1a32d767d5d4a8eee12e6317c69" category="doc">将电池移至新控制器</block>
-  <block id="d708815fa74d85cd087786cef2ab1cd6" category="list-text">从发生故障的控制器中取出电池，然后将其安装到替代控制器中：</block>
   <block id="e764e0e5854c6f45b3f893be8ea63ed7" category="list-text">确认控制器（电池和 DIMM 之间）中的绿色 LED 熄灭。</block>
   <block id="997a0d6eac5c38e607fa8951b2a2b74c" category="paragraph">如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。</block>
   <block id="8fea29345b9eb8aa445923cdf359f5ba" category="image-alt">E2800 上的绿色 LED</block>
@@ -2999,7 +2997,6 @@
   <block id="94a49ae35398530df80646bb544513f0" category="paragraph">当您选择*on*时，产品正面(典型显示)和背面的蓝色识别LED指示灯将亮起。</block>
   <block id="9004fc2719e98443b495c432e10ffb2e" category="paragraph">后部的识别LED指示灯位于设备中央、位于Micro SD插槽下方。</block>
   <block id="f57d0dae24c14fe0b57a6cf0e4aa9b52" category="list-text">根据需要打开和关闭识别LED。</block>
-  <block id="a3c54240889d795a785f54b21112d1b7" category="doc">卸下控制器</block>
   <block id="b45afbec52f534783a03eff995ab7c60" category="list-text">从设备中删除控制器：</block>
   <block id="cf53429bbb1adc08633a9a45088a58f5" category="list-text">戴上 ESD 腕带或采取其他防静电预防措施。</block>
   <block id="901be424bced93384bed30ffebbad97d" category="list-text">为缆线贴上标签，然后断开缆线和 SFP 的连接。</block>
@@ -3021,13 +3018,8 @@
   <block id="91c692d2e5b928a44446baeb67e25a50" category="paragraph">4端口HIC</block>
   <block id="52748a4020101685ab95f44d89b7ce8c" category="paragraph">4端口主机接口卡(HIC)。在执行更换时、必须将此卡移至新控制器。</block>
   <block id="8028710d01a41ca2ea84072e77d7385b" category="paragraph">*注*：E2800A控制器没有HIC。</block>
-  <block id="67d5b6933ccbaf5b0a5fbedd2e53d3c4" category="doc">如果需要、将HIC移至新控制器</block>
-  <block id="f98925abc6cb4377ae64ff1ac4820659" category="list-text">如果故障控制器包含主机接口卡(HIC)、请将HIC从故障控制器移至更换控制器。</block>
   <block id="c8efe06bb7eee5e4d90e049e86bf65dc" category="paragraph">单独的HIC仅用于E2800B控制器。HIC安装在主控制器板上、并包含两个SPF连接器。</block>
   <block id="3974b35b2cf021e8db213f0104048701" category="admonition">此操作步骤 中的插图显示了一个双端口HIC。控制器中的HIC可能具有不同数量的端口。</block>
-  <block id="269cafd6c8073deeb85a9bd332a74947" category="inline-xref">将HIC从故障控制器移至替代控制器</block>
-  <block id="963c2eb9efcfeefa0eda5318bcdf4900" category="list-text">如果控制器没有HIC (E2800A)、请更换控制器盖板。如果控制器确实具有HIC (E2800B)、请继续执行 <block ref="45559081ecf57b0c388c65e5f8f80079" category="inline-xref-macro-rx"></block>。</block>
-  <block id="35b8298e26bba9285059b47bb9a4eeab" category="list-text">如果配有HIC、请将HIC从故障控制器移至更换控制器。</block>
   <block id="1abae1b2ca77419d27f9d38b1a5ce79e" category="list-text">从HIC中删除所有SFP。</block>
   <block id="260b692edc8c35ec0a94e0a66944afbf" category="list-text">使用1号十字螺丝刀卸下将HIC面板连接到控制器的螺钉。</block>
   <block id="c1191295734430664731c130f36d12d6" category="paragraph">有四个螺钉：一个在顶部，一个在侧面，两个在正面。</block>
@@ -3591,7 +3583,6 @@
   <block id="65499790690d2c454fcef420d0986cd2" category="list-text">您的更换控制器的部件号与要更换的控制器相同。</block>
   <block id="6df8f1985e7a6f402e722600a5f522af" category="admonition">请勿依靠E系列说明来更换StorageGRID 设备中的控制器、因为更换过程不同。</block>
   <block id="2bb86ccc72619207d683e45635d07991" category="list-text">您可以通过标签来识别连接到控制器的每个缆线。</block>
-  <block id="fe4e9e2834367a1bf8d2c51578f417e3" category="list-text">如果所有驱动器都受到保护、您已查看单工E2800系列控制器更换操作步骤 中的步骤。 其中包括从NetApp 支持站点 下载并安装E系列SANtricity 系统管理器、然后在更换控制器后使用企业管理窗口(EMW)解锁受保护的驱动器。</block>
   <block id="822f3e8582776cbafa8007c1adb5ec11" category="admonition">只有在使用已保存的密钥解锁驱动器后，才能使用此设备。</block>
   <block id="b865bb98d9b0550e0a993612bafda00d" category="list-text">您必须具有特定的访问权限。</block>
   <block id="8ff1ab4da14b392126e0be753ff139ad" category="list-text">您必须使用登录到网格管理器<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
@@ -3602,14 +3593,8 @@
   <block id="94f8e078397fb87116b6f9abde423938" category="paragraph">更换控制器后，无法访问设备存储节点。如果E2800系列控制器运行正常、您可以 <block ref="b3dcbd550feb67c7e16c70bc63f72e18" category="inline-link-macro-rx"></block>。</block>
   <block id="752e2b22735dd0a3dc51389142f82b7a" category="paragraph">更换控制器时，您必须从原始控制器中取出电池，然后将其安装到替代控制器中。在某些情况下，您可能还需要从原始控制器中卸下主机接口卡，并将其安装在替代控制器中。</block>
   <block id="9ce903ec97f42a702063374b8f9558b5" category="admonition">大多数设备型号中的存储控制器不包括主机接口卡(Host Interface Card、HIC)。</block>
-  <block id="74ddc706cc279e81e96ba2d0f0b7e327" category="paragraph">此任务包含以下部分：</block>
   <block id="f8199556cf6a62ca9268aa50c99b34a1" category="list-text">准备</block>
-  <block id="db138738f11a6c56c06b54240b38df1d" category="list-text">使控制器脱机</block>
-  <block id="abf8f13bdb84c7122ff9a72d14501969" category="list-text">删除控制器</block>
-  <block id="176958306106ed587f1ed281973576da" category="list-text">将电池移至新控制器</block>
-  <block id="44f0502a4e12ff4c7b2a8e29ddf1240f" category="list-text">更换控制器</block>
   <block id="c1873ea87bdf996ede9990c97f3270e4" category="list-text">按照 E2800 控制器更换操作步骤 中的说明准备卸下控制器。</block>
-  <block id="55c892922ea20ac558136aea5a263d6a" category="paragraph">您可以使用 SANtricity 系统管理器执行这些步骤。</block>
   <block id="2ecfec7bfa276afdd11c54d5abaab7fa" category="list-text">记下控制器上当前安装的 SANtricity OS 软件版本。</block>
   <block id="b8813be0069959617e6f40c3a22df0fc" category="list-text">记下当前安装的 NVSRAM 版本。</block>
   <block id="ba155e9172d5994c57e93fb656141227" category="list-text">如果启用了驱动器安全功能，请确保存在已保存的密钥，并且您知道安装该密钥所需的密码短语。</block>
@@ -3618,7 +3603,6 @@
   <block id="7a96ab4cc5d58598488f7e2fdcea9df9" category="paragraph">如果删除控制器时出现问题，您可以使用保存的文件还原配置。</block>
   <block id="fd4061a4924f1e0bf98462757a83fc33" category="list-text">收集设备的支持数据。</block>
   <block id="d5b7c4e4db51ddcf44d5c764d7d12dec" category="admonition">在更换组件前后收集支持数据可确保在更换组件无法解决问题时、您可以向技术支持发送一整套日志。</block>
-  <block id="da397caaa5e3712e133c0d13d60aa55f" category="section-title">使控制器脱机</block>
   <block id="1c473716429e7b086c508d4d989b6460" category="list-text">如果 StorageGRID 设备正在 StorageGRID 系统中运行， <block ref="b3dcbd550feb67c7e16c70bc63f72e18" category="inline-link-macro-rx"></block>。</block>
   <block id="b479d08d9995967f3e39eb8f8dda7580" category="list-text">如果 E2800 控制器运行充分，可以进行可控的关闭，请确认所有操作均已完成。</block>
   <block id="01d4dba33c39acfee6527a2ef4d297b1" category="list-text">从 SANtricity 系统管理器的主页中，选择 * 查看正在执行的操作 * 。</block>
@@ -4228,5 +4212,29 @@
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
   <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">请参见<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> 有关可用于StorageGRID设备的所有加密方法的信息。</block>
   <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">查看有关的信息<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
-  <block id="00480567d9c91f7b7ba44e21f754f737" category="paragraph">如果您有一个GF6112设备以及<block ref="646dc3cd3bd62a6be1690aac96e1dd08" category="inline-link-rx"></block>，则设备详细信息页面上将显示管理驱动器选项卡。</block>
+  <block id="8982aaa194b18d24402b49fbe219e3e5" category="list-text">保持未连接状态以保存交换机端口和 IP 地址。使用网格管理器或存储网格设备安装程序 UI 访问 SANtricity System Manager 。</block>
+  <block id="c114b6896b71306b6ff5217eebf1d7eb" category="doc">第4步：将电池移至新控制器</block>
+  <block id="eed22a946ecb2d3652178906c8adb5c5" category="paragraph">从发生故障的控制器中取出电池、然后将其安装到更换用的控制器中。</block>
+  <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="doc">第3步：卸下控制器</block>
+  <block id="73c449311895c44cdc2cb9f82f1d86a8" category="paragraph">从设备中删除故障控制器。</block>
+  <block id="41cead6208beaab4753fef7eb16b7b3d" category="doc">第5步：根据需要将HIC移至新控制器</block>
+  <block id="52cea5d7c14ce5a1a352ae36b02fc89c" category="paragraph">如果故障控制器包含HIC、请将HIC从故障控制器移至替代控制器。</block>
+  <block id="f2323bfac4b2b6c0bed61a2782d7b2a3" category="open-title">E2800A</block>
+  <block id="c7c61e2e49b4848eb04ef9166c62112e" category="paragraph">E2800A控制器没有HIC。</block>
+  <block id="66e02a6be1542a6c5ab5b6e835ace031" category="inline-xref">第6步：更换控制器</block>
+  <block id="bee477a851e07f638eb69240b1b317bc" category="paragraph">装回E2800A控制器护盖、然后转至 <block ref="4bd98407e7ac018ef33f15dc5a2ef6d6" category="inline-xref-macro-rx"></block></block>
+  <block id="b186f28a62d42b7cdd50516610c1e839" category="open-title">E2800B</block>
+  <block id="477f610d0d161e316a6f06600c56252b" category="paragraph">将HIC从发生故障的E2800B控制器移至替代控制器。</block>
+  <block id="bfc87e4ee97496c70a38995efddf5be3" category="paragraph">如果您有一个GF6112设备以及<block ref="5540729631f9c458d692d5b76bbc9b38" category="inline-link-rx"></block>，则设备详细信息页面上将显示管理驱动器选项卡。</block>
+  <block id="b8325740c6f1fdf42bd83d726c080c9a" category="inline-link">单工E2800系列控制器更换操作步骤</block>
+  <block id="0f31bf890cf0f06d20912d7da5d50990" category="list-text">如果所有驱动器都受到保护、您已查看中的步骤<block ref="ab9bcc1613fce025138f2bd863db4580" category="inline-link-rx"></block>其中包括从NetApp 支持站点 下载并安装E系列SANtricity系统管理器，然后在更换控制器后使用企业管理窗口(Enterprise Management, EMW)解锁受保护的驱动器。</block>
+  <block id="16cd89923af48ed14de009bdd8e2993f" category="section-title">第1步：准备卸下控制器</block>
+  <block id="f187670d0aad1013a9fbfc3c71bf760e" category="paragraph">您可以使用SANtricity系统管理器执行以下步骤。</block>
+  <block id="c5a54dca8b6ca77546f4cc165d0d11a4" category="section-title">第2步：使控制器脱机</block>
+  <block id="89fb5d48855149ae02912143426f3adc" category="paragraph">使控制器脱机并确认所有操作均已完成。</block>
+  <block id="14dc8bb572f0f111ffb3d882de64812c" category="list-text">关闭控制器架。</block>
+  <block id="b2f9b08b9c77fd0d4c43b02ecac55483" category="paragraph">安装替代控制器并验证它是否已重新加入网格。</block>
+  <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">打开控制器架的电源。</block>
+  <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">第1步：准备更换用的控制器</block>
+  <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">准备删除故障控制器并使其脱机。</block>
 </blocks>
