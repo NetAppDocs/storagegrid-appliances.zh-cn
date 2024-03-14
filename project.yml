@@ -1,6 +1,7 @@
 ---
 settings:
   name: StorageGRID Appliances
+  search: storagegrid-enable,storagegrid-118,storagegrid-appliances
   internal:
     pdf_enabled: true
     termcheck_enabled: false
@@ -13,6 +14,8 @@ sidebar:
   entries:
   - title: StorageGRID设备文档
     url: "/index.html"
+  - title: StorageGRID软件文档
+    url: "/storagegrid-documentation.html"
   - title: 入门
     url: "/landing-learn-hdwr/index.html"
     entries:
@@ -47,8 +50,6 @@ sidebar:
     - section: sg5700
     - section: sg6000
     - section: sg6100
-  - title: StorageGRID软件文档
-    url: "/storagegrid-documentation.html"
   - title: 启用StorageGRID
     url: "/storagegrid-enable.html"
   - title: 法律声明

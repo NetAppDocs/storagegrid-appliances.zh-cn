@@ -163,7 +163,7 @@ CAUTION: 如果要将数据保留在驱动器上、请务必将SSD驱动器插�
 
 
 . 打开产品电源。
-. 如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
+. 如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
 . 等待设备重新加入网格。如果设备未重新加入网格、请按照StorageGRID 设备安装程序主页上的指导解决任何问题。
 +
 

@@ -53,7 +53,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[系统板上用于双插槽
 . 将提升板部件置于机箱中、确保其与系统板上的连接器和导销对齐。
 . 沿着中间线(靠近蓝色标记的孔)小心地将双插槽提升板部件按入到位，直至其完全就位。
 . 如果您不需要对设备执行其他维护步骤、请重新安装设备盖、将设备装回机架、连接电缆并接通电源。
-. 如果您更换的设备已为SED驱动器启用驱动器加密、则必须执行此操作 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
+. 如果您更换的设备已为SED驱动器启用驱动器加密、则必须执行此操作 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
 . 如果您更换的设备使用密钥管理服务器(KMS)管理节点加密的加密密钥、则可能需要进行其他配置、节点才能加入网格。如果节点未自动加入网格、请确保这些配置设置已传输到新设备、并手动配置任何不具有预期配置的设置：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["配置StorageGRID 连接"]
