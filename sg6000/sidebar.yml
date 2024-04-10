@@ -17,7 +17,13 @@ entries:
     - title: 使用维护模式升级存储控制器上的 SANtricity 操作系统
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
   - title: 使用 SANtricity 系统管理器升级驱动器固件
-    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    entries:
+    - title: 使用SANtricity系统管理器通过联机方法升级SG6000驱动器固件
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 使用SANtricity系统管理器通过脱机方法升级SG6000驱动器固件
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 对驱动器固件升级错误进行故障排除
+      url: "/sg6000/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: 打开和关闭控制器标识 LED
     url: "/sg6000/turning-controller-identify-led-on-and-off.html"
   - title: 在数据中心中找到控制器

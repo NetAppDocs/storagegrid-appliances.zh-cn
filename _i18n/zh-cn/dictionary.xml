@@ -884,7 +884,6 @@
   <block id="532f1eabdf9572d662db693bd6024975" category="list-text">查看通过串行终端打印的代码。</block>
   <block id="1c50599d41fa9baecb0f79415f317fa0" category="list-text">如果您使用的是 SOL ，请执行以下步骤：</block>
   <block id="3ccdf5c6e76f58fd6100f7ed8e88affc" category="list-text">使用 BMC IP 地址和登录凭据连接到 IPMI SOL 。</block>
-  <block id="837cfb97b4b28245eab4fffee9afc6d7" category="paragraph"><block ref="e3ef784e466a2956434c1314bc0c8c92" prefix="" category="inline-code"></block></block>
   <block id="8616d487e1c6ff81c8864e2a135bbe1e" category="list-text">查看虚拟串行终端上的代码。</block>
   <block id="04c09c27e0c49faff7ca3ce108551c35" category="list-text">使用下表查找您的设备的代码。</block>
   <block id="ca0dbad92a874b2f69b549293387925e" category="cell">代码</block>
@@ -2651,24 +2650,15 @@
   <block id="ecf8f63fe854bea3831662088ff39904" category="doc">安装StorageGRID 设备硬件</block>
   <block id="b10621ed96edfed5cdab0c30e0006f79" category="list-text">存储设备处于最佳状态。</block>
   <block id="fe21a4b4c7370b73210cfa79500a95c9" category="list-text">所有驱动器均处于最佳状态。</block>
-  <block id="9d79fd2a808d6d51325f70313848f133" category="list-text">您已安装与您的 SANtricity 版本兼容的最新版本 StorageGRID System Manager 。</block>
   <block id="d17d9f037dcc2d2d241386f00f4e3609" category="inline-link-macro">已将StorageGRID 设备置于维护模式</block>
-  <block id="c345855b8f8d83367a2de1cda2598e99" category="list-text">如果要执行脱机升级、则必须执行 <block ref="f1498071811ca85523b2ec754ee6c485" category="inline-link-macro-rx"></block>。</block>
   <block id="7febdef0cdb15c201490043bc7ace805" category="admonition">当设备处于维护模式时、存储控制器的I/O (输入/输出)活动将停止、以确保中断存储操作的安全。</block>
   <block id="a321ee9b0855a42051df0e349020c2cf" category="admonition">请勿一次升级多个StorageGRID 设备上的驱动器固件。这样做可能会导致发生原因 数据不可用、具体取决于您的部署模式和ILM策略。</block>
-  <block id="0227eb2f55e7efdf58515d93d828ea21" category="paragraph">您可以使用两种方法升级设备驱动器固件：</block>
-  <block id="5e424c3d56c6826b69a49c64e17ca91d" category="paragraph">*联机*：在设备执行I/O时，一次升级一个驱动器此方法不要求您将设备置于维护模式。但是、系统性能可能会受到影响、并且升级所需时间可能比脱机方法要长几小时。</block>
-  <block id="e0b00cbbb97321c9cfb68296540d2723" category="admonition">对于不具有冗余的卷中的驱动器、必须使用脱机方法进行更新。与闪存读取缓存关联的任何驱动器(例如SG6060中的SSD驱动器)或当前已降级的任何池或卷组均应使用脱机方法。</block>
-  <block id="8d684a689754ce30d3d896184c7c0626" category="paragraph">*脱机*：
-设备处于维护模式时、驱动器会并行升级。如果池或卷组不支持冗余或已降级、则必须使用脱机方法升级驱动器固件。只有在要升级的驱动器上的所有I/O活动都已停止时、脱机方法才会升级固件。要停止I/O活动、请将节点置于维护模式。</block>
   <block id="e3e28c9e2c25ece123da9282852c9b83" category="paragraph">脱机方法比联机方法速度更快、当一个设备中的多个驱动器需要升级时、速度会显著加快。但是、它要求节点停止服务、这可能需要计划维护窗口并监控进度。选择最适合您的操作过程的方法以及需要升级的驱动器数量。</block>
   <block id="56b2e4e7468b36806c62948d07b62d6f" category="admonition">驱动器类型有两种：SSD和HDD。您必须使用脱机方法升级SSD上的固件(例如SG6060中的SSD驱动器)。您可以使用联机或脱机方法升级HDD上的固件。</block>
   <block id="3663bc32267b225ac55e52a4e99f2b3c" category="inline-link-macro">维护模式</block>
-  <block id="14e78dd7a6bf63815621996dac2b2b3c" category="list-text">如果要执行脱机升级、请确认此设备是否处于中 <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>。</block>
   <block id="23fca754d51c4552272900db046a2257" category="admonition">如果要升级缓存组中SSD驱动器中的固件、则必须确保在升级过程中不会向任何缓存卷发送任何I/O。如果设备处于维护模式、则在升级过程中不会向任何卷发送任何I/O。</block>
   <block id="3533a2b46e125d041913c72fd9f48d9b" category="list-text">使用以下方法之一访问 SANtricity System Manager ：</block>
   <block id="c56d4e4921ea0ed69b79633149e26878" category="list-text">使用网格管理器并选择*N节点*&gt;*_Storage N点SANtricity 系统管理器*</block>
-  <block id="c59447485ddcd454e0e9b781e0be3a75" category="list-text">通过浏览到存储控制器IP来使用SANtricity 系统管理器：+<block ref="29c66d4541758aec7932976994c3319a" prefix=" " category="inline-code"></block></block>
   <block id="f5ee914d9142f81b048a6516338e60ca" category="list-text">如果需要，输入 SANtricity System Manager 管理员用户名和密码。</block>
   <block id="f81fb88b20f58263d5a52f1cbfbe31e3" category="list-text">验证存储设备中当前安装的驱动器固件版本：</block>
   <block id="07319dd8bf09119fbc5d52b0bb6984e9" category="list-text">在 SANtricity 系统管理器中，选择 * 支持 * &gt; * 升级中心 * 。</block>
@@ -2694,17 +2684,12 @@
   <block id="593f83d9cf94fc9e4031f35b23f927cf" category="list-text">安装驱动器固件升级：</block>
   <block id="6bb75f0716ac77d29c4d070efd7a3b0e" category="list-text">在 SANtricity 系统管理器的驱动器固件升级下，选择 * 开始升级 * 。</block>
   <block id="9cf2ba623b48d0e58d46e28f82bf71ca" category="list-text">选择 * 浏览 * ，然后选择从支持站点下载的新驱动器固件文件。</block>
-  <block id="df1cc8cc2566b5dd45677a005e2f1077" category="paragraph">驱动器固件文件的文件名类似于+<block ref="2bd3efd42bd30bf5ec268aab489d4777" prefix=" " category="inline-code"></block>。</block>
   <block id="7afa0bc9a63233cfb2803e627f142755" category="paragraph">您最多可以选择四个驱动器固件文件，一次一个。如果多个驱动器固件文件与同一驱动器兼容，则会收到文件冲突错误。确定要用于升级的驱动器固件文件，然后删除另一个驱动器固件文件。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">选择 * 下一步 * 。</block>
   <block id="a1703a841c581af0f963bfddf68f1b1f" category="paragraph">* 选择驱动器 * 列出了可使用选定固件文件进行升级的驱动器。</block>
   <block id="b1ef9db159b982facfd06f4136b894a6" category="paragraph">仅显示兼容的驱动器。</block>
   <block id="b49b59c1154ee27d9bd3b082c8ee80f7" category="paragraph">为驱动器选择的固件将显示在*建议的固件*列中。如果必须更改此固件，请选择 * 返回 * 。</block>
-  <block id="8ab56797e6a951964b009438fa948d06" category="list-text">选择要执行的升级类型：</block>
-  <block id="c17efd8dcb0ae0a11cac56c271bd4586" category="admonition">升级SSD驱动器时、必须使用脱机方法。</block>
-  <block id="a1090ec1faf8dd09db64054e3199e583" category="list-text">*在线升级所有驱动器*—升级存储阵列处理I/O时可支持固件下载的驱动器如果选择此升级方法、则不必停止使用这些驱动器对关联卷的I/O。</block>
   <block id="4d849ca8d43b5f8df234fb4e1c51c74a" category="admonition">联机升级可能比脱机升级需要几个小时。</block>
-  <block id="6921b552dce9414d5231ec346e80d09e" category="list-text">*将所有驱动器升级为脱机(并行)*—仅当使用这些驱动器的任何卷上的所有I/O活动都停止时，才能升级支持固件下载的驱动器。</block>
   <block id="508d403f48503f597190c1dee1523822" category="admonition">在使用此方法之前、您必须将设备置于维护模式。您应使用*Offline (脱机)*方法升级驱动器固件。</block>
   <block id="9d2a3994759c657f99dff4c9cfaee2d4" category="admonition">如果要使用脱机(并行)升级、请勿继续、除非您确定设备处于维护模式。如果在启动脱机驱动器固件更新之前未将设备置于维护模式、则可能会导致发生原因 数据丢失。</block>
   <block id="d6b31a472516977ccb3c97418ca027ec" category="list-text">在表的第一列中，选择要升级的一个或多个驱动器。</block>
@@ -2714,7 +2699,6 @@
   <block id="a9ff48bbddf3556580ff1235b8cf5255" category="admonition">停止驱动器固件升级可能会导致数据丢失或驱动器不可用。</block>
   <block id="374d6314a1686bfc77fd70aa617d4603" category="list-text">（可选）要查看已升级内容的列表，请选择 * 保存日志 * 。</block>
   <block id="965c5385647c1db79a963fc0e272b417" category="paragraph">日志文件将保存在浏览器的下载文件夹中、并带有名称<block ref="7b20dd0821a6fa35d7122bbe44821a99" prefix=" " category="inline-code"></block>。</block>
-  <block id="b91fa802062f28fac56759ae259d9238" category="paragraph">如果在升级操作步骤期间出现以下任何错误，请采取适当的建议操作。</block>
   <block id="8cb89ad108e36babae43be3f4185a474" category="list-text">* 已分配的驱动器出现故障 *</block>
   <block id="4f9ee96ae43fa01d3e278eb1f74f4ff2" category="paragraph">出现此故障的一个原因可能是驱动器没有相应的签名。确保受影响的驱动器为授权驱动器。有关详细信息，请联系技术支持。</block>
   <block id="ac4c4beee0bb0fda6868f9f6414e4055" category="paragraph">更换驱动器时，请确保更换驱动器的容量等于或大于要更换的故障驱动器。</block>
@@ -2745,7 +2729,6 @@
   <block id="4dcf00638af3c697ee6b99e40e1f9bfb" category="list-text">* 过去 7 天报告了 2 页以上的 2C 严重 MEL 事件 *</block>
   <block id="fd136850ef1b651365146688fa8d9610" category="list-text">* 过去 7 天报告了 2 个以上的 " 降级驱动器通道 " 严重 MEL 事件 *</block>
   <block id="235328827141e650f44c482c6868c490" category="list-text">* 过去 7 天内 4 个以上的关键 MEL 条目 *</block>
-  <block id="b5b75e18eedafacec87d4709e34209fc" category="list-text">如果您使用的是*脱机*升级，并且此操作步骤 已成功完成，请在节点处于维护模式时执行任何其他维护过程。完成后，或者如果遇到任何故障并希望重新启动，请转到StorageGRID 设备安装程序并选择*Advanced*&gt;*Reboot Controller*。然后选择以下选项之一：</block>
   <block id="6b108eb8b08f0ff8a5a6e884a1ac6474" category="list-text">*重新启动至StorageGRID。</block>
   <block id="ff893ef835261129935a9f82f297a8d3" category="list-text">*重新启动至维护模式*。重新启动控制器并使节点保持维护模式。如果在操作步骤 期间发生任何故障、并且您要重新启动、请选择此选项。节点重新启动至维护模式后，从出现故障的操作步骤 中的相应步骤重新启动。</block>
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。节点页面应显示正常状态(绿色复选标记图标) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。</block>
@@ -3573,8 +3556,6 @@
   <block id="3645999a212db12122a0446a162ce8f6" category="inline-link">StorageGRID 11.6说明</block>
   <block id="acbf3b183ab51488b99731f4cd2624cc" category="paragraph">如果需要对SG5600硬件执行维护过程、请使用<block ref="8db8ba3162a617a8ac29af904a66dd12" category="inline-link-rx"></block>。</block>
   <block id="5de42bbee7ead1d6edca50bd265907c7" category="summary">您可以升级驱动器固件，以确保具有所有最新功能和错误修复。</block>
-  <block id="d45c51446dc757d7fa15d2b4c4d24e0a" category="doc">使用SANtricity系统管理器升级SG5700驱动器固件</block>
-  <block id="f92e54d30593fb7cc6d4478240b8477c" category="paragraph">升级设备驱动器上的固件、以确保您拥有所有最新功能和错误修复。</block>
   <block id="76139fd62644e42b86c5b06a4f1ce82e" category="summary">如果 E2800 控制器运行不正常或出现故障，您可能需要更换它。</block>
   <block id="791aa87e4eb427affe98e6094ceb6472" category="doc">更换SG5700中的E2800系列存储控制器</block>
   <block id="d09a95cf80cc21d53aa1e5648d98d38c" category="paragraph">如果E2800系列控制器运行不正常或出现故障、您可能需要更换它。</block>
@@ -3735,7 +3716,6 @@
   <block id="57e1c48b034af2352e5a69534ab37dd2" category="list-text"><block ref="57e1c48b034af2352e5a69534ab37dd2" category="inline-link-rx"></block></block>
   <block id="9ccd79e77976b22b2105fd27f98d48e7" category="inline-link">StorageGRID 11.4 文档</block>
   <block id="a4236c1e626cbb1d83748576ab2ec1fc" category="list-text"><block ref="a4236c1e626cbb1d83748576ab2ec1fc" category="inline-link-rx"></block></block>
-  <block id="b29310bba22c58ffb795bf7adbc20683" category="doc">使用SANtricity系统管理器升级SG6000驱动器固件</block>
   <block id="acb67fba627fa95707ed1eb195bb4ba3" category="summary">要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6060 添加一个或两个扩展架。</block>
   <block id="80c41098192177786ef3a9e33a7ee233" category="doc">将扩展架添加到已部署的 SG6060</block>
   <block id="7adedd5165bb23901a8b93ba3c4c2dd1" category="paragraph">要增加存储容量，您可以向已部署在 StorageGRID 系统中的 SG6060 添加一个或两个扩展架。</block>
@@ -4216,7 +4196,6 @@
   <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="doc">第3步：卸下控制器</block>
   <block id="73c449311895c44cdc2cb9f82f1d86a8" category="paragraph">从设备中删除故障控制器。</block>
   <block id="41cead6208beaab4753fef7eb16b7b3d" category="doc">第5步：根据需要将HIC移至新控制器</block>
-  <block id="52cea5d7c14ce5a1a352ae36b02fc89c" category="paragraph">如果故障控制器包含HIC、请将HIC从故障控制器移至替代控制器。</block>
   <block id="f2323bfac4b2b6c0bed61a2782d7b2a3" category="open-title">E2800A</block>
   <block id="c7c61e2e49b4848eb04ef9166c62112e" category="paragraph">E2800A控制器没有HIC。</block>
   <block id="66e02a6be1542a6c5ab5b6e835ace031" category="inline-xref">第6步：更换控制器</block>
@@ -4237,4 +4216,38 @@
   <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">准备删除故障控制器并使其脱机。</block>
   <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 在更换设备首次启动时访问加密驱动器。</block>
   <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">如果您更换的设备已为SED驱动器启用驱动器加密、则必须执行此操作 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 在更换设备首次启动时访问加密驱动器。</block>
+  <block id="f98925abc6cb4377ae64ff1ac4820659" category="paragraph">如果故障控制器包含主机接口卡(HIC)、请将HIC从故障控制器移至更换控制器。</block>
+  <block id="7af2ad8f1c1832bab54905bcdc6524a2" category="doc">使用SANtricity System Manager通过脱机方法升级SG5700驱动器固件</block>
+  <block id="3a22cf5ffbbef9ad0472a7712f64b5dc" category="paragraph">使用SANtricity系统管理器联机方法升级设备中驱动器上的固件、以确保您拥有所有最新功能和错误修复。</block>
+  <block id="c1a7b1836ac9b78ef73ce5d2ba26103d" category="list-text">您已拥有 <block ref="f1498071811ca85523b2ec754ee6c485" category="inline-link-macro-rx"></block>。</block>
+  <block id="c30246932f5c5ea4ba8f6f003970db66" category="paragraph">设备处于维护模式时、驱动器会并行升级。如果池或卷组不支持冗余或已降级、则必须使用脱机方法升级驱动器固件。此外、您还应对与闪存读取缓存关联的任何驱动器或当前已降级的任何池或卷组使用脱机方法。只有在要升级的驱动器上的所有I/O活动都已停止时、脱机方法才会升级固件。要停止I/O活动、请将节点置于维护模式。</block>
+  <block id="697411ab196a4e576f519c144e18349f" category="list-text">通过浏览到存储控制器IP来使用SANtricity系统管理器：</block>
+  <block id="2b0459c48aff623978ca6ec879fbd493" category="paragraph"><block ref="29c66d4541758aec7932976994c3319a" prefix="" category="inline-code"></block></block>
+  <block id="22170e910c05e5c31a0de895e8044b8f" category="paragraph">驱动器固件文件的文件名类似于<block ref="2bd3efd42bd30bf5ec268aab489d4777" prefix=" " category="inline-code"></block>。</block>
+  <block id="a95e1d2d9b824c52c94876fa7b357f9c" category="list-text">选择*升级所有驱动器脱机(并行)*—仅当使用驱动器的任何卷上的所有I/O活动都已停止时，才升级可支持固件下载的驱动器。</block>
+  <block id="619ff1dd97a438dc0f6a1a6394d8c4d6" category="inline-link-macro">如果需要、请对驱动程序固件升级错误进行故障排除</block>
+  <block id="0fc13834523d64672cf1aa2e9bc111e1" category="paragraph"><block ref="5b03de720114c37b7b00609700972858" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4d34d80331e19b08caebc4630076e07" category="list-text">成功完成操作步骤后、请在节点处于维护模式时执行任何其他维护过程。完成后，或者如果遇到任何故障并希望重新启动，请转到StorageGRID 设备安装程序并选择*Advanced*&gt;*Reboot Controller*。然后选择以下选项之一：</block>
+  <block id="7591dbb01a12fdb3c9be4cce45eb9564" category="doc">使用SANtricity系统管理器联机方法升级SG5700驱动器固件</block>
+  <block id="b97550a7ba7658ac15b58d0871af7a09" category="paragraph">在设备执行I/O时、一次升级一个驱动器此方法不要求您将设备置于维护模式。但是、系统性能可能会受到影响、并且升级所需时间可能比脱机方法要长几小时。</block>
+  <block id="5d6600c8dfd04cdcb53bfff3d3e91de4" category="inline-link-macro">脱机方法</block>
+  <block id="d349e214e8190b56a034686080f6a647" category="paragraph">对于属于不具有冗余的卷的驱动器、必须使用进行更新 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。对于与闪存读取缓存关联的任何驱动器、或者当前处于降级状态的任何池或卷组、均应使用脱机方法。</block>
+  <block id="e2d5d64348676cf446dfd44a976e3c5a" category="paragraph">您必须使用 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> 升级SSD驱动器时。</block>
+  <block id="eb0c0381a2ecab0a05e0025157eeb4e5" category="list-text">选择*联机升级所有驱动器*—升级存储阵列处理I/O时可支持固件下载的驱动器如果选择此升级方法、则不必停止使用这些驱动器对关联卷的I/O。</block>
+  <block id="c4d9a9dd7264b95bcd49edb9e5bd0c34" category="summary">对使用SANtricity系统管理器升级设备中驱动器上的固件时可能出现的错误进行故障排除。</block>
+  <block id="912f976f5b0e46bfc619bc9483a112fb" category="doc">对驱动器固件升级错误进行故障排除</block>
+  <block id="21c8cbcec0776ab0bc610690be3de7ee" category="paragraph"><block ref="91368ba22effffa53db65fac249d9d1e" prefix="" category="inline-code"></block></block>
+  <block id="d6ca29319276400384e46c43e0c2ae97" category="admonition">在某些情况下、默认用户名可能为<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> 而不是<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
+  <block id="c619fcb628f35e62cb7bb98416137cc8" category="admonition">在某些情况下、SG6000设备的默认用户名可能是<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> 而不是<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
+  <block id="d6d8d6f4809b0387fbc44576f4668758" category="paragraph">准备更换用的E2800A或E2800B控制器。</block>
+  <block id="6c12c6aae31e7fd9ba612c37c1094d29" category="doc">使用SANtricity系统管理器和脱机方法升级SG6000驱动器固件</block>
+  <block id="29c80a5eecad431fd9f823a496f5eb82" category="paragraph">使用SANtricity系统管理器脱机方法升级设备中驱动器上的固件、以确保您拥有所有最新功能和错误修复。</block>
+  <block id="b159728d4a7cd93ff2e7263dbf47963d" category="doc">使用SANtricity系统管理器通过联机方法升级SG6000驱动器固件</block>
+  <block id="8d9fcf04a3a7be30342afeddfd41ed3a" category="paragraph">对于属于不具有冗余的卷的驱动器、必须使用进行更新 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。与闪存读取缓存关联的任何驱动器(例如SG6060中的SSD驱动器)或当前已降级的任何池或卷组均应使用脱机方法。</block>
+  <block id="a6fb2a2e13e13dac5d52711f459def92" category="paragraph">驱动器类型有两种：SSD和HDD。您必须使用 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> 升级SSD上的固件(例如SG6060中的SSD驱动器)。您可以使用联机或脱机方法升级HDD上的固件。</block>
+  <block id="085a1cecc32954931f9c4a478c4b081b" category="paragraph">您必须使用 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> 升级SSD上的固件。</block>
+  <block id="3631dcd2ec8f8e84f2dc4ff1264bb5ba" category="sidebar">使用SANtricity System Manager通过联机方法升级驱动器固件</block>
+  <block id="0007bed3a39900ca535cccaada9a4349" category="sidebar">使用SANtricity System Manager通过脱机方法升级驱动器固件</block>
+  <block id="9429703a81cb2b5231db7d0db68e388d" category="sidebar">使用SANtricity系统管理器通过联机方法升级SG6000驱动器固件</block>
+  <block id="afcfd0f4a9cd1a59c01ff3ab1b52a9b5" category="sidebar">使用SANtricity系统管理器通过脱机方法升级SG6000驱动器固件</block>
 </blocks>

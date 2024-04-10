@@ -90,7 +90,11 @@ KVM
 +
 .. 使用 BMC IP 地址和登录凭据连接到 IPMI SOL 。
 +
-`ipmitool -I lanplus -H _BMC_Port_IP_ -U root -P _Password_ sol activate`
+`ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 在某些情况下、默认用户名可能为 `root` 而不是 `admin`。
 
 .. 查看虚拟串行终端上的代码。
 
