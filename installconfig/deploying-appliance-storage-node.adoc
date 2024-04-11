@@ -34,7 +34,7 @@ summary: 安装和配置存储设备后，您可以将其部署为 StorageGRID �
 
 
 
-NOTE: 如果您需要一次部署多个设备节点、则可以使用自动执行安装过程 `configure-sga.py` 设备安装脚本。
+NOTE: 如果需要一次部署多个设备节点、可以使用以下链接自动执行安装过程：../installconfig/Automate-Appliance安装和配置.html#Automate-with配置sga-py-script[`configure-sga.py` 设备安装脚本]。
 
 * 如果要执行扩展或恢复操作，请按照相应说明进行操作：
 +
@@ -101,7 +101,7 @@ link:../commonhardware/appliance-node-cloning-procedure.html["节点克隆操作
 
 . 在 StorageGRID 设备安装程序主页中，单击 * 开始安装 * 。
 +
-当前状态将更改为 "`Installation is in progress ，` " ，此时将显示监控器安装页面。
+当前状态更改为"`正在安装、`"和 link:../installconfig/monitoring-appliance-installation.html["监控器安装页面"] 将显示
 
 +
 
@@ -110,6 +110,6 @@ NOTE: 如果需要手动访问监控器安装页面，请单击 * 监控安装 *
 . 如果网格包含多个设备存储节点，请对每个设备重复这些步骤。
 +
 
-NOTE: 如果您需要一次部署多个设备存储节点、则可以使用自动执行安装过程 `configure-sga.py` 设备安装脚本。
+NOTE: 如果您需要一次部署多个设备存储节点、可以使用以下链接自动执行安装过程：../installconfig/Automate-Appliance安装和配置.html#Automate-with配置sga-py-script[`configure-sga.py` 设备安装脚本]。
 
 

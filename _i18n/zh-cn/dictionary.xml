@@ -245,13 +245,10 @@
   <block id="1ff855ab55729ae4063274c6d17a385f" category="list-text">或者，要安装其他版本的 StorageGRID 软件，请执行以下步骤：</block>
   <block id="dbe5f4e4fad5c126ea669e2f792699b4" category="list-text">下载安装归档：</block>
   <block id="523d60582e8bbde2c5ff4ae6f84b599e" category="inline-link">NetApp下载：StorageGRID 设备</block>
-  <block id="08f7204e1ce8ade983fb10a402400949" category="paragraph"><block ref="08f7204e1ce8ade983fb10a402400949" category="inline-link-rx"></block></block>
   <block id="3befe165a449c2011ecba00696c3f4ab" category="list-text">提取归档。</block>
   <block id="1d24290d8f4a79eeaafbecffc1f4a350" category="list-text">从 StorageGRID 设备安装程序中，选择 * 高级 * &gt; * 上传 StorageGRID 软件 * 。</block>
   <block id="6fd2b0d88a0ea6f057348837593e1cf4" category="list-text">单击 * 删除 * 以删除当前软件包。</block>
   <block id="1f288c0ba3f88bf0912012d36eb9d7dd" category="image-alt">设备安装程序 - 删除当前软件</block>
-  <block id="712777b5e9d637ccfae5b04a415653d3" category="list-text">单击 * 浏览 * 下载并提取的软件包，然后单击 * 浏览 * 获取校验和文件。</block>
-  <block id="79e56e0389e10379e27bca8568ffa4c6" category="image-alt">设备安装程序—上传 SG 软件</block>
   <block id="59773e84f2479ffeb34ba9422edf9f9c" category="list-text">选择 * 主页 * 以返回到主页页面。</block>
   <block id="2d636e90bd2e05a13f9a7e54cc9ff4de" category="list-text">确认当前状态为 "`Ready to start installation of primary Admin Node name with software version x.y` " ，并且已启用 * 开始安装 * 按钮。</block>
   <block id="34aaa9f52a702ada229db511977b71dd" category="inline-link-macro">节点克隆操作步骤</block>
@@ -268,7 +265,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">要在服务设备节点上安装 StorageGRID ，请执行以下操作：</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">您可以指定或确认主管理节点的 IP 地址以及设备节点的名称。</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">您开始安装，并等待软件安装完成。</block>
-  <block id="ca5a02495af6bdb0a0ecd42075778723" category="paragraph">在完成设备网关节点安装任务后，安装将暂停。要恢复安装，请登录到网格管理器，批准所有网格节点并完成 StorageGRID 安装过程。安装非主管理节点不需要您的批准。</block>
   <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">请勿在同一站点部署SG100和SG1000服务设备。可能会导致性能不可预测。</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">自动安装和配置设备</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">如果您需要一次部署多个设备节点、则可以自动执行安装过程。请参见 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -292,7 +288,6 @@
   <block id="859aba5803f535249e29a8ffe2c32c6d" category="paragraph">此处显示的名称将是设备节点的系统名称。内部StorageGRID 操作需要系统名称、并且无法更改。</block>
   <block id="06f9cb221f1c7b35766aeb533e33b69c" category="list-text">在安装部分中、确认当前状态为"准备开始安装"<block ref="b63eb060814c4999e77b01e66538f258" prefix=" " category="inline-code"></block> 使用主管理节点进入网格<block ref="2f9ba536b02b69b5417cd803edfcffc0" prefix=" " category="inline-code"></block> "并启用了*开始安装*按钮。</block>
   <block id="94ec460361fb2b4faa500cbfe2736123" category="paragraph">如果未启用 * 开始安装 * 按钮，则可能需要更改网络配置或端口设置。有关说明、请参见设备的维护说明。</block>
-  <block id="dd3c49a5e1ad35a1fcdc49631b4a489a" category="image-alt">设备安装程序主页—安装非主管理节点</block>
   <block id="7219d53a2c987afebdf600ccc504d1ab" category="list-text">如果网格包含多个设备节点，请对每个设备重复上述步骤。</block>
   <block id="c3354d84393c7f9e023fdee83bcf8cef" category="summary">在某些型号的设备上、您可以更改为设备上的其他RAID模式、以满足您的存储和恢复要求。您只能在部署设备存储节点之前更改此模式。</block>
   <block id="b622ae5ae8ee031b50aeb341c3285846" category="doc">可选：更改RAID模式(SG5760和SG6000)</block>
@@ -541,7 +536,6 @@
   <block id="ace910911ef51c55674dbf6f48ce7fcd" category="list-text"><block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix="" category="inline-code"></block> 开始StorageGRID 安装</block>
   <block id="6d7f123732611773aab7984540e31afb" category="list-text"><block ref="08b5411f848a2581a41672a759c87380" prefix="" category="inline-code"></block> 用于监控StorageGRID 安装</block>
   <block id="1ef8ccf581606e90386c341184ef576d" category="list-text"><block ref="2b755b30293f2f9f79ec1c86ab0943f2" prefix="" category="inline-code"></block> 用于重新启动设备</block>
-  <block id="f13b14db9b01252edf0db47324d40bf1" category="paragraph">如果输入子命令(高级、配置、安装、监控或重新启动)参数、然后输入<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> 选项您将看到另一个帮助文本、其中提供了有关该子命令+中可用选项的更多详细信息<block ref="3baa4d8695a2207be4bec335382496cf" prefix=" " category="inline-code"></block></block>
   <block id="2daf25e905cf2b4f568f33c41d07fc54" category="inline-xref">将设备配置备份到JSON文件</block>
   <block id="52c400008e7d7e44e433cef62ee51f8c" category="paragraph">如果您愿意 <block ref="7c894e4a9f4c54a88d21d72ba2ad4233" category="inline-xref-macro-rx"></block>，请确保节点名称符合以下要求：</block>
   <block id="2ca0bbbd7ba6b72c27e210190991793b" category="list-text">如果要使用JSON文件自动配置所有设备节点、则每个节点名称都是唯一的。</block>
@@ -549,16 +543,9 @@
   <block id="b9bac70b4e160b588ff797b4dd555d64" category="list-text">可以使用字母、数字和连字符。</block>
   <block id="4741eb6218531a2c54badadb3f2e570f" category="list-text">不能以连字符开头或结尾。</block>
   <block id="f357f23d1a01d52046c340be89709e6f" category="list-text">不能仅包含数字。</block>
-  <block id="ef82d471d6b50961b884d7aa1b26102c" category="list-text">要将JSON文件中的配置应用于设备、请输入以下命令、其中<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是设备的管理网络IP地址、<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> 是JSON文件的名称、和<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> 是应用了配置的节点的名称：+<block ref="040ff3550a0b6f11b7460ac4e31970ed" prefix=" " category="inline-code"></block></block>
-  <block id="db62ec11b4b43c3342d18ffab91804f9" category="list-text">要确认设备节点的当前配置、请在其中输入以下内容<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是设备的管理网络IP地址：+<block ref="3fb681cb4749044501b9ad23526cdd73" prefix=" " category="inline-code"></block></block>
   <block id="b93f3c962c043bc12c18889a1269cb5a" category="paragraph">结果将显示设备的当前 IP 信息，包括主管理节点的 IP 地址以及有关管理，网格和客户端网络的信息。</block>
   <block id="7cac38cc118871061c8dce3db7f75d40" category="list-text">如果需要更改当前配置中的任何值、请使用<block ref="e2d5a00791bce9a01f99bc6fd613a39d" prefix=" " category="inline-code"></block> 用于更新它们的子命令。例如、如果要将设备用于连接到主管理节点的IP地址更改为<block ref="af76ef14733d250246586b58ebb85e3c" prefix=" " category="inline-code"></block>下，输入以下内容：</block>
-  <block id="026fd20bc8239191cee6649680d8c461" category="paragraph"><block ref="e8639c293a4dafb411d7f6edac1ea3dc" prefix="" category="inline-code"></block></block>
-  <block id="de0b47054a413aea610d4cd3a1bfff4c" category="list-text">[[back-UP设备-config]]如果要将设备配置备份到JSON文件、请使用高级和<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> 子命令。例如、如果要备份具有IP地址的设备的配置<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 到名为的文件<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>、输入以下内容：+<block ref="84dd9435ce5db7632c67ee7a6e4298d6" prefix=" " category="inline-code"></block></block>
-  <block id="e53aecfa06819693ed2430744f8362d7" category="paragraph">包含配置信息的 JSON 文件将写入执行脚本的同一目录。</block>
   <block id="153a65bebff9401a2458b1201a2b601c" category="admonition">检查生成的 JSON 文件中的顶级节点名称是否与设备名称匹配。除非您是经验丰富的用户并全面了解StorageGRID API、否则请勿对此文件进行任何更改。</block>
-  <block id="4c7861efb51e2ffd5c6238cbfd8aa793" category="list-text">如果您对设备配置满意、请使用<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> 和<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> 用于安装设备的子命令：+<block ref="288c5b1187d2f3aee29b2d8b74b6c709" prefix=" " category="inline-code"></block></block>
-  <block id="68a5e627b481792d9346927bcbb09b79" category="list-text">如果要重新启动设备、请输入以下内容：+<block ref="df863f526a7c46aa917c77164b61ecce" prefix=" " category="inline-code"></block></block>
   <block id="0de1a3196dd60bc820a86bf37f8d4fa1" category="summary">您可以为用于将设备连接到网格网络，客户端网络和管理网络的端口配置网络链路。您可以设置链路速度以及端口和网络绑定模式。</block>
   <block id="ec1ee0ee02ad6851c9644ca45c776776" category="admonition">如果使用ConfigBuilder生成JSON文件、则可以自动配置网络链路。请参见 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="dde0e2ccbf0ec5a8bfed2d3b9519cb4e" category="inline-link-macro">已获取附加设备</block>
@@ -1156,10 +1143,7 @@
   <block id="c9336d7080bc57d338b2bad2efe38313" category="list-text">查看前两个安装阶段的进度。</block>
   <block id="ca24497a603bbc47076b2ca3cbe5a2ac" category="paragraph">在此阶段，安装程序将从设备中的驱动器中清除任何现有配置，并配置主机设置。</block>
   <block id="90f6370ccbecc973aa1553afa395b729" category="list-text">继续监控安装进度，直到出现以下过程之一：</block>
-  <block id="247f3d17e4317101acecf503110544b0" category="list-text">对于除主管理节点之外的所有设备节点，安装 StorageGRID 阶段将暂停，嵌入式控制台上会显示一条消息，提示您使用网格管理器在管理节点上批准此节点。继续执行下一步。</block>
   <block id="8a8aaccc64167e205ae2e772ed0fe5b4" category="list-text">对于设备主管理节点安装、您无需批准此节点。设备将重新启动。您可以跳过下一步。</block>
-  <block id="ca2089a4125ab586b2ca81b4d4a9340b" category="admonition">在安装设备主管理节点期间，将显示第五个阶段（请参见显示四个阶段的示例屏幕截图）。如果第五阶段的进度超过 10 分钟，请手动刷新网页。</block>
-  <block id="a502699e7fa49618892585a8980922d7" category="list-text">转至主管理节点的网格管理器，批准待定网格节点，然后完成 StorageGRID 安装过程。</block>
   <block id="6ac1a7d9832a500687085e0cf66a46ec" category="paragraph">在网格管理器中单击 * 安装 * 后，第 3 阶段完成，第 4 阶段 * 完成安装 * 开始。阶段 4 完成后，设备将重新启动。</block>
   <block id="5f29d84a72d56fbb6bc236e691044453" category="summary">连接网络缆线后，您可以为设备接通电源。</block>
   <block id="bcc960cf3e9ec18999ff121dde627158" category="doc">连接电源线并接通电源</block>
@@ -2614,7 +2598,6 @@
   <block id="39477ba4c8468b4da04da4f855e9785e" category="list-text">您可以指定或确认主管理节点的 IP 地址以及存储节点的名称。</block>
   <block id="d5c1f2658aaba7f3605752bb1f4cfa22" category="list-text">您可以开始部署，并等待卷配置完毕并安装软件。</block>
   <block id="26ea01749d8fe9ba54d34006d7b711eb" category="list-text">当安装暂停完成设备安装任务后，您可以通过登录到网格管理器，批准所有网格节点并完成 StorageGRID 安装和部署过程来恢复安装。</block>
-  <block id="4e4a7a07939d8db1c2a9cc0463cd01b6" category="admonition">如果您需要一次部署多个设备节点、则可以使用自动执行安装过程<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> 设备安装脚本。</block>
   <block id="3da6a7d0bb47cd64f8de58da564ed961" category="list-text">如果要执行扩展或恢复操作，请按照相应说明进行操作：</block>
   <block id="3b485651b0f8c9bae0428480b41d029a" category="inline-link">正在添加网格节点</block>
   <block id="99ff77ddad436b4aa4cfe20cc0b05ade" category="list-text">要将设备存储节点添加到现有StorageGRID 系统、请参见的说明<block ref="f2b9f2a623f458b464404f68e70d646c" category="inline-link-rx"></block>。</block>
@@ -2628,7 +2611,6 @@
 <block ref="87d967605804492a459cd5cfc0edb4e9" category="inline-link-macro-rx"></block>。</block>
   <block id="0205d951b300647dabcd3e7f7910a010" category="admonition">如果需要手动访问监控器安装页面，请单击 * 监控安装 * 。</block>
   <block id="6782fad0edf81ef678da67ab11346ff5" category="list-text">如果网格包含多个设备存储节点，请对每个设备重复这些步骤。</block>
-  <block id="4e2e50dcffb626790688f13c3a94265b" category="admonition">如果您需要一次部署多个设备存储节点、则可以使用自动执行安装过程<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> 设备安装脚本。</block>
   <block id="2e091809aa4488fefb86c669cb8f1914" category="summary">您可以在机柜或机架中为E2860控制器架安装一组导轨、然后将控制器架滑入导轨上。如果您要安装 60 个驱动器扩展架，则需要使用相同的操作步骤 。</block>
   <block id="554505334c66fad08a4452516a02e8f6" category="doc">安装包含60个驱动器的磁盘架(SG6060)</block>
   <block id="0835dd05e1a77d417056577f207cbfb1" category="admonition">每个 60 个驱动器架的重量约为 132 磅（ 60 千克），而未安装驱动器。要安全移动磁盘架，需要四个人或一台机械升降机。</block>
@@ -3068,7 +3050,6 @@
   <block id="3cffdaddf1d95ec3c052fcf96560a030" category="paragraph">启用 * 开始克隆 * 后， * 当前状态 * 将指示为克隆流量选择的 StorageGRID 网络以及有关使用该网络连接的信息。请参见 <block ref="54e13ce1c122f0b18d12f8e7a211ecbf" category="inline-link-macro-rx"></block>。</block>
   <block id="d081af9c1bc1822369d68ca6df434792" category="list-text">在源节点上选择 * 开始克隆 * 。</block>
   <block id="41f39a54349270e6f7a3ec7e34353a95" category="list-text">在源节点或目标节点上使用 StorageGRID 设备安装程序监控克隆进度。</block>
-  <block id="9ea8162d17432f7b9bc858b79e65f413" category="paragraph">源节点和目标节点上的 StorageGRID 设备安装程序指示相同的状态。</block>
   <block id="f19c0dcdf0806f3540561c4ac08be4b4" category="image-alt">克隆进度</block>
   <block id="98c6d1132a15d72d0dc9e50596f25fb1" category="paragraph">"Monitor Cloning" 页面提供了克隆过程每个阶段的详细进度：</block>
   <block id="b2fdb0b814b9eb6027f8fdbc3554f684" category="list-text">* 建立克隆对等关系 * 显示克隆设置和配置的进度。</block>
@@ -3086,8 +3067,6 @@
   <block id="7b94aafd236e4ceea865c931a85dfffa" category="list-text">目标节点将退出维护模式并加入 StorageGRID ，从而替换源节点。</block>
   <block id="2d19d406fa4b8c7f970985fd245d9c26" category="inline-link">已准备好重新安装</block>
   <block id="11f0130e9caa644f96bf62e2f723dca8" category="list-text">源设备处于预安装状态，就像您已安装一样<block ref="9808e60ae6558350cc51bc72520015f6" category="inline-link-rx"></block>。</block>
-  <block id="5cd537a6dae618d366a854e49d455bba" category="admonition">如果设备未重新加入网格，请转到源节点的 StorageGRID 设备安装程序主页页面，选择 * 高级 * &gt; * 重新启动控制器 * ，然后选择 * 重新启动到维护模式 * 。在源节点以维护模式重新启动后，重复节点克隆操作步骤 。</block>
-  <block id="b39d313e6b319e6703372c12e765f24f" category="list-text">如果目标节点发生意外的问题描述 ，则用户数据将作为恢复选项保留在源设备上。目标节点成功重新加入 StorageGRID 后，源设备上的用户数据已过时，不再需要。</block>
   <block id="7943ed1a95e98b8db345a9a611617fc2" category="paragraph">在其他网格中将源设备作为新节点安装或扩展时、过时的用户数据将被覆盖。</block>
   <block id="e2e3ccf7097647279c88916257208b9b" category="paragraph">您还可以重置源设备上的控制器配置、以使此数据无法访问：</block>
   <block id="b96c8101a1845adc76ac9c16a415d845" category="inline-link-macro">StorageGRID 设备安装程序</block>
@@ -3178,9 +3157,7 @@
   <block id="af11eea53677ab5b08aa19cdcafd56ee" category="list-text">源节点（要更换的设备）和目标（新）设备必须为相同类型的设备：</block>
   <block id="2dfbae24004209154659df1bc8fa2a85" category="list-text">您只能将管理节点设备或网关节点设备克隆到新的服务设备。</block>
   <block id="3ed00b5839a316ad99941cddc347868b" category="list-text">您只能将存储节点设备克隆到新的存储设备。</block>
-  <block id="0734b0f73d20ce09674f65cd7aa84344" category="list-text">对于管理节点或网关节点设备、源节点设备和目标设备不必是相同类型的设备；但是、更改设备类型可能需要更换缆线或SFP模块。</block>
   <block id="481d4b10597e9f9335c607d5115fd3db" category="paragraph">例如，您可以将 SG1000 节点设备更换为 SG100 ，也可以将 SG100 设备更换为 SG1000 设备。</block>
-  <block id="a75ead1838e1da94925b9f44a527a0d7" category="list-text">对于存储节点设备、源节点设备和目标设备不必是相同类型的设备；但是、目标设备必须比源设备具有更大的存储容量。</block>
   <block id="ad3b23cccdc3e368ff647e8b569cfd36" category="paragraph">例如、您可以将SG5700节点设备更换为SG6000设备。</block>
   <block id="aabbed64734c33f6c7a61d74e334625a" category="paragraph">请联系您的 StorageGRID 销售代表，以帮助您选择兼容的替代设备来克隆 StorageGRID 安装中的特定设备节点。</block>
   <block id="832fb35230dc87b9117894fb35395cc7" category="section-title">准备克隆设备节点</block>
@@ -3191,7 +3168,6 @@
   <block id="abfec6d1f524b72ccd15f918c923008f" category="inline-link-macro">正在启用节点加密</block>
   <block id="8d4954f7887339a90dbe76578b481ffe" category="list-text">确定目标设备是否将使用密钥管理服务器（ KMS ）进行节点加密，以便在克隆之前在初始目标设备安装期间启用节点加密。您可以检查源设备节点上是否已启用节点加密、如中所述 <block ref="6bd92e423fc3e97f612a11738e3a3c13" category="inline-link-macro-rx"></block>。</block>
   <block id="f3547558aa9eeb591224d3b73c6fe1f6" category="paragraph">源节点和目标设备可以具有不同的节点加密设置。在数据传输期间以及目标节点重新启动并加入网格时，系统会自动执行数据解密和加密。</block>
-  <block id="da6305932b07f9de0f22a2c5db4c22a5" category="list-text">确定是否应更改目标设备上的 RAID 模式及其默认设置，以便您可以在克隆之前的初始目标设备安装期间指定此信息。您可以在网格管理器的 * 节点 * 页面上查看有关源设备节点当前 RAID 模式的信息。选择设备的 * 存储 * 选项卡。</block>
   <block id="760f793060ea29dfdd18f4fc69ab4f9d" category="paragraph">源节点和目标设备可以具有不同的 RAID 设置。</block>
   <block id="665b2ee84b3ce1addec753e47812a753" category="list-text">规划足够的时间以完成节点克隆过程。将数据从运行中的存储节点传输到目标设备可能需要几天时间。计划一次克隆，尽可能地减少对业务的影响。</block>
   <block id="ed44cdb4d3e080dee6b895b78592b4b8" category="list-text">一次只能克隆一个设备节点。克隆可能会阻止您同时执行其他 StorageGRID 维护功能。</block>
@@ -4250,4 +4226,35 @@
   <block id="0007bed3a39900ca535cccaada9a4349" category="sidebar">使用SANtricity System Manager通过脱机方法升级驱动器固件</block>
   <block id="9429703a81cb2b5231db7d0db68e388d" category="sidebar">使用SANtricity系统管理器通过联机方法升级SG6000驱动器固件</block>
   <block id="afcfd0f4a9cd1a59c01ff3ab1b52a9b5" category="sidebar">使用SANtricity系统管理器通过脱机方法升级SG6000驱动器固件</block>
+  <block id="08f1abb5178bd37fc6e2a13d8dcd8107" category="inline-link">NetApp 下载： StorageGRID</block>
+  <block id="f40a09f3e194689e4082cf7a66952b7f" category="paragraph"><block ref="f40a09f3e194689e4082cf7a66952b7f" category="inline-link-rx"></block></block>
+  <block id="df0509510227d21cac530cb79de147a1" category="list-text">单击下载并解压缩的软件包的*浏览*。选择<block ref="058f15d63233f30a1fbded9223deceff" prefix=" " category="inline-code"></block> 软件包。</block>
+  <block id="78f7e8f6f1fdf69e2de119bb3d1ffa87" category="paragraph">在完成设备网关节点安装任务后，安装将暂停。要恢复安装，请登录到网格管理器，批准所有网格节点并完成 StorageGRID 安装过程。</block>
+  <block id="d244eb2a1ebf7c5e6ddf7ea8d3527359" category="inline-link-macro">监控器安装页面</block>
+  <block id="5b15e37bf7099b2456b9ab4c777b6be1" category="paragraph">当前状态更改为"`正在安装、`"和 <block ref="2cfee2cef53c21fa5832e8cabef926ef" category="inline-link-macro-rx"></block> 将显示</block>
+  <block id="0bb60b0faed71ce3cf81fbafd38b6eae" category="admonition">如果需要一次部署多个设备节点、可以使用以下链接自动执行安装过程：../installconfig/Automate-Appliance安装和配置.html#Automate-with配置sga-py-script<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> 设备安装脚本]。</block>
+  <block id="be0e8fe07ca77469afbcaeb6936ac72e" category="admonition">如果您需要一次部署多个设备存储节点、可以使用以下链接自动执行安装过程：../installconfig/Automate-Appliance安装和配置.html#Automate-with配置sga-py-script<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> 设备安装脚本]。</block>
+  <block id="1ea73989dbbe2cb9ac1b4778d6cb6df2" category="paragraph">如果输入子命令(高级、配置、安装、监控或重新启动)参数、然后输入<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> 选项您将看到另一个帮助文本、其中提供了有关该子命令+中可用选项的更多详细信息<block ref="03f70e4532276b94a664b1d785b02c4e" prefix=" " category="inline-code"></block></block>
+  <block id="55d7a1be3a048285630cdbdf27b5ba9a" category="list-text">要将JSON文件中的配置应用于设备、请输入以下命令、其中<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是设备的管理网络IP地址、<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> 是JSON文件的名称、和<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> 是应用了配置的节点的名称：+<block ref="72f183908dc340cee1fdefb7e5840ddd" prefix=" " category="inline-code"></block></block>
+  <block id="0462f7fa69ff4f54c3348f93f3720a04" category="list-text">要确认设备节点的当前配置、请在其中输入以下内容<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是设备的管理网络IP地址：+<block ref="dac188db9f50e30c0f7f05f233f8d5f2" prefix=" " category="inline-code"></block></block>
+  <block id="6f3d4af284a7a3940430119fbf61e17f" category="paragraph"><block ref="e369ddd0be0bded8e17f8b7cb2011be2" prefix="" category="inline-code"></block></block>
+  <block id="f5a6ca817f28eecc69c2db93975bef5b" category="list-text">[[back-UP设备-config]]如果要将设备配置备份到JSON文件、请使用高级和<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> 子命令。例如、如果要备份具有IP地址的设备的配置<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 到名为的文件<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>、输入以下内容：+<block ref="eb560d2a69d32904f571582f5bed3014" prefix=" " category="inline-code"></block></block>
+  <block id="69b9312512cdc6f76fc57562e424544e" category="paragraph">包含配置信息的JSON文件将写入到指定输出文件的路径中、此处为该文件的相对路径<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>。</block>
+  <block id="fd5bba691683ef3a201e310f70f6d8e4" category="list-text">如果您对设备配置满意、请使用<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> 和<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> 用于安装设备的子命令：+<block ref="cb22ba99985d4320f9b56e53345a6646" prefix=" " category="inline-code"></block> +<block ref="09148fb6c91acb8535552973f29c5302" prefix=" " category="inline-code"></block></block>
+  <block id="c931565ed17682d74235819a1b30dffd" category="list-text">如果要重新启动设备、请输入以下内容：+<block ref="8c1be57a6b5e4d6606e9b616bc4b786c" prefix=" " category="inline-code"></block></block>
+  <block id="21f8809422673987244d000d11281874" category="paragraph">完成所有安装阶段后、关闭窗口。</block>
+  <block id="a7beb022c93acd3d0673dc51befd93b8" category="list-text">对于除主管理节点之外的所有设备节点、安装StorageGRID阶段将暂停、并且嵌入式控制台上会显示一条消息、提示您使用批准管理节点上的此节点<block ref="e3d100a9dd7fc524c056b793772558c8" category="inline-link-rx"></block>。继续执行下一步。</block>
+  <block id="42af9b60b35d6bca9c17ff477c884ccc" category="admonition">在安装设备主管理节点期间、第五阶段将显示为加载StorageGRID安装程序(示例屏幕截图仅显示前四个阶段)。如果加载StorageGRID安装程序(第五阶段)的时间超过10分钟、请手动刷新网页。</block>
+  <block id="cc6d0074c1cc81f39341600a31c22eea" category="inline-link">转到网格管理器</block>
+  <block id="2402f41c48e7f4bce703c793014a7f2b" category="list-text"><block ref="6f57cab9a4fe2b585805d3a0181ee3a1" category="inline-link-rx"></block> 在主管理节点上、批准待定网格节点并完成StorageGRID安装过程。</block>
+  <block id="cc721c163db74d07c83f165fac1cbd51" category="list-text">对于管理节点或网关节点设备、源节点设备和目标设备无需使用相同的设备型号；但是、更改设备型号可能需要更换缆线或SFP模块。</block>
+  <block id="186e64d4b1a267ec9b06d82dfc3ea37a" category="list-text">对于存储节点设备、源节点设备和目标设备不必是相同类型的设备；但是：</block>
+  <block id="28cb9e1a7b17557df2dab7da635677b4" category="list-text">目标设备必须比源设备具有更大的存储容量。</block>
+  <block id="765e8dcfe93408233d1db737b46e3c4b" category="list-text">目标设备的对象存储卷数量必须等于或大于源设备。</block>
+  <block id="a407ca9605b77abba5ba2f3dd9568e9b" category="paragraph">例如、您不能将SG6000节点设备(16个对象存储卷)替换为SGF6112设备(12个对象存储卷)。</block>
+  <block id="544c640a61781fbf87772d3bf0e70c8b" category="list-text">确定是否应更改目标设备上的 RAID 模式及其默认设置，以便您可以在克隆之前的初始目标设备安装期间指定此信息。您可以在网格管理器的 * 节点 * 页面上查看有关源设备节点当前 RAID 模式的信息。选择设备的*硬件*选项卡。</block>
+  <block id="d5d17dfc38d13ef9b05b43e504f88d75" category="list-text">目标存储设备中的卷数必须大于或等于源节点中的卷数。即使目标设备的容量大于源节点、您也无法将包含16个对象存储卷(rangedb)的源节点克隆到包含12个对象存储卷的目标存储设备。大多数存储设备都有16个对象存储卷、但只有12个对象存储卷的SGF6112存储设备除外。</block>
+  <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">源节点和目标节点上的StorageGRID设备安装程序指示类似状态。</block>
+  <block id="dbfeead225216a2d779b955a8689e759" category="admonition">如果目标设备未加入网格，请转到源节点的StorageGRID设备安装程序主页，选择*高级*&gt;*重新启动控制器*，然后选择*重新启动至维护模式*。在源节点以维护模式重新启动后，重复节点克隆操作步骤 。</block>
+  <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">如果目标节点发生意外的问题描述 ，则用户数据将作为恢复选项保留在源设备上。目标节点成功加入StorageGRID后、源设备上的用户数据已过时、不再需要。</block>
 </blocks>
