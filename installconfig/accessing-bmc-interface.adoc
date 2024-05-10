@@ -14,7 +14,9 @@ summary: 您可以使用以下设备型号上BMC管理端口的DHCP或静态IP�
 您可以使用以下设备型号上BMC管理端口的DHCP或静态IP地址访问BMC接口：
 
 * SG100
+* SG110
 * SG1000
+* SG1100
 * SG6000
 * SG6100
 
@@ -30,9 +32,19 @@ summary: 您可以使用以下设备型号上BMC管理端口的DHCP或静态IP�
 image::../media/sg100_bmc_management_port.png[SG100 BMC管理端口]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[BMC管理端口SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理端口]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[BMC管理端口SG1100]
 
 --
 .SG6000

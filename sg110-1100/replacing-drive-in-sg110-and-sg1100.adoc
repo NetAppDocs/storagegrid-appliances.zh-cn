@@ -1,0 +1,69 @@
+---
+permalink: sg110-1100/replacing-drive-in-sg110-and-sg1100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg110, sg1100, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: SG110和SG1100服务设备包含两个SSD驱动器。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。 
+---
+= 更换SG110或SG1100中的驱动器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG110和SG1100服务设备包含两个SSD驱动器。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。
+
+.开始之前
+* 您已拥有 link:locating-sg110-and-sg1100-in-data-center.html["已物理定位设备"]。
+* 您已注意到驱动器的左侧LED呈稳定琥珀色或使用网格管理器确认哪个驱动器出现故障 link:verify-component-to-replace.html["查看由故障驱动器引起的警报"]。
++
+
+IMPORTANT: 请参见有关查看状态指示器的信息以验证故障。
+
+* 您已获得替代驱动器。
+* 您已获得适当的 ESD 保护。
+
+
+.步骤
+. 验证驱动器左侧的故障LED是否为琥珀色、或者使用警报中的驱动器插槽ID找到驱动器。
++
+驱动器位于机箱中的以下位置(所示为已卸下挡板的机箱正面)：
+
+
+
+image::../media/sg1100_front_with_ssds.png[SG110和SG1100驱动器位置]
+
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 拆开备用驱动器的包装，并将其放在设备附近的无静电水平表面上。
++
+节省所有包装材料。
+
+. 按下故障驱动器上的释放按钮。
++
+image::../media/h600s_driveremoval.gif[驱动器删除]
+
++
+驱动器弹出器上的手柄部分打开，驱动器从插槽中释放。
+
+. 打开手柄，滑出驱动器，然后将其放在无静电的水平表面上。
+. 在将替代驱动器插入驱动器插槽之前，请按此驱动器上的释放按钮。
++
+闩锁会弹开。
+
++
+image::../media/h600s_driveinstall.gif[驱动器安装]
+
+. 将替代驱动器插入插槽，然后合上驱动器手柄。
++
+
+IMPORTANT: 合上手柄时不要用力过大。
+
++
+驱动器完全插入后，您会听到卡嗒声。
+
++
+更换后的驱动器将使用工作驱动器中的镜像数据自动重建。  您可以使用网格管理器检查重建的状态。转至*N节点*> `*Appliance Node*` >*硬件*。"Storage RAID Mode"(存储RAID模式)字段包含一条"Re构建"消息、直到驱动器完全重建为止。
+
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

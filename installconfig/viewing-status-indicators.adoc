@@ -144,6 +144,143 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 
 
 --
+.SG110和SG1100
+--
+此设备包含一些指示灯、可帮助您确定设备控制器和SSD的状态：
+
+* <<appliance_indicators,设备指示灯和按钮>>
+* <<general_boot_codes,常规启动代码>>
+* <<ssd_indicators,SSD 指示灯>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation-sg110-and-sg1100.html["对SG110和SG1100硬件安装进行故障排除"]。
+
+[[appliance_indicators]]
+设备指示灯和按钮::
++
+--
+下图显示了SG110和SG1100设备上的指示灯和按钮。
+
+image::../media/sgf6112_front_indicators.png[前部指示灯- SG110和SG1100]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：设备已启动。
+* off ：设备已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+使用BMC、可以将此按钮设置为闪烁、亮起(稳定亮起)或熄灭。
+
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+
+
+ a| 
+4.
+ a| 
+状态LED
+ a| 
+* 琥珀色，稳定亮起：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+
+
+ a| 
+5.
+ a| 
+。
+ a| 
+SG110和SG1100设备不使用此指示灯、并且此指示灯将保持熄灭状态。
+
+|===
+--
+
+
+[[general_boot_codes]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[ssd_indicators]]
+SSD 指示灯::
++
+--
+下图显示了SG110和SG1100设备上的SSD指示灯。
+
+image::../media/ssd_indicators.png[SSD 指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| LED | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+驱动器状态 / 故障
+ a| 
+* 蓝色（实心）：驱动器已联机
+* 琥珀色(稳定亮起)：驱动器出现故障
+* off ：插槽为空
+
+
+
+
+ a| 
+2.
+ a| 
+驱动器处于活动状态
+ a| 
+蓝色（闪烁）：正在访问驱动器
+
+|===
+--
+
+
+--
 .SG5700
 --
 设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：

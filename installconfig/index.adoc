@@ -32,6 +32,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 . 安装到机柜或机架中
 +
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100和SG1000"]
+** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110和SG1100"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
 ** link:installing-hardware-sg6000.html["SG6000"]
 ** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
@@ -56,8 +57,8 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 ** link:verifying-port-level-network-connections.html["验证端口级别的网络连接"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG6000和SG5700)
-. link:configuring-bmc-interface.html["配置BMC接口"] (SG100、SG1000、SG6000和SG6100)
+. link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG5700和SG6000)
+. link:configuring-bmc-interface.html["配置BMC接口"] (SG6000、SG6100和服务设备)
 . 执行可选的设置步骤
 +
 ** link:optional-enabling-node-encryption.html["启用节点或驱动器加密"]

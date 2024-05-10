@@ -17,7 +17,8 @@ NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会�
 
 +
 
-NOTE: 在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行以下链接：./main/changing-nodes-network-configuration.html[`change-ip` command] StorageGRID。
+NOTE: 在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行
+[`change-ip` command] StorageGRID。
 
 . 对所做的选择感到满意后，单击 * 保存 * 。
 +

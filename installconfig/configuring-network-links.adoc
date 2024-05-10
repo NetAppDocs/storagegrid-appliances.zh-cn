@@ -39,6 +39,7 @@ NOTE: LACP传输哈希策略为layer2+3。
 这些图和表汇总了每个设备的端口绑定模式和网络绑定模式选项。有关详细信息，请参见以下内容：
 
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["端口绑定模式(SG1000和SG100)"]
+* link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["端口绑定模式(SG1100和SG110)"]
 * link:gathering-installation-information-sg5700.html#port-bond-modes["端口绑定模式(E5700SG)"]
 * link:gathering-installation-information-sg6000.html#port-bond-modes["端口绑定模式(SG6000-CN)"]
 * link:gathering-installation-information-sg6100.html#port-bond-modes["端口绑定模式(SGF6112)"]
@@ -172,6 +173,137 @@ image::../media/sg1000_bonded_management_ports.png[管理网络端口绑定 SG10
 SG100 ：
 
 image::../media/sg100_bonded_management_ports.png[管理网络端口绑定 SG100]
+
+--
+
+
+--
+.SG110和SG1100
+--
+固定端口绑定模式(默认)::
++
+--
+图中显示了SG1100或SG110上的四个网络端口是如何在固定端口绑定模式(默认配置)下绑定的。
+
+SG1100：
+
+image::../media/sg1100_fixed_port.png[SG1100固定端口绑定模式]
+
+SG110：
+
+image::../media/sgf6112_fixed_port.png[SG110固定端口绑定模式]
+
+[cols="1a,3a"]
+|===
+| Callout | 哪些端口已绑定 
+
+
+ a| 
+C
+ a| 
+如果使用此网络，则端口 1 和 3 将绑定到客户端网络。
+
+
+
+ a| 
+g
+ a| 
+网格网络的端口 2 和 4 绑定在一起。
+
+|===
+下表总结了用于配置四个网络端口的选项。只有在要使用非默认设置时，才需要在链路配置页面上配置设置。
+
+[cols="1a,2a,2a"]
+|===
+| 网络绑定模式 | 客户端网络已禁用（默认） | 已启用客户端网络 
+
+
+ a| 
+Active-Backup （默认）
+ a| 
+* 端口 2 和 4 对网格网络使用主动备份绑定。
+* 未使用端口1和3。
+* VLAN 标记是可选的。
+
+ a| 
+* 端口 2 和 4 对网格网络使用主动备份绑定。
+* 端口 1 和 3 对客户端网络使用主动备份绑定。
+* 为了方便网络管理员，可以为两个网络指定 VLAN 标记。
+
+
+
+
+ a| 
+LACP （ 802.3ad ）
+ a| 
+* 端口 2 和 4 对网格网络使用 LACP 绑定。
+* 未使用端口1和3。
+* VLAN 标记是可选的。
+
+ a| 
+* 端口 2 和 4 对网格网络使用 LACP 绑定。
+* 端口 1 和 3 对客户端网络使用 LACP 绑定。
+* 为了方便网络管理员，可以为两个网络指定 VLAN 标记。
+
+
+|===
+--
+聚合端口绑定模式::
++
+--
+这些图显示了四个网络端口如何在聚合端口绑定模式下绑定。
+
+SG1100：
+
+image::../media/sg1100_aggregate_ports.png[聚合端口绑定模式SG1100]
+
+SG110：
+
+image::../media/sgf6112_aggregate_ports.png[SG110聚合端口绑定模式]
+
+[cols="1a,3a"]
+|===
+| Callout | 哪些端口已绑定 
+
+
+ a| 
+1.
+ a| 
+所有四个端口都分组在一个 LACP 绑定中，从而允许所有端口用于网格网络和客户端网络流量。
+
+|===
+下表总结了用于配置网络端口的选项。只有在要使用非默认设置时，才需要在链路配置页面上配置设置。
+
+[cols="1a,2a,2a"]
+|===
+| 网络绑定模式 | 客户端网络已禁用（默认） | 已启用客户端网络 
+
+
+ a| 
+仅 LACP （ 802.3ad ）
+ a| 
+* 端口 1-4 对网格网络使用一个 LACP 绑定。
+* 一个 VLAN 标记用于标识网格网络数据包。
+
+ a| 
+* 端口 1-4 对网格网络和客户端网络使用一个 LACP 绑定。
+* 通过两个 VLAN 标记，可以将网格网络数据包与客户端网络数据包隔离。
+
+
+|===
+--
+管理端口的Active-Backup网络绑定模式::
++
+--
+这些图显示了设备上的两个1-GbE管理端口是如何在管理网络的Active-Backup网络绑定模式下绑定的。
+
+SG1100：
+
+image::../media/sg1100_bonded_management_ports.png[管理绑定的网络端口SG1100]
+
+SG110：
+
+image::../media/sgf6112_bonded_management_ports.png[管理绑定的网络端口SG110]
 
 --
 

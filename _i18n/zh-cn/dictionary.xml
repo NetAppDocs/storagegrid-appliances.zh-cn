@@ -3,9 +3,6 @@
   <block id="daad4dadeda8cd86f01c8ad7f2a30465" category="summary">了解此文档站点中的新增功能。</block>
   <block id="896ec268e957d3c662f84637cbe5cff2" category="doc">设备新增功能</block>
   <block id="72537bf3eb1f84421991e3c2fd3c6510" category="paragraph">了解StorageGRID设备的新增功能。</block>
-  <block id="46e6e53b63575cf1827147a48464a879" category="section-title">GF6112全闪存设备</block>
-  <block id="0893c8e93b9a4b4059d6e5940b5fd595" category="inline-link-macro">GF6112设备：概述</block>
-  <block id="88d0d4b73239c3f30645fd45a0392d6a" category="paragraph">全新StorageGRID SGF6112存储设备采用紧凑型设计、将计算控制器和存储控制器集成到1U机箱中。此设备支持12个SSD NVMe驱动器、每个驱动器的存储容量高达15.3 TB。SSD驱动器位于可提供弹性对象存储的RAID中。请参见 <block ref="80483d1684bda77797911f6b469313f1" category="inline-link-macro-rx"></block>。</block>
   <block id="4e2d1b46d32d63f7b20c891a226971a0" category="summary">您可以更改服务设备的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。</block>
   <block id="e4d7bc194db0f2b04796f28dca2cb07d" category="doc">更改SG100或SG1000的链路配置</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
@@ -265,7 +262,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">要在服务设备节点上安装 StorageGRID ，请执行以下操作：</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">您可以指定或确认主管理节点的 IP 地址以及设备节点的名称。</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">您开始安装，并等待软件安装完成。</block>
-  <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">请勿在同一站点部署SG100和SG1000服务设备。可能会导致性能不可预测。</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">自动安装和配置设备</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">如果您需要一次部署多个设备节点、则可以自动执行安装过程。请参见 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="71993e8ea93f8d02397504df8a2f696f" category="list-text">打开浏览器，然后输入设备的 IP 地址。</block>
@@ -1178,7 +1174,6 @@
   <block id="5b06ccc1c03f3b182fcc3f498ea6ed33" category="list-text">检查每个存储控制器背面的七段显示。有关详细信息，请参见有关查看启动状态代码的文章。</block>
   <block id="4c879409f52a908e9d590c416599dad7" category="list-text">验证 SG6000-CN 控制器正面的电源按钮是否亮起。</block>
   <block id="9354327818f8e50e42cf51da6c8e515f" category="list-text">如果已卸下 SG6000-CN 控制器，请将前挡板连接到该控制器。</block>
-  <block id="1c7c4d0e82f24664cd89fa8aceb51d56" category="list-text">如果SG6100-CN设备正面的电源按钮当前未呈蓝色亮起，请按该按钮打开设备的电源。</block>
   <block id="d33b4aba25cf9772af1dbcbe99d64d41" category="paragraph">电源上的LED应呈绿色亮起而不闪烁。</block>
   <block id="2f2db283f5abc325514875d486abdc79" category="paragraph"><block ref="2f2db283f5abc325514875d486abdc79" category="inline-link-macro-rx"></block></block>
   <block id="c0dcb6db5300484aab9ea95a8e1d1bdd" category="summary">安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。</block>
@@ -1347,7 +1342,6 @@
   <block id="a84b5f1afdd502c061024370bfc6a952" category="section-title">SG100 和 SG1000 图表</block>
   <block id="0b818dd339956b64673c11bfeffba91c" category="paragraph">此图显示了 SG100 和 SG1000 的正面，其中已卸下挡板。从正面看，除了挡板上的产品名称之外，这两个设备是相同的。</block>
   <block id="28989aff1888ad2b7678074c0b2967d1" category="image-alt">正面，带有 SSD SG100 和 SG1000</block>
-  <block id="dfcfdfb340da954210315d11a2bd0c61" category="paragraph">橙色轮廓表示的两个固态驱动器(SSD)可用于存储StorageGRID操作系统、并使用RAID 1进行镜像以实现冗余。将 SG100 或 SG1000 服务设备配置为管理节点时，这些驱动器用于存储审核日志，指标和数据库表。</block>
   <block id="6610dc47f2f5383953ec2a1621ffb22e" category="paragraph">其余驱动器插槽为空。</block>
   <block id="e2df10e153cb8c16dadcf714811ec619" category="section-title">SG100连接器</block>
   <block id="d6e5389fc7987a2d5338515d74fde402" category="paragraph">此图显示了 SG100 背面的连接器。</block>
@@ -1449,9 +1443,7 @@
   <block id="259f7ff6cc8d64b66cba93a17304c3d6" category="inline-link-macro">验证端口级别的网络连接</block>
   <block id="b2d8ae65d08c0fc7e0d796288b2adabe" category="list-text"><block ref="b2d8ae65d08c0fc7e0d796288b2adabe" category="inline-link-macro-rx"></block></block>
   <block id="c02e34b6a88ae18cf515d08b091effd3" category="inline-link-macro">访问并配置SANtricity 系统管理器</block>
-  <block id="54c6ec78161cbcd94d065b290ed99d0d" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> (SG6000和SG5700)</block>
   <block id="b24644fb0cb0d2175187599360704730" category="inline-link-macro">配置BMC接口</block>
-  <block id="cf7c4bd5320fcf86408777d5f9a4fe0c" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> (SG100、SG1000、SG6000和SG6100)</block>
   <block id="6efb63c9dddb08a981caced6ecaa7231" category="list-text">执行可选的设置步骤</block>
   <block id="1769437c445032226853842293627464" category="inline-link-macro">启用节点或驱动器加密</block>
   <block id="0dce870abc630014d0799a7b47dfd01e" category="list-text"><block ref="0dce870abc630014d0799a7b47dfd01e" category="inline-link-macro-rx"></block></block>
@@ -1507,7 +1499,6 @@
   <block id="d9f435cb7a4ab03ce6a9dd9556ec754d" category="list-text">更改RAID模式</block>
   <block id="8bcdd04428a0e463b5d2942eb52fa7a4" category="list-text">访问SG6000-CN控制器的BMC接口</block>
   <block id="bf6a9db479978eb4f9d757484d56488a" category="list-text">服务设备</block>
-  <block id="ac941add132fd73a9ca0fd82f948c217" category="list-text">访问SG100或SG1000的BMC接口</block>
   <block id="d66b55cd8d763d06c15eb0e4ec520f0a" category="doc">硬件安装故障排除（ SG100 和 SG1000 ）</block>
   <block id="2fe63d2b3f22e322fc5a2471a0057de8" category="list-text">您知道如何操作 <block ref="de1e0aa09b9ef96e751421d7f7e86d04" category="inline-link-macro-rx"></block>。</block>
   <block id="114f2dd347c68bd8b5310e02290324cd" category="list-text">连接到设备背面的 DB-9 串行端口。</block>
@@ -1642,7 +1633,6 @@
   <block id="edc8f42c5d3c1c2a2922bf75112aa76a" category="list-text">* 适用于 StorageGRID 的管理网络 * ：管理网络是一个用于系统管理和维护的封闭网络。管理网络通常是一个专用网络，不需要在站点之间进行路由。管理网络是可选的。</block>
   <block id="a43ab4ec6314775efb16fdcbad06d69a" category="list-text">* 适用于 StorageGRID 的客户端网络： * 客户端网络是一种开放网络，用于访问包括 S3 和 Swift 在内的客户端应用程序。客户端网络可提供对网格的客户端协议访问，从而可以隔离和保护网格网络。您可以配置客户端网络，以便仅使用您选择打开的端口通过此网络访问设备。客户端网络是可选的。</block>
   <block id="7ac9f844973adf1cc467bcd4a52f52d5" category="list-text">* SG6100*的管理网络(可选用于存储设备、SG6100不需要)：通过此网络可以访问SANtricity SANtricity系统管理器、从而可以监控和管理设备和存储控制器架中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。</block>
-  <block id="28a542bc07290f8a1b1447961bf9fa60" category="list-text">*BMC管理网络*(SG100、SG1000、SG6000和SG6100可选)：通过此网络可以访问SG100、SG1000、SG6000和SG6100设备中的底板管理控制器，从而可以监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。</block>
   <block id="660fc24fc18dd99919bb0bc5149a6c14" category="paragraph">如果未连接可选的 BMC 管理网络，则某些支持和维护过程将更难执行。除非出于支持目的需要，否则您可以使 BMC 管理网络保持未连接状态。</block>
   <block id="735397a80f406e1834aa096854796f06" category="admonition">有关StorageGRID 网络的详细信息、请参见<block ref="37d143d6aa4e97202e0da5da8774331d" category="inline-link-rx"></block>。</block>
   <block id="536913eab1d549cf61908a5576a405e6" category="summary">安装并配置网格节点后、您可以自动配置StorageGRID 系统。</block>
@@ -1731,7 +1721,6 @@
   <block id="d5db6ba99ab0efffe356662c3fc55f4c" category="list-text">如果您有扩展架，请重复上述步骤，在每个扩展架的每个抽盒中安装 12 个 HDD 驱动器。</block>
   <block id="9cdf68498d339fb0d7d4e4972e1695ce" category="list-text">按照说明将 SG6000-CN 安装到机柜或机架中。</block>
   <block id="875693c8e94a9b6f2e275d5162bb0123" category="summary">SG6100、SG6000或服务设备上的底板管理控制器\(BMC)的用户界面可提供有关硬件的状态信息、并可用于配置设备的SNMP设置和其他选项。</block>
-  <block id="ed9644f5ceef6febeee33082dacb1a73" category="doc">BMC界面：概述(SG100、SG1000、SG6000和SG6100)</block>
   <block id="ee36a41933a8c47ba8eb1d5246ea022f" category="paragraph">SG6100、SG6000或服务设备上的底板管理控制器(BMC)用户界面可提供有关硬件的状态信息、并可用于配置设备的SNMP设置和其他选项。</block>
   <block id="81f3a517925abf11c2bf8f4ed6207237" category="paragraph">在安装设备时、请使用本节中的以下过程配置BMC：</block>
   <block id="961d7f5d7663b6dc951b5e5c4774580d" category="list-text"><block ref="961d7f5d7663b6dc951b5e5c4774580d" category="inline-link-macro-rx"></block></block>
@@ -2449,7 +2438,6 @@
   <block id="622dedd3d9518bbe8333a11e6a3906f0" category="list-text">设备附带有四根光缆，用于将两个存储控制器连接到 SG6000-CN 控制器。</block>
   <block id="482c49b0c4f478c3a53f43e2d9354ea9" category="list-text">您可以使用 RJ-45 以太网缆线（至少四根）连接管理端口。</block>
   <block id="c7aa0392cfcfae7f9063e19db3429311" category="list-text">如果您计划使用光缆连接端口，则需要一到四个 SFP+ 或 SFP28 收发器。</block>
-  <block id="40cc77eb24c46b897428cdf99359f949" category="paragraph">下图显示了SG6060和SG6060X设备中的三个控制器、其中SG6000-CN计算控制器位于顶部、两个E2800存储控制器位于底部。SG6060使用E2800A控制器、SG60X使用E2800B控制器。</block>
   <block id="c5da69b0daeee585efd14cbdcd95f9c0" category="admonition">除了互连端口的位置之外、两个版本的E2800控制器的规格和功能都相同。</block>
   <block id="85ac648b274fe5b9984597982dd7afad" category="admonition">请勿在同一设备中使用E2800A和E2800B控制器。</block>
   <block id="2c921c8eaa2b387f856a217c368c4a73" category="paragraph">SG6060连接：</block>
@@ -2900,7 +2888,6 @@
   <block id="f2f4d90ef6566a91f0d4ee0f2bd0c0cf" category="list-text">向前和向下旋转机箱盖闩锁，直到其停止，并且机箱盖完全就位到机箱中。确认外盖前边缘没有间隙。</block>
   <block id="68abdeb4de4c03b18880696414098033" category="paragraph">如果护盖未完全就位，您可能无法将产品滑入机架。</block>
   <block id="bad1c962977ca3ccc3125850f38447b4" category="list-text">可选：将蓝色塑料闩锁按锁定方向转动四分之一圈，如闩锁上所示，以将其锁定。</block>
-  <block id="d786a607ae8af0f0cd8359b84322ac13" category="admonition">在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行以下链接：./main/changing-nodes-network-configuration.html<block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> command] StorageGRID。</block>
   <block id="1b87de5ab81f4f92cfa077be2e09d040" category="admonition">如果更改了所连接的网络或链路，则可能会断开连接。如果您未在1分钟内重新连接、请使用分配给设备的其他IP地址之一重新输入StorageGRID 设备安装程序的URL：<block ref="7cb9429482151be5ab9338810b072fc0" prefix=" " category="inline-code"></block></block>
   <block id="b318d18a01124d748f6ccb12b914c2dc" category="paragraph">除了您选择执行的任何其他测试之外，请确认您可以对主管理节点的网格网络 IP 地址以及至少一个其他节点的网格网络 IP 地址执行 ping 操作。如有必要、请返回有关配置网络链路的说明并更正任何问题。</block>
   <block id="f127bf70eac06d5cd43bc646d9b61a11" category="list-text">在对链接配置更改的工作情况感到满意后、重新启动节点。在 StorageGRID 设备安装程序中，选择 * 高级 * &gt; * 重新启动控制器 * ，然后选择以下选项之一：</block>
@@ -2910,9 +2897,7 @@
   <block id="c97a80297e486669f93485561c3164ed" category="admonition">如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换风扇。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="aa7a430b5102e55ec29d486c5165e7ba" category="paragraph">照片显示了产品的风扇。电气接头将突出显示。将顶盖从设备上取下后，即可访问散热风扇。</block>
   <block id="dc55836577fc02b16cce59c34c0bd0f3" category="admonition">两个电源设备中的每个设备都包含一个风扇。此操作步骤 不包括电源风扇。</block>
-  <block id="714a2b4dc29fd72668c8e5e36bf4b8c8" category="image-alt">风扇GF6112 FRU</block>
   <block id="c36b4cc7c715c27cf89053ed16076b2a" category="list-text">找到需要更换的风扇。</block>
-  <block id="d7e7ea11b214fe9c3389d9e2bb1a9335" category="paragraph">八个风扇位于机箱中的以下位置(图中所示为已卸下顶盖的GF6112的前半部分)：</block>
   <block id="faaae5a36ccc39581b4a36a48818db1a" category="image-alt">风扇位置</block>
   <block id="9fc41f5c47cf13c3dacfca6f1e20a227" category="cell">风扇单元</block>
   <block id="20466611954593695b4f1b6b35f973bf" category="paragraph">FAN_SYS</block>
@@ -2946,7 +2931,6 @@
   <block id="c9c36506fb741805088a0cbb00459a23" category="list-text">从包装中取出CMOS电池。</block>
   <block id="3e165c924e3bd4588b57bd761d4f07e0" category="list-text">将替代电池按入系统板上的空插槽中，使正极(+)面朝上，直至电池卡入到位。</block>
   <block id="9cf7c93fc766c56873c1ddd46447d057" category="list-text">找到与系统板上的导销对齐的双插槽提升板部件上的定位孔(圈出)、以确保提升板部件正确定位。</block>
-  <block id="f9df26f43e7cbb8a8facb5017b47ccbe" category="list-text">找到系统板上的导销。</block>
   <block id="e2ca2c1368ac8b9d1d8e5571f1857efd" category="image-alt">系统板上用于双插槽提升板部件的导销</block>
   <block id="f456f175997595ccbac05b05c7dbc0d8" category="inline-link-macro">输入驱动器加密密码短语</block>
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">如果您更换的设备使用密钥管理服务器(KMS)管理节点加密的加密密钥、则可能需要进行其他配置、节点才能加入网格。如果节点未自动加入网格、请确保这些配置设置已传输到新设备、并手动配置任何不具有预期配置的设置：</block>
@@ -2954,7 +2938,6 @@
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">为此设备配置节点加密</block>
   <block id="0a5611066cc6dfa6acb00a3c98785ae8" category="list-text"><block ref="0a5611066cc6dfa6acb00a3c98785ae8" category="inline-link-rx"></block></block>
   <block id="6c60c1ebcaf910de2a51a8c828bc0f5e" category="list-text">登录到设备：</block>
-  <block id="173a66e0398614aa76b044a28acb6ae2" category="list-text">使用以下选项之一还原设备的BMC网络连接：</block>
   <block id="350f00799e345da9d8437a6755232692" category="paragraph">您知道要标识的设备的BMC IP地址。</block>
   <block id="12d42de975e694d332bec59aed70bded" category="inline-link-macro">访问设备BMC界面</block>
   <block id="8b999a1febaa917ddad3d11fc533934c" category="list-text"><block ref="255c862e8a70f96afa658300e7161668" category="inline-link-macro-rx"></block>。</block>
@@ -3096,9 +3079,6 @@
   <block id="e8d170c1d01b5214a9b97ee8fbc40398" category="section-title">目标设备兼容性</block>
   <block id="6cca792a53335169aad8581043148997" category="paragraph">替代设备的类型必须与要替换的源节点相同，并且这两个设备都必须属于同一逻辑 StorageGRID 站点。</block>
   <block id="3514507af11b532760b83d61e1cfa58d" category="list-text">替代服务设备可以不同于要替换的管理节点或网关节点。</block>
-  <block id="53128132390930a1f8d6c6d9519248df" category="list-text">您可以将 SG100 源节点设备克隆到 SG1000 服务目标设备，以增强管理节点或网关节点的功能。</block>
-  <block id="0ed5f431751e37ac1ff96feb9134f783" category="list-text">您可以将 SG1000 源节点设备克隆到 SG100 服务目标设备，以便为要求更苛刻的应用程序重新部署 SG1000 。</block>
-  <block id="55f00cb7cf66e41ad1054fc5507a2e0a" category="paragraph">例如，如果将 SG1000 源节点设备用作管理节点，而您希望将其用作专用负载平衡节点。</block>
   <block id="8853412a153551cfcaa29f811be54d2a" category="list-text">将 SG1000 源节点设备更换为 SG100 服务目标设备会将网络端口的最大速度从 100-GbE 降低到 25-GbE 。</block>
   <block id="953cb2571b5956e3ac9d0120f56a1235" category="list-text">服务设备具有不同的网络连接器。更改设备类型可能需要更换缆线或 SFP 模块。</block>
   <block id="f99ba690ef7c0b4d695af7ef97254d6b" category="list-text">更换用的存储设备必须比要更换的存储节点具有更大的容量。</block>
@@ -3374,7 +3354,6 @@
   <block id="c5e193e61c8068cebd4cb4fba2c27866" category="inline-link-macro">重新连接控制器电源线</block>
   <block id="b6b0dd970889f43cc1c52597b7622743" category="list-text"><block ref="6f9f5a65c301bc92abf7bdeee5c6a76d" category="inline-link-macro-rx"></block>。</block>
   <block id="37abf98b4de9f33857b199b4587f5694" category="inline-link-macro">重新启动设备</block>
-  <block id="e5286716c2baaaba3a8565ab8ef46806" category="paragraph"><block ref="1dd8d3f4f8b694bd6a574f797efa8d57" category="inline-link-macro-rx"></block>。</block>
   <block id="75a0a5a5fe162a7f9fdba4837463d44f" category="summary">可以打开设备正面的蓝色识别LED指示灯、以帮助在数据中心内定位设备。</block>
   <block id="6f0e600a24fecbdf20f99f186e630c00" category="doc">打开和关闭SGF6112设备识别LED</block>
   <block id="debdd98b0f5a40d3b21e412c9c782a4d" category="paragraph">可以打开设备正面和背面的蓝色识别LED指示灯、以帮助在数据中心内定位设备。</block>
@@ -3382,7 +3361,6 @@
   <block id="48ce381161753a96507e349f7aa77165" category="paragraph"><block ref="48ce381161753a96507e349f7aa77165" category="inline-link-macro-rx"></block></block>
   <block id="93fbb9aaa73dda71ec648251dcaa9967" category="summary">您可能需要在设备上执行维护过程。本节将介绍维护SG6100设备的特定过程。</block>
   <block id="64afa9c486f46d037a09b05e70cd8b61" category="paragraph">本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。</block>
-  <block id="1a8829c74e638f60318ff0a8272ab9bb" category="paragraph">*配置维护过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：</block>
   <block id="3b7a76fa87690a443242d6944757d7d3" category="inline-link-macro">打开和关闭设备识别LED</block>
   <block id="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="list-text"><block ref="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="inline-link-macro-rx"></block></block>
   <block id="68f44a5f426fd13a4802cb01ac1d7315" category="list-text"><block ref="68f44a5f426fd13a4802cb01ac1d7315" category="inline-link-macro-rx"></block></block>
@@ -4079,7 +4057,6 @@
   <block id="31e40175f2d3fefac38304e359c80e94" category="sidebar">节点克隆</block>
   <block id="bf4407ec23ea65719897cbdb78263587" category="sidebar">节点克隆要求</block>
   <block id="ff5cd15e6095aa49c820a70173a97926" category="sidebar">设备专用维护</block>
-  <block id="bc496fc4f5adb6c66aa628a721d4b883" category="sidebar">SG1000和SG100</block>
   <block id="b82ff6cc8b54f013ccfe94afdb37a599" category="sidebar">SG5600</block>
   <block id="f36d580564cf2b56f88491948411d4ab" category="sidebar">将存储设备安装在机柜或机架中</block>
   <block id="701c74b841bd25ba8469d3424654b5c9" category="sidebar">在机柜或机架中安装服务设备</block>
@@ -4095,7 +4072,6 @@
   <block id="5e77e4e9d10272660f06e394cf1f9698" category="sidebar">设备安装快速入门</block>
   <block id="dbafed3b69ea2c476ecca29b838eebf3" category="sidebar">自动执行安装和配置</block>
   <block id="a8b2e04cc6d2b7928d150b7f392c761a" category="sidebar">设备概述</block>
-  <block id="6ea6a276a0e2f68264ddca0d8045ae5e" category="sidebar">SG6100 (新)</block>
   <block id="f9f44cf635afea4827c5ef9038b46622" category="sidebar">部署设备节点</block>
   <block id="2d4f4568ad652ff08727bc044f1373cc" category="sidebar">StorageGRID 软件</block>
   <block id="7bb5d1e21ca0bacc168d63d7155d3755" category="sidebar">StorageGRID 1.18文档</block>
@@ -4124,7 +4100,6 @@
   <block id="0862353a6639a2cdaca55ba2fcbb8033" category="sidebar">将SG6000安装到机柜或机架中</block>
   <block id="1779ca6984a3582b9c1a3c02d22c730c" category="sidebar">安装SG6000-CN控制器(SG6024和SG6060)</block>
   <block id="345a844566607ddc6e73586a30452787" category="sidebar">设置SANtricity系统管理器(SG5700和SG6000)</block>
-  <block id="1c4078edbfed6cccf640c5627c0c0678" category="sidebar">配置BMC接口(SG100、SG1000、SG6000和SG6100)</block>
   <block id="682329c411688c214c3b69d3c9177018" category="sidebar">更改root密码</block>
   <block id="f1ddfd50d289ca1496b137a55f34fd6d" category="sidebar">设置电子邮件通知</block>
   <block id="99f776141c73b268838def5e1fcf8f15" category="sidebar">可选：重新映射网络端口</block>
@@ -4135,8 +4110,6 @@
   <block id="77d2b0ac8e200595c2f4d240b0c80f51" category="sidebar">维护设备配置(所有节点)</block>
   <block id="48889e269a4d7fca4c265f4a2f877e26" category="sidebar">维护SG6100硬件</block>
   <block id="14975bfde92215c95436649cec8f726d" category="sidebar">SG6100硬件维护</block>
-  <block id="4629e39933bc05a37d7d157d0c146d88" category="sidebar">配置维护过程</block>
-  <block id="2e2721e5bb6cda8413dddd5a3a61b1c0" category="sidebar">配置维护过程- SG6100</block>
   <block id="43669fdd9ce1157a7238aa25102bb3ab" category="sidebar">使用管理驱动器选项卡</block>
   <block id="26b6d36b296274fea73c7b0861022842" category="sidebar">关闭并打开产品电源</block>
   <block id="f038cfedcecfda2c0df73e7e4b3e5a5f" category="sidebar">硬件维护过程</block>
@@ -4257,4 +4230,214 @@
   <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">源节点和目标节点上的StorageGRID设备安装程序指示类似状态。</block>
   <block id="dbfeead225216a2d779b955a8689e759" category="admonition">如果目标设备未加入网格，请转到源节点的StorageGRID设备安装程序主页，选择*高级*&gt;*重新启动控制器*，然后选择*重新启动至维护模式*。在源节点以维护模式重新启动后，重复节点克隆操作步骤 。</block>
   <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">如果目标节点发生意外的问题描述 ，则用户数据将作为恢复选项保留在源设备上。目标节点成功加入StorageGRID后、源设备上的用户数据已过时、不再需要。</block>
+  <block id="3b5a3c695e5378023df688e790ada7b4" category="summary">维护SG1100和SG110服务设备的硬件。</block>
+  <block id="d751b295bd431b789da8da77d91a8a1d" category="doc">维护SG1100和SG110服务设备硬件</block>
+  <block id="70bca0055a2d38054af0059da4e459ed" category="inline-link-macro">SG110和SG1100</block>
+  <block id="9310c6e3b94e3baa60a2b31f7b80cc71" category="list-text"><block ref="9310c6e3b94e3baa60a2b31f7b80cc71" category="inline-link-macro-rx"></block></block>
+  <block id="f1c7efda23b762cfe6e972e421fb54f8" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> (SG5700和SG6000)</block>
+  <block id="e3654db4a646d23dc2d3d64204192d91" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> (SG6000、SG6100和服务设备)</block>
+  <block id="aadf1dcd60cf75ec60913a8a677fcd35" category="list-text">对于SG110、如果您计划对端口使用光缆、则需要一到四个SFP+或SFP28收发器。</block>
+  <block id="11a92f98e01c18d06291aad0e993ba9b" category="list-text">对于SG1100、如果您计划对端口使用光缆、则需要一到四个QSFP+或QSFP28收发器。</block>
+  <block id="7be200e96b3561254643e0c9ae88d200" category="paragraph">SG110端口连接：</block>
+  <block id="4847cd73c56bfcf0a81879e0f8566e03" category="image-alt">SG110背面连接器</block>
+  <block id="efa56b23619be44c1edbb8104e56aee7" category="paragraph">SG1100端口连接：</block>
+  <block id="d12ed4a582d120ead36ad1003ad9be52" category="list-text">对于SG110：10/C5-GbE</block>
+  <block id="5a7820dde5654ab76fc1cbd150870c79" category="list-text">对于SG1100：10/C5/40/100-GbE</block>
+  <block id="d8eb0a72dfa8ed2d5ab5e115e3517823" category="inline-link-macro">端口绑定模式(SG110和SG1100)</block>
+  <block id="2bf13c0d2115d6f9d68cd07ae8122eba" category="paragraph">连接到网格网络和 StorageGRID 客户端网络。请参见 <block ref="2d94b3a29297ea0d5c8d287ca16f56f8" category="inline-link-macro-rx"></block></block>
+  <block id="105b9ed0aaa84d2bba41a7b8dbff5bf2" category="paragraph">设备上的管理网络端口</block>
+  <block id="81947e39c5dfaeb209b9d5d46a5f214e" category="cell">SG110链路速度(GbE)</block>
+  <block id="dce2124d604851b9d974b519c3d112b3" category="cell">SG1100链路速度(GbE)</block>
+  <block id="b7b297cde875bcc6e3d13f1b9826b7ba" category="paragraph">下图显示了SG6060和SG6060X设备中的三个控制器、其中SG6000-CN计算控制器位于顶部、两个E2800存储控制器位于底部。SG6060使用E2800A控制器、SG6060X使用两个E2800B控制器版本之一。</block>
+  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">版本1</block>
+  <block id="425d8e1e777a03c3e220dfaac38dbf1f" category="list-text">版本2</block>
+  <block id="b47d572334b5a2d49d83db2f13386984" category="admonition">如果E2800B控制器中的FC收发器安装在上部FC连接端口(6)中、请将其移至右下角的FC连接端口(7)。</block>
+  <block id="6eeb10812f878395fd42337316644656" category="admonition">如果在同一站点中混用具有不同性能级别的服务设备(例如SG100或SG110以及SG1000或SG1100)、则在高可用性组中使用多个节点或在多个服务设备之间平衡客户端负载时、发生原因会产生不可预测且不一致的结果。</block>
+  <block id="9624989f81bd52d3ffbdafbb5e213112" category="list-text">SG110</block>
+  <block id="f067c1ad51f888c421e417d3c8174d73" category="list-text">SG1100</block>
+  <block id="7372a975d9635ea096cdb2e16635d786" category="list-text">访问SG100、SG110、SG1000和SG1100的BMC界面</block>
+  <block id="db9ca1297cfefe282f7bf704613373d2" category="inline-link-macro">更改SG110或SG1100服务设备的链路配置</block>
+  <block id="819eab2ae3e43020e15c4fc95f7ca327" category="list-text"><block ref="819eab2ae3e43020e15c4fc95f7ca327" category="inline-link-macro-rx"></block></block>
+  <block id="fdb721fb29bb12d395a4c90d75692893" category="doc">排除硬件安装故障(SG110和SG1100)</block>
+  <block id="1c8c4e98a896cf2ad92d989eaeee5a54" category="doc">BMC界面：概述(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)</block>
+  <block id="65e3a43d7f14275aee46dca655a5201f" category="list-text"><block ref="8a17bb4a8f8c3bd8049fbe657de9b51a" category="inline-xref-macro-rx"></block></block>
+  <block id="7265f603fb8b474e3a419ac242490013" category="list-text"><block ref="b6a11a205501ec5e39f6cf064746681c" category="inline-xref-macro-rx"></block></block>
+  <block id="7844be79442a1f1fad55f9da176b627e" category="list-text"><block ref="be6fab1e0dd362a8d9a11399bc350f55" category="inline-xref-macro-rx"></block></block>
+  <block id="f968bb219612a257c41171656737117f" category="inline-link-macro">对SG110和SG1100硬件安装进行故障排除</block>
+  <block id="c0a584d4f9599ff521011752760b603a" category="paragraph">请使用此信息提供帮助 <block ref="948381f0a6f9865418651bea4346a2f1" category="inline-link-macro-rx"></block>。</block>
+  <block id="c46d134b23d9b2e563bf4be88b43e659" category="paragraph">下图显示了SG110和SG1100设备上的指示灯和按钮。</block>
+  <block id="387739340ec21ff77eb9e92d094b5b92" category="image-alt">前部指示灯- SG110和SG1100</block>
+  <block id="587a73f22155129c5ce79bff0c6b56b1" category="paragraph">SG110和SG1100设备不使用此指示灯、并且此指示灯将保持熄灭状态。</block>
+  <block id="d01d11481ba69485897f98be94d33893" category="paragraph">下图显示了SG110和SG1100设备上的SSD指示灯。</block>
+  <block id="4c37ef1bac30cedcc77f06e0f26cd9f3" category="image-alt">BMC管理端口SG110</block>
+  <block id="746d15603774fdc0343b8559c77603d4" category="image-alt">BMC管理端口SG1100</block>
+  <block id="12f4c4afd397818417fc7cbaedce23b1" category="doc">安装到机柜或机架中(SG110或SG1100)</block>
+  <block id="3a57cd1d68c79d483d99967be7f6a359" category="paragraph">橙色轮廓线表示的两个固态驱动器(SSD)用于存储StorageGRID 操作系统、并使用RAID 1进行镜像以实现冗余。将SG100或SG1000服务设备配置为管理节点后、这些驱动器可能会用于存储审核日志、指标和数据库表。</block>
+  <block id="63f4b50949264b8c54be43e2d12d082a" category="list-text">SG110或SG1100</block>
+  <block id="bd6d0b79af19a1baecedcd634248d8ca" category="image-alt">前端驱动器SG110和SG1100设备</block>
+  <block id="e7d8a7ce9695b24defc169611f51402a" category="paragraph">要安装和配置SG110和SG1100硬件、您还需要以下附加设备。</block>
+  <block id="54677e4039d0ef7ec9f667d1a0b1e5b5" category="list-text">SG110：</block>
+  <block id="f33bc3cfe65a7ad9e2f916e1e041e2f3" category="list-text">SG1100：</block>
+  <block id="668eaf0ed65ab4f0d90cd720e98d9d72" category="image-alt">SG110上的管理网络端口</block>
+  <block id="572cea252186930a48e6e3b0a64c66ed" category="image-alt">SG1100上的管理网络端口</block>
+  <block id="c72b64687a9901d2377088780c852eff" category="image-alt">SG110链路本地连接</block>
+  <block id="9f50808e83017a9133e8e051bc4983f5" category="image-alt">SG1100链路本地连接</block>
+  <block id="a2c99ec32793e479a6a8a0fb11c9666c" category="doc">收集网络信息(SG110和SG1100)</block>
+  <block id="3fa963c883b33f97f091fbe72cafd26f" category="paragraph">在安装SG110或SG1100服务设备之前、请确认您的StorageGRID系统正在使用所需版本的StorageGRID软件。</block>
+  <block id="80cd4249fb4b0334ac9e988dbddb3264" category="paragraph">11．8或更高版本(建议使用最新的修补程序)</block>
+  <block id="8eed5380e537614403b29f3539b7e10c" category="paragraph">StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用此设备上的以下1/10-GbE管理端口连接到管理网络。</block>
+  <block id="6e6f13400a266a546c81f256261d260b" category="paragraph">SG110 RJ-45端口：</block>
+  <block id="5765a003071d8a52fe1398512d9a0660" category="image-alt">SG110 RJ-45端口</block>
+  <block id="c89838a603eec3f35d1d564f51a40bf9" category="paragraph">SG1100 RJ-45端口：</block>
+  <block id="87374a5b7dbfb66091224d376a30f504" category="image-alt">SG1100 RJ-45端口</block>
+  <block id="2de7b7510b1c4bfe9a42f08f29fcdb3e" category="paragraph">对于SG110、请选择以下选项之一：</block>
+  <block id="018082e73303eec037357829ab824960" category="paragraph">对于SG1100、请选择以下选项之一：</block>
+  <block id="1734c22548c1f8c417968d3230def1c7" category="paragraph">*注：*对于SG1100、10-GbE和25-GbE的速度需要使用QSA适配器。</block>
+  <block id="3a63d3bfca1f636e9168549b70448dfd" category="paragraph">SG110 BMC管理端口：</block>
+  <block id="8d77651c88354a545de5eea514584e78" category="image-alt">SG110管理端口</block>
+  <block id="f5bb16f206fe60b4fdf497ea0a247e69" category="paragraph">SG1100 BMC管理端口：</block>
+  <block id="2bd36acac8c427d3e8157e7f4617b910" category="image-alt">SG1100 BMC管理端口</block>
+  <block id="45ae167275a7d0d42250b6c67ac9acf0" category="paragraph">时间 <block ref="a60a1925451f4c518cadfb0c9a8cb902" category="inline-link-macro-rx"></block> 对于SG110和SG1100设备、您可以对连接到网格网络和可选客户端网络的端口以及连接到可选管理网络的1-GbE1/10-GbE管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。</block>
+  <block id="a1ec886f8bef1af4f3a70a46a71936a8" category="paragraph">固定端口绑定模式是网络端口的默认配置。图中显示了SG1100或SG110上的网络端口是如何在固定端口绑定模式下绑定的。</block>
+  <block id="e68ddbf32fa99f85ac9b7a4a58b4fa76" category="image-alt">SG110固定端口绑定模式</block>
+  <block id="32f1865bf059fbc469deeb7f0c0161c0" category="image-alt">SG1100固定端口绑定模式</block>
+  <block id="7d95a56d60a171f803b8979c4bf9792b" category="image-alt">SG110聚合端口绑定模式</block>
+  <block id="5cea30664daee040c14b5ec48038f7da" category="image-alt">SG1100聚合端口绑定模式</block>
+  <block id="653b7502ed464480d71004eb29fd5de2" category="paragraph">对于服务设备上的两个1/10-GbE管理端口、您可以选择独立网络绑定模式或Active-Backup网络绑定模式以连接到可选的管理网络。这些图显示了设备上的管理端口如何在管理网络的网络绑定模式下绑定。</block>
+  <block id="81e02a1fa6feb949b023cf2108d992a3" category="image-alt">SG110绑定网络管理端口</block>
+  <block id="3bebac3facc24bea11ba81197af806d2" category="image-alt">SG1100绑定网络管理端口</block>
+  <block id="ae5a3f5cb9b3ba960a1cb2e38d2c9290" category="admonition">在将1/10-GbE管理端口配置为主动-备份模式时、如果需要临时本地连接到服务设备、请从两个管理端口拔下缆线、将临时缆线插入右侧的管理端口、然后使用IP地址169.254..1访问此设备。</block>
+  <block id="d71dc8061014a17250a68fccf3957c0c" category="inline-link-macro">端口绑定模式(SG1100和SG110)</block>
+  <block id="3646dc64c9984fb8e4916b069a738c4d" category="list-text"><block ref="3646dc64c9984fb8e4916b069a738c4d" category="inline-link-macro-rx"></block></block>
+  <block id="1eb5174a3405ee92fa2cb06763568414" category="paragraph">图中显示了SG1100或SG110上的四个网络端口是如何在固定端口绑定模式(默认配置)下绑定的。</block>
+  <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">聚合端口绑定模式SG1100</block>
+  <block id="d724879fa330fae85100664fb33bd284" category="image-alt">SG110聚合端口绑定模式</block>
+  <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">管理绑定的网络端口SG1100</block>
+  <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">管理绑定的网络端口SG110</block>
+  <block id="835d59e48069a93606ecd047daaf1f61" category="summary">StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理节点运行、以便在StorageGRID系统中提供高可用性负载平衡服务。这两个设备可以同时用作网关节点和管理节点（主节点或非主节点）。</block>
+  <block id="075d750e820c89a48b3bccebaab0e9e8" category="doc">SG110和SG1100设备：概述</block>
+  <block id="df039f5a970acf6d438e3773b9545296" category="paragraph">StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理节点运行、以便在StorageGRID系统中提供高可用性负载平衡服务。这两个设备可以同时作为网关节点和管理节点（主节点或非主节点）运行。</block>
+  <block id="78fe9ec70c03c307edaf827b55bf78d3" category="list-text">SG110最多支持四个连接到网格网络和客户端网络的10-GbE或25-GbE连接。</block>
+  <block id="da5b95c24564c9b901b35d67fe3e06f9" category="list-text">SG1100最多支持四个到网格网络和客户端网络的10-GbE、25-GbE、40-GbE或100-GbE连接。</block>
+  <block id="6cc7f3972c4008dfe1cc07845c3a6c08" category="section-title">SG110和SG1100图表</block>
+  <block id="cf8400ebfb22d05446dbafa234f560eb" category="paragraph">此图显示了卸下挡板的SG110和SG1100的正面。从正面看，除了挡板上的产品名称之外，这两个设备是相同的。</block>
+  <block id="3d2ca047e0ba231007c711e0159fd543" category="image-alt">正面、包含SSD SG110和SG1100</block>
+  <block id="c65113663b1f6da1bdea3bae1199295d" category="paragraph">橙色轮廓线表示的两个固态驱动器(SSD)用于存储StorageGRID 操作系统、并使用RAID 1进行镜像以实现冗余。将SG110或SG1100服务设备配置为管理节点时、这些驱动器可能会用于存储审核日志、指标和数据库表。</block>
+  <block id="529bc7fbe0727a465d63ca1b960f8d1b" category="section-title">SG110连接器</block>
+  <block id="4884d8655bcd090c55821574a69f257f" category="paragraph">此图显示了SG110的背面、包括端口、风扇和电源。</block>
+  <block id="3f116d8147ca3ee2a9deec5a3615b60a" category="image-alt">背面连接器SG110</block>
+  <block id="7f545ec0012cd3730868130cc2cc32d8" category="section-title">SG1100连接器</block>
+  <block id="161a3a39166d6d7e69ea53a1220a4857" category="paragraph">此图显示了SG1100背面的连接器。</block>
+  <block id="21d670fa0cbf4d6ef41c014fe84e9791" category="image-alt">背面连接器SG1100</block>
+  <block id="2352b2130f44ff234de0d0ef0c2249d0" category="paragraph">10/25/40/100-GbE ，基于缆线或收发器类型，交换机速度和已配置的链路速度。本机支持QSFP56 (仅限100GbE /端口)、QSFP28 (100GbE)和QSFP+(40GbE)。可选SFP+(10GbE)或SFP28 (25GbE)收发器可与QSA (单独出售)结合使用。</block>
+  <block id="f0454101a72342bdb68e3f847866df68" category="section-title">SG110和SG1100应用程序</block>
+  <block id="2becee645abbd8209a2519e1ba8c9610" category="list-text">使用两个SG110或两个SG1100设备通过将其配置为网关节点来提供网关服务。</block>
+  <block id="6f0a69f03c1ff183d86866b1f99ec9db" category="admonition">请勿在同一站点部署SG110和SG1100服务设备。可能会导致性能不可预测。</block>
+  <block id="8ea4bf911293cfb2bf04ca96e05c3f41" category="list-text">使用两个SG110或两个SG1100设备为某些网格管理服务提供冗余。为此，请将每个设备配置为管理节点。</block>
+  <block id="9a36aee0eed152f42afba806fe379d97" category="list-text">使用两个SG110或两个SG1100设备提供通过一个或多个虚拟IP地址访问的高可用性负载平衡和流量整形服务。为此，请将设备配置为管理节点或网关节点的任意组合，并将这两个节点添加到同一 HA 组。</block>
+  <block id="d8a93d72c559dd827dcc442c95aad95b" category="paragraph">与StorageGRID存储设备结合使用时、SG110和SG1100服务设备均支持部署纯设备网格、而不依赖于外部虚拟机管理程序或计算硬件。</block>
+  <block id="c477d61bbefb3230a904489ee2393a0c" category="list-text"><block ref="c477d61bbefb3230a904489ee2393a0c" category="inline-link-macro-rx"></block></block>
+  <block id="174d39beebf966f8b0fd97a60a1b64fd" category="list-text">*BMC管理网络*(适用于SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)：通过此网络、您可以访问SG100、SG1000、SG6000和SG6100设备中的底板管理控制器、从而监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。</block>
+  <block id="768c56127fcc2636d57e4635785f71f3" category="section-title">SG110和SG1100服务设备</block>
+  <block id="cb8480a76ca9faf13ba8cdaa026a4115" category="inline-link-macro">SG110和SG1100服务设备：概述</block>
+  <block id="a6db1221b7bb3dbe5285ed10748c73b9" category="paragraph">全新的StorageGRID SG110和SG1100服务设备是一项不断发展的硬件更新、可提高管理和负载平衡性能。请参见 <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a83eeae8b6fd32d08a2347f7444c21ee" category="admonition">在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行
+<block ref="cca79d77d4e26ceed98b8b75d018051a" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> command] StorageGRID。</block>
+  <block id="673f51a198147ee01f0eda8def081663" category="paragraph">八个风扇位于机箱中的以下位置(所示为卸下顶盖的StorageGRID设备的前半部分)：</block>
+  <block id="3bd0d1998d06f546858be89f67dafb1c" category="inline-link-macro">维护SG110和SG1100设备</block>
+  <block id="e18debed2185f73ee8477857562ba4ee" category="list-text"><block ref="e18debed2185f73ee8477857562ba4ee" category="inline-link-macro-rx"></block></block>
+  <block id="6632e86febb1a2e603ec2700897f8a86" category="list-text">您可以将SG100源节点设备克隆到SG110、SG1000或SG1100服务目标设备。将SG100克隆到SG1000或SG1100服务目标设备可为管理节点或网关节点提供更大的功能。</block>
+  <block id="b4dbdb727139e5ead70576ff4386d050" category="list-text">您可以将SG110源节点设备克隆到SG1100服务设备目标、以便为管理节点或网关节点提供更大的功能。</block>
+  <block id="977b528f03583de0752d1521f2d8acb9" category="list-text">您可以将SG1000源节点设备克隆到SG100、SG110或SG1100服务目标设备。通过将SG1000克隆到SG100或SG110服务目标设备、您可以为要求更苛刻的应用程序重新部署SG1000。</block>
+  <block id="3c893022293982e3947a5e3e05078f75" category="list-text">您可以将SG1100源节点设备克隆到SG110服务目标设备、以便为要求更高的应用程序重新部署SG1100。</block>
+  <block id="59830b85779f0e0f99f6eae5dedae7e3" category="paragraph">例如、如果要将SG1100或SG1000源节点设备用作管理节点、而您希望将其用作专用负载平衡节点。</block>
+  <block id="b35c0ef428ec255e038f1521fe8a0683" category="list-text">将SG1100源节点设备更换为SG110服务目标设备会将网络端口的最大速度从100-GbE降低到25-GbE。</block>
+  <block id="e84c89730f464a482aef94ee1a675b10" category="paragraph">本节介绍了维护SG110或SG1100设备的特定过程。</block>
+  <block id="ac7d3872004b0a65fa2be33e24e28d8a" category="doc">在数据中心中找到SG110或SG1100</block>
+  <block id="a1e0a0113c7c2f260e12a69fe64a56b2" category="list-text">为了帮助您在数据中心内找到该设备、 <block ref="1e7dd4d78109ffd028df0a51c4910e28" category="inline-link-macro-rx"></block>。</block>
+  <block id="b147ebaef0a74f708dd546b7388657fd" category="paragraph"><block ref="2ccd8ceb91ba9a831109d5a1ebd5a69c" category="inline-link-macro-rx"></block> 如果您使用它来定位产品。
+ **按下产品前面板上的识别LED开关。
+ **使用设备BMC界面。</block>
+  <block id="56a38c5f6e46ea3c7a67a98527c13b47" category="doc">更改SG110或SG1100的链路配置</block>
+  <block id="8420ab9ffa9537cb869e227077bc2a34" category="summary">SG110和SG1100设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。</block>
+  <block id="35695e12e3087be52ef18cb96aa963a0" category="doc">更换SG110或SG1100中的一个或两个电源</block>
+  <block id="5c7db8d9add126ce8969ab1fd5b370da" category="paragraph">SG110和SG1100设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。</block>
+  <block id="5d7e2394702b960f6f58e47acfbb6e8c" category="list-text">您已拥有 <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block> 更换电源。</block>
+  <block id="ac1d7d8e6dc26d2f34601663e52a791c" category="paragraph">图中显示了SG110和SG1100的两个电源设备。电源可从产品背面进行操作。</block>
+  <block id="1677ee8d1b36f438876e123069f4cb74" category="list-text"><block ref="66bdba46c0a2351ab6d6f47ffff23afb" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e9137c2571f75b78aa98161fa9f0946" category="doc">验证SG110或SG1100中要更换的组件</block>
+  <block id="f6cc4cce76198c3fc89a8df4d287eb8f" category="paragraph"><block ref="f6cc4cce76198c3fc89a8df4d287eb8f" category="inline-link-macro-rx"></block></block>
+  <block id="d6b9a24ded15866ec7ccfd9dc123e9f1" category="summary">SG110和SG1100服务设备包含两个SSD驱动器。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。</block>
+  <block id="b7e2329725f0e8436052c511156f3748" category="doc">更换SG110或SG1100中的驱动器</block>
+  <block id="42c7a1dda62ababf4cb674eb7c39cc2a" category="list-text">您已拥有 <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block>。</block>
+  <block id="de9b0cfebec70b4730ede733544adadc" category="paragraph">驱动器位于机箱中的以下位置(所示为已卸下挡板的机箱正面)：</block>
+  <block id="66104298dc21ba6c0533bc9d0b9b6bf8" category="image-alt">SG110和SG1100驱动器位置</block>
+  <block id="bd7f3d409571f64d9e17003a1374da04" category="paragraph">更换后的驱动器将使用工作驱动器中的镜像数据自动重建。  您可以使用网格管理器检查重建的状态。转至*N节点*&gt;<block ref="dde8ded2884e27f868b3a8c4b5416bb3" prefix=" " category="inline-code"></block> &gt;*硬件*。"Storage RAID Mode"(存储RAID模式)字段包含一条"Re构建"消息、直到驱动器完全重建为止。</block>
+  <block id="dc707ffba727d12356011f9f73a992eb" category="doc">更换SG110或SG110设备</block>
+  <block id="f2a5a8758ca15c3a23a2ddbd079a95ee" category="list-text"><block ref="e02d1a5e1dc87cd7778b4a75e2317828" category="inline-link-macro-rx"></block>。</block>
+  <block id="5409d0965e779fcc5620d3cd745ab01f" category="list-text"><block ref="4fa0895d2a03c9ce7010299dc730cc37" category="inline-link-macro-rx"></block>。</block>
+  <block id="a48af9b61164e86b2280ebe2bd272712" category="list-text">记下故障设备中可更换组件(两个电源、八个冷却风扇、三个NIC和两个SSD)的位置。</block>
+  <block id="8b1659eb1302c159af7985a2c22fa27e" category="paragraph">两个驱动器位于机箱中的以下位置(所示为已卸下挡板的机箱正面)：</block>
+  <block id="c2b15088afc135982ed6160ae5eac813" category="list-text"><block ref="f6c9cca69a348acd8905bc371eb6fc7a" category="inline-link-macro-rx"></block>。</block>
+  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 在更换设备首次启动时访问加密驱动器。</block>
+  <block id="0a5b0b97f6329c71c665a41fb8e50546" category="paragraph"><block ref="0a5b0b97f6329c71c665a41fb8e50546" category="inline-link-macro-rx"></block></block>
+  <block id="77a3632ce069e04667f3c07729bc12e6" category="doc">更换SG110和SG1100护盖</block>
+  <block id="17f139a2fd45164bf31db4cbc506794e" category="paragraph"><block ref="94283cdb05b445a973e84301f97caf0b" category="inline-link-macro-rx"></block> 以检修顶盖。</block>
+  <block id="a216695ce5b47cfaec12a1b19ae3fb60" category="paragraph"><block ref="1b46dbdc1359715fefc31e850941339c" category="inline-link-macro-rx"></block>。</block>
+  <block id="4cac03fe582c6e9c7b00f6150d8de44e" category="summary">如果SG110或SG1100中的网络接口卡(NIC)未以最佳状态运行或出现故障、则可能需要更换此卡。</block>
+  <block id="4d5c7b30a4d19a46b8aa8fb041a11e07" category="doc">更换SG110或SG1100中的NIC</block>
+  <block id="4c68b0943e79e049731958e525193bbd" category="paragraph">如果SG110或SG1100中的网络接口卡(Network Interface Card、NIC)运行不正常或出现故障、则可能需要更换该卡。</block>
+  <block id="927be83d9035c123f8d7d9e8cfafeb94" category="inline-link-macro">物理位置：SG110或SG1100设备</block>
+  <block id="24bf7ce85a6fb58803cea8f5c88ca74b" category="list-text">您已拥有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 要更换数据中心中的NIC的位置。</block>
+  <block id="73a2518b7d3a736d59aa912a57abda34" category="admonition">答 <block ref="937f3ef5575067c7f2242672e77298dc" category="inline-link-macro-rx"></block> 在从机架中卸下设备之前需要。</block>
+  <block id="6c5d9be04e7c66d804e9922fc591088c" category="list-text">您已断开所有缆线和 <block ref="dc7225cbd8d4b68386891f4f43bfe53f" category="inline-link-macro-rx"></block>。</block>
+  <block id="f9cae9b628024fbe396a0cbabe539188" category="doc">更换SG110或SG1100中的CMOS电池</block>
+  <block id="bfe3df71e69779f16f86cfe5c2c8630c" category="inline-link-macro">已验证需要更换CMOS电池的SG110或SG1100</block>
+  <block id="41b96317eb4b5bdaa763cb01901ab31a" category="list-text">您已拥有 <block ref="f820af276921202483c4883b0f3a4d39" category="inline-link-macro-rx"></block>。</block>
+  <block id="0da2eb69068c217b0fc7a5d5adde18dc" category="list-text">您已拥有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 在数据中心更换CMOS电池的位置。</block>
+  <block id="ccee7529d7d175aca9c5b67b93650e4d" category="admonition">答 <block ref="af671dbc17aabf78e439327329fcfaf5" category="inline-link-macro-rx"></block> 在从机架中卸下设备之前需要。</block>
+  <block id="f37e66e07e00675fdcc0bb5b4a2d2431" category="doc">打开和关闭SG110或SG1100识别LED指示灯</block>
+  <block id="93ae44b8461554818c19394aec7564fa" category="paragraph"><block ref="93ae44b8461554818c19394aec7564fa" category="inline-link-macro-rx"></block></block>
+  <block id="3a71c03d18843882d300afa68c266c13" category="summary">从机柜或机架中卸下SG110或SG1100以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。</block>
+  <block id="bc9596d6807bde2e993c410c91269350" category="doc">在机柜或机架中重新定位SG110和SG1100</block>
+  <block id="d6621ea2246b016be3984fe3722f717a" category="section-title">从机柜或机架中卸下SG110或SG1100</block>
+  <block id="2a18f9c740fdc38db3054f80b5148df0" category="list-text">您可以使用标签来标识连接到SG110或SG1100的每条缆线。</block>
+  <block id="e8a36eefffb270e7fdfcbe70cfae02c8" category="inline-link-macro">位于SG110或SG1100的物理位置</block>
+  <block id="da293f6803f9457d5e25775b4d7ba62c" category="list-text">您已拥有 <block ref="cbbe557358a36c0ce95c8f4a10b6af30" category="inline-link-macro-rx"></block> 在数据中心执行维护的位置。</block>
+  <block id="c9c52f1bbaf493c0bd060f99e9b4d31b" category="inline-link-macro">关闭SG110或SG1100</block>
+  <block id="a356c4d9c1948b8dc45c1ffca6f88115" category="list-text">您已拥有 <block ref="7c024e7b821ea2605c8d62e2c8b78fe4" category="inline-link-macro-rx"></block>。</block>
+  <block id="654b557c64cf80df53d669b5e931d3da" category="image-alt">SG110或SG1100机架固定螺钉</block>
+  <block id="4187702a620626981506c308f62e0442" category="list-text">将SG110或SG1100向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。</block>
+  <block id="609dfb79180e75d183414141ff1c7699" category="section-title">将SG110或SG1100重新安装到机柜或机架中</block>
+  <block id="30c3e76ee9fe69a1db3394d21116aa18" category="paragraph">您已重新安装产品护盖。</block>
+  <block id="2779825f63604db4b27b188f2d03737b" category="inline-link-macro">重新安装SG110或SG1100护盖</block>
+  <block id="c95bfc841349ab8679294cc677e88c9d" category="paragraph"><block ref="c95bfc841349ab8679294cc677e88c9d" category="inline-link-macro-rx"></block></block>
+  <block id="e19587ca009fb28c16d995c5edbd1fa5" category="list-text">同时按下蓝色导轨以释放两个机架导轨、然后将SG110或SG1100滑入机架、直至其完全就位。</block>
+  <block id="22dc184830c2cbda4b043ab5a3cce6bb" category="image-alt">SG110或SG1100滑轨</block>
+  <block id="74c2ea6aca800b8766b877c2b16a7728" category="paragraph"><block ref="c8ee67fa13b2b241963a60e9659d4d7f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b4b1ae13ff19104a2638fac1e91cf92f" category="doc">关闭和打开SG110或SG1100电源</block>
+  <block id="b9240936ed31e305085463f5cce2c053" category="paragraph">您可以关闭SG110或SG1100设备、然后重新打开其电源以执行维护。</block>
+  <block id="b1c1dfb471a6f1f3fd2166422e5ee696" category="section-title">关闭SG110或SG1100设备</block>
+  <block id="ac7ab9bcfd9ccd7d72e4ad0c7e3ecfd4" category="section-title">启动SG110或SG1100并验证操作</block>
+  <block id="2288cb67d86668be6f1a261840ed0916" category="list-text">您已拥有 <block ref="c78043e4d899bb99da1fcc488bba84ed" category="inline-link-macro-rx"></block> 并连接了数据线和电源线。</block>
+  <block id="fa2af59b6156d0aec104e44663ccb746" category="list-text">您已拥有 <block ref="1d434378bf19f38d94d6718c8351074c" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a580be7135080b681d4be92c03ad758" category="summary">SG110或SG1100设备具有八个冷却风扇。如果其中一个风扇发生故障，您必须尽快更换，以确保设备具有适当的散热效果。</block>
+  <block id="2f565a1c76f8655ee5b895b48fdd9868" category="doc">更换SG110或SG1100中的风扇</block>
+  <block id="651fc7ecc07d3c5589bcdbf86900528e" category="list-text">您已拥有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 更换数据中心中的风扇的位置。</block>
+  <block id="a494d05ff2448de4863300634404b00e" category="list-text"><block ref="7605313cc83fe468541967e7fefdaac9" category="inline-link-macro-rx"></block>，然后向下按压闩锁以将主机盖固定到位。</block>
+  <block id="2b714c159ee37bfcda3d8997dbf8c34a" category="list-text"><block ref="d562fca429c3ba3818e1a9ce8be74798" category="inline-link-macro-rx"></block> 并监控设备LED指示灯和启动代码。</block>
+  <block id="b337d01c3682624445d3043b34d4f142" category="paragraph">*维护配置过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：</block>
+  <block id="e26ffb539a1b2a0b29867450005b8bee" category="paragraph"><block ref="e6765e58c61518e3539dcb7717155370" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7e49b9f955135fd24f83c367558f704" category="sidebar">更换SG110或SG1100设备</block>
+  <block id="b2f29fa8f4a845926f04c6b42a76608e" category="sidebar">在机架中重新定位SG110或SG1100</block>
+  <block id="05e5b945264ec2a7a4fb43cd609f1363" category="sidebar">SG110和SG1100网络信息</block>
+  <block id="74c62c67c3d6082d54f23ecf0b6db84a" category="sidebar">SG110和SG1100 (新增)</block>
+  <block id="d6fca2602ac9cbcfb8a14dfb1f7739de" category="sidebar">配置BMC接口(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)</block>
+  <block id="3cedc3146b91b16ed8ebb1fee915113d" category="sidebar">排除安装故障(SG110和SG1100)</block>
+  <block id="a2e2012b6b8c458228b1e15b454770f0" category="sidebar">维护SG110和SG1100硬件</block>
+  <block id="d1a3d5a511aaa49a39568a8f65ac6b29" category="sidebar">SG110和SG1100硬件维护</block>
+  <block id="9cb56d535a16391a544c46fd4d91e6ba" category="sidebar">维护配置过程- SG110和SG1100</block>
+  <block id="c8815aa195405d61f92fd38ffbcf2c8c" category="sidebar">硬件维护过程- SG110和SG1100</block>
+  <block id="8234ee9f46864ecf847ef0ef05ff4451" category="sidebar">将设备重新放置在机架中</block>
+  <block id="824ffb105357c984745978d4f897102d" category="sidebar">维护配置过程- SG6100</block>
 </blocks>

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: BMC, baseboard management controller, configure, setup, set up 
 summary: 'SG6100、SG6000或服务设备上的底板管理控制器\(BMC)的用户界面可提供有关硬件的状态信息、并可用于配置设备的SNMP设置和其他选项。' 
 ---
-= BMC界面：概述(SG100、SG1000、SG6000和SG6100)
+= BMC界面：概述(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

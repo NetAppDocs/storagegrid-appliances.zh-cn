@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
-keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: '您可以将服务设备部署为主管理节点，非主管理节点或网关节点。所有服务设备均可同时作为网关节点和管理节点(主节点或非主节点)运行。' 
 ---
 = 部署服务设备节点
@@ -105,7 +105,7 @@ NOTE: 如果需要手动访问监控器安装页面，请单击菜单栏中的 *
 
 
 
-NOTE: 请勿在同一站点部署SG100和SG1000服务设备。可能会导致性能不可预测。
+IMPORTANT: 如果在同一站点中混用具有不同性能级别的服务设备(例如SG100或SG110以及SG1000或SG1100)、则在高可用性组中使用多个节点或在多个服务设备之间平衡客户端负载时、发生原因会产生不可预测且不一致的结果。
 
 
 NOTE: 如果您需要一次部署多个设备节点、则可以自动执行安装过程。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。

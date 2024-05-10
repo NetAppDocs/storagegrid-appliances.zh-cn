@@ -18,6 +18,6 @@ summary: 了解此文档站点中的新增功能。
 
 
 
-== GF6112全闪存设备
+== SG110和SG1100服务设备
 
-全新StorageGRID SGF6112存储设备采用紧凑型设计、将计算控制器和存储控制器集成到1U机箱中。此设备支持12个SSD NVMe驱动器、每个驱动器的存储容量高达15.3 TB。SSD驱动器位于可提供弹性对象存储的RAID中。请参见 link:installconfig/hardware-description-sg6100.html["GF6112设备：概述"]。
+全新的StorageGRID SG110和SG1100服务设备是一项不断发展的硬件更新、可提高管理和负载平衡性能。请参见 link:./installconfig/hardware-description-sg110-and-1100.html["SG110和SG1100服务设备：概述"]。

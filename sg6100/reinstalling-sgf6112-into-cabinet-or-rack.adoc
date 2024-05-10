@@ -81,4 +81,4 @@ NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
 
 
 .完成后
-link:powering-on-sgf6112-and-verifying-operation.html["重新启动设备"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["重新启动设备"]。

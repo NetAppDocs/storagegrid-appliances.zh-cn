@@ -13,6 +13,8 @@ indexpage:
     links:
     - title: SG100和SG1000
       url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG110和SG1100
+      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
   - title: 连接缆线并接通电源
     links:
     - title: 连接缆线

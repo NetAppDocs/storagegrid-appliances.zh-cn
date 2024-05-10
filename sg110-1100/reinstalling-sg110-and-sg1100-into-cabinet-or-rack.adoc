@@ -1,0 +1,86 @@
+---
+permalink: sg110-1100/reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg110, sg1100, admin node, admin appliance, install, installing, installation, cabinet, rack 
+summary: 从机柜或机架中卸下SG110或SG1100以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。 
+---
+= 在机柜或机架中重新定位SG110和SG1100
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从机柜或机架中卸下SG110或SG1100以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。
+
+
+
+== 从机柜或机架中卸下SG110或SG1100
+
+.开始之前
+* 您可以使用标签来标识连接到SG110或SG1100的每条缆线。
+* 您已拥有 link:locating-sg110-and-sg1100-in-data-center.html["位于SG110或SG1100的物理位置"] 在数据中心执行维护的位置。
+* 您已拥有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["关闭SG110或SG1100"]。
++
+
+CAUTION: 切勿使用电源开关关闭产品。
+
+
+
+.步骤
+. 贴上标签，然后断开产品电源线的连接。
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 贴上标签、然后断开设备数据电缆和任何SFP+或SFP28收发器的连接。
++
+
+IMPORTANT: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+. 拧松产品前面板上的两颗固定螺钉。
++
+image::../media/sg6060_rack_retaining_screws.png[SG110或SG1100机架固定螺钉]
+
+. 将SG110或SG1100向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。
++
+产品顶盖可操作。
+
+. 可选：如果要从机柜或机架中完全卸下设备、请按照导轨套件的说明从导轨中卸下设备。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+
+
+
+== 将SG110或SG1100重新安装到机柜或机架中
+
+.开始之前
+您已重新安装产品护盖。
+
+link:reinstalling-sg110-and-sg1100-cover.html["重新安装SG110或SG1100护盖"]
+
+.步骤
+. 同时按下蓝色导轨以释放两个机架导轨、然后将SG110或SG1100滑入机架、直至其完全就位。
++
+如果无法再移动控制器、请拉动机箱两侧的蓝色闩锁、将控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG110或SG1100滑轨]
+
++
+
+NOTE: 在打开控制器电源之前、请勿连接前挡板。
+
+. 拧紧控制器前面板上的固定螺钉，将控制器固定在机架中。
++
+image::../media/sg6060_rack_retaining_screws.png[SG110或SG1100机架固定螺钉]
+
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. link:../installconfig/cabling-appliance.html["重新连接控制器数据电缆和任何SFP+或SFP28收发器"]。
++
+
+IMPORTANT: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["重新连接控制器电源线"]。
+
+
+.完成后
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["重新启动设备"]。

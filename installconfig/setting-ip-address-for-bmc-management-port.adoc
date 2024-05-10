@@ -27,9 +27,19 @@ summary: 在访问BMC界面之前、您必须在SG6000-CN控制器或服务设�
 image::../media/sg100_bmc_management_port.png[SG100 BMC 管理端口]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[BMC管理端口SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理端口]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[BMC管理端口SG1100]
 
 --
 .SG6000

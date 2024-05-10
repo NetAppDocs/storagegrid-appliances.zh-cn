@@ -46,7 +46,7 @@ image::../media/SGF6112-battery-cmos.png[CMOS电池夹]
 +
 image::../media/sgf6112_two-slot-riser_alignment_hole.png[大提升板部件上的定位孔]
 
-. 找到系统板上的导销。
+. 找到系统板上的导销
 +
 image::../media/sgf6112_two-slot-riser_guide-pin.png[系统板上用于双插槽提升板部件的导销]
 
@@ -68,7 +68,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[系统板上用于双插槽
 .. 输入中列出的密码 `Passwords.txt` 文件
 
 
-. 使用以下选项之一还原设备的BMC网络连接：
+. 还原设备的BMC网络连接。有两个选项：
 +
 ** 使用静态IP、网络掩码和网关
 ** 使用DHCP获取IP、网络掩码和网关

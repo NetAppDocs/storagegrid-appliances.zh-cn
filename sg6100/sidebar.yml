@@ -6,8 +6,8 @@ entries:
 - title: 概述
   pdf-filename: SG6100硬件维护
   url: "/sg6100/index.html"
-- title: 配置维护过程
-  pdf-filename: 配置维护过程- SG6100
+- title: 维护配置过程
+  pdf-filename: 维护配置过程- SG6100
   entries:
   - title: 使用管理驱动器选项卡
     url: "/sg6100/manage-drives-tab.html"

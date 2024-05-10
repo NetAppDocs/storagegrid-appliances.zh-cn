@@ -21,6 +21,8 @@ entries:
       url: "/installconfig/reviewing-appliance-network-connections.html"
     - title: SG100和SG1000
       url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG110和SG1100
+      url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
     - title: SG6000
@@ -42,6 +44,8 @@ entries:
     entries:
     - title: SG100和SG1000
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG110和SG1100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
     - title: SG6000
@@ -85,7 +89,7 @@ entries:
       url: "/installconfig/verifying-port-level-network-connections.html"
   - title: 设置SANtricity系统管理器(SG5700和SG6000)
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
-  - title: 配置BMC接口(SG100、SG1000、SG6000和SG6100)
+  - title: 配置BMC接口(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)
     entries:
     - title: 概述
       url: "/installconfig/configuring-bmc-interface.html"
@@ -118,6 +122,8 @@ entries:
     url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
   - title: 排除安装故障(SG100和SG1000)
     url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: 排除安装故障(SG110和SG1100)
+    url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
   - title: 排除安装故障(SG5700或SG6000)
     url: "/installconfig/troubleshooting-hardware-installation.html"
   - title: 安装故障排除(SG6100)

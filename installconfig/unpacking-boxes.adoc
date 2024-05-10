@@ -50,6 +50,47 @@ image::../media/power_cords.gif[电源线]
 
 
 --
+.SG110和SG1100
+--
+* * 硬件 *
++
+SG110或SG1100::
++
+--
+image::../media/sgf6112_front_with_ssds.png[前端驱动器SG110和SG1100设备]
+
+--
+带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+前挡板::
++
+--
+image::../media/sgf_6112_front_bezel.png[前挡板]
+
+--
+
+
+* *电源线*
++
+
+TIP: 您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
++
+您所在国家/地区的两条电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+
+
+
+
+--
 .SG5700
 --
 * * 硬件 *

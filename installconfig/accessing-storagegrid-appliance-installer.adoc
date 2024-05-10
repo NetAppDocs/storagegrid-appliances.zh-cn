@@ -34,9 +34,19 @@ summary: 您必须访问 StorageGRID 设备安装程序以验证安装程序版�
 image::../media/sg100_admin_network_port.png[SG100 上的管理网络端口]
 
 --
+.SG110
+--
+image::../media/sg6100_admin_network_port.png[SG110上的管理网络端口]
+
+--
 .SG1000
 --
 image::../media/sg1000_admin_network_port.png[SG1000 上的管理网络端口]
+
+--
+.SG1100
+--
+image::../media/sg1100_admin_network_port.png[SG1100上的管理网络端口]
 
 --
 .E5700SG
@@ -105,11 +115,25 @@ image::../media/appliance_installer_home_5700_5600.png[StorageGRID Webscale 设�
 image::../media/sg100_link_local_port.png[SG100 链路本地连接]
 
 --
+.SG110
+--
+使用以太网电缆将服务笔记本电脑直接连接到设备最右侧的RJ-45端口。
+
+image::../media/sg6100_link_local_port.png[SG110链路本地连接]
+
+--
 .SG1000
 --
 使用以太网缆线将服务笔记本电脑直接连接到服务设备上最右侧的 RJ-45 端口。
 
 image::../media/sg1000_link_local_port.png[SG1000 链路本地连接]
+
+--
+.SG1100
+--
+使用以太网电缆将服务笔记本电脑直接连接到设备最右侧的RJ-45端口。
+
+image::../media/sg1100_link_local_port.png[SG1100链路本地连接]
 
 --
 .E5700SG

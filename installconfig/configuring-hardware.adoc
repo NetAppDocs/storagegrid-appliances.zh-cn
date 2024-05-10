@@ -43,7 +43,9 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 以下设备具有必须配置的BMC界面：
 
 * SG100
+* SG110
 * SG1000
+* SG1100
 * SG6000
 * SG6100
 
@@ -61,7 +63,7 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 * 服务设备
 +
-** 访问SG100或SG1000的BMC接口
+** 访问SG100、SG110、SG1000和SG1100的BMC界面
 
 
 

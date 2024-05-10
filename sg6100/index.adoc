@@ -15,7 +15,7 @@ summary: 您可能需要在设备上执行维护过程。本节将介绍维护SG
 
 本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
 
-*配置维护过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：
+*维护配置过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：
 
 * link:turning-sgf6112-identify-led-on-and-off.html["打开和关闭设备识别LED"]
 * link:locating-sgf6112-in-data-center.html["在数据中心内找到设备"]

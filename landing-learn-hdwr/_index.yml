@@ -8,7 +8,7 @@ indexpage:
     - title: 了解StorageGRID
       url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
     - title: StorageGRID 快速入门
-      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
     - title: 设备安装快速入门
       url: "../installconfig/index.html"
   - title: 了解存储设备
@@ -23,3 +23,5 @@ indexpage:
     links:
     - title: SG100 和 SG1000 服务设备
       url: "../installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG110和SG1100服务设备
+      url: "../installconfig/hardware-description-sg110-and-1100.html"

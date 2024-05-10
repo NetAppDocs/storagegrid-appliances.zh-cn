@@ -16,6 +16,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 请参阅设备的说明以确定所需的信息：
 
 * link:gathering-installation-information-sg100-and-sg1000.html["SG100和SG1000"]
+* link:gathering-installation-information-sg110-and-sg1100.html["SG110和SG1100"]
 * link:gathering-installation-information-sg5700.html["SG5700"]
 * link:gathering-installation-information-sg6000.html["SG6000"]
 * link:gathering-installation-information-sg6100.html["SG6100"]
@@ -29,7 +30,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 * * 适用于 StorageGRID 的管理网络 * ：管理网络是一个用于系统管理和维护的封闭网络。管理网络通常是一个专用网络，不需要在站点之间进行路由。管理网络是可选的。
 * * 适用于 StorageGRID 的客户端网络： * 客户端网络是一种开放网络，用于访问包括 S3 和 Swift 在内的客户端应用程序。客户端网络可提供对网格的客户端协议访问，从而可以隔离和保护网格网络。您可以配置客户端网络，以便仅使用您选择打开的端口通过此网络访问设备。客户端网络是可选的。
 * * SG6100*的管理网络(可选用于存储设备、SG6100不需要)：通过此网络可以访问SANtricity SANtricity系统管理器、从而可以监控和管理设备和存储控制器架中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
-* *BMC管理网络*(SG100、SG1000、SG6000和SG6100可选)：通过此网络可以访问SG100、SG1000、SG6000和SG6100设备中的底板管理控制器，从而可以监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
+* *BMC管理网络*(适用于SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)：通过此网络、您可以访问SG100、SG1000、SG6000和SG6100设备中的底板管理控制器、从而监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
 +
 如果未连接可选的 BMC 管理网络，则某些支持和维护过程将更难执行。除非出于支持目的需要，否则您可以使 BMC 管理网络保持未连接状态。
 
