@@ -4,23 +4,23 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, storage appliance, install, installing, installation, cabinet, rack 
 summary: 从机柜或机架中卸下SGF6112以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。 
 ---
-= 在机柜或机架中重新定位SGF6112
+= 在机柜或机架中重新定位SGF6112或SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-从机柜或机架中卸下SGF6112以检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。
+从机柜或机架中卸下SGF6112或SG6100-CN以检修顶盖或将设备移动到其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。
 
 
 
-== 从机柜或机架中卸下GF6112
+== 从机柜或机架中卸下SGF6112或SG6100-CN
 
 .开始之前
-* 您可以使用标签来标识连接到SGF6112的每个缆线。
-* 您已拥有 link:locating-sgf6112-in-data-center.html["物理位置为GF6112"] 在数据中心执行维护的位置。
-* 您已拥有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭SGF6112"]。
+* 您可以使用标签来标识连接到SGF6112或SG6100-CN的每条缆线。
+* 您已拥有 link:locating-sgf6112-in-data-center.html["位于SGF6112或SG6100-CN的物理位置"] 在数据中心执行维护的位置。
+* 您已拥有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭SGF6112或SG6100-CN"]。
 +
 
 CAUTION: 切勿使用电源开关关闭产品。
@@ -37,9 +37,9 @@ NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
 
 . 拧松产品前面板上的两颗固定螺钉。
 +
-image::../media/sg6060_rack_retaining_screws.png[GF6112机架固定螺钉]
+image::../media/sg6060_rack_retaining_screws.png[SGF6112或SG6100-CN机架固定螺钉]
 
-. 将SGF6112向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。
+. 将SGF6112或SG6100-CN向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。
 +
 产品顶盖可操作。
 
@@ -50,7 +50,7 @@ image::../media/sg6060_rack_retaining_screws.png[GF6112机架固定螺钉]
 
 
 
-== 将GF6112重新安装到机柜或机架中
+== 将SGF6112或SG6100-CN重新安装到机柜或机架中
 
 .开始之前
 您已拥有 link:reinstalling-sgf6112-cover.html["已重新安装产品护盖"]。

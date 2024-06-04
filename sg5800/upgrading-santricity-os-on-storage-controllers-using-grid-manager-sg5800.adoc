@@ -1,0 +1,200 @@
+---
+permalink: sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更高版本的存储控制器，您必须使用网格管理器应用升级。 
+---
+= 使用网格管理器升级SG9500存储控制器上的SANtricity操作系统
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于当前使用SANtricity OS 08.42.20.00 (11.42)或更高版本的存储控制器、您可以使用网格管理器应用升级。您也可以 link:upgrading-santricity-os-on-storage-controller.html["使用维护模式应用升级"]。
+
+.开始之前
+* 如果您未获得要从中升级到的SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]，您已咨询过 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
+* 您拥有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["维护或root访问权限"^]。
+* 您将使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您具有配置密码短语。
+
+
+.关于此任务
+在SANtricity操作系统升级过程中、您无法执行其他软件更新(StorageGRID软件升级或修补程序)。如果您尝试在 SANtricity 操作系统升级过程完成之前启动修补程序或 StorageGRID 软件升级，则系统会重定向到 SANtricity 操作系统升级页面。
+
+只有在 SANtricity 操作系统升级成功应用于已选择进行升级的所有适用节点之后，操作步骤 才会完成。在每个节点上（按顺序）加载 SANtricity 操作系统可能需要 30 分钟以上的时间，并且最多需要 90 分钟来重新启动每个 StorageGRID 存储设备。网格中任何不使用SANtricity OS的节点不会受到此操作步骤 的影响。
+
+
+CAUTION: 只有在使用网格管理器执行升级时，以下步骤才适用。如果设备中的存储控制器使用的是08.42.20.00 (11.42)之前的SANtricity 操作系统、则无法使用网格管理器升级这些控制器。
+
+
+NOTE: 此操作步骤 会自动将 NVSRAM 升级到与 SANtricity 操作系统升级相关的最新版本。您无需应用单独的NVSRAM升级文件。
+
+
+NOTE: 在开始此操作步骤 之前，请确保应用最新的StorageGRID 修补程序。请参见 https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["StorageGRID 热修补程序操作步骤"^] 了解详细信息。
+
+.步骤
+. [[download-SANtricity-OS]]从下载新的SANtricity OS软件文件 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
++
+请务必为存储控制器选择 SANtricity 操作系统版本。
+
+. 选择 * 维护 * > * 系统 * > * 软件更新 * 。
++
+image::../media/software_update_landing.png[软件更新登录页面]
+
+. 在 SANtricity OS update 部分中，选择 * 更新 * 。
++
+此时将显示SANtricity OS升级页面、其中列出了每个设备节点的详细信息、包括：
+
++
+** Node name
+** 站点
+** 设备型号
+** SANtricity 操作系统版本
+** Status
+** 上次升级状态
+
+
+. 查看表中有关所有可提升设备的信息。确认所有存储控制器的状态均为*标称*。如果任何控制器的状态为*未知*，请转至*N节点*>*_Appliance nDE_*>*硬件*以调查并解决此问题描述。
+. 选择从NetApp 支持站点 下载的SANtricity OS升级文件。
++
+.. 选择 * 浏览 * 。
+.. 找到并选择文件。
+.. 选择 * 打开 * 。
+
+
++
+已上传并验证此文件。验证过程完成后，文件名在*Browse*按钮旁边显示一个绿色复选标记。请勿更改文件名、因为它是验证过程的一部分。
+
+. 输入配置密码短语并选择*继续*。
++
+此时将显示一个警告框，指出在重新启动已升级的节点上的服务时，浏览器的连接可能会暂时断开。
+
+. 选择*是*将SANtricity OS升级文件暂存到主管理节点。
++
+SANtricity 操作系统升级开始时：
+
++
+.. 运行状况检查已运行。此过程会检查是否没有节点的状态为 "Needs Attention （需要注意） " 。
++
+
+NOTE: 如果报告了任何错误，请解决这些错误并再次选择 * 启动 * 。
+
+.. 此时将显示 SANtricity 操作系统升级进度表。此表显示了网格中的所有存储节点以及每个节点的当前升级阶段。
++
+
+NOTE: 此表显示了所有设备存储节点。不会显示基于软件的存储节点。对于需要升级的所有节点，请选择 * 批准 * 。
+
++
+image::../media/santricity_upgrade_progress_table.png[屏幕截图显示了 SANtricity 操作系统升级页面的 SANtricity 操作系统升级进度部分]
+
+
+
+. (可选)按以下顺序对节点列表进行升序或降序排序：
++
+** Node name
+** 当前版本
+** 进度
+** 阶段
+** Status
+
+
++
+您也可以在搜索框中输入术语来搜索特定节点。
+
+. 批准已准备好添加到升级队列的网格节点。已批准的节点一次升级一个。
++
+
+CAUTION: 请勿批准设备存储节点的SANtricity 操作系统升级、除非您确定该节点已做好停止并重新启动的准备。在某个节点上批准 SANtricity 操作系统升级后，该节点上的服务将停止，升级过程将开始。稍后，当节点完成升级后，设备节点将重新启动。对于与节点通信的客户端，这些操作可能会导致发生原因 服务中断。
+
++
+** 选择*Approve All*按钮将所有存储节点添加到SANtricity OS升级队列。
++
+
+NOTE: 如果节点的升级顺序非常重要、请逐个批准节点或节点组、并等待每个节点完成升级、然后再批准下一个节点。
+
+** 选择一个或多个 * 批准 * 按钮将一个或多个节点添加到 SANtricity OS 升级队列。如果状态不是标称值，则禁用*Approve*按钮。
++
+选择 * 批准 * 后，升级过程将确定是否可以升级此节点。如果某个节点可以升级，则会将其添加到升级队列中。
+
++
+对于某些节点，不会有意应用选定的升级文件，您可以在不升级这些特定节点的情况下完成升级过程。有意未升级的节点会显示完成阶段（已尝试升级），并在详细信息列中列出未升级此节点的原因。
+
+
+
+. 如果需要从 SANtricity 操作系统升级队列中删除一个或所有节点，请选择 * 删除 * 或 * 全部删除 * 。
++
+当此阶段超过已排队时， * 删除 * 按钮将处于隐藏状态，您无法再从 SANtricity 操作系统升级过程中删除此节点。
+
+. 等待 SANtricity 操作系统升级应用于每个批准的网格节点。
++
+** 如果在应用SANtricity 操作系统升级时任何节点显示错误阶段、则表示此节点的升级失败。在技术支持的协助下，您可能需要将设备置于维护模式才能进行恢复。
+** 如果节点上的固件太旧、无法使用网格管理器进行升级、则节点将显示一个错误阶段、其中包含您必须使用维护模式升级节点上的SANtricity 操作系统的详细信息。要解决此错误、请执行以下操作：
++
+... 使用维护模式升级显示 " 错误 " 阶段的节点上的 SANtricity OS 。
+... 使用网格管理器重新启动并完成 SANtricity 操作系统升级。
+
+
+
+
++
+在所有已批准的节点上完成SANtricity 操作系统升级后、SANtricity 操作系统升级进度表将关闭、绿色横幅将显示已升级的节点数量以及升级完成的日期和时间。
+
+. 如果某个节点无法升级、请记下Details列中显示的原因并采取相应措施。
++
+
+NOTE: 只有在所有列出的存储节点上批准 SANtricity 操作系统升级后， SANtricity 操作系统升级过程才会完成。
+
++
+[cols="1a,2a"]
+|===
+| reason | 建议的操作 
+
+
+ a| 
+存储节点已升级。
+ a| 
+无需采取进一步行动。
+
+
+
+ a| 
+SANtricity 操作系统升级不适用于此节点。
+ a| 
+此节点没有可由StorageGRID 系统管理的存储控制器。完成升级过程，而不升级显示此消息的节点。
+
+
+
+ a| 
+SANtricity 操作系统文件与此节点不兼容。
+ a| 
+此节点所需的SANtricity 操作系统文件与您选择的文件不同。
+完成当前升级后，下载适用于此节点的正确 SANtricity OS 文件，然后重复升级过程。
+
+|===
+. 如果要结束节点批准并返回到 SANtricity OS 页面以允许上传新的 SANtricity OS 文件，请执行以下操作：
++
+.. 选择 * 跳过节点并完成 * 。
++
+此时将显示一条警告、询问您是否确定要在不升级所有适用节点的情况下完成升级过程。
+
+.. 选择 * 确定 * 返回到 * SANtricity OS* 页面。
+.. 当您准备好继续批准节点时、 <<download-santricity-os,下载SANtricity 操作系统>> 重新启动升级过程。
++
+
+NOTE: 已批准并升级的节点仍保持升级状态，而不会出现错误。
+
+
+
+. 对处于完成阶段且需要其他 SANtricity 操作系统升级文件的所有节点重复此升级操作步骤 。
++
+
+NOTE: 对于状态为 "Needs Attenance" 的任何节点，请使用维护模式执行升级。
+
+
+
+.相关信息
+https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
+
+link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["使用维护模式升级E4000控制器上的SANtricity操作系统"]

@@ -25,6 +25,8 @@ entries:
       url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
+    - title: SGs了
+      url: "/installconfig/gathering-installation-information-sg5800.html"
     - title: SG6000
       url: "/installconfig/gathering-installation-information-sg6000.html"
     - title: SG6100
@@ -48,6 +50,8 @@ entries:
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SGs了
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5800.html"
     - title: SG6000
       entries:
       - title: 概述
@@ -62,7 +66,13 @@ entries:
       - title: 安装SG6000-CN控制器(SG6024和SG6060)
         url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
     - title: SG6100
-      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+      entries:
+      - title: 安装包含60个驱动器的磁盘架(SG6160)
+        url: "/installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安装12个驱动器的磁盘架(SGF6112)
+        url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+      - title: 安装SG6100-CN控制器(SG6160)
+        url: "/installconfig/sg6100-cn-installing-into-cabinet-or-rack.html"
   - title: 电缆设备
     url: "/installconfig/cabling-appliance.html"
   - title: 连接并接通电源
@@ -87,7 +97,7 @@ entries:
       url: "/installconfig/verifying-network-connections.html"
     - title: 验证端口级别的网络连接
       url: "/installconfig/verifying-port-level-network-connections.html"
-  - title: 设置SANtricity系统管理器(SG5700和SG6000)
+  - title: 设置SANtricity系统管理器(SG5700、SG5700、SG6000和SG6100)
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
   - title: 配置BMC接口(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)
     entries:
@@ -105,7 +115,7 @@ entries:
       url: "/installconfig/setting-up-email-notifications-for-alerts.html"
   - title: 可选：启用节点或驱动器加密
     url: "/installconfig/optional-enabling-node-encryption.html"
-  - title: 可选：更改RAID模式(SG5760和SG6000)
+  - title: 可选：更改RAID模式(SG5760、SG5860、SG6000和SG6160)
     url: "/installconfig/optional-changing-raid-mode.html"
   - title: 可选：重新映射网络端口
     url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
@@ -126,5 +136,5 @@ entries:
     url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
   - title: 排除安装故障(SG5700或SG6000)
     url: "/installconfig/troubleshooting-hardware-installation.html"
-  - title: 安装故障排除(SG6100)
+  - title: 排除安装故障(SG6100或SG6100)
     url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"

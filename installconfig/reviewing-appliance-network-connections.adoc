@@ -18,6 +18,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 * link:gathering-installation-information-sg100-and-sg1000.html["SG100和SG1000"]
 * link:gathering-installation-information-sg110-and-sg1100.html["SG110和SG1100"]
 * link:gathering-installation-information-sg5700.html["SG5700"]
+* link:gathering-installation-information-sg5800.html["SGs了"]
 * link:gathering-installation-information-sg6000.html["SG6000"]
 * link:gathering-installation-information-sg6100.html["SG6100"]
 

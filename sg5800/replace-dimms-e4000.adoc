@@ -1,0 +1,271 @@
+---
+permalink: sg5800/replace-dimms-e4000.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 更换E4000 (SG4500)中的DIMM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果E4000中的DIMM出现故障、您可以更换它。
+
+.关于此任务
+要更换 DIMM ，您必须验证控制器的缓存大小，使控制器脱机，卸下控制器，卸下 DIMM 并在控制器中安装新 DIMM 。然后，您可以将控制器恢复联机并验证存储阵列是否正常工作。
+
+更换控制器后、可能无法访问设备存储节点。如果E4000系列控制器运行正常、您可以这样做 link:../commonhardware/placing-appliance-into-maintenance-mode.html["将SGiMshi控制器置于维护模式"]。
+
+.开始之前
+* 确保您已具备以下条件：
++
+** 更换用的 DIMM 。
+** ESD 腕带，或者您已采取其他防静电预防措施。
+** 一个无静电的平面工作区。
+** 用于标识连接到控制器箱的每个缆线的标签。
+
+
+* 访问SANtricity系统管理器：
++
+** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
++
+
+NOTE: 在此操作步骤的某些步骤中、您可能无法使用网格管理器访问SANtricity系统管理器。如果SG™控制器已关闭，则需要使用浏览器访问SANtricity系统管理器。
+
+** 将Management Station中的浏览器指向控制器的域名或IP地址。
+
+
+
+
+
+
+== 第 1 步：确定是否需要更换 DIMM
+
+在更换 DIMM 之前，请验证控制器的缓存大小。
+
+.步骤
+. 访问控制器的存储阵列配置文件。在SANtricity系统管理器中，转到*Support*›*Support Center*。从支持资源页面中，选择 * 存储阵列配置文件 * 。
+. 向下滚动或使用搜索字段查找 * 数据缓存模块 * 信息。
+. 如果存在故障DIMM或报告*数据缓存模块*不是最佳的DIMM，请记下DIMM的位置并继续更换控制器上的DIMM。
+
+
+
+
+== 第2步：关闭控制器架
+
+关闭控制器电源、以便可以安全地卸下和更换DIMM。
+
+.步骤
+. 在 SANtricity 系统管理器中，查看 Recovery Guru 中的详细信息，确认问题描述中的内存不匹配，并确保不需要先解决任何其他问题。
+. 从 Recovery Guru 的 Details 区域中，确定要更换的 DIMM 。
+. 使用SANtricity系统管理器备份存储阵列的配置数据库。
++
+如果删除控制器时出现问题，您可以使用保存的文件还原配置。系统将保存 RAID 配置数据库的当前状态，其中包括控制器上卷组和磁盘池的所有数据。
+
++
+** 在 System Manager 中：
++
+... 选择*支持›支持中心›诊断*。
+... 选择 * 收集配置数据 * 。
+... 单击 * 收集 * 。
++
+文件保存在浏览器的"Downloads"文件夹中、名称为*配置数据-
+<arrayName>－<dateTime>．7z*。
+
+
+
+
+
+. 关闭SG完全 控制器。
++
+.. 登录到网格节点：
++
+... 输入以下命令： `ssh admin@grid_node_IP`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 关闭SG完全 控制器：
++
+*`shutdown -h now`*
+
+.. 等待缓存中的所有数据写入驱动器。
++
+当需要将缓存的数据写入驱动器时、E4000控制器背面的绿色"Cache Active"LED会亮起。您必须等待此 LED 关闭。
+
+
+
+. 从 SANtricity 系统管理器的主页中，选择 * 查看正在执行的操作 * 。
+. 确认所有操作均已完成，然后再继续下一步。
+. 关闭控制器架上的两个电源开关。
+. 等待控制器架上的所有 LED 熄灭。
+
+
+
+
+== 步骤3：卸下控制器箱
+
+从系统中卸下控制器箱、然后卸下控制器箱盖。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 松开将缆线绑在缆线管理设备上的黏扣带、然后从控制器箱中拔下系统缆线和SFP (如果需要)、并记录缆线的连接位置。
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. 从控制器箱的左侧和右侧拆下缆线管理设备并将其放在一旁。
+. 挤压凸轮把手上的闩锁、直到其释放、完全打开凸轮把手以从中板释放控制器箱、然后用两只手将控制器箱拉出机箱。
+. 翻转控制器箱、将其放在平坦、稳定的表面上。
+. 按下控制器箱两侧的蓝色按钮以松开护盖、然后向上旋转护盖、使其脱离控制器箱、从而打开护盖。
++
+image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打开控制器箱盖。]
+
+
+
+
+
+== 步骤4：更换DIMM
+
+找到控制器内的DIMM、将其卸下并更换。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 在更换系统组件之前，您必须完全关闭系统，以避免丢失 NVRAM 或 NVMEM 中未写入的数据。LED位于控制器箱的背面。
+. If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
+. If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
++
+.. 按下控制器箱侧面的蓝色按钮、从控制器箱中取出电池。
+.. 向上滑动电池、直至其脱离固定支架、然后将电池从控制器箱中提出。
+.. 找到电池电缆、按下电池插头上的夹子以从插座中松开锁定夹、然后从插座中拔下电池电缆。
+.. Confirm that the NVMEM LED is no longer lit.
+.. 重新连接电池连接器、然后重新检查控制器背面的LED。
+.. 拔下电池电缆。
+
+
+. 找到控制器箱上的DIMM。
+. 记下DIMM在插槽中的方向和位置、以便可以按正确的方向插入更换用的DIMM。
+. Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
++
+DIMM将向上旋转一点。
+
+. 将DIMM旋转到最远位置、然后将DIMM滑出插槽。
++
+
+NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
++
+image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[图例图标 01]
+| DIMM ejector tabs 
+
+
+ a| 
+image::../media/legend_icon_02.png[legend icon 02]
+| DIMM 
+|===
+. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
++
+The notch among the pins on the DIMM should line up with the tab in the socket.
+
+. 将DIMM垂直插入插槽。
++
+The DIMM fits tightly in the slot, but should go in easily.If not, realign the DIMM with the slot and reinsert it.
+
++
+
+NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
+. 重新连接蓄电池：
++
+.. 插入电池。
+.. 确保插头锁定在主板上的电池电源插座中。
+.. 将电池与金属板侧壁上的固定支架对齐。
+.. 向下滑动电池组、直至电池闩锁卡入到位并卡入侧壁的开口中。
+
+
+. 重新安装控制器箱盖。
+
+
+
+
+== 步骤5：重新安装控制器箱
+
+将控制器箱重新安装到机箱中。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 如果尚未更换控制器箱上的盖子、请进行更换。
+. 翻转控制器箱、并将其端部与机箱中的开口对齐。
+. 将控制器箱轻轻推入系统的一半。将控制器箱的末端与机箱中的开口对齐、然后将控制器箱轻轻推入系统的一半。
++
+
+NOTE: 在系统指示之前、请勿将控制器箱完全插入机箱中。
+
+. Recable the system, as needed.
+. 完成控制器箱的重新安装：
++
+.. 使凸轮把手处于打开位置、用力推入控制器箱、直到它与中板接触并完全就位、然后将凸轮把手合上至锁定位置。
++
+
+NOTE: 将控制器箱滑入机箱时、请勿用力过度、以免损坏连接器。
+
++
+The controller begins to boot as soon as it is seated in the chassis.
+
+.. If you have not already done so, reinstall the cable management device.
+.. 使用钩环带将缆线绑定到缆线管理设备。
+
+
+. 打开控制器架上的两个电源开关。
+
+
+
+
+== 第6步：完成DIMM更换
+
+将控制器置于联机状态，收集支持数据并恢复操作。
+
+.步骤
+. 在控制器启动时，检查控制器 LED 。
++
+重新建立与另一控制器的通信时：
+
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机后、确认其状态为"Optimal"(最佳)并检查控制器架的警示LED。
++
+如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。
+注：如果无法解决此问题、请联系技术支持。
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+.. 选择*支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+. 确认重新启动已完成，并且节点已重新加入网格。在网格管理器中，验证*N节点*页面是否显示设备节点的正常状态(节点名称左侧的绿色复选标记)，表示没有处于活动状态的警报，并且节点已连接到网格。
++
+
+NOTE: 从打开电源开关到节点重新加入网格并在Grid Manager中显示正常状态、可能需要20分钟的时间。"
+
+

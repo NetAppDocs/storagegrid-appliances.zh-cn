@@ -166,6 +166,80 @@ image::../media/fc_cable_and_sfp.gif[光缆和 SFP]
 
 
 --
+.SGs了
+--
+* * 硬件 *
++
+安装了12个驱动器的SG5812设备::
++
+--
+image::../media/de212c_table_size.gif[SG5812 2U设备]
+
+--
+SG5860设备、未安装驱动器::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U设备]
+
+--
+产品前挡板::
++
+--
+image::../media/sg5700_front_bezels.gif[SG5812和SG5860挡板]
+
+
+NOTE: 您的边框可能看起来不同。
+
+--
+带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+SG5860：60个NL) SAS驱动器::
++
+--
+image::../media/sg5760_drive.gif[驱动器]
+
+--
+SG5860：句柄::
++
+--
+image::../media/handles.gif[SG5860句柄]
+
+--
+SG5860：用于方孔机架安装的后支架和固定螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[用于SG5860的后支架和固定螺母]
+
+--
+
+
+* *电缆和连接器*
++
+
+TIP: 您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
++
+您所在国家/地区的两条电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+两根用于控制器互连(iSCSI)的25GbE SFP28缆线::
++
+--
+image::../media/sg5800_25gbe_sfp28_cable.png[25GbE SFP28缆线]
+
+--
+
+
+
+
+--
 .SG6000
 --
 * *SG6060硬件*
@@ -323,7 +397,108 @@ image::../media/sas_cable.gif[SAS 缆线]
 --
 .SG6100
 --
-* * 硬件 *
+* *SG6160硬件*
++
+SG6100-CN控制器::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[SG6100-CN控制器]
+
+--
+E4000控制器架未安装驱动器::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U设备]
+
+--
+两个前挡板::
++
+--
+image::../media/sg6000_front_bezels_for_table.gif[前挡板]
+
+
+NOTE: 您的边框可能看起来不同。
+
+--
+两个导轨套件、带说明::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+60 个 NL-SAS 驱动器::
++
+--
+image::../media/sg5760_drive.gif[驱动器]
+
+--
+四个手柄::
++
+--
+image::../media/handles.gif[SG5860句柄]
+
+--
+用于方孔机架安装的后支架和固定螺母::
++
+--
+image::../media/back_brackets_table_size.gif[用于SG5860的后支架和固定螺母]
+
+--
+一根100 GbE到4x25GbE分支互连缆线::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100 GbE到4x25GbE分支缆线]
+
+--
+您所在国家/地区的四根电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+
+
+* *SG6160扩展架*
++
+扩展架未安装驱动器::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U设备]
+
+--
+前挡板::
++
+--
+image::../media/front_bezel_for_table_de460c.gif[前挡板 DE460C]
+
+--
+60 个 NL-SAS 驱动器::
++
+--
+image::../media/sg5760_drive.gif[驱动器]
+
+--
+一个带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+四个手柄::
++
+--
+image::../media/handles.gif[SG5860句柄]
+
+--
+用于方孔机架安装的后支架和固定螺母::
++
+--
+image::../media/back_brackets_table_size.gif[用于SG5860的后支架和固定螺母]
+
+--
+
+
+* *GF6112硬件*
 +
 GF6112::
 +

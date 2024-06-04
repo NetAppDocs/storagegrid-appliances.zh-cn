@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, mac, mac address 
 summary: 在某些情况下、您可能需要在更换设备后更新MAC地址引用。 
 ---
-= 更新MAC地址引用
+= 更新MAC地址引用(SG100、SG1000、SGF6024和SG6060)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

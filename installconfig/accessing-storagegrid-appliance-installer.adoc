@@ -74,9 +74,19 @@ NOTE: 如果无法使用 DHCP 分配 IP 地址，则会显示 0.0.0.0 。
 
 
 --
+.SGs了
+--
+image::../media/sg5800_admin_network_port.png[SG波特 控制器上的管理网络端口]
+
+--
 .SG6000-CN
 --
 image::../media/sg6000_cn_admin_network_port.png[SG6000-CN 控制器上的管理网络端口]
+
+--
+.SG6100-CN
+--
+image::../media/sg6100_cn_admin_network_port.png[SG6000-CN 控制器上的管理网络端口]
 
 --
 .GF6112
@@ -143,11 +153,25 @@ image::../media/sg1100_link_local_port.png[SG1100链路本地连接]
 image::../media/e5700sg_mgmt_port_2.gif[管理端口 2 在 E5700SG 控制器上的位置]
 
 --
+.SGs了
+--
+使用以太网缆线将服务笔记本电脑连接到SG波特5控制器上的管理端口1。
+
+image::../media/sg5800_mgmt_port.png[管理端口1在SG波特5控制器上的位置]
+
+--
 .SG6000-CN
 --
 使用以太网缆线将服务笔记本电脑直接连接到 SG6000-CN 控制器上最右侧的 RJ-45 端口。
 
 image::../media/sg6000_cn_link_local_port.png[SG6000-CN 的管理端口位置]
+
+--
+.SG6100-CN
+--
+使用以太网电缆将服务笔记本电脑直接连接到SG6100-CN控制器上最右侧的RJ-45端口。
+
+image::../media/sg6100_cn_link_local_port.png[SG6100-CN的管理端口位置]
 
 --
 .GF6112

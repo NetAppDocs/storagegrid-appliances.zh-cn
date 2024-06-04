@@ -1,0 +1,20 @@
+---
+permalink: sg5800/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 维护SG8600设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要升级E4000控制器上的SANtricity OS软件、更改SG9500控制器的以太网链路配置、更换E4000控制器或SG9500控制器或更换特定组件。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
+
+本节将专门介绍维护SG8600设备的步骤。
+
+请参见 link:../commonhardware/index.html["通用过程"] 适用于所有设备使用的维护过程。
+
+请参见 link:../installconfig/configuring-hardware.html["设置硬件"] 用于在初始设备安装和配置期间执行的维护过程。

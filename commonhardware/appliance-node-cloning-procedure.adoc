@@ -15,7 +15,7 @@ summary: 克隆过程可能需要几天时间才能在源节点（正在更换�
 
 .开始之前
 * 您已将兼容的目标设备安装到机柜或机架中，并已连接所有缆线并已接通电源。
-* 您已确认替代设备上的StorageGRID设备安装程序版本与StorageGRID系统的软件版本匹配、并在必要时升级和降级StorageGRID设备安装程序固件。
+* 您已确认替代设备上的StorageGRID设备安装程序版本与StorageGRID系统的软件版本匹配、并根据需要升级或降级StorageGRID设备安装程序固件。
 * 您已配置目标设备，包括配置 StorageGRID 连接， SANtricity 系统管理器（仅限存储设备）和 BMC 接口。
 +
 ** 配置 StorageGRID 连接时，请使用临时 IP 地址。

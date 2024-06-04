@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
 summary: 可以打开设备正面的蓝色识别LED指示灯、以帮助在数据中心内定位设备。 
 ---
-= 打开和关闭SGF6112设备识别LED
+= 打开和关闭SGF6112设备或SG6100-CN控制器标识LED
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -41,8 +41,9 @@ NOTE: LACP传输哈希策略为layer2+3。
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["端口绑定模式(SG1000和SG100)"]
 * link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["端口绑定模式(SG1100和SG110)"]
 * link:gathering-installation-information-sg5700.html#port-bond-modes["端口绑定模式(E5700SG)"]
+* link:gathering-installation-information-sg5800.html#port-bond-modes["端口绑定模式(SG波特)"]
 * link:gathering-installation-information-sg6000.html#port-bond-modes["端口绑定模式(SG6000-CN)"]
-* link:gathering-installation-information-sg6100.html#port-bond-modes["端口绑定模式(SGF6112)"]
+* link:gathering-installation-information-sg6100.html#port-bond-modes["端口绑定模式(SGF6112和SG6100-CN)"]
 
 
 [role="tabbed-block"]
@@ -422,6 +423,111 @@ image::../media/e5700sg_bonded_management_ports.gif[E5700SG绑定管理端口]
 
 
 --
+.SGs了
+--
+固定端口绑定模式(默认)::
++
+--
+此图显示了在固定端口绑定模式（默认配置）下四个 10/225-GbE 端口的绑定方式。
+
+image::../media/sg5800_fixed_port.png[图中显示了SGiTsh-5/GbE控制器上的10Gbe端口如何在固定模式下绑定]
+
+[cols="1a,3a"]
+|===
+| Callout | 哪些端口已绑定 
+
+
+ a| 
+C
+ a| 
+如果使用此网络，则端口 1 和 3 将绑定到客户端网络。
+
+
+
+ a| 
+g
+ a| 
+网格网络的端口 2 和 4 绑定在一起。
+
+|===
+下表总结了用于配置四个 10/225-GbE 端口的选项。只有在要使用非默认设置时，才需要在链路配置页面上配置设置。
+
+[cols="1a,2a,2a"]
+|===
+| 网络绑定模式 | 客户端网络已禁用（默认） | 已启用客户端网络 
+
+
+ a| 
+Active-Backup （默认）
+ a| 
+* 端口 2 和 4 对网格网络使用主动备份绑定。
+* 未使用端口1和3。
+* VLAN 标记是可选的。
+
+ a| 
+* 端口 2 和 4 对网格网络使用主动备份绑定。
+* 端口 1 和 3 对客户端网络使用主动备份绑定。
+* 为了方便网络管理员，可以为两个网络指定 VLAN 标记。
+
+
+
+
+ a| 
+LACP （ 802.3ad ）
+ a| 
+* 端口 2 和 4 对网格网络使用 LACP 绑定。
+* 未使用端口1和3。
+* VLAN 标记是可选的。
+
+ a| 
+* 端口 2 和 4 对网格网络使用 LACP 绑定。
+* 端口 1 和 3 对客户端网络使用 LACP 绑定。
+* 为了方便网络管理员，可以为两个网络指定 VLAN 标记。
+
+
+|===
+--
+聚合端口绑定模式::
++
+--
+此图显示了四个 10/25GbE 端口在聚合端口绑定模式下的绑定方式。
+
+image::../media/sg5800_aggregate_port.png[图中显示了SGi附 在聚合模式下的SGi8控制器上的10/C5-GbE端口]
+
+[cols="1a,3a"]
+|===
+| Callout | 哪些端口已绑定 
+
+
+ a| 
+1.
+ a| 
+所有四个端口都分组在一个 LACP 绑定中，从而允许所有端口用于网格网络和客户端网络流量。
+
+|===
+下表总结了用于配置四个 10/225-GbE 端口的选项。只有在要使用非默认设置时，才需要在链路配置页面上配置设置。
+
+[cols="1a,2a,2a"]
+|===
+| 网络绑定模式 | 客户端网络已禁用（默认） | 已启用客户端网络 
+
+
+ a| 
+仅 LACP （ 802.3ad ）
+ a| 
+* 端口 1-4 对网格网络使用一个 LACP 绑定。
+* 一个 VLAN 标记用于标识网格网络数据包。
+
+ a| 
+* 端口 1-4 对网格网络和客户端网络使用一个 LACP 绑定。
+* 通过两个 VLAN 标记，可以将网格网络数据包与客户端网络数据包隔离。
+
+
+|===
+--
+
+
+--
 .SG6000
 --
 固定端口绑定模式(默认)::
@@ -535,14 +641,20 @@ image::../media/sg6000_cn_bonded_managemente_ports.png[已绑定管理网络端�
 
 
 --
-.GF6112
+.SG6100
 --
 固定端口绑定模式(默认)::
 +
 --
 此图显示了四个网络端口如何在固定端口绑定模式下绑定(默认配置)。
 
+*GF6112*：
+
 image::../media/sgf6112_fixed_port.png[GF6112固定端口绑定模式]
+
+* SG6100*：
+
+image::../media/sg6100_cn_fixed_port.png[SG6100-CN固定端口绑定模式]
 
 [cols="1a,3a"]
 |===
@@ -604,7 +716,13 @@ LACP （ 802.3ad ）
 --
 此图显示了四个网络端口如何在聚合端口绑定模式下绑定。
 
+*GF6112*：
+
 image::../media/sgf6112_aggregate_ports.png[GF6112聚合端口绑定模式]
+
+* SG6100*：
+
+image::../media/sg6100_cn_aggregate_ports.png[SG6100-CN聚合端口绑定模式]
 
 [cols="1a,3a"]
 |===
@@ -640,9 +758,15 @@ image::../media/sgf6112_aggregate_ports.png[GF6112聚合端口绑定模式]
 管理端口的Active-Backup网络绑定模式::
 +
 --
-此图显示了如何在管理网络的Active-Backup网络绑定模式下绑定SGF6112上的两个1-GbE管理端口。
+此图显示了两个1-GbE管理端口如何在管理网络的Active-Backup网络绑定模式下绑定。
+
+*GF6112*：
 
 image::../media/sgf6112_bonded_management_ports.png[管理绑定的网络端口SGF6112]
+
+* SG6100*：
+
+image::../media/sg6100_cn_bonded_management_ports.png[管理绑定的网络端口SG6100-CN]
 
 --
 
@@ -673,12 +797,12 @@ image::../media/sgf6112_bonded_management_ports.png[管理绑定的网络端口S
 您用于网格网络和客户端网络的网络交换机也必须支持此速度并为此速度进行配置。您必须使用适当的适配器或收发器来设置所配置的链路速度。请尽可能使用自动链路速度，因为此选项会与链路配对节点协商链路速度和正向错误更正（ FEC ）模式。
 
 +
-如果您计划对SG6000或SG5700网络端口使用25-GbE链路速度：
+如果您计划对SG6100、SG6000、SG5700或SG5700网络端口使用25-GbE的链路速度：
 
 +
 ** 使用SFP28收发器和SFP28双轴电缆或光缆。
 ** 对于SG5700，从*链接速度*下拉列表中选择*25GbE*。
-** 对于SG6000，请从*Link speed*下拉列表中选择*Auto*。
+** 对于SG6600、SG6000或SG6100，请从*Link speed*下拉列表中选择*Auto*。
 
 
 . 启用或禁用计划使用的 StorageGRID 网络。

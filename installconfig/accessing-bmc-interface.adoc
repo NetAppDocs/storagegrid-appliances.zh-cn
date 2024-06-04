@@ -54,7 +54,13 @@ image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN控制器BMC管理端
 --
 .SG6100
 --
-image::../media/sgf6112_cn_bmc_management_port.png[SGF6112 BMC管理端口]
+_GF6112_：
+
+image::../media/sgf6112_cn_bmc_management_port.png[BMC管理端口GF6112]
+
+_SG6100-CN_：
+
+image::../media/sg6100_cn_bmc_management_port.png[BMC管理端口SG610-CN]
 
 --
 ====

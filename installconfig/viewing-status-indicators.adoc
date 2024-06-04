@@ -668,6 +668,95 @@ EP
 
 
 --
+.SGs了
+--
+设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：
+
+* <<status_indicators_SG5800_controller,SG可能性>>
+* <<general_boot_codes_sg5800,常规启动代码>>
+* <<boot_codes_SG5800_controller,SG型 控制器启动代码>>
+* <<error_codes_SG5800_controller,SGs了 控制器错误代码>>
+
+
+请使用此信息提供帮助 link:troubleshooting-hardware-installation.html["对SGs太 网硬件安装进行故障排除"]。
+
+[[status_indicators_SG5800_controller]]
+SG可能性::
++
+--
+启动StorageGRID设备安装程序后、您应定期查看SGJet控制器上的状态指示灯。
+
+下图显示了SGShow笔 控制器上的状态指示灯。
+
+image::../media/sg5800_leds.png[SG可能性]
+
+[cols="1a,2a,2a"]
+|===
+| Callout | 显示 | Description 
+
+
+ a| 
+1.
+ a| 
+警示 LED
+ a| 
+琥珀色：控制器出现故障，需要操作员注意，或者未找到安装脚本。
+
+off ：控制器运行正常。
+
+
+
+ a| 
+2.
+ a| 
+扩展端口警示 LED
+ a| 
+琥珀色：这些 LED 始终为琥珀色（未建立链路），因为设备不使用扩展端口。
+
+
+
+ a| 
+3.
+ a| 
+主机端口链路状态 LED
+ a| 
+绿色：链路已启动。
+
+off ：链路已关闭。
+
+
+
+ a| 
+4.
+ a| 
+以太网链路状态 LED
+ a| 
+绿色：已建立链路。
+
+off ：未建立任何链路。
+
+
+
+ a| 
+5.
+ a| 
+以太网活动 LED
+ a| 
+绿色：管理端口与其连接的设备（例如以太网交换机）之间的链路已启动。
+
+off ：控制器与连接的设备之间没有链路。
+
+呈绿色闪烁：存在以太网活动。
+
+|===
+--
+
+
+.相关信息
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+
+
+--
 .SG6000
 --
 SG6000设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：
@@ -809,7 +898,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800 的七段显示�
 设备指示灯和按钮::
 +
 --
-下图显示了GF6112设备上的指示灯和按钮。
+下图显示了SG6100设备上的指示灯和按钮。
 
 image::../media/sgf6112_front_indicators.png[前指示灯- SGF6112]
 
@@ -871,7 +960,7 @@ image::../media/sgf6112_front_indicators.png[前指示灯- SGF6112]
  a| 
 。
  a| 
-此指示灯不会由SGF6112产品使用，并且会保持熄灭状态。
+SG6100设备不使用此指示灯、并且此指示灯保持熄灭状态。
 
 |===
 --
@@ -898,7 +987,7 @@ image::../media/sgf6112_front_indicators.png[前指示灯- SGF6112]
 SSD 指示灯::
 +
 --
-下图显示了SGF6112设备上的SSD指示灯。
+下图显示了SGF6112或SG6160设备上的SSD指示灯。
 
 image::../media/ssd_indicators.png[SSD 指示灯]
 
@@ -917,7 +1006,7 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 * off ：插槽为空
 
 
-*注意：*如果将新的正常工作的SSD插入正常工作的StorageGRID 节点、SSD上的LED最初应闪烁、但一旦系统确定驱动器具有足够的容量且正常工作、则会停止闪烁。
+*注意：*如果将新的正常工作的SSD插入到正常工作的SGF6112或SG6160 StorageGRID节点中、SSD上的LED最初应闪烁、但一旦系统确定驱动器具有足够的容量且正常工作、则会停止闪烁。
 
 
 
@@ -930,6 +1019,10 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 
 |===
 --
+
+
+.相关信息
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 
 
 --

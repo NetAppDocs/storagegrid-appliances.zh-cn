@@ -11,7 +11,7 @@ summary: 在访问BMC界面之前、您必须在SG6000-CN控制器或服务设�
 
 
 [role="lead"]
-在访问BMC界面之前、请先配置SGF6112、SG6000-CN控制器或服务设备上BMC管理端口的IP地址。
+在访问BMC界面之前、请先配置SGF6112、SG6000-CN控制器、SG6100-CN控制器或服务设备上BMC管理端口的IP地址。
 
 如果使用ConfigBuilder生成JSON文件、则可以自动配置IP地址。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
 
@@ -49,7 +49,13 @@ image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN 控制器上的 BMC 
 --
 .SG6100
 --
+_GF6112_：
+
 image::../media/sgf6112_cn_bmc_management_port.png[BMC管理端口GF6112]
+
+_SG6100-CN_：
+
+image::../media/sg6100_cn_bmc_management_port.png[BMC管理端口SG610-CN]
 
 --
 ====

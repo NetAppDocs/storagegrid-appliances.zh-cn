@@ -1,0 +1,391 @@
+---
+permalink: sg5800/replace-controller-e4000-simplex.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, Replacing, replace, e4000, controller, remove, removing, removal, install, installing, installation 
+summary: 如果E4000控制器未以最佳状态运行或出现故障、您可能需要更换它。 
+---
+= 更换E4000控制器(SG4500)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果E4000控制器未以最佳状态运行或出现故障、您可能需要更换它。
+
+.开始之前
+确保您已具备以下条件：
+
+* 与要更换的控制器具有相同部件号的更换控制器。
++
+
+NOTE: 请勿依靠E系列说明来更换StorageGRID 设备中的控制器、因为更换过程不同。
+
+* ESD腕带、或者您已采取防静电预防措施。
+* 用于标识连接到控制器的每条缆线的标签。
+* 特定访问权限。
+* 您必须使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 访问SANtricity系统管理器：
++
+** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+** 将Management Station中的浏览器指向控制器的域名或IP地址。
+
+
+
+
+.关于此任务
+您可以通过以下两种方式确定控制器箱是否发生故障：
+
+* 网格管理器警报指示存储控制器出现故障、而网格管理器或SANtricity系统管理器中的恢复专家会指示您更换控制器。
+* 控制器上的琥珀色警示 LED 亮起，表示控制器出现故障。
+
+
+更换控制器后，无法访问设备存储节点。如果E4000系列控制器运行正常、您可以这样做 link:../commonhardware/placing-appliance-into-maintenance-mode.html["将SGiM工具 置于维护模式"]。
+
+
+
+== 第 1 步：准备更换控制器
+
+准备通过保存驱动器安全密钥，备份配置和收集支持数据来更换控制器箱。然后，您可以停止主机 I/O 操作并关闭控制器架。
+
+.步骤
+. 如果可能，请记下控制器上当前安装的 SANtricity OS 软件版本。打开SANtricity系统管理器并选择*支持›升级中心›查看软件和固件清单*。
+. 请记下当前安装的NV哪个 版本的随机。
+. 如果启用了驱动器安全功能，请确保存在已保存的密钥，并且您知道安装该密钥所需的密码短语。
++
+
+CAUTION: *可能无法访问数据*—如果存储阵列中的所有驱动器均已启用安全保护，则新控制器将无法访问存储阵列，直到您使用命令行界面解锁受保护的驱动器为止。有关命令行界面的详细信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["E系列文档"]。
+
++
+要保存密钥（可能无法保存，具体取决于控制器的状态）：
+
++
+.. 在SANtricity系统管理器中，选择*设置›系统*。
+.. 在 * 驱动器安全密钥管理 * 下，选择 * 备份密钥 * 。
+.. 在 * 定义密码短语 / 重新输入密码短语 * 字段中，输入并确认此备份副本的密码短语。
+.. 单击 * 备份 * 。
+.. 将您的关键信息记录在安全位置，然后单击 * 关闭 * 。
+
+
+. 使用 SANtricity 系统管理器备份存储阵列的配置数据库。
++
+如果删除控制器时出现问题，您可以使用保存的文件还原配置。系统将保存 RAID 配置数据库的当前状态，其中包括控制器上卷组和磁盘池的所有数据。
+
++
+** 在 System Manager 中：
++
+... *选择支持›支持中心›诊断*。
+... 选择 * 收集配置数据 * 。
+... 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * configurationData-<arrayName>-<DateTime>.7z* 。
+
+
+
+** 或者，您也可以使用以下命令行界面命令备份配置数据库：
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
+
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+如果删除控制器时出现问题，您可以使用保存的文件对问题描述进行故障排除。系统会将有关存储阵列的清单，状态和性能数据保存在一个文件中。
+
++
+.. *选择支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+
+
+== 第2步：将控制器置于脱机状态
+
+使控制器脱机并确认所有操作均已完成。
+
+.步骤
+. 如果 StorageGRID 设备正在 StorageGRID 系统中运行， link:../commonhardware/placing-appliance-into-maintenance-mode.html["将产品置于维护模式"]。
+. 如果E4000控制器运行状况良好、可以控制关闭、请确认所有操作均已完成。
++
+.. 等待缓存中的所有数据写入驱动器。
++
+需要将缓存数据写入驱动器时，控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
+
+.. 从 SANtricity 系统管理器的主页中，选择 * 查看正在执行的操作 * 。
+.. 确认所有操作均已完成，然后再继续下一步。
+
+
+. 关闭控制器架上的两个电源开关。
+. 等待控制器架上的所有 LED 熄灭。
+
+
+
+
+== 步骤3：卸下E4000控制器箱
+
+卸下E4000控制器箱。
+
+.步骤
+. 戴上 ESD 腕带或采取其他防静电预防措施。
+. 为连接到控制器箱的每个缆线贴上标签。
+. 断开控制器箱的所有缆线。
++
+
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+. 挤压凸轮把手上的闩锁、直到其释放、完全打开凸轮把手以从中板释放控制器箱、然后用两只手将控制器箱拉出机箱。
+. 将控制器放在无静电的平面上，可拆卸盖朝上。
+. 按下控制器箱两侧的蓝色按钮以松开护盖、然后向上旋转护盖、使其脱离控制器箱、从而打开护盖。
+
+
+
+
+== 第4步：确定要传输到更换控制器的部件
+
+更换用的控制器可能预装了部件。确定必须将哪些部件转移到更换用的控制器箱。
+
+. 将更换用的控制器放在无静电的平坦表面上、可拆卸盖朝上。
+. 按下控制器箱两侧的蓝色按钮以松开护盖、然后向上旋转护盖、使其脱离控制器箱、从而打开护盖。
+. 确定更换用的控制器是否包含电池和(或) DIMM。如果安装了控制器护盖、请重新安装控制器护盖、然后转至 <<step8_replace_controller,第8步：更换控制器>>。否则：
++
+** 如果更换用的控制器不包括电池或DIMM、请转至 <<step5_remove_battery,第5步：取出电池>>。
+** 如果更换用的控制器包括电池、但不包括DIMM、请转至 <<step6_remove_dimm,第6步：移动DIMM>>。
+
+
+
+
+
+
+== 第5步：取出电池
+
+已从受损控制器中取出电池、并将其安装在更换用的控制器中。
+
+.步骤
+. 从控制器箱中取出电池：
++
+.. 按下控制器箱侧面的蓝色按钮。
+.. 向上滑动电池、直至其脱离固定支架、然后将电池从控制器箱中提出。
+.. 通过以下方法拔下电池插头：按压电池插头表面的夹子以从插座中释放电池插头、然后从插座中拔下电池电缆。
++
+image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[卸下NVMEM电池。]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[图例图标 01]
+| 电池释放卡舌 
+
+
+ a| 
+image::../media/legend_icon_02.png[legend icon 02]
+| 电池电源连接器 
+|===
+
+
+. 将电池移至更换用的控制器箱：
++
+.. 将电池与金属板侧壁上的固定支架对齐、但不要将其连接。在将其余组件移至更换用的控制器箱后、您需要将其插入。
+
+
+. 如果更换用的控制器预安装了DIMM、请转至 <<step7_install_battery,第7步：安装电池>>。否则、请继续下一步。
+
+
+
+
+== 第6步：移动DIMM
+
+从受损控制器箱中取出DIMM、然后将其安装到更换用的控制器箱中。
+
+.步骤
+. 找到控制器箱上的DIMM。
++
+
+NOTE: 记下DIMM在插槽中的位置、以便可以按正确的方向将DIMM插入更换用的控制器箱中的同一位置。
+从受损控制器箱中卸下DIMM：
+
++
+.. 通过缓慢地拉开DIMM两侧的DIMM弹出卡舌、从插槽中弹出DIMM。
++
+DIMM将向上旋转一点。
+
+.. 将DIMM旋转到最远位置、然后将DIMM滑出插槽。
++
+
+NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
++
+image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[图例图标 01]
+| DIMM ejector tabs 
+
+
+ a| 
+image::../media/legend_icon_02.png[legend icon 02]
+| DIMM 
+|===
+
+
+. 确认电池未插入更换用的控制器箱。
+. 在替代控制器中将DIMM安装在受损控制器中的相同位置：
++
+.. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
++
+The DIMM fits tightly in the slot, but should go in easily.If not, realign the DIMM with the slot and reinsert it.
+
++
+
+NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+
+
+. 对另一个DIMM重复上述步骤。
+. 如果更换用的控制器预装了电池、请转至 <<step8_replace_controller,第8步：更换控制器>>。否则、请继续下一步。
+
+
+
+
+== 第7步：安装电池
+
+将电池安装到更换用的控制器箱中。
+
+.步骤
+. 将蓄电池插头重新插入控制器箱上的插座。
++
+确保插头锁定在主板上的电池插槽中。
+
+. 将电池与金属板侧壁上的固定支架对齐。
+. 向下滑动电池组、直至电池闩锁卡入到位并卡入侧壁的开口中。
+. 重新安装控制器箱盖并将其锁定到位。
+
+
+
+
+== 第8步：更换控制器
+
+安装替代控制器并验证节点是否已重新加入网格。
+
+.步骤
+. 将替代控制器安装到设备中。
++
+.. 将控制器翻转，使可拆卸盖朝下。
+.. 在凸轮把手处于打开位置的情况下，将控制器完全滑入设备中。
+.. 将凸轮把手移至左侧，将控制器锁定到位。
+.. 更换缆线。
+.. 打开控制器架的电源。
+.. 等待E4000控制器重新启动。
+.. 确定如何为替代控制器分配 IP 地址。
++
+
+NOTE: 为替代控制器分配IP地址的步骤取决于您是否使用DHCP服务器将管理端口连接到网络以及是否所有驱动器都受到保护。
+
++
+如果管理端口 1 连接到使用 DHCP 服务器的网络，则新控制器将从 DHCP 服务器获取其 IP 地址。此值可能与原始控制器的 IP 地址不同。
+
+
+
+. 如果存储阵列具有安全驱动器，请导入驱动器安全密钥；否则，请转至下一步。对于包含所有安全驱动器的存储阵列，或者混合使用安全驱动器和非安全驱动器的存储阵列，请遵循以下相应的操作步骤。
++
+
+NOTE: _Unsecure drives_ 是指未分配的驱动器，全局热备用驱动器，或者属于卷组或池的驱动器，这些驱动器不受驱动器安全功能的保护。安全驱动器是指使用驱动器安全性为其分配的驱动器、这些驱动器属于安全卷组或磁盘池。
+
++
+** * 仅限安全驱动器（无非安全驱动器） * ：
++
+... 访问存储阵列的命令行界面（ CLI ）。有关命令行界面的详细信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["E系列文档"]。
+... 在控制器上加载相应的单工NV单一 管理器。
++
+例如： `download storageArray NVSRAM file=\"N4000-881834-SG4.dlp\" forceDownload=TRUE;`
+
+... 加载单工NVRAM后确认控制器为*最佳*。
+... 如果使用外部安全密钥管理、 https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management["在控制器上设置外部密钥管理"]。
+... 如果使用内部安全密钥管理、请输入以下命令以导入安全密钥：
++
+[listing]
+----
+import storageArray securityKey file="C:/file.slk"
+passPhrase="passPhrase";
+----
++
+其中：
+
++
+**** `C:/file.slk` 表示驱动器安全密钥的目录位置和名称
+**** `passPhrase` 是在导入安全密钥、控制器重新启动、新控制器采用存储阵列的已保存设置后解锁文件所需的密码短语。
+
+
+... 转至下一步以确认新控制器是否处于最佳状态。
+
+
+** * 混合使用安全驱动器和非安全驱动器 * ：
++
+... 收集支持包并打开存储阵列配置文件。
+... 找到并记录所有不安全驱动器的位置，这些位置可在支持包中找到。
+... 关闭系统电源。
+... 删除不安全的驱动器。
+... 更换控制器。
+... 打开系统电源，等待七段显示器显示托盘编号。
+... 在SANtricity系统管理器中，选择*设置›系统*。
+... 在安全密钥管理部分中，选择 * 创建 / 更改密钥 * 以创建新的安全密钥。
+... 选择 * 解锁安全驱动器 * 以导入您保存的安全密钥。
+... 运行 `set allDrives nativeState` CLI命令。
+... 控制器将自动重新启动。
+... 等待控制器启动，并等待七段显示器显示托盘编号或闪烁的 L5 。
+... 关闭系统电源。
+... 重新安装不安全的驱动器。
+... 使用 SANtricity 系统管理器重置控制器。
+... 打开系统电源，等待七段显示器显示托盘编号。
+... 转至下一步以确认新控制器是否处于最佳状态。
+
+
+
+
+. 如果在此操作步骤期间将设备置于维护模式、请将设备恢复为正常运行模式。在 StorageGRID 设备安装程序中，选择 * 高级 * > * 重新启动控制器 * ，然后选择 * 重新启动至 StorageGRID * 。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
+. 在重新启动期间、监控节点的状态、以确定节点何时重新加入网格。
++
+设备将重新启动并重新加入网格。此过程可能需要长达 20 分钟。
+
+. 确认重新启动已完成，并且节点已重新加入网格。在网格管理器中、验证节点页面是否显示正常状态(绿色复选标记图标) image:../media/icon_alert_green_checkmark.png["绿色复选标记"] 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。
++
+image::../media/nodes_menu.png[设备节点已重新加入网格]
+
+. 在 SANtricity 系统管理器中，确认新控制器处于最佳状态。
++
+.. 选择 * 硬件 * 。
+.. 对于控制器架，选择 * 显示磁盘架的背面 * 。
+.. 选择您更换的控制器箱。
+.. 选择 * 查看设置 * 。
+.. 确认控制器的 * 状态 * 为最佳状态。
+.. 如果状态不是最佳状态，请突出显示控制器，然后选择 * 置于联机状态 * 。
+
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+.. 选择*支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+.下一步是什么？
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

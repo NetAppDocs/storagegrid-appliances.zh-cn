@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
 summary: '如果SGF6112中的网络接口卡(NIC)未以最佳状态运行或出现故障、您可能需要更换该卡。' 
 ---
-= 更换SGF6112中的NIC
+= 更换SGF6112或SG6100-CN中的内部NIC
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-如果SGF6112中的网络接口卡(Network Interface Card、NIC)运行不正常或出现故障、则可能需要更换该卡。
+如果SGF6112或SG6100-CN中的内部网络接口卡(NIC)运行不正常或出现故障、则可能需要更换该卡。
 
 使用这些过程可以：
 
@@ -21,12 +21,12 @@ summary: '如果SGF6112中的网络接口卡(NIC)未以最佳状态运行或出�
 
 
 
-== 卸下NIC
+== 卸下内部NIC
 
 .开始之前
 * 您拥有正确的替代NIC。
 * 您已确定 link:verify-component-to-replace.html["要更换的NIC的位置"]。
-* 您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位到SGF6112设备"] 要更换数据中心中的NIC的位置。
+* 您已拥有 link:locating-sgf6112-in-data-center.html["物理位置：SGF6112设备或SG6100-CN控制器"] 要更换数据中心中的NIC的位置。
 +
 
 NOTE: 答 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["受控关闭设备"] 在从机架中卸下设备之前需要。
@@ -38,7 +38,7 @@ NOTE: 答 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["受控
 为了防止服务中断、请在开始更换网络接口卡(Network Interface Card、NIC)之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内可接受服务中断期间更换NIC。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 
-CAUTION: 如果您使用的ILM规则仅为对象创建一个副本、则必须在计划的维护时段更换NIC。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+CAUTION: 如果您使用的ILM规则仅为对象创建一个副本、则必须在计划的维护时段更换NIC、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 .步骤
 . 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
@@ -118,7 +118,7 @@ image::../media/one-slot-assembly-sgf6112.png[单插槽提升板部件中的NIC]
 
 
 
-== 重新安装NIC
+== 重新安装内部NIC
 
 将更换用的NIC安装到与已卸下的NIC相同的位置。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: 您可以更改设备的以太网链路配置、包括端口绑定模式、网络绑定模式和链路速度。 
 ---
-= 更改SGF6112设备的链路配置
+= 更改SGF6112设备或SG6100-CN控制器的链路配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

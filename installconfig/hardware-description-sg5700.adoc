@@ -326,7 +326,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG 控制器上的连�
  a| 
 12 Gb/ 秒 SAS
  a| 
-未使用。StorageGRID 设备不支持扩展驱动器架。
+未使用。
 
 
 
@@ -421,7 +421,7 @@ image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的连接�
 * 端口 1 选项：
 +
 ** 连接到管理网络以启用对 SANtricity 系统管理器的直接 TCP/IP 访问
-** 保持未连接状态以保存交换机端口和 IP 地址。  使用网格管理器或存储网格设备安装程序 UI 访问 SANtricity System Manager 。
+** 保持未连接状态以保存交换机端口和 IP 地址。  使用网格管理器或存储网格设备安装程序访问SANtricity System Manager。
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: 找到设备、以便执行硬件维护或升级。 
 ---
-= 在数据中心中找到GF6112设备
+= 在数据中心中找到SGF6112设备或SG6100-CN控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,6 +38,6 @@ image::../media/sgf6112_front_panel_service_led_on.png[正面识别 LED —亮�
 
 
 .完成后
-link:turning-sgf6112-identify-led-on-and-off.html["关闭蓝色的识别LED"] 如果您使用它来定位产品。
+link:turning-sgf6112-identify-led-on-and-off.html["关闭蓝色的识别LED"] 如果您使用以下方法之一来查找设备：
  **按下产品前面板上的识别LED开关。
  **使用设备BMC界面。

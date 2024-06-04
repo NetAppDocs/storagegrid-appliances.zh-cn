@@ -3,15 +3,14 @@
 
 
 .开始之前
-* 您已查阅 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
+* 如果您未获得要从中升级到的SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]，您已咨询过 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
 * 您拥有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["维护或root访问权限"^]。
 * 您将使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 您具有配置密码短语。
-* 您有权访问 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 
 
 .关于此任务
-在完成SANtricity OS升级过程之前、您无法执行其他软件更新(StorageGRID 软件升级或修补程序)。如果您尝试在 SANtricity 操作系统升级过程完成之前启动修补程序或 StorageGRID 软件升级，则系统会重定向到 SANtricity 操作系统升级页面。
+在SANtricity操作系统升级过程中、您无法执行其他软件更新(StorageGRID软件升级或修补程序)。如果您尝试在 SANtricity 操作系统升级过程完成之前启动修补程序或 StorageGRID 软件升级，则系统会重定向到 SANtricity 操作系统升级页面。
 
 只有在 SANtricity 操作系统升级成功应用于已选择进行升级的所有适用节点之后，操作步骤 才会完成。在每个节点上（按顺序）加载 SANtricity 操作系统可能需要 30 分钟以上的时间，并且最多需要 90 分钟来重新启动每个 StorageGRID 存储设备。网格中任何不使用SANtricity OS的节点不会受到此操作步骤 的影响。
 

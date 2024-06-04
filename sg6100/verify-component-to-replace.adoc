@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112 
 summary: 如果您不确定要更换设备中的硬件组件、请填写此操作步骤 以确定组件以及设备在数据中心中的位置。 
 ---
-= 验证要在SGF6112中更换的组件
+= 验证SGF6112或SG6100-CN中要更换的组件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

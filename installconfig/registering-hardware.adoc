@@ -25,7 +25,7 @@ image::../media/appliance_label.gif[标签，包括序列号]
 
 NOTE: SG6000存储设备上有多个序列号。如果您致电SG6000设备寻求服务或支持、则必须注册并使用存储控制器架上的序列号。
 
-. 访问 NetApp 支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 转至 http://mysupport.netapp.com/["NetApp 支持站点"^]。
 . 确定是否需要注册硬件：
 +
 [cols="1a,2a"]

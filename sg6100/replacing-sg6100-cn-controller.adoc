@@ -1,0 +1,106 @@
+---
+permalink: sg6100/replacing-sg6100-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, sg6100-cn, controller, remove, removing, removal, install, installing, installation 
+summary: 如果SG6100-CN控制器未以最佳状态运行或出现故障、您可能需要更换此控制器。 
+---
+= 更换SG6100-CN控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果SG6100-CN控制器未以最佳状态运行或出现故障、您可能需要更换此控制器。
+
+.开始之前
+* 您的更换控制器的部件号与要更换的控制器相同。
+* 您可以通过标签来识别连接到控制器的每个缆线。
+* 您已在数据中心中找到要更换的控制器。
++
+link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+
+
+
+.关于此任务
+更换SG6100-CN控制器后、无法访问设备存储节点。如果SG6100-CN控制器运行正常、则可以在此操作步骤启动时执行控制下的关闭。
+
+
+NOTE: 如果在安装 StorageGRID 软件之前更换控制器，则在完成此操作步骤 后，您可能无法立即访问 StorageGRID 设备安装程序。虽然您可以从与设备位于同一子网上的其他主机访问StorageGRID 设备安装程序、但不能从其他子网上的主机访问该安装程序。此情况应在 15 分钟内自行解决（当原始控制器的任何 ARP 缓存条目超时），或者您也可以通过手动从本地路由器或网关清除任何旧的 ARP 缓存条目来立即清除此情况。
+
+.步骤
+. 显示并记录设备的当前配置。
++
+.. 登录到要更换的设备：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 输入 ... `*run-host-command ipmitool lan print*` 以显示设备的当前BMC配置。
+
+
+. 如果SG6100-CN控制器运行状况良好、可以控制关闭、 link:power-sg6100-cn-controller-off-on.html#shut-down-sg6100-cn-controller["关闭SG6100-CN控制器"]。
+. 如果此StorageGRID 设备上的任何网络接口配置了DHCP、则可能需要更新DHCP服务器上的永久DHCP租约分配、以引用替代设备的MAC地址。此更新可确保为设备分配预期的IP地址。
+. 卸下并更换SG6100-CN控制器：
++
+.. 贴上标签、然后断开电缆连接。
++
+
+CAUTION: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+.. 从机柜或机架中卸下故障控制器。
+.. 将替代控制器安装到机柜或机架中。
+.. 更换缆线。
+.. 打开控制器电源并监控控制器LED。
+
+
+. 如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
+. 如果更换控制器的设备使用密钥管理服务器(KMS)对数据进行加密、则可能需要进行其他配置、节点才能加入网格。如果节点未自动加入网格、请确保这些配置设置已传输到新控制器、并手动配置任何不具有预期配置的设置：
++
+** link:../installconfig/configuring-network-links.html["配置网络链路"]
+** link:../installconfig/setting-ip-configuration.html["配置 StorageGRID IP 地址"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["为此设备配置节点加密"^]
+
+
+. 使用更换的控制器登录到设备：
++
+.. 输入以下命令： `ssh admin@_grid_node_IP_`
+.. 输入中列出的密码 `Passwords.txt` 文件
+.. 输入以下命令切换到root： `su -`
+.. 输入中列出的密码 `Passwords.txt` 文件
+
+
+. 还原设备的BMC网络连接。有两个选项：
++
+** 使用静态IP、网络掩码和网关
+** 使用DHCP获取IP、网络掩码和网关
++
+... 要还原BMC配置以使用静态IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... 要还原BMC配置以使用DHCP获取IP、网络掩码和网关、请输入以下命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. 还原BMC网络连接后、连接到BMC界面以审核和还原可能已应用的任何其他自定义BMC配置。例如、您应确认SNMP陷阱目标和电子邮件通知的设置。请参见 link:../installconfig/configuring-bmc-interface.html["配置BMC接口"]。
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。

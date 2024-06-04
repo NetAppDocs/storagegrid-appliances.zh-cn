@@ -1,10 +1,10 @@
 ---
 permalink: installconfig/troubleshooting-hardware-installation-sg6100.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6100, sgf6112,troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
+keywords: storagegrid, sg6100, sgf6112, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection, sg6160, sg5800, e4000 
 summary: 如果您在安装期间遇到问题，查看与硬件设置和连接问题相关的故障排除信息可能会很有帮助。 
 ---
-= 排除硬件安装故障(SG6100)
+= 对硬件安装进行故障排除(SG6100或SG6100)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 如果您在安装期间遇到问题，查看与硬件设置和连接�
 
 
 
-== 查看启动代码
+== 查看启动代码(仅限SGF6112和SG6160)
 
 在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。
 
@@ -52,7 +52,7 @@ KVM
  a| 
 串行端口
  a| 
-** DB-9 串行缆线
+** USB电缆
 ** 虚拟串行终端
 
 
@@ -91,6 +91,10 @@ KVM
 .. 使用 BMC IP 地址和登录凭据连接到 IPMI SOL 。
 +
 `ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 在某些情况下、默认用户名可能为"root"、而不是"admin"。
 
 .. 查看虚拟串行终端上的代码。
 
@@ -131,6 +135,22 @@ FP
 
 
  a| 
+他
+ a| 
+仅适用于SG6160：
+
+系统正在等待与存储控制器建立连接并与 SANtricity 操作系统同步。
+
+*注*：如果引导操作步骤未经过此阶段，请执行以下步骤：
+
+.. 确认SG6100-CN控制器和两个存储控制器之间的四根互连缆线已牢固连接。
+.. 根据需要更换一根或多根缆线，然后重试。
+.. 如果无法解决问题描述 问题，请联系技术支持。
+
+
+
+
+ a| 
 HC
  a| 
 系统正在检查现有 StorageGRID 安装数据。
@@ -154,7 +174,7 @@ StorageGRID 正在运行。
 
 
 
-== 查看错误代码
+== 查看错误代码(仅限SGF6112和SG6160)
 
 如果在设备启动时发生硬件错误， BMC 将记录一个错误代码。您可以根据需要使用 BMC 界面查看这些错误代码，然后与技术支持联系以解决此问题描述 。
 
@@ -525,7 +545,7 @@ MRC ： err_interlef_failure
 如果硬件故障或布线错误阻止 StorageGRID 设备完成启动处理，则此设备安装程序可能不可用。
 
 .步骤
-. 查看设备上的 LED 以及 BMC 中显示的启动和错误代码。
+. 查看设备上的LED和/或BMC (如果配备)中显示的启动和错误代码。
 . 如果您需要有关解决问题描述 的帮助，请联系技术支持。
 
 
@@ -533,11 +553,41 @@ MRC ： err_interlef_failure
 
 == 连接问题
 
-如果无法连接到设备、则可能存在网络问题描述 、或者硬件安装可能未成功完成。
+
+
+=== 扩展架未显示在设备安装程序中(SG6160)
+
+如果您已安装扩展架、但它们未显示在StorageGRID设备安装程序中、则应验证这些扩展架是否已完全安装并打开电源。
+
+.关于此任务
+您可以通过在 StorageGRID 设备安装程序中查看以下信息来验证扩展架是否已连接到设备：
+
+* 主页 * 页面包含一条有关扩展架的消息。
++
+image::../media/expansion_shelf_home_page_msg.png[扩展架消息]
+
+* * 高级 * > * RAID 模式 * 页面可通过驱动器数量指示设备是否包含扩展架。
+
+
+如果StorageGRID 设备安装程序页面未指示存在扩展架、请遵循此操作步骤。
+
+.步骤
+. 确认所有所需的缆线均已牢固连接。请参见 link:cabling-appliance.html["电缆设备"]。
+. 验证是否已打开扩展架的电源。请参见 link:connecting-power-cords-and-applying-power.html["连接电源线并接通电源(SG6100)"]。
+. 如果您需要有关解决问题描述 的帮助，请联系技术支持。
+
+
+
+
+=== 无法连接到设备
+
+如果无法连接到此存储设备、则可能存在网络问题描述、或者硬件安装可能未成功完成。
 
 .步骤
 . 尝试使用设备的IP地址对设备执行ping操作：+
-`*ping _appliance_IP_*`
++
+`*ping _appliance/controller_IP_*`
+
 . 如果 ping 未收到任何响应，请确认您使用的 IP 地址正确无误。
 +
 您可以使用网格网络，管理网络或客户端网络上设备的 IP 地址。
@@ -548,7 +598,7 @@ MRC ： err_interlef_failure
 如果无法解决问题描述 问题，请联系技术支持。
 
 . 如果 ping 成功，请打开 Web 浏览器。
-. 输入StorageGRID 设备安装程序的URL：+
+. 输入StorageGRID设备安装程序或SANtricity系统管理器的URL：+
 `*https://_appliances_controller_IP_:8443*`
 +
 此时将显示主页页面。

@@ -23,7 +23,7 @@ summary: 您可能需要在设备上执行维护过程。本节将介绍维护SG
 * link:changing-link-configuration-of-sgf6112-appliance.html["更改设备的链接配置"]
 
 
-*硬件维护程序*要求物理操作特定的GF6112组件。
+*硬件维护程序*要求物理操作特定SGF6112或SG6160组件。
 
 
 

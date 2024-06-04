@@ -1,0 +1,16 @@
+---
+permalink: sg5800/upgrading-drive-firmware-using-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: 您可以升级驱动器固件，以确保具有所有最新功能和错误修复。 
+---
+= 使用SANtricity系统管理器升级SGz前后 驱动器固件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升级设备驱动器上的固件、以确保您拥有所有最新功能和错误修复。
+
+<stdin>中未解析的指令- include：..//_include/正在 升级驱动器固件使用SANtricity-system-manager.adoc[]

@@ -1,0 +1,29 @@
+---
+indexpage:
+  tiles:
+  - title: 经常执行的过程
+    links:
+    - title: 更改链路配置
+      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+    - title: 升级SANtricity
+      url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
+    - title: 升级驱动器固件
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 硬件过程
+    links:
+    - title: 更换SG可能性 能计算控制器
+      url: "../sg5800/replace-controller-sg5800.html"
+    - title: 更换E4000存储控制器
+      url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: 更换风扇罐
+      url: "../sg5800/replace-fan-canister.html"
+    - title: 更换动力箱
+      url: "../sg5800/replace-power-canister.html"
+    - title: 更换电池
+      url: "../sg5800/replace-battery-e4000.html"
+    - title: 更换 DIMM
+      url: "../sg5800/replace-dimms-e4000.html"
+    - title: 更换驱动器
+      url: "../sg5800/replace-drive-e4000.html"
+    - title: Power supply
+      url: "../sg5800/replace-power-supply.html"

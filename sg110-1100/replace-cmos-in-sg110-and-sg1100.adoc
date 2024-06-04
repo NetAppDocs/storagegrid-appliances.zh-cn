@@ -37,7 +37,7 @@ NOTE: 答 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-
 为防止服务中断、请在开始更换CMOS电池之前确认所有其他存储节点均已连接到网格、或者在计划维护时段(服务中断时间可接受)更换电池。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 
-CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换电池。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换电池、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 .步骤
 . 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。

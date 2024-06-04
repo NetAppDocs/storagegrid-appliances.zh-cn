@@ -40,6 +40,7 @@ NOTE: 在这些说明中，“`Linux`”是指Red Hat®Enterprise Linux®、Ubun
 
 * link:../sg6100/index.html["维护SG6100设备"]
 * link:../sg6000/index.html["维护 SG6000 设备"]
+* link:../sg5800/index.html["维护SG8600设备"]
 * link:../sg5700/index.html["维护 SG5700 设备"]
 * link:../sg110-1100/index.html["维护SG110和SG1100设备"]
 * link:../sg100-1000/index.html["维护SG100和SG1000设备"]

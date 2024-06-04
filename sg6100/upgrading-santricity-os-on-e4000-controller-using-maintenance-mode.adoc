@@ -1,0 +1,65 @@
+---
+permalink: sg6100/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, controller, e4000, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
+summary: 您可以使用维护模式升级E4000控制器上的SANtricity操作系统。 
+---
+= 使用维护模式升级E4000控制器上的SANtricity操作系统(SG6160)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用维护模式升级E4000控制器上的SANtricity操作系统。
+
+
+NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
+
+.开始之前
+* 您已查阅 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
+* 您必须将SGs接入 控制器 link:../commonhardware/placing-appliance-into-maintenance-mode.html["维护模式"]，中断与E4000控制器的连接。
++
+
+NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。
+
+
+
+.关于此任务
+请勿一次在多个StorageGRID 设备上升级E系列控制器中的SANtricity 操作系统或NVSRAM。
+
+
+CAUTION: 一次升级多个 StorageGRID 设备可能会导致发生原因 数据不可用，具体取决于您的部署模式和 ILM 策略。
+
+.步骤
+. 确认设备已进入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["维护模式"]。
+. 从服务笔记本电脑访问 SANtricity 系统管理器并登录。
+. 将新的 SANtricity OS 软件文件和 NVSRAM 文件下载到管理客户端。
++
+
+CAUTION: NVSRAM 是特定于 StorageGRID 设备的。请勿使用标准NVSRAM下载。
+
+. 按照_E4000和E3800 SANtricity软件和固件升级指南_或SANtricity系统管理器联机帮助中的说明升级E4000控制器的固件和NVS常 存。
++
+
+NOTE: 立即激活升级文件。不要推迟激活。
+
+. 如果此操作步骤 已成功完成，并且您在节点处于维护模式时还需要执行其他过程，请立即执行。完成后，或者如果遇到任何故障并希望重新启动，请选择 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID *
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。  如果您在操作步骤 期间遇到任何故障并希望重新启动，请选择此选项。  节点重新启动至维护模式后，从出现故障的操作步骤 中的相应步骤重新启动。
++
+image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
+
++
+设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。节点页面应显示正常状态(绿色复选标记图标) image:../media/icon_alert_green_checkmark.png["绿色复选标记"] 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。
+
++
+image::../media/nodes_menu.png[设备节点已重新加入网格]
+
+
+
+
+
+.相关信息
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]

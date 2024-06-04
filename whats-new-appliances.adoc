@@ -18,6 +18,18 @@ summary: 了解此文档站点中的新增功能。
 
 
 
+== SG5812和SG5860设备
+
+新的StorageGRID SG5812和SG5860设备是集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。请参见 https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg5800.html["SG工具：概述"] 了解更多信息。
+
+
+
+== SG6160设备
+
+新的StorageGRID SG6160设备包括一个计算控制器和一个存储控制器架、其中包含两个存储控制器和60个驱动器、以及两个用于缓存的NVMe SSD驱动器。或者、也可以向SG6160添加60个驱动器的扩展架。请参见 link:installconfig/hardware-description-sg6100.html["SGF6100设备：概述"] 了解更多信息。
+
+
+
 == SG110和SG1100服务设备
 
 全新的StorageGRID SG110和SG1100服务设备是一项不断发展的硬件更新、可提高管理和负载平衡性能。请参见 link:./installconfig/hardware-description-sg110-and-1100.html["SG110和SG1100服务设备：概述"]。

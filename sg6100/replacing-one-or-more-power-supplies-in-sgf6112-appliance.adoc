@@ -2,16 +2,16 @@
 permalink: sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, sgf6112, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
-summary: SG6100系列设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。 
+summary: SGF6112设备和SG6100-CN计算节点具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。 
 ---
-= 更换SGF6112中的一个或两个电源
+= 更换SGF6112或SG6100-CN中的一个或两个电源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-GF6112设备具有两个电源、用于实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。
+SGF6112设备和SG6100-CN计算节点具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源的型号和功率必须相同。
 
 .开始之前
 * 您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位设备"] 更换电源。
@@ -30,9 +30,9 @@ GF6112设备具有两个电源、用于实现冗余。如果其中一个电源�
 
 
 .关于此任务
-此图显示了SGF6112的两个电源设备。电源可从产品背面进行操作。
+图中显示了SGF6112设备或SG6100-CN计算节点的两个电源设备。电源可从产品背面进行操作。
 
-image::../media/sgf6112_power_supplies.png[带有两个电源的GF6112背面]
+image::../media/sgf6112_power_supplies.png[SGF6112或SG6100-CN背面、带两个电源]
 
 .步骤
 . 如果您只更换一个电源，则无需关闭设备。转至 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
@@ -40,7 +40,7 @@ image::../media/sgf6112_power_supplies.png[带有两个电源的GF6112背面]
 .. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭设备"]。
 +
 
-CAUTION: 如果您使用的ILM规则仅创建一个对象的一个副本、而您要同时更换两个电源、则必须在计划的维护时段更换这些电源。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+CAUTION: 如果您曾经使用仅创建一个对象的一个副本的ILM规则、而您要同时更换两个电源、则必须在计划的维护时段更换这些电源、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 
 

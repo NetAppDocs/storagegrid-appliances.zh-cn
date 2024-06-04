@@ -34,7 +34,7 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 === SANtricity 系统管理器
 
-对于SG6000和SG5700、您需要配置SANtricity 系统管理器。SANtricity 软件用于监控这些设备的硬件。
+对于SG6160、SG6000、SG5700和SG5700、您需要配置SANtricity系统管理器。SANtricity 软件用于监控这些设备的硬件。
 
 
 
@@ -56,9 +56,9 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 * 存储设备
 +
-** 为SANtricity系统管理器(SG5700和SG6000)配置要用于监控硬件的软件
+** 配置SANtricity系统管理器(SG5700、SG5700、SG6000和SG6100)用于监控硬件的软件
 ** 更改RAID模式
-** 访问SG6000-CN控制器的BMC接口
+** 访问SG6000-CN或SG6100-CN控制器的BMC接口
 
 
 * 服务设备

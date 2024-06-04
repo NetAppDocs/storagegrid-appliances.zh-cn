@@ -6,7 +6,7 @@
 为了防止服务中断、请在开始更换风扇之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内更换风扇、此时可以接受服务中断。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 
-CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换风扇。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换风扇、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 更换风扇时，无法访问设备节点。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。 
 ---
-= 使用管理驱动器选项卡
+= 使用管理驱动器选项卡(SGF6112)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
