@@ -36,7 +36,7 @@ indexpage:
     - title: 更换电源
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
     - title: 更换存储控制器架或扩展架中的电源(SG6160)
-      url: "/sg6100/replace-6100-cn-power-canister.html"
+      url: "../sg6100/replace-6100-cn-power-canister.html"
     - title: 更换SGF6112或SG6100-CN (SG6160)中的风扇
       url: "../sg6100/replacing-fan-in-sgf6112.html"
     - title: 更换存储控制器架或扩展架中的风扇(SG6160)
@@ -48,14 +48,15 @@ indexpage:
     - title: 更换存储控制器架或扩展架中的驱动器(SG6160)
       url: "../sg6100/replace-6160-drives-60.html"
     - title: 更换内部NIC (SGF6112和SG6160)
-      url: "/sg6100/replace-nic-in-sgf6112.html"
+      url: "../sg6100/replace-nic-in-sgf6112.html"
     - title: 更换外部NIC (SG6160)
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "../sg6100/replace-ocp-nic-in-sg6100-cn.html"
     - title: 更换DIMM (SG6160)
-      url: "/sg6100/replace-dimms-e4000.html"
+      url: "../sg6100/replace-dimms-e4000.html"
     - title: 更换电池(SG6160)
-      url: "/sg6100/replace-battery-e4000.html"
+      url: "../sg6100/replace-battery-e4000.html"
     - title: 装回护盖
+      url: "../sg6100/reinstalling-sgf6112-cover.html"
     - title: 更换CMOS电池
       url: "../sg6100/replace-cmos-in-sgf6112.html"
     - title: 将扩展架添加到已部署的SG6160
