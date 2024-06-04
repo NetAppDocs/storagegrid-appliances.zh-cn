@@ -5061,14 +5061,7 @@
   <block id="e6c11d6c727d6af4a15aadeb9c8d765c" category="list-text">将前挡板连接至SG6100-CN控制器(如果已卸下)。</block>
   <block id="784b225f130f7d41e24cfeb95e8faec4" category="doc">配置SANtricity系统管理器(SG6160、SG6000、SG5700和SG5700)</block>
   <block id="e9b0f91353e7e92b0bdad4d600bf8aad" category="inline-xref">SG可能性</block>
-  <block id="33142c71ffb7a820e39e2d8b9b87c90d" category="list-text"><block ref="562ba6ab1f9a30f1dbd536755e8030f3" category="inline-xref-macro-rx"></block></block>
-  <block id="6e2ca3456886b60923634ed7eb9c8d7f" category="list-text"><block ref="4602dd8dedea945665f66e0efb09332c" category="inline-xref-macro-rx"></block></block>
-  <block id="f536acc32b97ad90a5740f9c6acd9249" category="inline-xref">SG型 控制器启动代码</block>
-  <block id="5576c47c21553b6c80a9811f4546218f" category="list-text"><block ref="f285587c275058bc7d3d747c12066f52" category="inline-xref-macro-rx"></block></block>
-  <block id="540f46aeae603c2f4426ce72f569d476" category="inline-xref">SGs了 控制器错误代码</block>
-  <block id="4657bcb798d90e371448f17714c8c9f9" category="list-text"><block ref="3e9e4f9184270725588680504bdaec1d" category="inline-xref-macro-rx"></block></block>
   <block id="ee0d7ce7f3f04a927e4972f514fd99c9" category="inline-link-macro">对SGs太 网硬件安装进行故障排除</block>
-  <block id="274d64f0b9bfee260adbb6408672a4b0" category="paragraph">请使用此信息提供帮助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e11a1131d9974f2fd0c9ec0f8b70da1" category="paragraph">启动StorageGRID设备安装程序后、您应定期查看SGJet控制器上的状态指示灯。</block>
   <block id="043b3b7e7d1cab87dcb9bbe4e09747f6" category="paragraph">下图显示了SGShow笔 控制器上的状态指示灯。</block>
   <block id="ee19c832192b29abe3714f9cd076b86b" category="paragraph">下图显示了SG6100设备上的指示灯和按钮。</block>
@@ -5322,19 +5315,7 @@
   <block id="002c473abb16ba8030a796dbd755e33d" category="list-text">使用风扇箱手柄将风扇箱拉出产品。</block>
   <block id="64c29ebf8cd32413c80f6ffda96405ee" category="list-text">将更换用的风扇箱完全滑入产品中，然后移动风扇箱手柄，直至其与橙色卡舌锁住。</block>
   <block id="37a36b8523adcf2cc0873f9e2f41ca9c" category="doc">更换SGF6112或SG6100-CN护盖</block>
-  <block id="854c7629d35948a4df812750dec127ee" category="summary">从机柜或机架中卸下SG6100-CN控制器、以便检修顶盖或将设备移动到其他位置、然后在硬件维护完成后将控制器重新安装到机柜或机架中。</block>
-  <block id="5fb243f0f549e18d4924ebf22621bb48" category="doc">在机柜或机架中重新定位SG6100-CN控制器</block>
-  <block id="abc84ec80690dbc94a66ecc51074d3c0" category="section-title">从机柜或机架中卸下SG6100-CN控制器</block>
-  <block id="881b8f310c4263d181dbaedf240d3d2d" category="paragraph">从机柜或机架中卸下SG6100-CN控制器、以便检修顶盖或将控制器移动到其他位置。</block>
-  <block id="907fea185972d8e2b273ebea2808d7f1" category="list-text">您可以使用标签来标识连接到SG6100-CN控制器的每条缆线。</block>
-  <block id="fda31ec860925354771998211c7831af" category="list-text">您已找到要在数据中心执行维护的SG6100-CN控制器的物理位置。</block>
   <block id="fbc4a37098bcf763b9f98fd0a2884283" category="inline-link-macro">关闭SG6100-CN控制器</block>
-  <block id="5f63238f202a5cd936c6942641733c6e" category="list-text">您已拥有 <block ref="d00266d0f93b386e66854bd4e0adc388" category="inline-link-macro-rx"></block>。</block>
-  <block id="7e50f59ca73ccb860aa814cfd32bc021" category="list-text">将SG6100-CN控制器向前滑出机架、直至安装导轨完全展开、并且您可以听到两侧的闩锁卡嗒声。</block>
-  <block id="76d74a3c6e61e29e13b8b398f522989d" category="section-title">将SG6100-CN控制器重新安装到机柜或机架中</block>
-  <block id="27eee63b8f274f92b6fd34ad72eda57f" category="inline-link-macro">重新安装SG6100-CN控制器护盖</block>
-  <block id="8f7788c169aa50f1f1d939333d3f4bcc" category="paragraph"><block ref="8f7788c169aa50f1f1d939333d3f4bcc" category="inline-link-macro-rx"></block></block>
-  <block id="e555012dca3572d0bab17db35a4008d4" category="paragraph"><block ref="e555012dca3572d0bab17db35a4008d4" category="inline-link-macro-rx"></block></block>
   <block id="4cc27b1800a32240f555e0ec4afc5cde" category="summary">将E4000中的驱动器更换为可容纳60个驱动器的磁盘架。</block>
   <block id="125aeb33ae4459fc8222ee9ed2b717aa" category="doc">更换存储控制器架或扩展架中的驱动器(SG6160)</block>
   <block id="5ee472a2b6b33fddd49024587c88b2f3" category="paragraph">您可以更换SG6160存储控制器架或扩展架(DE460C)中的驱动器。</block>
@@ -5466,7 +5447,6 @@
   <block id="75bae77bd5a1e5d5a3fa60c2123780ca" category="summary">如果SG6100-CN控制器未以最佳状态运行或出现故障、您可能需要更换此控制器。</block>
   <block id="34219e12808cfaa75a6d668403e35db8" category="doc">更换SG6100-CN控制器</block>
   <block id="001591654095885fb8e8bae93eba4b37" category="paragraph">更换SG6100-CN控制器后、无法访问设备存储节点。如果SG6100-CN控制器运行正常、则可以在此操作步骤启动时执行控制下的关闭。</block>
-  <block id="10f53149eec912e3988fa735d632dcc9" category="list-text">如果SG6100-CN控制器运行状况良好、可以控制关闭、 <block ref="06019beeec02ceba6236461f5eafd019" category="inline-link-macro-rx"></block>。</block>
   <block id="c360904142c30f58300519e8c01b32d0" category="list-text">如果此StorageGRID 设备上的任何网络接口配置了DHCP、则可能需要更新DHCP服务器上的永久DHCP租约分配、以引用替代设备的MAC地址。此更新可确保为设备分配预期的IP地址。</block>
   <block id="bc15f2ba1d2a4b957f06af9c2cc3e6d9" category="list-text">卸下并更换SG6100-CN控制器：</block>
   <block id="8145cbfa0e5fc59eb5093d29f4de5483" category="list-text">贴上标签、然后断开电缆连接。</block>
@@ -5524,4 +5504,6 @@
   <block id="0c5b49805cedde0be71bd8e1248caea5" category="sidebar">SG6100-CN控制器(SG6160)</block>
   <block id="109cfb866393048721520c64b6a72dcd" category="sidebar">E4000控制器(SG6160)</block>
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">在机架中重新定位</block>
+  <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">如果SG6100-CN控制器运行状况良好、可以控制关闭、 <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>。</block>
+  <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">设备控制器包括一些指示灯、可帮助您确定设备控制器的状态。请使用此信息提供帮助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
 </blocks>

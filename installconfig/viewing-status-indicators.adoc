@@ -670,17 +670,8 @@ EP
 --
 .SGs了
 --
-设备控制器包括一些指示灯、可帮助您确定设备控制器的状态：
+设备控制器包括一些指示灯、可帮助您确定设备控制器的状态。请使用此信息提供帮助 link:troubleshooting-hardware-installation.html["对SGs太 网硬件安装进行故障排除"]。
 
-* <<status_indicators_SG5800_controller,SG可能性>>
-* <<general_boot_codes_sg5800,常规启动代码>>
-* <<boot_codes_SG5800_controller,SG型 控制器启动代码>>
-* <<error_codes_SG5800_controller,SGs了 控制器错误代码>>
-
-
-请使用此信息提供帮助 link:troubleshooting-hardware-installation.html["对SGs太 网硬件安装进行故障排除"]。
-
-[[status_indicators_SG5800_controller]]
 SG可能性::
 +
 --

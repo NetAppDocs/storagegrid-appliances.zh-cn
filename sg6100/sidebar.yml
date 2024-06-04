@@ -83,8 +83,4 @@ entries:
     - title: E4000控制器(SG6160)
       url: "/sg6100/replace-controller-e4000-duplex.html"
   - title: 在机架中重新定位
-    entries:
-    - title: GF6112
-      url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
-    - title: SG6100-CN控制器(SG6160)
-      url: "/sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
