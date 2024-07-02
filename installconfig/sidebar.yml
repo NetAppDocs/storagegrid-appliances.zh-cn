@@ -67,6 +67,9 @@ entries:
         url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
     - title: SG6100
       entries:
+      - title: 概述
+        pdf-filename: 将SG6100安装到机柜或机架中
+        url: "/installconfig/installing-hardware-sg6100.html"
       - title: 安装包含60个驱动器的磁盘架(SG6160)
         url: "/installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html"
       - title: 安装12个驱动器的磁盘架(SGF6112)

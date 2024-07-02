@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6100.html 
+sidebar: sidebar 
+keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
+summary: 对于SG6160和SGF6112、您可以在机柜或机架中安装导轨、然后将控制器架、所有扩展架和计算控制器滑入导轨上。 
+---
+= 安装到机柜或机架中(SG6100)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于SG6160和SGF6112、您可以在机柜或机架中安装导轨、然后将控制器架、所有扩展架和计算控制器滑入导轨上。
+
+[cols="1a,2a,2a"]
+|===
+| 型号 | 安装 | 以了解相关信息 
+
+
+ a| 
+SG6160
+ a| 
+可容纳60个驱动器的控制器架和任何可容纳60个驱动器的扩展架
+ a| 
+link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["安装可容纳60个驱动器的磁盘架"]
+
+
+
+ a| 
+SG6112
+ a| 
+可容纳12个驱动器的设备架
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6112.html["安装包含12个驱动器的磁盘架"]
+
+
+
+ a| 
+SG6160
+ a| 
+SG6100-CN计算控制器
+ a| 
+link:sg6100-cn-installing-into-cabinet-or-rack.html["安装SG6100-CN控制器"]
+
+|===
