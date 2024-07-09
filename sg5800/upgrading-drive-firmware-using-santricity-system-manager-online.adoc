@@ -26,9 +26,7 @@ CAUTION: 请勿一次升级多个StorageGRID 设备上的驱动器固件。这�
 
 [NOTE]
 ====
-对于属于不具有冗余的卷的驱动器、必须使用进行更新 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["脱机方法"]。对于当前已降级的任何池或卷组、应使用脱机方法。
-
-您必须使用 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["脱机方法"] 升级SSD驱动器时。
+属于没有冗余的卷的驱动器必须使用进行更新 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["脱机方法"]。
 
 ====
 .步骤

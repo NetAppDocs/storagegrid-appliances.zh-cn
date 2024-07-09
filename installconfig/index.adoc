@@ -59,7 +59,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 
 
 . link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG6160、SG5700、SG5700和SG6000)
-. link:configuring-bmc-interface.html["配置BMC接口"] (SG6000、SG6100和服务设备)
+. link:configuring-bmc-interface.html["配置BMC接口"] (SG6100、SG6000和服务设备)
 . 执行可选的设置步骤
 +
 ** link:optional-enabling-node-encryption.html["启用节点或驱动器加密"]

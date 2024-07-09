@@ -11,13 +11,13 @@ summary: 'SG田间 工作台(StorageGRID)设备是一个集成的存储和计算
 
 
 [role="lead"]
-SG田间 工作台(StorageGRID)设备是一个集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。
+SG运StorageGRID维设备是集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。
 
-StorageGRID SG型 设备具有以下功能：
+StorageGRID SG型 工具具有以下功能：
 
 * 集成 StorageGRID 存储节点的存储和计算要素。
 * 包括 StorageGRID 设备安装程序，以简化存储节点的部署和配置。
-* 包括用于硬件管理和监控的 E 系列 SANtricity System Manager 。
+* 包括用于硬件管理和监控的E系列SANtricity System Manager。
 * 最多支持四个连接到 StorageGRID 网格网络和客户端网络的 10-GbE 或 25-GbE 连接。
 * 支持全磁盘加密(Full Disk Encryption、FD)驱动器或FIPS驱动器。如果将这些驱动器与 SANtricity 系统管理器中的驱动器安全功能结合使用，则会阻止未经授权的数据访问。
 
@@ -274,7 +274,7 @@ image::../media/e4000_controller_with_callouts.png[E4000控制器上的连接器
 
 *注意*：如果选择使管理端口保持未接线状态，则某些可选的SANtricity功能(例如用于准确日志时间戳的NTP同步)将不可用。
 
-*注意*：如果不对管理进行连线，则需要使用StorageGRID 11．8或更高版本以及SANtricity 11．8或更高版本。
+*注意*：保持管理端口未接线状态时，需要StorageGRID 11．8或更高版本以及SANtricity 11．8或更高版本。
 
 
 

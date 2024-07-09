@@ -24,7 +24,12 @@ StorageGRID网格管理器可监控设备状态、并在发生驱动器故障时
 +
 ** NetApp 为您的控制器架或驱动器架支持的替代驱动器。
 ** ESD 腕带，或者您已采取其他防静电预防措施。
-** 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）
+** 访问SANtricity系统管理器：
++
+*** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+*** 将Management Station中的浏览器指向控制器的域名或IP地址。
+
+
 
 
 

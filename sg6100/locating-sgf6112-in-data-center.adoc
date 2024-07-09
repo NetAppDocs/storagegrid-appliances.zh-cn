@@ -39,5 +39,7 @@ image::../media/sgf6112_front_panel_service_led_on.png[正面识别 LED —亮�
 
 .完成后
 link:turning-sgf6112-identify-led-on-and-off.html["关闭蓝色的识别LED"] 如果您使用以下方法之一来查找设备：
- **按下产品前面板上的识别LED开关。
- **使用设备BMC界面。
+
+* 按下产品前面板上的识别LED开关。
+* 使用设备BMC界面。
+
