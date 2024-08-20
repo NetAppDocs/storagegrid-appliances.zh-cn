@@ -1,0 +1,99 @@
+---
+permalink: sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, appliance, install, installing, installation, cabinet, rack, controller, remove, removing, removal 
+summary: 从机柜或机架中卸下SG100或SG1000以检修顶盖或将设备移动到其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。 
+---
+= 在机柜或机架中重新定位SG100或SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从机柜或机架中取出SG100或SG1000设备、以便检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。
+
+
+
+== 从机柜或机架中卸下SG100或SG1000
+
+从机柜或机架中取出SG100或SG1000、以便检修顶盖或将设备移至其他位置。
+
+.开始之前
+* 您可以使用标签来标识连接到SG100或SG1000设备的每条缆线。
+* 您已找到要在数据中心执行维护的SG100或SG1000设备的物理位置。
++
+link:locating-controller-in-data-center.html["在数据中心内找到设备"]
+
+* 您拥有 link:shut-down-sg100-and-sg1000.html["关闭SG100或SG1000设备"]。
++
+
+CAUTION: 切勿使用电源开关关闭产品。
+
+
+
+.步骤
+. 标记并断开控制器电源线。
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 标记并断开控制器数据缆线以及任何 SFP+ 或 SFP28 收发器的连接。
++
+
+NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
+. 松开控制器前面板上的两个固定螺钉。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
+
+. 将设备向前滑出机架、直至安装导轨完全展开、您可以听到两侧的闩锁发出咔嗒声。
++
+可以访问控制器顶盖。
+
+. 可选：如果要从机柜或机架中完全卸下设备、请按照导轨套件的说明从导轨中卸下设备。
+
+
+更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+
+
+
+== 将SG100或SG1000重新安装到机柜或机架中
+
+硬件维护完成后、将设备重新安装到机柜或机架中。
+
+.开始之前
+您已重新安装产品护盖。
+
+link:reinstalling-sg100-and-sg1000-controller-cover.html["重新安装SG100或SG1000护盖"]
+
+.步骤
+. 同时按下蓝色导轨可松开两个机架导轨、然后将设备滑入机架、直至完全就位。
++
+如果无法再移动产品，请拉动机箱两侧的蓝色闩锁，将产品滑入最深的位置。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[设备滑轨滑动]
+
++
+
+NOTE: 在打开产品电源之前，请勿连接前挡板。
+
+. 拧紧产品前面板上的固定螺钉，将产品固定在机架中。
++
+image::../media/sg6060_rack_retaining_screws.png[机架固定螺钉]
+
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 重新连接控制器数据缆线以及任何 SFP+ 或 SFP28 收发器。
++
+
+NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
+
++
+link:../installconfig/cabling-appliance.html["电缆设备"]
+
+. 重新连接产品电源线。
++
+link:../installconfig/connecting-power-cords-and-applying-power.html["连接电源线并接通电源(SG100或SG1000)"]
+
+
+
+.完成后
+可以重新启动设备。

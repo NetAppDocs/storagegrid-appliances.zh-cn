@@ -35,6 +35,8 @@ entries:
 - title: 硬件过程
   pdf-filename: 硬件过程- SG6000
   entries:
+  - title: 验证要更换的组件
+    url: "/sg6000/verify-component-to-replace-sg6000cn.html"
   - title: 将扩展架添加到已部署的 SG6060
     url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
   - title: 更换存储控制器
@@ -47,6 +49,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: 更换 SG6000-CN 控制器中的一个或两个电源
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: 更换SG6000-CN控制器中的CMOS电池
+    url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: 更换机架中的控制器
     url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
   - title: 装回控制器护盖

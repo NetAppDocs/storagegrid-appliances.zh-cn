@@ -2650,7 +2650,6 @@
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">设备重新启动并重新加入网格可能需要长达 20 分钟的时间。要确认重新启动已完成且节点已重新加入网格，请返回网格管理器。节点页面应显示正常状态(绿色复选标记图标) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 节点名称左侧)、表示没有处于活动状态的警报、并且节点已连接到网格。</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">您知道需要更换组件的存储设备的序列号。</block>
   <block id="fe96bb389ae099a3c5dcdd5b5427e3bc" category="list-text">您将使用登录到网格管理器<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
-  <block id="7aa733436808f3ef7dbb843f0bfd7537" category="paragraph">使用此操作步骤可确定硬件出现故障的设备以及哪些可更换硬件组件运行不正常。可能确定要更换的组件包括：</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">电源</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">风扇</block>
   <block id="3907a0fffff4b13006f3069d9186c0d5" category="list-text">固态驱动器(SSD)</block>
@@ -5517,4 +5516,58 @@
   <block id="32560f7f516484a70333e63586d49ee8" category="list-text">按下产品前面板上的识别LED开关。</block>
   <block id="84f9f6b07fa3b7c2043dcb10969d9836" category="list-text">使用设备BMC界面。</block>
   <block id="c3767fd24594af27204c85f38e6485de" category="admonition">当设备处于维护模式时、存储控制器的I/O (输入/输出)活动将停止、以确保中断存储操作的安全。</block>
+  <block id="a5c480dfbb1146eeb42a0bcc0d8bbbb4" category="paragraph">使用此操作步骤可确定硬件出现故障的设备以及哪些可更换硬件组件运行不正常。可能确定要更换的组件包括：</block>
+  <block id="a26cdf0f1745cbb76eb5328668e38b6f" category="image-alt">提升板部件的位置</block>
+  <block id="48588d23b204532125483be8736cc62b" category="list-text">使用手指或塑料撬起工具将固定夹从电池上压出、以将其从插槽中弹簧取出。</block>
+  <block id="65dc474701428334be6aca7529908454" category="image-alt">提升板部件上的定位孔</block>
+  <block id="665f25079cb5accd5eb43f2913b6c37f" category="doc">更换SG100或SG1000设备盖</block>
+  <block id="f1d6d43707540812eb946d45ccef5ec4" category="section-title">卸下SG100或SG1000设备护盖</block>
+  <block id="64e8eab7438cec59cd0671f1a5e3dbb6" category="paragraph">卸下产品盖板，以便检修内部组件。</block>
+  <block id="b1d5df074b99621759036a9121b85e98" category="paragraph">从机柜或机架中取出产品，以便检修顶盖。</block>
+  <block id="511c877284f772f66774598abeeea6f5" category="inline-link-macro">从机柜或机架中卸下SG100或SG1000设备</block>
+  <block id="2285eddd6702074129ac0f1ecda4b2f4" category="paragraph"><block ref="2285eddd6702074129ac0f1ecda4b2f4" category="inline-link-macro-rx"></block></block>
+  <block id="b0e7c1ff76e24cb7116c6fb8b809271c" category="image-alt">盖板闩锁打开</block>
+  <block id="827c9e961d14d7b5f5337e655b29df10" category="section-title">重新安装SG100或SG1000设备护盖</block>
+  <block id="e1095c022f98a1bb69eb7e440dbb0ced" category="paragraph">内部硬件维护完成后、重新安装设备盖。</block>
+  <block id="7b6a35b28349993ccb044f99d3cb9c05" category="image-alt">盖板闩锁定位销</block>
+  <block id="77e20811baef645173a9afd272aed5f2" category="inline-link-macro">将产品重新安装到机柜或机架中。</block>
+  <block id="fee143211358506f5958deb39267a94d" category="paragraph"><block ref="fee143211358506f5958deb39267a94d" category="inline-link-macro-rx"></block></block>
+  <block id="8d74142d0d3a9120da2ba9c70236cdd6" category="summary">从机柜或机架中卸下SG100或SG1000以检修顶盖或将设备移动到其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。</block>
+  <block id="a5b8a777a1b08a83ca76ba17d2003033" category="doc">在机柜或机架中重新定位SG100或SG1000</block>
+  <block id="5fc59c0417d710999eccabc5f2b53e54" category="paragraph">从机柜或机架中取出SG100或SG1000设备、以便检修顶盖或将设备移至其他位置、然后在硬件维护完成后将设备重新安装到机柜或机架中。</block>
+  <block id="4faf0e30b4acd7fb71c04eecc674f9bb" category="section-title">从机柜或机架中卸下SG100或SG1000</block>
+  <block id="1e2dad3dc1303cb9c34342a08ac369c2" category="paragraph">从机柜或机架中取出SG100或SG1000、以便检修顶盖或将设备移至其他位置。</block>
+  <block id="fd4bc1e04629aac76e335abbe4b95110" category="list-text">您可以使用标签来标识连接到SG100或SG1000设备的每条缆线。</block>
+  <block id="00265604d07e83e9fa37acfb58aea0a6" category="list-text">您已找到要在数据中心执行维护的SG100或SG1000设备的物理位置。</block>
+  <block id="e062f7e106df68638e79abdb18fac222" category="paragraph"><block ref="e062f7e106df68638e79abdb18fac222" category="inline-link-macro-rx"></block></block>
+  <block id="0fcf830f0c15b1400c1db9718be45ada" category="inline-link-macro">关闭SG100或SG1000设备</block>
+  <block id="5c1320f429c4112c2bba2f8f6cb8fa01" category="list-text">您拥有 <block ref="f1505d4606b132b8853f29fe0a332652" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b0bec7300d43ef7de3808046f83438c" category="list-text">将设备向前滑出机架、直至安装导轨完全展开、您可以听到两侧的闩锁发出咔嗒声。</block>
+  <block id="72c93dbd5f5d24a30424f10682ce2429" category="section-title">将SG100或SG1000重新安装到机柜或机架中</block>
+  <block id="605201180c8af58706d2950dc2815425" category="paragraph">硬件维护完成后、将设备重新安装到机柜或机架中。</block>
+  <block id="185e5b18a157d76176305c8be330d521" category="inline-link-macro">重新安装SG100或SG1000护盖</block>
+  <block id="134ec335795fdd11457bc3cf0025baf5" category="paragraph"><block ref="134ec335795fdd11457bc3cf0025baf5" category="inline-link-macro-rx"></block></block>
+  <block id="e3cda821d00824f87e103cfa79fa642c" category="list-text">同时按下蓝色导轨可松开两个机架导轨、然后将设备滑入机架、直至完全就位。</block>
+  <block id="684fc7e3b4be959ee39744c82078ef0c" category="image-alt">机架固定螺钉</block>
+  <block id="c934d158cd3ec0bfbf3cbdd7b7827955" category="list-text">重新连接产品电源线。</block>
+  <block id="05c9535932e03bb8444cfbfc967af3e2" category="inline-link-macro">连接电源线并接通电源(SG100或SG1000)</block>
+  <block id="a76302d15eb6041c12b94bdbf80ddf79" category="paragraph"><block ref="a76302d15eb6041c12b94bdbf80ddf79" category="inline-link-macro-rx"></block></block>
+  <block id="bbbfb5089b20d2a9a438d1f300dc3951" category="paragraph">可以重新启动设备。</block>
+  <block id="1aab7af93e422001302d3d72d844aa68" category="doc">更换SG100或SG1000中的CMOS电池</block>
+  <block id="2de23f109c4b7a2ebaf85dfa94d803d2" category="inline-link-macro">已验证需要更换CMOS电池的SG100或SG1000</block>
+  <block id="d31100686fc52b53392732b7d3ae0dbb" category="list-text">您拥有 <block ref="fcfad0bf3ec87a01189dcc7ef62e31e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="76dc6b7b32167d9bd3a9ee4280cd472c" category="inline-link-macro">物理位置：SG100或SG1000设备</block>
+  <block id="295f39bc37ea49d39fdef10ffc386a4d" category="list-text">您可以 <block ref="1c34acfb2667f43feb9d3c66f2b8ed39" category="inline-link-macro-rx"></block> 在数据中心更换CMOS电池。</block>
+  <block id="7d406e9712f1c209336e5e697cc447ef" category="admonition">在从机架中卸下设备之前、需要使用 <block ref="db7c721060dced196b796faf173aec6a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="126a827d213a0e5e13049b3f4047c548" category="list-text">您已断开所有电缆和的连接 <block ref="b4ae088a94cfd6b68a1d3b21b7e66f50" category="inline-link-macro-rx"></block>。</block>
+  <block id="20015455ab5d561bb2f053becbe04427" category="doc">验证SG100或SG1000中要更换的组件</block>
+  <block id="155f05305b468da8a62a625c5bb46d08" category="paragraph"><block ref="155f05305b468da8a62a625c5bb46d08" category="inline-link-macro-rx"></block></block>
+  <block id="a3920e91582773914df89ce69b0b4103" category="doc">更换SG6000-CN CMOS电池</block>
+  <block id="b3b2dfaac1200c3b68a403bd40179bdf" category="list-text">您拥有 <block ref="1ec8c115f0c3870ab94b38ffe7b9d363" category="inline-link-macro-rx"></block>。</block>
+  <block id="52f39f79f4d9a5685bc2024f2a087065" category="list-text">您可以 <block ref="f706bf55d44d59c0b4f06acfce2f61ee" category="inline-link-macro-rx"></block> 在数据中心更换CMOS电池。</block>
+  <block id="a1294f5ec4aea9551adb3b8c8723fea7" category="admonition">在从机架中卸下设备之前、需要使用 <block ref="01cb3624578c0b6333a3e47dc48ec415" category="inline-link-macro-rx"></block> 。</block>
+  <block id="27a168d0228d72534f07ee949d2796ff" category="list-text">您已断开所有电缆和的连接 <block ref="15196f495d147a32d6ddc13b14aad025" category="inline-link-macro-rx"></block>。</block>
+  <block id="10fa39edb4e5d5fc91498d5271535f37" category="doc">验证要在SG6000-CN中更换的组件</block>
+  <block id="ca37341c514b082d1be600ae89827bce" category="sidebar">在机架中重新定位SG100或SG1000</block>
+  <block id="530a7cab0d75789e4984b34660953995" category="sidebar">更换SG6000-CN控制器中的CMOS电池</block>
 </blocks>

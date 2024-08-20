@@ -20,11 +20,19 @@ entries:
 - title: 硬件过程
   pdf-filename: 硬件过程—SG100和SG1000
   entries:
+  - title: 验证要更换的组件
+    url: "/sg100-1000/verify-component-to-replace-sg100-and-sg1000.html"
+  - title: 装回护盖
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
   - title: 更换一个或两个电源
     url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
   - title: 更换风扇
     url: "/sg100-1000/replacing-fan-in-services-appliance.html"
   - title: 更换驱动器
     url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: 更换CMOS电池
+    url: "/sg100-1000/replace-cmos-in-sg100-and-sg1000.html"
   - title: 更换产品
     url: "/sg100-1000/replacing-services-appliance.html"
+  - title: 将设备重新放置在机架中
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"

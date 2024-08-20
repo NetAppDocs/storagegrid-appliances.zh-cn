@@ -15,11 +15,17 @@ indexpage:
     links:
     - title: 更换产品
       url: "../sg100-1000/replacing-services-appliance.html"
+    - title: 在机架中重新定位SG100或SG1000
+      url: "../sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"
   - title: 硬件过程
     links:
+    - title: 装回护盖
+      url: "../sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
     - title: 更换电源
       url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
     - title: 更换风扇
       url: "../sg100-1000/replacing-fan-in-services-appliance.html"
     - title: 更换驱动器
       url: "../sg100-1000/replacing-drive-in-services-appliance.html"
+    - title: 更换CMOS电池
+      url: "../sg100-1000/replace-cmos-in-sg100-and-sg1000.html"
