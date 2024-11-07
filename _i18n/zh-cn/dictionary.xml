@@ -5691,7 +5691,6 @@
   <block id="6caee75b38d61d4801420e3aec0b9ea6" category="paragraph">下图显示了SG6100设备正面的指示灯和按钮。</block>
   <block id="fe624da545a0997cc5d2c3d30f369af3" category="paragraph">下图显示了电源的位置、并确定了SGF6112和SG6100-CN背面的LED。设备端口上还有其他状态和活动LED。这些LED可能因设备型号而异。</block>
   <block id="f95ca0912808abe2270cd1f418b6e89a" category="image-alt">背面LED SGF6112和SG6100-CN</block>
-  <block id="0f47986745ce840c10499664283d7b6b" category="paragraph"><block ref="0f47986745ce840c10499664283d7b6b" category="inline-link-rx"></block></block>
   <block id="810b48be331213357ad3b610c2ba8a84" category="paragraph">为防止服务中断、请在开始更换CMOS电池之前确认所有其他存储节点均已连接到网格、或者在计划维护时段(服务中断时间可接受)更换电池。请参见有关的信息<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
   <block id="ae08639bb3ed33f2b9c5b58d9cddd031" category="list-text">您的更换设备的部件号与要更换的设备相同。检查贴在设备正面的标签、确认部件号匹配。</block>
   <block id="4a9949b1653a4c2d26a04be273526cc5" category="list-text">您拥有 <block ref="1f3a73fe731b4a5896a19ff9b9d6fda4" category="inline-link-macro-rx"></block>。</block>
@@ -5761,4 +5760,5 @@
   <block id="51130a506eed4d61508de06399ef34da" category="sidebar">在机架中重新定位SGF6112或SG6100-CN</block>
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">管理驱动器(SG110、SG1100、SGF6112和SG6160)</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">使用BMC界面</block>
+  <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
 </blocks>
