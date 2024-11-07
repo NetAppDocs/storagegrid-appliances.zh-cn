@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: 维护SG6000存储设备硬件
+  summary: 维护SG6000存储设备的硬件。
+  keywords: maintain storagegrid sg6000
+  lead: 维护SG6000存储设备的硬件。
   tiles:
   - title: 经常执行的过程
     links:
-    - title: 打开或关闭位置LED
+    - title: 打开或关闭识别LED
       url: "../sg6000/turning-controller-identify-led-on-and-off.html"
     - title: 在数据中心内找到设备
       url: "../sg6000/locating-controller-in-data-center.html"
@@ -13,8 +17,10 @@ indexpage:
       url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
     - title: 升级SANtricity
       url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
-    - title: 升级驱动器固件
-      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: 升级驱动器固件(联机方法)
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升级驱动器固件(脱机方法)
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: 机架过程
     links:
     - title: 更换机架中的控制器

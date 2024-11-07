@@ -10,8 +10,9 @@ entries:
   pdf-filename: 维护配置过程- SG5700
   entries:
   - title: 升级存储控制器上的 SANtricity 操作系统
-    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: 关于升级SG5700存储控制器上的SANtricity操作系统
+      url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     - title: 使用网格管理器升级存储控制器上的 SANtricity 操作系统
       url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
     - title: 使用维护模式升级 E2800 控制器上的 SANtricity 操作系统

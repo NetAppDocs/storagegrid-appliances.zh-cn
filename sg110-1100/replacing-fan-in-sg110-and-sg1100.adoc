@@ -26,14 +26,11 @@ NOTE: 答 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-
 
 
 .关于此任务
-为了防止服务中断、请在开始更换风扇之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内更换风扇、此时可以接受服务中断。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
-
-
-CAUTION: 如果您使用的ILM规则仅创建一个对象副本、则必须在计划的维护时段更换风扇、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+为了防止服务中断、请在开始更换风扇之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内更换风扇、此时可以接受服务中断。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 更换风扇时，无法访问设备节点。
 
-照片显示了产品的风扇。电气接头将突出显示。将顶盖从设备上取下后，即可访问散热风扇。
+图中显示了产品的风扇，其中电气接头突出显示。将顶盖从设备上取下后，即可访问散热风扇。
 
 
 NOTE: 两个电源设备中的每个设备都包含一个风扇。此操作步骤 不包括电源风扇。
@@ -49,11 +46,8 @@ image::../media/sgf6112_fan_fru.png[风扇 FRU]
 +
 image::../media/SGF6112-fan-locations.png[风扇位置]
 
-
-
++
 |===
-
-
 |  | 风扇单元 
 
 

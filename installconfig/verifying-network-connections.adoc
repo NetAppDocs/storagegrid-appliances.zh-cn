@@ -35,7 +35,7 @@ image::../media/ping_test_start.png[StorageGRID 设备安装程序中的 Ping �
 如果网络连接有效，则会显示 "Ping test passed" 消息，并列出 ping 命令输出。
 
 +
-image::../media/ping_test_passed.png[StorageGRID Webscale 设备安装程序中的 ping 测试结果屏幕截图]
+image::../media/ping_test_passed.png[StorageGRID设备安装程序中ping测试结果的屏幕截图]
 
 
 

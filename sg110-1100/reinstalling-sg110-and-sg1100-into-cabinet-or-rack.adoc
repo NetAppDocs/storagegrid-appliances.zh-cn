@@ -20,7 +20,7 @@ summary: 从机柜或机架中卸下SG110或SG1100以检修顶盖或将设备移
 .开始之前
 * 您可以使用标签来标识连接到SG110或SG1100的每条缆线。
 * 您已拥有 link:locating-sg110-and-sg1100-in-data-center.html["位于SG110或SG1100的物理位置"] 在数据中心执行维护的位置。
-* 您已拥有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["关闭SG110或SG1100"]。
+* 您拥有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["关闭SG110或SG1100"]。
 +
 
 CAUTION: 切勿使用电源开关关闭产品。
@@ -83,4 +83,4 @@ IMPORTANT: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线
 
 
 .完成后
-link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["重新启动设备"]。
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation["重新启动设备"](英文)

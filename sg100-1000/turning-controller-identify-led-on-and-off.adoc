@@ -17,7 +17,7 @@ summary: 可以打开控制器正面和背面的蓝色标识 LED ，以帮助在
 您拥有要标识的控制器的BMC IP地址。
 
 .步骤
-. 访问设备BMC界面。
+. link:../installconfig/accessing-bmc-interface.html["访问设备BMC界面"]。
 . 选择 * 服务器标识 * 。
 +
 已选择识别LED的当前状态。
@@ -37,6 +37,6 @@ NOTE: 如果控制器上安装了挡板，则可能很难看到正面的识别 L
 
 
 .相关信息
-link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+* link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+* link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]
 
-link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]

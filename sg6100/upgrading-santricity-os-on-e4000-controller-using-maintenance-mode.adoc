@@ -14,7 +14,7 @@ summary: 您可以使用维护模式升级E4000控制器上的SANtricity操作�
 您可以使用维护模式升级E4000控制器上的SANtricity操作系统。
 
 
-NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
+NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
 
 .开始之前
 * 您已查阅 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
@@ -62,4 +62,4 @@ image::../media/nodes_menu.png[设备节点已重新加入网格]
 
 
 .相关信息
-link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]

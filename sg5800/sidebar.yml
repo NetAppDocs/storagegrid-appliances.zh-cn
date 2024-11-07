@@ -10,8 +10,9 @@ entries:
   pdf-filename: 维护配置过程- SGs了
   entries:
   - title: 升级存储控制器上的 SANtricity 操作系统
-    url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: 关于升级SG9500存储控制器上的SANtricity操作系统
+      url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     - title: 使用网格管理器升级存储控制器上的 SANtricity 操作系统
       url: "/sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html"
     - title: 使用维护模式升级E4000控制器上的SANtricity操作系统
@@ -30,7 +31,7 @@ entries:
   pdf-filename: 硬件流程- SGs太 少
   entries:
   - title: 更换SG酒店 的控制器
-    url: "/sg5800/replace-controller-sg5800.html"
+    url: "/sg5800/replace-controller-5800sg.html"
   - title: 更换E4000控制器
     url: "/sg5800/replace-controller-e4000-simplex.html"
   - title: 更换风扇(SG5860)

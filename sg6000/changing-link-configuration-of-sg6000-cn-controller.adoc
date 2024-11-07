@@ -41,7 +41,7 @@ NOTE: 如果更改了所连接的网络或链路，则可能会断开连接。�
 `*https://_Appliance_Controller_IP_:8443*`
 
 +
-如果更改了 VLAN 设置，则设备的子网可能已更改。如果需要更改设备的 IP 地址，请按照执行操作 https://docs.netapp.com/us-en/storagegrid-118/maintain/configuring-ip-addresses.html["配置 IP 地址"^] 说明。
+如果更改了 VLAN 设置，则设备的子网可能已更改。如果需要更改设备的IP地址、请按照说明进行操作 https://docs.netapp.com/us-en/storagegrid/maintain/configuring-ip-addresses.html["配置 IP 地址"^]。
 
 +
 link:../installconfig/setting-ip-configuration.html["配置 StorageGRID IP 地址"]

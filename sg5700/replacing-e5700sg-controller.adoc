@@ -114,4 +114,4 @@ CAUTION: 请始终用双手支撑控制器的重量。
 更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
 
 .相关信息
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E系列文档"^]

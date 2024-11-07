@@ -195,7 +195,7 @@ image::../media/appliance_installer_reboot_complete.png[重新启动完成]
 +
 .. 在网格管理器中，选择*N节点*并验证设备存储节点是否具有绿色复选标记图标。
 +
-绿色复选标记图标表示没有处于活动状态的警报、并且节点已连接到网格。有关节点图标的问题描述 、请参见 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
+绿色复选标记图标表示没有处于活动状态的警报、并且节点已连接到网格。有关节点图标的说明，请参见 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 .. 选择 * 存储 * 选项卡，然后确认添加的每个扩展架的对象存储表中显示了 16 个新的对象存储。
 .. 验证每个新扩展架的磁盘架状态是否为标称，配置状态是否为已配置。

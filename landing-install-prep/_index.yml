@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 准备StorageGRID安装
+  summary: 准备安装StorageGRID系统的站点。
+  keywords: storagegrid installation preparation
+  lead: 准备安装StorageGRID系统的站点。
   tiles:
   - title: 准备
     links:

@@ -20,8 +20,7 @@ summary: 您可以关闭SGF6112设备并重新打开其电源以执行维护。
 关闭设备以执行硬件维护。
 
 .开始之前
-* 您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位设备"]。
-
+您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位设备"]。
 
 .关于此任务
 为了防止服务中断、请在计划的维护时段关闭设备、此时可以接受服务中断。

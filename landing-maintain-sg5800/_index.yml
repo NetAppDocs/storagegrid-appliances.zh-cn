@@ -1,10 +1,14 @@
 ---
 indexpage:
+  title: 维护SG8600存储设备硬件
+  summary: 维护SG8600存储设备的硬件。
+  keywords: maintain storagegrid sg5800
+  lead: 维护SG8600存储设备的硬件。
   tiles:
   - title: 经常执行的过程
     links:
     - title: 更改链路配置
-      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+      url: "../sg5800/changing-link-configuration-of-e5800sg-controller.html"
     - title: 升级SANtricity
       url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
     - title: 升级驱动器固件
@@ -12,7 +16,7 @@ indexpage:
   - title: 硬件过程
     links:
     - title: 更换SG可能性 能计算控制器
-      url: "../sg5800/replace-controller-sg5800.html"
+      url: "../sg5800/replace-controller-5800sg.html"
     - title: 更换E4000存储控制器
       url: "../sg5800/replace-controller-e4000-simplex.html"
     - title: 更换风扇罐

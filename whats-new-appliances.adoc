@@ -18,15 +18,21 @@ summary: 了解此文档站点中的新增功能。
 
 
 
+== BMC信息
+
+有关使用StorageGRID设备BMC界面的详细信息现已发布。请参阅。 link:./commonhardware/use-bmc.html["使用StorageGRID设备基板管理控制器(BMC)"]
+
+
+
 == SG5812和SG5860设备
 
-新的StorageGRID SG5812和SG5860设备是集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。请参见 https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg5800.html["SG工具：概述"] 了解更多信息。
+新的StorageGRID SG5812和SG5860设备是集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。请参见link:./installconfig/hardware-description-sg5800.html["SG工具：概述"]以了解更多信息。
 
 
 
 == SG6160设备
 
-新的StorageGRID SG6160设备包括一个计算控制器和一个存储控制器架、其中包含两个存储控制器和60个驱动器、以及两个用于缓存的NVMe SSD驱动器。或者、也可以向SG6160添加60个驱动器的扩展架。请参见 link:installconfig/hardware-description-sg6100.html["SGF6100设备：概述"] 了解更多信息。
+新的StorageGRID SG6160设备包括一个计算控制器和一个存储控制器架、其中包含两个存储控制器和60个驱动器、以及两个用于缓存的NVMe SSD驱动器。或者、也可以向SG6160添加60个驱动器的扩展架。请参见link:./installconfig/hardware-description-sg6100.html["SGF6100设备：概述"]了解更多信息。
 
 
 

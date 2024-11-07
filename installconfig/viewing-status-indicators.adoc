@@ -30,7 +30,7 @@ summary: 设备和控制器包括一些指示灯、可帮助您确定设备组�
 设备指示灯和按钮::
 +
 --
-下图显示了SG100和SG1000上的状态指示灯和按钮。
+下图显示了SG100和SG1000正面的状态指示灯和按钮。
 
 image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
 
@@ -89,6 +89,39 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
 --
 
 
+下图显示了电源的位置、并确定了SG100和SG1000背面的LED。设备端口上还有其他状态和活动LED。这些LED可能因设备型号而异。
+
+image::../media/q2023_rear_leds.png[背面LED SG100和SG1000]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+|===
 [[general_boot_codes_SG100_1000]]
 常规启动代码::
 +
@@ -159,7 +192,7 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 设备指示灯和按钮::
 +
 --
-下图显示了SG110和SG1100设备上的指示灯和按钮。
+下图显示了SG110和SG1100设备正面的指示灯和按钮。
 
 image::../media/sgf6112_front_indicators.png[前部指示灯- SG110和SG1100]
 
@@ -227,6 +260,39 @@ SG110和SG1100设备不使用此指示灯、并且此指示灯将保持熄灭状
 --
 
 
+下图显示了电源的位置、并确定了SG110和SG1100背面的LED。设备端口上还有其他状态和活动LED。这些LED可能因设备型号而异。
+
+image::../media/q2024_rear_leds.png[背面LED SG110和SG1100]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+|===
 [[general_boot_codes]]
 常规启动代码::
 +
@@ -475,6 +541,13 @@ E5700SG 控制器启动代码::
 [cols="1a,3a"]
 |===
 | 代码 | 表示 
+
+
+ a| 
+高
+ a| 
+主启动脚本正在等待操作系统启动完成。
+
 
 
  a| 
@@ -744,8 +817,7 @@ off ：控制器与连接的设备之间没有链路。
 
 
 .相关信息
-* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
-
+link:https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 
 --
 .SG6000
@@ -765,7 +837,7 @@ SG6000-CN控制器上的状态指示灯和按钮::
 --
 SG6000-CN 控制器包含一些指示灯，可帮助您确定控制器的状态，其中包括以下指示灯和按钮。
 
-下图显示了SG6000-CN控制器上的状态指示灯和按钮。
+下图显示了SG6000-CN控制器正面的状态指示灯和按钮。
 
 image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
 
@@ -825,6 +897,39 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
 --
 
 
+下图显示了电源设备的位置、并在SG6000-CN控制器背面显示了LED指示灯。设备端口上还有其他状态和活动LED。这些LED可能因设备型号而异。
+
+image::../media/q2023_rear_leds.png[背面LED SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+|===
 [[general_boot_codes_sg6000]]
 常规启动代码::
 +
@@ -889,7 +994,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800 的七段显示�
 设备指示灯和按钮::
 +
 --
-下图显示了SG6100设备上的指示灯和按钮。
+下图显示了SG6100设备正面的指示灯和按钮。
 
 image::../media/sgf6112_front_indicators.png[前指示灯- SGF6112]
 
@@ -957,6 +1062,39 @@ SG6100设备不使用此指示灯、并且此指示灯保持熄灭状态。
 --
 
 
+下图显示了电源的位置、并确定了SGF6112和SG6100-CN背面的LED。设备端口上还有其他状态和活动LED。这些LED可能因设备型号而异。
+
+image::../media/q2024_rear_leds.png[背面LED SGF6112和SG6100-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+|===
 [[general_boot_codes_SG6100]]
 常规启动代码::
 +
@@ -1013,8 +1151,7 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 
 
 .相关信息
-* https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
-
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 
 --
 ====

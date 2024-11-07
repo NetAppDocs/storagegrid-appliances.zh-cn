@@ -37,8 +37,7 @@ NOTE: 如果控制器上安装了挡板，则可能很难看到正面的识别 L
 
 
 .相关信息
-link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["确认要更换的光纤通道 HBA"]
+* link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["确认要更换的光纤通道 HBA"]
+* link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
+* link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]
 
-link:locating-controller-in-data-center.html["在数据中心中找到控制器"]
-
-link:../installconfig/accessing-bmc-interface.html["访问 BMC 界面"]

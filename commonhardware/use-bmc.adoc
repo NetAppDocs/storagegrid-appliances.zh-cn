@@ -1,0 +1,94 @@
+---
+permalink: commonhardware/use-bmc.html 
+sidebar: sidebar 
+keywords: storagegrid, bmc 
+summary: '某些StorageGRID设备包括底板管理控制器(BMC)、可用于对设备配置、监控和诊断进行低级硬件访问。' 
+---
+= 使用StorageGRID设备基板管理控制器(BMC)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+某些StorageGRID设备包括底板管理控制器(BMC)、可用于对设备配置、监控和诊断进行低级硬件访问。
+
+以下StorageGRID设备型号支持BMC界面：
+
+* SG100
+* SG110
+* SG1000
+* SG1100
+* SG6000
+* SG6100
+
+
+有关对这些设备使用BMC界面的详细信息、请参见 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]。在技术支持的指导下、您只能访问StorageGRID文档中记录的_NOT _ BMC函数。
+
+本BMC用户指南介绍了适用于某些StorageGRID设备的最新版BMC固件。您的StorageGRID设备的BMC固件版本可能略有不同。
+
+* BMC固件会在StorageGRID软件升级期间进行更新。如果您运行的不是最新版本的StorageGRID软件，则可以将设备更新到最新版本的StorageGRID以安装 https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["适用于您的设备的最新BMC固件版本"]。
+* 如果您的BMC在StorageGRID更新之前或之后显示不同、中的信息 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]可能有助于您根据BMC版本调整说明。
+
+
+
+
+== BMC用于StorageGRID设备
+
+以下BMC过程已记录下来、可用于受支持的StorageGRID设备：
+
+* link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]
+* link:../installconfig/configuring-snmp-settings-for-bmc.html["配置BMC SNMP设置"]
+* link:../installconfig/setting-up-email-notifications-for-alerts.html["设置电子邮件警报通知"]
+* 排除硬件安装故障：
++
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000和SG100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100和SG110"]
+** link:../installconfig/troubleshooting-hardware-installation.html["SG6000"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+
+
+* 确定设备电源状态：
++
+** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000和SG100"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100和SG110"]
+** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000"]
+** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+
+
+* 打开和关闭设备识别LED：
++
+** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000和SG100"]
+** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100和SG110"]
+** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000"]
+** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+
+
+
+
+
+
+== StorageGRID设备不支持BMC功能
+
+以下BMC功能与StorageGRID专用配置冲突、不应使用。
+
+* 设置
++
+** RAID管理
+** SAS IT管理
+** IPMI接口
+** 冷冗余
+** NIC选择
+
+
+* 图像重定向
+* 主机系统诊断
+* 维护
++
+** 双映像配置
+** 固件信息
+** 固件更新
+** 恢复出厂默认设置
+
+
+

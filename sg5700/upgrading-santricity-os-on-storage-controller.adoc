@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
 summary: 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。 
 ---
-= 升级SG5700存储控制器上的SANtricity操作系统
+= 关于升级SG5700存储控制器上的SANtricity操作系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

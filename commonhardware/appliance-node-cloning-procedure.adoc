@@ -98,7 +98,7 @@ image::../media/cloning_progress.png[克隆进度]
 
 
 * 目标节点将退出维护模式并加入 StorageGRID ，从而替换源节点。
-* 源设备处于预安装状态，就像您已安装一样 https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["已准备好重新安装"^]。
+* 源设备处于预安装状态，就像您安装了一样 https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["已准备好重新安装"^]。
 
 
 

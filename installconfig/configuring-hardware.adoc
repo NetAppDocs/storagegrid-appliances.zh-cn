@@ -58,12 +58,12 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 +
 ** 配置SANtricity系统管理器(SG5700、SG5700、SG6000和SG6100)用于监控硬件的软件
 ** 更改RAID模式
-** 访问SG6000-CN或SG6100-CN控制器的BMC接口
+** link:../installconfig/accessing-bmc-interface.html["访问BMC界面"]适用于SG6000-CN或SG6100-CN控制器
 
 
 * 服务设备
 +
-** 访问SG100、SG110、SG1000和SG1100的BMC界面
+** link:../installconfig/accessing-bmc-interface.html["访问BMC界面"]适用于SG100、SG110、SG1000和SG1100
 
 
 

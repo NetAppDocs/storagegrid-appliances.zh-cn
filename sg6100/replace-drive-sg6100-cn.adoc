@@ -57,7 +57,7 @@ CAUTION: 合上手柄时不要用力过大。
 驱动器完全插入后，您会听到卡嗒声。
 
 +
-当两个SSD驱动器均正常运行时、系统将自动恢复读缓存功能。您可以 https://docs.netapp.com/us-en/storagegrid-118/monitor/running-diagnostics.html["运行诊断"^] 监控读取缓存命中率。由于缓存刚刚重建、因此命中率最初可能会很低、但随着访问对象数据的客户端重新填充缓存、命中率会逐渐增加。
+当两个SSD驱动器均正常运行时、系统将自动恢复读缓存功能。您可以 https://docs.netapp.com/us-en/storagegrid/monitor/running-diagnostics.html["运行诊断"^]监控读取缓存命中率。由于缓存刚刚重建、因此命中率最初可能会很低、但随着访问对象数据的客户端重新填充缓存、命中率会逐渐增加。
 
 
 

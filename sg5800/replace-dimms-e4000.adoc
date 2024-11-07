@@ -29,7 +29,7 @@ summary:
 
 * 访问SANtricity系统管理器：
 +
-** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
 +
 
 NOTE: 在此操作步骤的某些步骤中、您可能无法使用网格管理器访问SANtricity系统管理器。如果SG™控制器已关闭，则需要使用浏览器访问SANtricity系统管理器。
@@ -167,12 +167,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
 
 
  a| 
-image::../media/legend_icon_01.png[图例图标 01]
+image::../media/legend_icon_01.png[标注参考1]
 | DIMM ejector tabs 
 
 
  a| 
-image::../media/legend_icon_02.png[legend icon 02]
+image::../media/legend_icon_02.png[标注参考2.]
 | DIMM 
 |===
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.

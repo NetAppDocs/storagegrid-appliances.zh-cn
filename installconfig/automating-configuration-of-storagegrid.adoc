@@ -42,7 +42,7 @@ summary: 安装并配置网格节点后、您可以自动配置StorageGRID 系�
 您可以使用 `configure-storagegrid.py` Python脚本和 `configure-storagegrid.json` 用于自动配置StorageGRID 系统的配置文件。
 
 
-NOTE: 您也可以使用配置系统 https://docs.netapp.com/us-en/storagegrid-118/primer/exploring-grid-manager.html["网格管理器"^] 或 link:overview-of-installation-rest-apis.html["安装 API"]。
+NOTE: 您也可以使用或配置系统 https://docs.netapp.com/us-en/storagegrid/primer/exploring-grid-manager.html["网格管理器"^]link:overview-of-installation-rest-apis.html["安装 API"]。
 
 .步骤
 . 登录到用于运行 Python 脚本的 Linux 计算机。

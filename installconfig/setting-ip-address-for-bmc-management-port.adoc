@@ -16,7 +16,7 @@ summary: 在访问BMC界面之前、您必须在SG6000-CN控制器或服务设�
 如果使用ConfigBuilder生成JSON文件、则可以自动配置IP地址。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
 
 .开始之前
-* 管理客户端正在使用 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 管理客户端正在使用 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 您正在使用可连接到 StorageGRID 网络的任何管理客户端。
 * BMC 管理端口将连接到您计划使用的管理网络。
 +

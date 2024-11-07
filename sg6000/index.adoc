@@ -19,7 +19,7 @@ summary: 您可能需要对 SG6000 设备执行维护过程。本节中的过程
 
 请参见 link:../installconfig/configuring-hardware.html["设置硬件"] 用于在初始设备安装和配置期间执行的维护过程。
 
-要防止服务中断，请在关闭设备之前确认所有其他存储节点均已连接到网格，或者在可接受服务中断期间的计划维护窗口期间关闭设备。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
+要防止服务中断，请在关闭设备之前确认所有其他存储节点均已连接到网格，或者在可接受服务中断期间的计划维护窗口期间关闭设备。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 
-CAUTION: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划维护时段关闭设备。否则，在任何维护操作步骤 导致存储节点停止服务期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/index.html["通过信息生命周期管理管理对象"^]。
+CAUTION: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划维护时段关闭设备。否则，在任何维护操作步骤 导致存储节点停止服务期间，您可能暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid/ilm/index.html["通过信息生命周期管理管理对象"^]。

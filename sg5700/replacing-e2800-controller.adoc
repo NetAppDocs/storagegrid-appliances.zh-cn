@@ -26,7 +26,7 @@ NOTE: 请勿依靠E系列说明来更换StorageGRID 设备中的控制器、因�
 CAUTION: 只有在使用已保存的密钥解锁驱动器后，才能使用此设备。
 
 * 您必须具有特定的访问权限。
-* 您必须使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您必须使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .关于此任务

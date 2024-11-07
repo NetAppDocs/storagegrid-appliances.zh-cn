@@ -13,7 +13,7 @@ summary: 如果您在安装期间为设备启用了节点加密，则可以监�
 [role="lead"]
 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器（ KMS ）详细信息。
 
-请参见 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["配置密钥管理服务器"^] 有关为StorageGRID 设备实施KMS的信息。
+有关为StorageGRID设备实施KMS的信息、请参见 https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["配置密钥管理服务器"^]。
 
 .开始之前
 * 您在安装期间为设备启用了节点加密。安装此设备后、您无法启用节点加密。
@@ -32,7 +32,7 @@ image::../media/fde_monitor_in_maint_mode.png[Kms 清除配置]
 ** " 加密状态 " 显示设备是启用还是禁用了节点加密。
 ** 密钥管理服务器详细信息显示了有关用于对设备进行加密的 KMS 的信息。您可以展开服务器和客户端证书部分以查看证书详细信息和状态。
 +
-*** 要解决证书本身的问题，例如续订已过期的证书，请参见 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["有关配置 KMS 的说明"^]。
+*** 要解决证书本身的问题，例如续订已过期的证书，请参见 https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["有关配置 KMS 的说明"^]。
 *** 如果连接到 KMS 主机时出现意外问题，请验证 link:../commonhardware/checking-dns-server-configuration.html["DNS服务器正确"] 这样 link:../installconfig/configuring-network-links.html["已正确配置设备网络"]。
 *** 如果无法解决证书问题，请联系技术支持。
 
@@ -73,7 +73,7 @@ image::../media/nodes_menu.png[设备节点已重新加入网格]
 
 CAUTION: 清除 KMS 后，设备上的数据将被永久删除，并且无法再访问。此数据不可恢复。
 
-https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html["停用节点"^] 将其包含的任何数据移动到 StorageGRID 中的其他节点。
+https://docs.netapp.com/us-en/storagegrid/maintain/grid-node-decommissioning.html["停用节点"^]将其包含的任何数据移动到StorageGRID中的其他节点。
 
 .关于此任务
 清除设备 KMS 配置将禁用节点加密，从而删除设备节点与 StorageGRID 站点的 KMS 配置之间的关联。然后，设备上的数据将被删除，并且设备将保持预安装状态。此过程无法反转。
@@ -130,4 +130,4 @@ KMS 加密密钥和所有数据将从节点中删除，设备将重新启动。�
 
 
 .完成后
-在设备重新启动并确认 KMS 已清除且设备处于预安装状态后，您可以从 StorageGRID 系统中物理删除此设备。请参见 https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["有关准备重新安装设备的说明"^]。
+在设备重新启动并确认 KMS 已清除且设备处于预安装状态后，您可以从 StorageGRID 系统中物理删除此设备。请参见 https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["有关准备重新安装设备的说明"^]。

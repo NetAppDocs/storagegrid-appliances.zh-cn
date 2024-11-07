@@ -18,13 +18,36 @@ summary: 在某些型号的设备上、您可以更改为设备上的其他RAID�
 .关于此任务
 如果您的设备支持、您可以选择以下卷配置选项之一：
 
-* *动态磁盘池(DDP)*：此模式对每八个数据驱动器使用两个奇偶校验驱动器。这是所有设备的默认和建议模式。与RAID 6相比、DDP可提供更高的系统性能、减少驱动器发生故障后的重建时间、并简化管理。DDP还可以在SG5760、SG5860和SG6160设备中提供抽盒丢失保护。
+
+NOTE: 卷大小在所有DDP和RAID类型之间不一致。DDP和RAID6运行方式的变化会导致卷大小不同。
+
+* *动态磁盘池(DDP)*：此模式对每八个数据驱动器使用两个奇偶校验驱动器。这是所有设备的默认和建议模式。
++
+** 与RAID 6相比、DDP可提供更高的系统性能、减少驱动器发生故障后的重建时间、并简化管理。
+** 每个存储设备或扩展架会创建一个磁盘池。
+** DDP可在SG5760、SG5860和SG6160设备中提供抽盒丢失保护。
 +
 
-NOTE: 由于有两个SSD、DDP不会在SG6060设备中提供抽盒丢失保护。对于添加到SG6060中的任何扩展架、抽屉丢失保护功能均有效。
+NOTE: 由于使用两个SSD、DDP无法在SG6060设备中提供抽盒丢失保护。对于添加到SG6060中的任何扩展架、抽屉丢失保护功能均有效。
 
-* * DDP16* ：此模式每 16 个数据驱动器使用两个奇偶校验驱动器，因此与 DDP 相比，存储效率更高。与RAID 6相比、DDP16可提供更好的系统性能、减少驱动器发生故障后的重建时间、简化管理并具有同等的存储效率。要使用 DDP16 模式，您的配置必须至少包含 20 个驱动器。DDP16 不提供抽盒丢失保护。
+
+
+* * DDP16* ：此模式每 16 个数据驱动器使用两个奇偶校验驱动器，因此与 DDP 相比，存储效率更高。
++
+** 与RAID 6相比、DDP16可提供更好的系统性能、减少驱动器发生故障后的重建时间、简化管理并具有同等的存储效率。
+** 要使用DDP16模式、存储设备必须至少包含20个驱动器。
+** 每个存储设备或扩展架会创建一个磁盘池。
+** DDP16不提供抽盒丢失保护。
+
+
 * * RAID6* ：此模式每 16 个或更多数据驱动器使用两个奇偶校验驱动器。这是一种硬件保护方案、它会在每个磁盘上使用奇偶校验条带、并允许RAID集中出现两个磁盘故障、以免丢失任何数据。要使用 RAID 6 模式，您的配置必须至少包含 20 个驱动器。虽然与DDP相比、RAID 6可以提高设备的存储效率、但不建议在大多数StorageGRID 环境中使用。
++
+** RAID 6为每个扩展架提供一个全局热备件。例如、具有两个扩展架的SG6160具有三个热备件。
+** 在一个包含60个驱动器的存储设备上、StorageGRID会创建三个卷组、每个卷组至少包含18个驱动器(16+2)、最大大小为21个驱动器(19+2)。
+** 在SGF6024上、一个RAID 6卷组包含23个驱动器和一个热备用磁盘。
+** RAID 6卷稍大、在许多情况下、可以从DDP16克隆节点。RAID 6配置中的卷大小因卷组而异。
+
+
 
 
 
@@ -37,7 +60,7 @@ CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAI
 .开始之前
 * 您有一个SG5760、其中包含60个驱动器。如果您使用的是SG5712、则必须使用默认DDP模式。
 * 您正在使用可以连接到 StorageGRID 的任何客户端。
-* 客户端具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .步骤
@@ -57,7 +80,7 @@ CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAI
 .开始之前
 * SG5860具有60个驱动器。如果您使用的是SG5812、则必须使用默认DDP模式。
 * 您正在使用可以连接到 StorageGRID 的任何客户端。
-* 客户端具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .步骤
@@ -76,7 +99,7 @@ CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAI
 --
 .开始之前
 * 您正在使用可以连接到 StorageGRID 的任何客户端。
-* 客户端具有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .步骤
@@ -100,7 +123,7 @@ CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAI
 --
 .开始之前
 * 您正在使用可以连接到 StorageGRID 的任何客户端。
-* 客户端具有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .步骤

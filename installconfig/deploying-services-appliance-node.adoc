@@ -22,7 +22,7 @@ summary: '您可以将服务设备部署为主管理节点，非主管理节点�
 .开始之前
 * 此设备已安装在机架或机柜中，并已连接到您的网络并已启动。
 * 已使用 StorageGRID 设备安装程序为此设备配置网络链路， IP 地址和端口重新映射（如果需要）。
-* 您的服务笔记本电脑具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您有一台带的服务笔记本电脑 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 您知道分配给设备的 IP 地址之一。您可以对任何已连接的 StorageGRID 网络使用此 IP 地址。
 
 
@@ -90,7 +90,7 @@ NOTE: 如果需要手动访问监控器安装页面，请单击菜单栏中的 *
 * 已使用 StorageGRID 设备安装程序为此设备配置网络链路， IP 地址和端口重新映射（如果需要）。
 * 已部署 StorageGRID 系统的主管理节点。
 * StorageGRID 设备安装程序的 IP 配置页面上列出的所有网格网络子网均已在主管理节点上的网格网络子网列表中定义。
-* 您的服务笔记本电脑具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您有一台带的服务笔记本电脑 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 您知道分配给设备的 IP 地址。您可以对任何已连接的 StorageGRID 网络使用此 IP 地址。
 
 

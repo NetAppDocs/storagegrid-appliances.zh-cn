@@ -14,10 +14,51 @@ summary: 如果您希望在出现警报时发送电子邮件通知、请使用BM
 如果您希望在出现警报时发送电子邮件通知、请使用BMC界面配置SMTP设置、用户、LAN目标、警报策略和事件筛选器。
 
 
-NOTE: 如果SG6000-CN控制器或服务设备发生故障并需要更换、则可能无法保留此操作步骤 所做的BMC设置。请确保您已应用所有设置，以便在更换硬件后根据需要轻松重新应用这些设置。
+NOTE: 如果控制器或设备发生故障并需要更换、则可能无法保留此过程中所做的BMC设置。请确保您已应用所有设置，以便在更换硬件后根据需要轻松重新应用这些设置。
 
+[role="tabbed-block"]
+====
+.StorageGRID来说、是一个很好的选择
+--
 .开始之前
-您知道如何访问 BMC 信息板。
+您知道如何操作 link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]。
+
+.关于此任务
+在BMC界面中，使用“设置”页面上的*用户管理*和*平台事件过滤器*选项配置电子邮件通知。
+
+以下说明显示了可用于某些StorageGRID设备的最新BMC固件版本。您的StorageGRID设备的BMC固件版本可能略有不同。
+
+* BMC固件会在StorageGRID软件升级期间进行更新。如果您运行的不是最新版本的StorageGRID软件，则可以将设备更新到最新版本的StorageGRID以安装 https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["适用于您的设备的最新BMC固件版本"]。
+* 如果您的BMC在StorageGRID更新之前或之后显示不同：
++
+** 请参见StorageGRID 1.18选项卡上的说明。
+** link:../commonhardware/use-bmc.html["使用StorageGRID BMC"]您可能还会获得一些信息来帮助您根据您的BMC版本调整这些说明。
+
+
+
+
+.步骤
+. 将电子邮件通知配置为一个或多个LAN目标。
++
+.. 从BMC信息板中，选择*Settings*>*Platform Event Filters*>*LAN目的地*。
+.. 对于“目标类型”，请选择*E-Mail*。
+.. 选择BMC用户名以接收BMC用户列表中的电子邮件警报。警报电子邮件将发送到此用户配置的电子邮件地址。注意：要配置BMC用户，请选择*Settings*>*User Management*。有关详细信息、请参见的用户管理部分 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]。
+.. 输入电子邮件警报的电子邮件主题和电子邮件消息。
++
+
+NOTE: AMI格式的电子邮件用户不会使用电子邮件主题和电子邮件消息。
+
+.. 选择 * 保存 * 。
+
+
+. 有关使用BMC配置警报策略和事件筛选器的信息、请参见的平台事件筛选器部分 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]。
+
+
+--
+.StorageGRID 11.8.
+--
+.开始之前
+您知道如何操作 link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]。
 
 .关于此任务
 在 BMC 界面中，您可以使用设置页面上的 * SMTP 设置 * ， * 用户管理 * 和 * 平台事件筛选器 * 选项来配置电子邮件通知。
@@ -25,7 +66,7 @@ NOTE: 如果SG6000-CN控制器或服务设备发生故障并需要更换、则�
 image::../media/bmc_settings_menu.png[BMC 设置菜单]
 
 .步骤
-. link:configuring-snmp-settings-for-bmc.html["配置BMC的SNMP设置"]。
+. 配置BMC的SMTP设置。
 +
 .. 选择 * 设置 * > * SMTP 设置 * 。
 .. 对于发件人电子邮件 ID ，请输入有效的电子邮件地址。
@@ -82,3 +123,6 @@ image::../media/bmc_settings_menu.png[BMC 设置菜单]
 
 
 
+
+--
+====

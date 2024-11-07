@@ -62,7 +62,7 @@ NOTE: 您可以使用同一个JSON文件配置多个设备。
 
 +
 
-NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使用它们作为示例，说明如何在您自己开发的网格部署和配置工具中使用 StorageGRID 安装 REST API 。请参见的说明 https://docs.netapp.com/us-en/storagegrid-118/maintain/downloading-and-extracting-storagegrid-installation-files.html["下载并提取 StorageGRID 安装文件"^]。
+NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使用它们作为示例，说明如何在您自己开发的网格部署和配置工具中使用 StorageGRID 安装 REST API 。请参阅的说明 https://docs.netapp.com/us-en/storagegrid/maintain/downloading-and-extracting-storagegrid-installation-files.html["下载并提取 StorageGRID 安装文件"^]。
 
 
 
@@ -76,7 +76,7 @@ NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使�
 * 此设备已安装在机架中，并已连接到您的网络并已启动。
 * 您已拥有 <<automation-options,已生成JSON文件>> 在NetApp专业服务顾问的指导下。
 * 您的设备包含与StorageGRID 11.5或更高版本兼容的最新固件。
-* 您已连接到要使用配置的设备上的StorageGRID 设备安装程序 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您已使用连接到要配置的设备上的StorageGRID设备安装程序 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .步骤

@@ -14,7 +14,7 @@ summary: 了解如何配置和使用StorageGRID系统。
 
 
 [role="lead"]
-转至 https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 1.18文档"^] 了解如何配置和使用StorageGRID 11.8系统。
+请访问 https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 11．11文档"^]、了解如何配置和使用StorageGRID系统。
 
 StorageGRID文档站点包含以下信息：
 
@@ -33,6 +33,7 @@ StorageGRID文档站点包含以下信息：
 
 您可以在此处找到其他版本的NetApp StorageGRID软件的文档：
 
+* https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 1.18文档"^]
 * https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7文档"^]
 * https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6文档"^]
 * https://docs.netapp.com/us-en/storagegrid-115/index.html["StorageGRID 11.5 文档"^]

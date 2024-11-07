@@ -50,7 +50,7 @@ CAUTION: * 可能的设备损坏 * - 如果在打开电源的情况下执行此�
 . 在 SANtricity 系统管理器中，确定哪个风扇箱出现故障。
 +
 .. 选择 * 硬件 * 。
-.. 查看风扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] * 磁盘架 * 下拉列表右侧的图标，用于确定哪个磁盘架具有故障风扇箱。
+.. 查看*磁盘架*下拉列表右侧的风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"]图标、确定哪个磁盘架具有故障风扇箱。
 +
 如果组件发生故障，此图标将为红色。
 

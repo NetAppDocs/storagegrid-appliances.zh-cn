@@ -21,7 +21,7 @@ summary: 您可能需要更换 StorageGRID 设备中的控制器电池，驱动�
 .关于此任务
 要更换E2800控制器中的电池、请参见这些说明中的说明 link:replacing-e2800-controller.html["更换E2800控制器"]。这些说明介绍了如何从设备中卸下控制器，从控制器中取出电池，安装电池以及更换控制器。
 
-要更换产品中的驱动器、电源风扇箱、风扇箱、电源箱或驱动器抽盒、请访问 http://mysupport.netapp.com/info/web/ECMP1658252.html["E系列维护E2800硬件的过程"^]。
+要更换产品中的驱动器、电源风扇箱、风扇箱、电源箱或驱动器抽屉，请访问 https://docs.netapp.com/us-en/e-series-family/index.html["E系列维护E2800硬件的过程"^]。
 
 
 

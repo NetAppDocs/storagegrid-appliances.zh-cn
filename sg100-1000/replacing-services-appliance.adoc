@@ -14,7 +14,7 @@ summary: 如果设备运行不正常或出现故障，您可能需要更换设�
 如果设备运行不正常或出现故障，您可能需要更换设备。
 
 .开始之前
-* 您的更换设备的部件号与要更换的设备相同。
+* 您的更换设备的部件号与要更换的设备相同。检查贴在设备正面的标签、确认部件号匹配。
 * 您可以通过标签来识别连接到设备的每个缆线。
 * 您已拥有 link:locating-controller-in-data-center.html["已物理定位设备"]。
 
@@ -112,6 +112,6 @@ HDD02或HDD2指上部插槽中的驱动器，HDD03或HDD3指下部插槽中的�
 更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
 
 .相关信息
-link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+* link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+* link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["查看设备的启动代码"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["查看设备的启动代码"]

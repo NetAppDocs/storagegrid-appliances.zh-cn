@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 安装设备硬件
+  summary: 在您的站点安装设备硬件。
+  keywords: storagegrid install hardware, storagegrid install appliance
+  lead: 在您的站点安装设备硬件。
   tiles:
   - title: 将存储设备安装在机柜或机架中
     links:

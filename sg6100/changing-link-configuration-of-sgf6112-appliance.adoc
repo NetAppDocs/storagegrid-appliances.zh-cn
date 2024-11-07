@@ -14,8 +14,7 @@ summary: 您可以更改设备的以太网链路配置、包括端口绑定模�
 您可以更改设备的以太网链路配置、包括端口绑定模式、网络绑定模式和链路速度。
 
 .开始之前
-* 您已拥有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已将设备置于维护模式"]。
-
+您已拥有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已将设备置于维护模式"]。
 
 
 NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。
@@ -28,8 +27,7 @@ NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会�
 
 +
 
-NOTE: 在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行
-[`change-ip` command] StorageGRID。
+NOTE: 在设备处于维护模式时所做的IP配置更改不会应用于已安装的StorageGRID环境。运行[`change-ip`在将设备重新启动到StorageGRID后、命令]。
 
 . 对所做的选择感到满意后，单击 * 保存 * 。
 +

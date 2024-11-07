@@ -14,8 +14,7 @@ summary: 您可以更改服务设备的以太网链路配置。您可以更改�
 您可以更改服务设备的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。
 
 .开始之前
-* 您已拥有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已将设备置于维护模式"]。
-
+您已拥有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已将设备置于维护模式"]。
 
 
 NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。

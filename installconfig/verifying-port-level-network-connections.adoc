@@ -16,7 +16,7 @@ summary: 要确保 StorageGRID 设备安装程序与其他节点之间的访问�
 .关于此任务
 使用 StorageGRID 设备安装程序中提供的端口列表，您可以测试设备与网格网络中其他节点之间的连接。
 
-此外，您还可以在管理和客户端网络以及 UDP 端口上测试连接，例如用于外部 NFS 或 DNS 服务器的端口。有关这些端口的列表、请参见 https://docs.netapp.com/us-en/storagegrid-118/network/network-port-reference.html["网络端口参考"^]。
+此外，您还可以在管理和客户端网络以及 UDP 端口上测试连接，例如用于外部 NFS 或 DNS 服务器的端口。有关这些端口的列表，请参见 https://docs.netapp.com/us-en/storagegrid/network/network-port-reference.html["网络端口参考"^]。
 
 
 NOTE: 端口连接表中列出的网格网络端口仅适用于StorageGRID 11.7或更高版本。要验证每种节点类型的端口是否正确，您应始终参考适用于您的 StorageGRID 版本的网络连接准则。

@@ -30,7 +30,7 @@ summary: 安装StorageGRID 设备之前、请确认您已具备所需的所有�
 ESD 腕带::
 +
 --
-* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]
+* https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]
 * SSH 客户端，例如 PuTTY
 * 1 GbE （ RJ-45 ）端口
 

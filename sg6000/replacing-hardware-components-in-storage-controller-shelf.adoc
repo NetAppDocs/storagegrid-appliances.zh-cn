@@ -24,7 +24,7 @@ link:locating-controller-in-data-center.html["在数据中心中找到控制器"
 .关于此任务
 要更换存储控制器中的电池、请参见说明中的步骤 link:replacing-storage-controller-sg6000.html["更换存储控制器"]。这些说明介绍了如何从设备中卸下控制器，从控制器中取出电池，安装电池以及更换控制器。
 
-有关控制器架中其他现场可更换单元(Field可更换单元、FRU)的说明、请访问 http://mysupport.netapp.com/info/web/ECMP1658252.html["E系列系统维护流程"^]。
+有关控制器架中其他现场可更换单元(FRU)的说明，请访问 https://docs.netapp.com/us-en/e-series-family/index.html["E系列系统维护流程"^]。
 
 [cols="1a,3a"]
 |===

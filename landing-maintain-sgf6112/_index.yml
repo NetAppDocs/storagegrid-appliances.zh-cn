@@ -1,13 +1,17 @@
 ---
 indexpage:
+  title: 维护SG6100存储设备硬件
+  summary: 维护SG6100存储设备的硬件。
+  keywords: maintain storagegrid sg6100
+  lead: 维护SG6100存储设备的硬件。
   tiles:
   - title: 经常执行的过程
     links:
-    - title: 升级SANtricity (SG6160)
+    - title: 升级SANtricity
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
     - title: 升级驱动器固件(SG6160)
-      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager.html"
-    - title: 打开或关闭位置LED
+      url: "../sg6100/upgrade-drive-firmware-using-santricity-system-manager.html"
+    - title: 打开或关闭识别LED
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: 在数据中心内找到设备
       url: "../sg6100/locating-sgf6112-in-data-center.html"
@@ -25,10 +29,8 @@ indexpage:
       url: "../sg6100/replacing-sg6100-cn-controller.html"
     - title: 更换存储控制器控制器(SG6160)
       url: "../sg6100/replace-controller-e4000-duplex.html"
-    - title: 在机架中重新定位SGF6112
+    - title: 在机架中重新定位SGF6112或SG6100-CN
       url: "../sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
-    - title: 在机架中重新定位SG6100-CN
-      url: "../sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
   - title: 硬件过程
     links:
     - title: 装回护盖
@@ -50,7 +52,7 @@ indexpage:
     - title: 更换内部NIC (SGF6112和SG6160)
       url: "../sg6100/replace-nic-in-sgf6112.html"
     - title: 更换外部NIC (SG6160)
-      url: "../sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "../sg6100/replace-ocp-nic-sg6100-cn.html"
     - title: 更换DIMM (SG6160)
       url: "../sg6100/replace-dimms-e4000.html"
     - title: 更换电池(SG6160)

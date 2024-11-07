@@ -22,7 +22,7 @@ summary: 您可以使用以下设备型号上BMC管理端口的DHCP或静态IP�
 
 
 .开始之前
-* 管理客户端正在使用 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 管理客户端正在使用 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 设备上的BMC管理端口已连接到您计划使用的管理网络。
 +
 [role="tabbed-block"]

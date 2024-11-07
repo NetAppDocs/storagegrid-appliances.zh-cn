@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 部署设备节点
+  summary: 部署StorageGRID设备节点并验证其运行情况。
+  keywords: storagegrid deployment, deploy storagegrid
+  lead: 部署StorageGRID设备节点并验证其运行情况。
   tiles:
   - title: 部署设备
     links:

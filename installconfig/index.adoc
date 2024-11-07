@@ -22,7 +22,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 . link:preparing-site.html["准备站点"]
 . link:unpacking-boxes.html["打开包装箱"]
 . link:obtaining-additional-equipment-and-tools.html["获取其他设备和工具"]
-. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["查看Web浏览器要求"^]
+. https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["查看Web浏览器要求"^]
 . link:reviewing-appliance-network-connections.html["收集网络信息"]
 
 

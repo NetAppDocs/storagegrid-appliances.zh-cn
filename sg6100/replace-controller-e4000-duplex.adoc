@@ -161,12 +161,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[卸下NVMEM电池。]
 
 
  a| 
-image::../media/legend_icon_01.png[图例图标 01]
+image::../media/legend_icon_01.png[标注参考1]
 | 电池释放卡舌 
 
 
  a| 
-image::../media/legend_icon_02.png[legend icon 02]
+image::../media/legend_icon_02.png[标注参考2.]
 | 电池电源连接器 
 |===
 
@@ -210,12 +210,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
 
 
  a| 
-image::../media/legend_icon_01.png[图例图标 01]
+image::../media/legend_icon_01.png[标注参考1]
 | DIMM ejector tabs 
 
 
  a| 
-image::../media/legend_icon_02.png[legend icon 02]
+image::../media/legend_icon_02.png[标注参考2.]
 | DIMM 
 |===
 

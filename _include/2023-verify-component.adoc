@@ -4,7 +4,7 @@
 
 .开始之前
 * 您知道需要更换组件的存储设备的序列号。
-* 您将使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您已使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 
 .关于此任务
@@ -31,7 +31,7 @@ NOTE: 选择警报，而不是一组警报的标题。
 
 .. 记下发生故障的组件的节点名称和唯一标识标签。
 +
-image::../media/nic-alert-sgf6112.jpg[具有组件ID的警报]
+image::../media/nic-alert-sgf6112.png[具有组件ID的警报]
 
 
 

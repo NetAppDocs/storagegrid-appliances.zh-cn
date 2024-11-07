@@ -88,7 +88,7 @@ NOTE: 安装程序可确保先前安装中完成的任务不会重新运行。�
 
 . 继续监控安装进度，直到出现以下过程之一：
 +
-** 对于除主管理节点之外的所有设备节点、安装StorageGRID阶段将暂停、并且嵌入式控制台上会显示一条消息、提示您使用批准管理节点上的此节点 https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["网格管理器"^]。继续执行下一步。
+** 对于除主管理节点之外的所有设备节点，“Install StorageGRID”(安装节点)阶段将暂停，并且嵌入式控制台上将显示一条消息，提示您使用批准管理节点上的此节点 https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["网格管理器"^]。转至下一步。
 ** 对于设备主管理节点安装、您无需批准此节点。设备将重新启动。您可以跳过下一步。
 +
 
@@ -99,7 +99,7 @@ image::../media/monitor_installation_install_sgws.gif[此图通过周围的文�
 
 
 
-. https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["转到网格管理器"^] 在主管理节点上、批准待定网格节点并完成StorageGRID安装过程。
+. https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["转到网格管理器"^]在主管理节点上、批准待定网格节点并完成StorageGRID安装过程。
 +
 在网格管理器中单击 * 安装 * 后，第 3 阶段完成，第 4 阶段 * 完成安装 * 开始。阶段 4 完成后，设备将重新启动。
 

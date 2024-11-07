@@ -1,24 +1,26 @@
 ---
-permalink: sg6100/manage-drives-tab.html 
+permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
-summary: 您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。 
+keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 您可以使用网格管理器中的管理驱动器选项卡对支持此功能的设备的驱动器执行故障排除和维护任务。 
 ---
-= 使用管理驱动器选项卡(SGF6112)
+= 使用管理驱动器选项卡(SG110、SG1100、SGF6112和SG6160)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用网格管理器中的管理驱动器选项卡对SGF6112设备中的驱动器执行故障排除和维护任务。
+您可以使用网格管理器中的管理驱动器选项卡对支持此功能的设备的驱动器执行故障排除和维护任务。
 
 .开始之前
-* 您将使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
-
+您已使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 
 .关于此任务
-如果您有一个GF6112设备以及 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["存储设备管理员或root访问权限"^]，则设备详细信息页面上将显示管理驱动器选项卡。
+如果您的设备支持此功能和 https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["存储设备管理员或root访问权限"^]，则设备详细信息页面上将显示管理驱动器选项卡。
+
+
+NOTE: 对于StorageGRID 11.2、只有GF6112设备支持管理驱动器选项卡。
 
 管理驱动器选项卡包含以下视图：
 

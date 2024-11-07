@@ -33,7 +33,7 @@ NOTE: 请勿混用不同电压类型的PSU。请始终像这样替换。
 ** ESD 腕带，或者您已采取其他防静电预防措施。
 ** 访问SANtricity系统管理器：
 +
-*** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+*** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
 *** 将Management Station中的浏览器指向控制器的域名或IP地址。
 
 
@@ -64,7 +64,7 @@ NOTE: 请勿混用不同电压类型的PSU。请始终像这样替换。
 
 +
 .. 选择 * 硬件 * 。
-.. 查看强大功能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] 和风扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] * 磁盘架 * 下拉列表右侧的图标，用于确定哪个磁盘架的电源出现故障。
+.. 查看*Shelf*下拉列表右侧的电源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"]和风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"]图标，确定哪个磁盘架的电源出现故障。
 +
 如果组件出现故障，其中一个或两个图标将显示为红色。
 

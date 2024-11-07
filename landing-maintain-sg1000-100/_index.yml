@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: 维护SG1000和SG100服务设备硬件
+  summary: 维护SG1000和SG100服务设备的硬件。
+  keywords: maintain storagegrid sg100, maintain storagegrid sg1000
+  lead: 维护SG1000和SG100服务设备的硬件。
   tiles:
   - title: 经常执行的过程
     links:
-    - title: 打开或关闭位置LED
+    - title: 打开或关闭识别LED
       url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
     - title: 在数据中心内找到设备
       url: "../sg100-1000/locating-controller-in-data-center.html"

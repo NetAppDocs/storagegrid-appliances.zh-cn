@@ -37,10 +37,10 @@ image::../media/sgf6112_power_supplies.png[SGF6112或SG6100-CN背面、带两个
 .步骤
 . 如果您只更换一个电源，则无需关闭设备。转至 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
 +
-.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭设备"]。
+.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["关闭设备"](英文)
 +
 
-CAUTION: 如果您曾经使用仅创建一个对象的一个副本的ILM规则、而您要同时更换两个电源、则必须在计划的维护时段更换这些电源、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
+CAUTION: 如果您曾经使用仅创建一个对象的一个副本的ILM规则、而您要同时更换两个电源、则必须在计划的维护时段更换这些电源、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参阅有关的信息 https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 
 

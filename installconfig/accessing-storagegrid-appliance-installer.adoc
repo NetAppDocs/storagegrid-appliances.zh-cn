@@ -15,7 +15,7 @@ summary: 您必须访问 StorageGRID 设备安装程序以验证安装程序版�
 
 .开始之前
 * 您正在使用可以连接到 StorageGRID 管理网络的任何管理客户端，或者您使用的是服务笔记本电脑。
-* 客户端或服务笔记本电脑具有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 客户端或服务笔记本电脑具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 服务设备或存储设备控制器已连接到您计划使用的所有StorageGRID 网络。
 * 您知道这些网络上的服务设备或存储设备控制器的IP地址、网关和子网。
 * 您已配置计划使用的网络交换机。
@@ -110,7 +110,7 @@ image::../media/sg6100_admin_network_port.png[SGF6112上的管理网络端口]
 此时将显示 StorageGRID 设备安装程序主页页面。首次访问此页面时显示的信息和消息取决于设备当前与 StorageGRID 网络的连接方式。可能会显示错误消息，这些消息将在后续步骤中解决。
 
 +
-image::../media/appliance_installer_home_5700_5600.png[StorageGRID Webscale 设备安装程序主页顶部的屏幕截图]
+image::../media/appliance_installer_home_5700_5600.png[StorageGRID设备安装程序主页顶部的屏幕截图]
 
 
 

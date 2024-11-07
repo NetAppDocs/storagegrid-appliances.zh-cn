@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 安装StorageGRID 设备硬件
+  summary: 要向StorageGRID系统添加存储或服务设备、请安装和配置设备硬件。然后、在每个设备上安装StorageGRID软件、并将设备节点连接到网格。
+  keywords: storagegrid appliance install, storagegrid hardware install
+  lead: 要向StorageGRID系统添加存储或服务设备、请安装和配置设备硬件。然后、在每个设备上安装StorageGRID软件、并将设备节点连接到网格。
   tiles:
   - title: 快速入门
     links:

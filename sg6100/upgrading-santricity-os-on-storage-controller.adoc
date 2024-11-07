@@ -13,7 +13,7 @@ summary: 为了确保存储控制器能够以最佳方式运行，您必须升�
 [role="lead"]
 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。
 
-通过咨询确定可在StorageGRID设备上使用的最新SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"] 并根据需要进行下载。
+如果需要、请通过咨询和下载来确定可在StorageGRID设备上使用的最新SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 
 从下载新的SANtricity OS软件文件 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 
@@ -21,7 +21,7 @@ summary: 为了确保存储控制器能够以最佳方式运行，您必须升�
 
 * 您可以使用网格管理器执行升级。
 +
-link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]
 
 * 您可以使用维护模式执行升级。
 +
@@ -29,6 +29,6 @@ link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["�
 
 +
 
-NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
+NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
 
 

@@ -38,8 +38,8 @@ NOTE: 如果需要一次部署多个设备节点、可以使用以下链接自�
 
 * 如果要执行扩展或恢复操作，请按照相应说明进行操作：
 +
-** 要将设备存储节点添加到现有StorageGRID 系统、请参见的说明 https://docs.netapp.com/us-en/storagegrid-118/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["正在添加网格节点"^]。
-** 要在恢复操作中部署设备存储节点、请参见说明 https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-storagegrid-appliance-storage-node.html["恢复设备存储节点"^]。
+** 要将设备存储节点添加到现有StorageGRID系统，请参见的说明 https://docs.netapp.com/us-en/storagegrid/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["正在添加网格节点"^]。
+** 要在恢复操作中部署设备存储节点，请参见说明 https://docs.netapp.com/us-en/storagegrid/maintain/recovering-storagegrid-appliance-storage-node.html["恢复设备存储节点"^]。
 
 
 
@@ -50,8 +50,14 @@ NOTE: 如果需要一次部署多个设备节点、可以使用以下链接自�
 +
 此时将显示 StorageGRID 设备安装程序主页页面。
 
+. 选择*节点类型*。有关详细信息，请参见 https://docs.netapp.com/us-en/storagegrid/primer/what-storage-node-is.html#types-of-storage-nodes["存储节点的类型"]。
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif[其他节点类型的设备安装程序主页（管理节点除外）]
+
+NOTE: 只能在设备部署期间选择仅元数据。如果选择"仅元数据"作为存储节点类型、则在部署设备后将无法更改此类型。
+
+. 在*Node name*字段中，提供要用于此设备节点的系统名称，然后单击*Save*。
++
+此处显示的名称将是设备节点的系统名称。内部StorageGRID 操作需要系统名称、并且无法更改。
 
 . 在 * 主管理节点连接 * 部分中，确定是否需要指定主管理节点的 IP 地址。
 +
@@ -86,10 +92,6 @@ image::../media/appliance_installer_home_start_installation_enabled.gif[其他�
 
 
 |===
-. 在*Node name*字段中，提供要用于此设备节点的系统名称，然后单击*Save*。
-+
-此处显示的名称将是设备节点的系统名称。内部StorageGRID 操作需要系统名称、并且无法更改。
-
 . 在*安装*部分中、确认当前状态为"准备开始安装" `_node name_` 使用主管理节点进入网格 `_admin_ip_` "并启用了*开始安装*按钮。
 +
 如果未启用 * 开始安装 * 按钮，则可能需要更改网络配置或端口设置。有关说明、请参见设备的维护说明。

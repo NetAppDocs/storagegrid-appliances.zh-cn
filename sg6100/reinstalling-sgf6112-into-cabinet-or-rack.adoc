@@ -20,7 +20,7 @@ summary: 从机柜或机架中卸下SGF6112以检修顶盖或将设备移至其�
 .开始之前
 * 您可以使用标签来标识连接到SGF6112或SG6100-CN的每条缆线。
 * 您已拥有 link:locating-sgf6112-in-data-center.html["位于SGF6112或SG6100-CN的物理位置"] 在数据中心执行维护的位置。
-* 您已拥有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭SGF6112或SG6100-CN"]。
+* 您拥有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["关闭SGF6112或SG6100-CN"]。
 +
 
 CAUTION: 切勿使用电源开关关闭产品。
@@ -81,4 +81,4 @@ NOTE: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线。
 
 
 .完成后
-link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["重新启动设备"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-or-sg6100-cn-and-verify-operation["重新启动设备"](英文)

@@ -41,7 +41,7 @@ CAUTION: 一次升级多个 StorageGRID 设备可能会导致发生原因 数据
 
 CAUTION: NVSRAM 是特定于 StorageGRID 设备的。请勿使用标准NVSRAM下载。
 
-. 按照 _upgrading SANtricity OS_ 指南或 SANtricity 系统管理器联机帮助中的说明升级固件和 NVSRAM 。
+. 按照或SANtricity系统管理器联机帮助中的说明 https://docs.netapp.com/us-en/e-series-santricity/sm-support/upgrade-controller-software-and-firmware.html["_正在 升级SANtricity OS_指南"^]升级固件和NV严格 执行。
 +
 
 NOTE: 立即激活升级文件。不要推迟激活。

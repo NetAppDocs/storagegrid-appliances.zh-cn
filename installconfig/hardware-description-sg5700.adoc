@@ -460,4 +460,4 @@ image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的连接�
 
 |===
 .相关信息
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E系列文档"^]

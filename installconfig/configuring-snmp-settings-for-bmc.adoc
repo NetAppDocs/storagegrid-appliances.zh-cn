@@ -13,8 +13,57 @@ summary: 如果您熟悉为硬件配置SNMP、则可以使用BMC界面为SG6100�
 [role="lead"]
 如果您熟悉为硬件配置SNMP、则可以使用BMC界面为SG6100、SG6000和服务设备配置SNMP设置。您可以提供安全社区字符串，启用 SNMP 陷阱并最多指定五个 SNMP 目标。
 
+[role="tabbed-block"]
+====
+.SG110、SG1100、SG6100-CN、SGF6112
+--
 .开始之前
-* 您知道如何访问 BMC 信息板。
+* 您知道如何操作 link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]。
+* 您具有为SNMPv3设备配置SNMP设置的经验。
+
+
+
+NOTE: 如果此设备发生故障且需要更换，则此操作步骤 所做的 BMC 设置可能不会保留下来。  请确保您已应用所有设置，以便在更换硬件后根据需要轻松重新应用这些设置。
+
+以下说明显示了可用于某些StorageGRID设备的最新BMC固件版本。您的StorageGRID设备的BMC固件版本可能略有不同。
+
+* 最新版本的BMC固件仅支持SNMPv3。
+* BMC固件会在StorageGRID软件升级期间进行更新。如果您运行的不是最新版本的StorageGRID软件，则可以将设备更新到最新版本的StorageGRID以安装 https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["适用于您的设备的最新BMC固件版本"]。
+* 如果您的BMC在StorageGRID更新之前或之后显示不同：
++
+** 请参见SG100、SG1000、SG6000-CN选项卡上的说明。
+** link:../commonhardware/use-bmc.html["使用StorageGRID BMC"]您可能还会获得一些信息来帮助您根据您的BMC版本调整这些说明。
+
+
+
+
+.步骤
+. 将SNMP陷阱配置为一个或多个LAN目标。
++
+.. 从BMC信息板中，选择*Settings*>*Platform Event Filters*>*LAN目的地*。
+.. 对于目标类型，选择*SNMP陷阱*。
+.. 对于"SNMP Destination Address"(SNMP目标地址)、输入目标IP地址。
++
+
+NOTE: 使用IP地址作为SNMP目标地址。不支持DNS名称。
+
+.. 选择 * 保存 * 。
+
+
+. 如果使用SNMP陷阱发送警报通知、请参见的平台事件筛选器部分、 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]了解有关使用BMC配置警报策略和事件筛选器的信息。
+. (可选)为BMC用户启用和配置SNMP。
++
+.. 从BMC信息板中，选择*Settings*>*User Management*；然后选择BMC用户。
+.. 有关为BMC用户配置SNMP设置的信息、请参见的用户管理部分 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["《BMC用户指南》"^]。
+
+
+
+
+--
+.SG100、SG1000、SG6000-CN
+--
+.开始之前
+* 您知道如何操作 link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]。
 * 您在为 SNMPv1-v2c 设备配置 SNMP 设置方面具有经验。
 
 
@@ -38,3 +87,6 @@ NOTE: 使用 IP 地址输入每个 SNMP 陷阱的目标 IP 。不支持DNS名称
 . 或者，也可以单击 * 发送测试陷阱 * 来测试您的设置。
 . 如果设置正确，请单击 * 保存 * 。
 
+
+--
+====

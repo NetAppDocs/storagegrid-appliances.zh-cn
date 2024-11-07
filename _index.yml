@@ -1,14 +1,18 @@
 ---
 indexpage:
+  title: StorageGRID设备文档
+  summary: NetApp StorageGRID 是一款软件定义的对象存储套件、支持公共、私有和混合多云环境中的各种用例。StorageGRID 为Amazon
+    S3 API提供本机支持、并提供行业领先的创新技术、例如自动化生命周期管理、以便长期经济高效地存储、保护和保留非结构化数据。
+  keywords: storagegrid appliances, storagegrid hardware, install, configure
   lead: NetApp StorageGRID 是一款软件定义的对象存储套件、支持公共、私有和混合多云环境中的各种用例。StorageGRID 为Amazon
     S3 API提供本机支持、并提供行业领先的创新技术、例如自动化生命周期管理、以便长期经济高效地存储、保护和保留非结构化数据。
   tiles:
   - title: 入门
     links:
     - title: 了解StorageGRID
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/index.html
     - title: StorageGRID 快速入门
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/quick-start.html
     - title: 设备安装快速入门
       url: "/installconfig/index.html"
     - title: 自动执行安装和配置
@@ -19,7 +23,7 @@ indexpage:
     links:
     - title: SG100和SG1000
       url: "/installconfig/hardware-description-sg100-and-1000.html"
-    - title: SG110和SG1100 (新增)
+    - title: SG110和SG1100
       url: "/installconfig/hardware-description-sg110-and-1100.html"
     - title: SG5700
       url: "/installconfig/hardware-description-sg5700.html"
@@ -57,6 +61,8 @@ indexpage:
       url: "/landing-maintain-sgf6112/index.html"
   - title: StorageGRID 软件
     links:
+    - title: StorageGRID 11.9文档
+      url: https://docs.netapp.com/us-en/storagegrid/index.html
     - title: StorageGRID 1.18文档
       url: https://docs.netapp.com/us-en/storagegrid-118/index.html
     - title: StorageGRID 11.7文档

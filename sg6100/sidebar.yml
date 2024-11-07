@@ -23,8 +23,6 @@ entries:
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 对驱动器固件升级错误进行故障排除
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
-  - title: 使用管理驱动器选项卡
-    url: "/sg6100/manage-drives-tab.html"
   - title: 打开和关闭识别LED
     url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
   - title: 在数据中心内找到设备
@@ -63,7 +61,7 @@ entries:
     - title: 内部NIC (SGF6112和SG6160)
       url: "/sg6100/replace-nic-in-sgf6112.html"
     - title: 外部NIC (SG6160)
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: 更换CMOS电池
     url: "/sg6100/replace-cmos-in-sgf6112.html"
   - title: 更换 DIMM

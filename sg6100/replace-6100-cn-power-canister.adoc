@@ -52,7 +52,7 @@ summary: 更换一个包含 60 个驱动器的控制器架或驱动器架，其�
 . 在 SANtricity 系统管理器中，确定哪个电源箱出现故障。
 +
 .. 选择 * 硬件 * 。
-.. 查看强大功能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] * 磁盘架 * 下拉列表右侧的图标，用于确定哪个磁盘架的电源箱出现故障。
+.. 查看*磁盘架*下拉列表右侧的电源图标，确定哪个磁盘架的电源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"]箱出现故障。
 +
 如果组件发生故障，此图标将为红色。
 

@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 维护SG5700存储设备硬件
+  summary: 维护SG5700存储设备的硬件。
+  keywords: maintain storagegrid sg5700
+  lead: 维护SG5700存储设备的硬件。
   tiles:
   - title: 经常执行的过程
     links:
@@ -7,8 +11,10 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: 升级SANtricity
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
-    - title: 升级驱动器固件
-      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: 升级驱动器固件(联机方法)
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升级驱动器固件(脱机方法)
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: 硬件过程
     links:
     - title: 更换E2800系列存储控制器

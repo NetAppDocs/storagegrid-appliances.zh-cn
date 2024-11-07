@@ -14,7 +14,7 @@ summary: 如果设备运行不正常或出现故障，您可能需要更换设�
 如果设备运行不正常或出现故障，您可能需要更换设备。
 
 .开始之前
-* 您的更换设备的部件号与要更换的设备相同。
+* 您的更换设备的部件号与要更换的设备相同。检查贴在设备正面的标签、确认部件号匹配。
 * 您可以通过标签来识别连接到设备的每个缆线。
 * 您已拥有 link:locating-sgf6112-in-data-center.html["已物理定位设备"]。
 
@@ -42,7 +42,7 @@ NOTE: 如果在安装 StorageGRID 软件之前更换设备，则在完成此操�
 .. 输入 ... `*run-host-command ipmitool lan print*` 以显示设备的当前BMC配置。
 
 
-. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["关闭设备"]。
+. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["关闭设备"](英文)
 . 如果此StorageGRID设备上的任何网络接口配置了DHCP、则需要更新DHCP服务器上的永久DHCP租约分配、以引用替代设备的MAC地址。这样可确保为设备分配预期的IP地址。
 +
 请联系您的网络或DHCP-服务器管理员以更新永久DHCP租约分配。管理员可以通过DHCP服务器日志或通过检查设备以太网端口所连接的交换机中的MAC地址表来确定替代设备的MAC地址。
@@ -163,7 +163,7 @@ CAUTION: 如果要将数据保留在驱动器上、请务必将SSD驱动器插�
 
 
 . 打开产品电源。
-. 如果您更换的设备已为SED驱动器启用硬件驱动器加密、则必须执行此操作 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["输入驱动器加密密码短语"] 在更换设备首次启动时访问加密驱动器。
+. 如果您更换的设备已为SED驱动器启用硬件驱动器加密，请参阅link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["访问加密驱动器"]。首次启动替代设备时、请按照说明访问加密驱动器。要完成此过程、需要重新启动。
 . 等待设备重新加入网格。如果设备未重新加入网格、请按照StorageGRID 设备安装程序主页上的指导解决任何问题。
 +
 
@@ -172,7 +172,7 @@ WARNING: 如果设备安装程序指示需要更改物理硬件(例如将磁盘�
 . 如果您更换的设备使用密钥管理服务器(KMS)管理节点加密的加密密钥、则可能需要进行其他配置、节点才能加入网格。如果节点未自动加入网格、请确保这些配置设置已传输到新设备、并手动配置任何不具有预期配置的设置：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["配置StorageGRID 连接"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["为此设备配置节点加密"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["为此设备配置节点加密"^]
 
 
 . 登录到更换的设备：
@@ -217,6 +217,6 @@ WARNING: 如果设备安装程序指示需要更改物理硬件(例如将磁盘�
 更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
 
 .相关信息
-link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+* link:../installconfig/viewing-status-indicators.html["查看状态指示器"]
+* link:../installconfig/troubleshooting-hardware-installation-sg6100.html#view-boot-codes["查看设备的启动代码"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg6100.html#view-error-codes["查看设备的启动代码"]

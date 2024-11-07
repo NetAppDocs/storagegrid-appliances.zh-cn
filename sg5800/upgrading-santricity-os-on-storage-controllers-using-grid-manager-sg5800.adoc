@@ -15,8 +15,8 @@ summary: 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更高版
 
 .开始之前
 * 如果您未获得要从中升级到的SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]，您已咨询过 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
-* 您拥有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["维护或root访问权限"^]。
-* 您将使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您拥有 https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["维护或root访问权限"^]。
+* 您已使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 您具有配置密码短语。
 
 
@@ -32,7 +32,7 @@ CAUTION: 只有在使用网格管理器执行升级时，以下步骤才适用�
 NOTE: 此操作步骤 会自动将 NVSRAM 升级到与 SANtricity 操作系统升级相关的最新版本。您无需应用单独的NVSRAM升级文件。
 
 
-NOTE: 在开始此操作步骤 之前，请确保应用最新的StorageGRID 修补程序。请参见 https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["StorageGRID 热修补程序操作步骤"^] 了解详细信息。
+NOTE: 在开始此操作步骤 之前，请确保应用最新的StorageGRID 修补程序。有关详细信息、请参见。 https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["StorageGRID 热修补程序操作步骤"^]
 
 .步骤
 . [[download-SANtricity-OS]]从下载新的SANtricity OS软件文件 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
@@ -195,6 +195,6 @@ NOTE: 对于状态为 "Needs Attenance" 的任何节点，请使用维护模式�
 
 
 .相关信息
-https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
+* https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具"^]
+* link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["使用维护模式升级E4000控制器上的SANtricity操作系统"]
 
-link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["使用维护模式升级E4000控制器上的SANtricity操作系统"]

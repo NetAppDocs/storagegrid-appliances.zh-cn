@@ -987,8 +987,11 @@ image::../media/sg6100_e4000_connections.png[SG6100-CN至E4000连接]
  a| 
 2.
  a| 
-设备上的四个10/C5-GbE网络端口
+SG6100-CN 控制器上的四个网络端口
  a| 
+* 设备上的四个10/C5-GbE网络端口
+* 四个10/C5/40/100-GbE网络端口、带可选的100G NIC SKU (仅限SG6160)
+
  a| 
 连接到网格网络和 StorageGRID 客户端网络。请参见 link:gathering-installation-information-sg6100.html#port-bond-modes["端口绑定模式(SG6100)"]
 

@@ -47,7 +47,7 @@ NOTE: 如果更改了所连接的网络或链路，则可能会断开连接。�
 如果更改了 VLAN 设置，则设备的子网可能已更改。如果需要更改设备的 IP 地址，请按照执行操作 link:../installconfig/setting-ip-configuration.html["配置StorageGRID IP地址"] 说明。
 
 . 从 StorageGRID 设备安装程序中，选择 * 配置网络连接 * > * Ping 测试 * 。
-. 使用 Ping 测试工具检查可能受中所做链路配置更改影响的任何网络上的 IP 地址连接  <<change_link_configuration_sg5700,更改链路配置>> 步骤。
+. 使用Ping测试工具检查与可能受步骤中所做链路配置更改影响的任何网络上IP地址的连接<<change_link_configuration_sg5800,更改链路配置>>。
 +
 除了您选择执行的任何其他测试之外，请确认您可以对主管理节点的网格 IP 地址以及至少一个其他存储节点的网格 IP 地址执行 ping 操作。如有必要，请更正任何链路配置问题。
 

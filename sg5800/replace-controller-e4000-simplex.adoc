@@ -24,10 +24,10 @@ NOTE: 请勿依靠E系列说明来更换StorageGRID 设备中的控制器、因�
 * ESD腕带、或者您已采取防静电预防措施。
 * 用于标识连接到控制器的每条缆线的标签。
 * 特定访问权限。
-* 您必须使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 您必须使用登录到网格管理器 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
 * 访问SANtricity系统管理器：
 +
-** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"^]。
 ** 将Management Station中的浏览器指向控制器的域名或IP地址。
 
 
@@ -180,12 +180,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[卸下NVMEM电池。]
 
 
  a| 
-image::../media/legend_icon_01.png[图例图标 01]
+image::../media/legend_icon_01.png[标注参考1]
 | 电池释放卡舌 
 
 
  a| 
-image::../media/legend_icon_02.png[legend icon 02]
+image::../media/legend_icon_02.png[标注参考2.]
 | 电池电源连接器 
 |===
 
@@ -229,12 +229,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
 
 
  a| 
-image::../media/legend_icon_01.png[图例图标 01]
+image::../media/legend_icon_01.png[标注参考1]
 | DIMM ejector tabs 
 
 
  a| 
-image::../media/legend_icon_02.png[legend icon 02]
+image::../media/legend_icon_02.png[标注参考2.]
 | DIMM 
 |===
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
 summary: 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。 
 ---
-= 升级SG9500存储控制器上的SANtricity操作系统
+= 关于升级SG9500存储控制器上的SANtricity操作系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: 为了确保存储控制器能够以最佳方式运行，您必须升�
 [role="lead"]
 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。
 
-通过咨询确定可在StorageGRID设备上使用的最新SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"] 并根据需要进行下载。
+如果需要、请通过咨询和下载来确定可在StorageGRID设备上使用的最新SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 
 从下载新的SANtricity OS软件文件 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 
