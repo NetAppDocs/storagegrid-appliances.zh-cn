@@ -5648,7 +5648,6 @@
   <block id="2060996e4ea036c84fe524f4bb640ff0" category="list-text">* SGF6112*的管理网络(可选用于存储设备、SG6100不需要)：通过此网络可以访问SANtricity SANtricity系统管理器、从而可以监控和管理设备和存储控制器架中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。</block>
   <block id="e6b3f8c787f110e738041acfec63cd45" category="admonition">有关StorageGRID网络的详细信息，请参见<block ref="c9a67c39cb366102345c95ea9d802249" category="inline-link-rx"></block>。</block>
   <block id="79ffe998f527a3998a83d054ff067c7e" category="list-text"><block ref="79ffe998f527a3998a83d054ff067c7e" category="inline-link-macro-rx"></block></block>
-  <block id="44ef269732748f70c763abafc0361990" category="list-text"><block ref="44ef269732748f70c763abafc0361990" category="inline-link-macro-rx"></block></block>
   <block id="2b5994be0ad1518a670726d49503aef3" category="admonition">如果控制器或设备发生故障并需要更换、则可能无法保留此过程中所做的BMC设置。请确保您已应用所有设置，以便在更换硬件后根据需要轻松重新应用这些设置。</block>
   <block id="156e455630a4e49e7afff2a829c35531" category="open-title">StorageGRID来说、是一个很好的选择</block>
   <block id="1433f3dea3005561ee1f9e94e4de877d" category="paragraph">在BMC界面中，使用“设置”页面上的*用户管理*和*平台事件过滤器*选项配置电子邮件通知。</block>
@@ -5761,4 +5760,5 @@
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">管理驱动器(SG110、SG1100、SGF6112和SG6160)</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">使用BMC界面</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
+  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
 </blocks>
