@@ -5761,4 +5761,6 @@
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">使用BMC界面</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
   <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
+  <block id="125c3dfed61415188958ef328818fc0b" category="inline-link-macro">向已部署的SG6160添加扩展架的说明</block>
+  <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">如果您的设备包含扩展架、请参见<block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>以了解布线信息。</block>
 </blocks>

@@ -1124,6 +1124,7 @@ SFP28 收发器
 
 
 . 如果您计划使用 StorageGRID 管理网络，请使用以太网缆线将设备上的管理网络端口连接到管理网络。
+. 如果您的设备包含扩展架、请参见link:../sg6100/adding-expansion-shelf-to-deployed-sg6160.html["向已部署的SG6160添加扩展架的说明"]以了解布线信息。
 
 
 --
