@@ -26,9 +26,25 @@ summary: 使用此操作步骤 更换系统板上的CMOS币形电池。
 .开始之前
 * 您已拥有 link:verify-component-to-replace.html["已验证需要更换CMOS电池的SG110或SG1100"]。
 * 您已拥有 link:locating-sg110-and-sg1100-in-data-center.html["物理位置：SG110或SG1100设备"] 在数据中心更换CMOS电池的位置。
+* 您已记录设备的当前BMC配置(如果该配置仍然可用)。
++
+.. 登录到要更换的设备：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 输入： `*run-host-command ipmitool lan print*`以显示设备的当前BMC配置。
 +
 
 NOTE: 答 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["受控关闭设备"] 在从机架中卸下设备之前需要。
+
+
 
 * 您已断开所有缆线和 link:reinstalling-sg110-and-sg1100-cover.html["已卸下产品盖"]。
 

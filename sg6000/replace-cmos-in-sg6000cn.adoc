@@ -26,9 +26,25 @@ summary: 使用此操作步骤 更换系统板上的CMOS币形电池。
 .开始之前
 * 您拥有 link:verify-component-to-replace-sg6000cn.html["已验证需要更换CMOS电池的设备"]。
 * 您可以 link:locating-controller-in-data-center.html["以物理方式定位SG6000-CN控制器"] 在数据中心更换CMOS电池。
+* 您已记录设备的当前BMC配置(如果该配置仍然可用)。
++
+.. 登录到要更换的设备：
++
+... 输入以下命令： `ssh admin@_grid_node_IP_`
+... 输入中列出的密码 `Passwords.txt` 文件
+... 输入以下命令切换到root： `su -`
+... 输入中列出的密码 `Passwords.txt` 文件
++
+以root用户身份登录后、提示符将从变为 `$` to `#`。
+
+
+
+.. 输入： `*run-host-command ipmitool lan print*`以显示设备的当前BMC配置。
 +
 
 NOTE: 在从机架中卸下设备之前、需要使用 link:power-sg6000-cn-controller-off-on.html["受控关闭设备"] 。
+
+
 
 * 您已断开所有电缆和的连接 link:reinstalling-sg6000-cn-controller-cover.html["已卸下产品盖"]。
 
