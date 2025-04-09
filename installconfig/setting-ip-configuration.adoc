@@ -67,8 +67,8 @@ NOTE: 为了获得最佳网络性能，应在所有节点的网格网络接口�
 NOTE: 未列出默认路由。如果未启用客户端网络，则默认路由将使用网格网络网关。
 
 +
-*** 要添加子网，请单击插入图标 image:../media/icon_plus_sign_black_on_white.gif["插入图标"] 最后一个条目右侧。
-*** 要删除未使用的子网，请单击删除图标 image:../media/icon_nms_delete_new.gif["删除图标"]。
+*** 要添加子网、请单击最后一个条目右侧的插入图标image:../media/icon_plus_sign_black_on_white.gif["插入图标"]。
+*** 要删除未使用的子网，请单击删除图标image:../media/icon_nms_delete_new.gif["删除图标"]。
 
 
 .. 单击 * 保存 * 。
@@ -92,8 +92,8 @@ NOTE: 未列出默认路由。如果未启用客户端网络，则默认路由�
 NOTE: 未列出默认路由。如果未启用客户端网络，则默认路由将使用网格网络网关。
 
 +
-*** 要添加子网，请单击插入图标 image:../media/icon_plus_sign_black_on_white.gif["插入图标"] 最后一个条目右侧。
-*** 要删除未使用的子网，请单击删除图标 image:../media/icon_nms_delete_new.gif["删除图标"]。
+*** 要添加子网、请单击最后一个条目右侧的插入图标image:../media/icon_plus_sign_black_on_white.gif["插入图标"]。
+*** 要删除未使用的子网，请单击删除图标image:../media/icon_nms_delete_new.gif["删除图标"]。
 
 
 .. 如果要使用巨型帧，请将 MTU 字段更改为适用于巨型帧的值，例如 9000 。否则，请保留默认值 1500 。
@@ -148,8 +148,8 @@ CAUTION: 网络的 MTU 值必须与节点所连接的交换机端口上配置的
 NOTE: 无法创建默认路由以使用管理网络网关。
 
 +
-*** 要添加子网，请单击插入图标 image:../media/icon_plus_sign_black_on_white.gif["插入图标"] 最后一个条目右侧。
-*** 要删除未使用的子网，请单击删除图标 image:../media/icon_nms_delete_new.gif["删除图标"]。
+*** 要添加子网、请单击最后一个条目右侧的插入图标image:../media/icon_plus_sign_black_on_white.gif["插入图标"]。
+*** 要删除未使用的子网，请单击删除图标image:../media/icon_nms_delete_new.gif["删除图标"]。
 
 
 .. 单击 * 保存 * 。
@@ -173,8 +173,8 @@ NOTE: 无法创建默认路由以使用管理网络网关。
 NOTE: 无法创建默认路由以使用管理网络网关。
 
 +
-*** 要添加子网，请单击插入图标 image:../media/icon_plus_sign_black_on_white.gif["插入图标"] 最后一个条目右侧。
-*** 要删除未使用的子网，请单击删除图标 image:../media/icon_nms_delete_new.gif["删除图标"]。
+*** 要添加子网、请单击最后一个条目右侧的插入图标image:../media/icon_plus_sign_black_on_white.gif["插入图标"]。
+*** 要删除未使用的子网，请单击删除图标image:../media/icon_nms_delete_new.gif["删除图标"]。
 
 
 .. 如果要使用巨型帧，请将 MTU 字段更改为适用于巨型帧的值，例如 9000 。否则，请保留默认值 1500 。

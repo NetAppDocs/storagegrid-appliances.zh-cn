@@ -175,7 +175,7 @@ image::../media/sg5760_front_and_back_views.gif[SG5760 设备的正面和背面]
 
 SG5760 包括两个控制器，两个风扇箱和两个电源箱。
 
-image::../media/sg5760_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760 appliance]
+image::../media/sg5760_with_callouts.gif[SG5760设备中的控制器、风扇箱和电源箱]
 
 [cols="1a,2a"]
 |===
@@ -223,7 +223,7 @@ image::../media/sg5760x_front_and_back_views.gif[SG5760X设备的正面和背面
 
 SG5760X包括两个控制器、两个风扇箱和两个电源箱。
 
-image::../media/sg5760x_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760X appliance]
+image::../media/sg5760x_with_callouts.gif[SG5760X设备中的控制器、风扇箱和电源箱]
 
 [cols="1a,3a"]
 |===

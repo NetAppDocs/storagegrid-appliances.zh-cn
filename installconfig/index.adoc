@@ -13,7 +13,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 [role="lead"]
 按照以下简要步骤安装和设置StorageGRID 设备、并将其部署为StorageGRID 系统中的节点。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 准备安装
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]准备安装
 [role="quick-margin-list"]
 . 与NetApp专业服务顾问合作、自动执行安装和配置。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
 +
@@ -26,7 +26,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 . link:reviewing-appliance-network-connections.html["收集网络信息"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 安装硬件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]安装硬件
 [role="quick-margin-list"]
 . link:registering-hardware.html["注册硬件"]
 . 安装到机柜或机架中
@@ -44,7 +44,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 . link:viewing-status-indicators.html["查看状态指示灯和代码"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置硬件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]设置硬件
 [role="quick-margin-para"]
 如果要配置和部署多个设备、请使用NetApp ConfigBuilder工具自动执行以下配置和部署步骤。如需指导、请联系您的NetApp专业服务顾问。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
 
@@ -69,7 +69,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 部署设备节点
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]部署设备节点
 [role="quick-margin-para"]
 将此设备部署为StorageGRID 系统中的新节点。
 

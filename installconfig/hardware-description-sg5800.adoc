@@ -114,7 +114,7 @@ image::../media/sg5860_front_and_back_views.png[SG5860设备的正面和背面]
 
 SG5860包括两个控制器、两个风扇箱和两个电源箱。
 
-image::../media/sg5860_with_callouts.png[控制器,fan canisters,and power canisters in SG5860 appliance]
+image::../media/sg5860_with_callouts.png[SG5860设备中的控制器、风扇箱和电源箱]
 
 [cols="1a,2a"]
 |===
