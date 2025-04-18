@@ -2865,7 +2865,6 @@
   <block id="9bb391312ffed336cc1adbf60045dba8" category="list-text">检查产品正面的标签上是否有匹配的部件号，以确认您找到了正确的产品。</block>
   <block id="d3cb531b4f9c05d46c6be8f0489a9b86" category="list-text">卸下前挡板(如果已安装)以接触前面板控件和指示灯。</block>
   <block id="8727881150b0ace8b598a648cdfcd4e1" category="summary">NetApp StorageGRID 是一款软件定义的对象存储套件、支持公共、私有和混合多云环境中的各种用例。StorageGRID 为Amazon S3 API提供本机支持、并提供行业领先的创新技术、例如自动化生命周期管理、以便长期经济高效地存储、保护和保留非结构化数据。</block>
-  <block id="4fab2171e21f4258294a2a074494fa18" category="doc">StorageGRID设备文档</block>
   <block id="2e1c8345a49fcd97288e52caaad82a49" category="summary">在某些情况下、您可能需要在更换设备后更新MAC地址引用。</block>
   <block id="8731fac4810f4eee46647147bd16bf3d" category="paragraph">如果要更换的设备上的任何网络接口配置了DHCP、则可能需要更新DHCP服务器上的永久DHCP租约分配、以引用替代设备的MAC地址。此更新可确保为替代设备分配预期的IP地址。</block>
   <block id="5d98e441c401a29a6e5bb2f1212a7a15" category="list-text">找到产品正面的标签。此标签列出了设备的BMC管理端口的MAC地址。</block>
@@ -3865,7 +3864,6 @@
   <block id="8ef596bf4eb7277f78ad1d7ad4cc04de" category="sidebar">StorageGRID 知识库</block>
   <block id="c2d388654878e1108f99fdeaa465fcac" category="sidebar">NetApp 博客</block>
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 社区</block>
-  <block id="69d1c297210c956cee51bf4ccf9dc0d1" category="sidebar">StorageGRID设备文档</block>
   <block id="42201415720ad552ae0536ddda18b94e" category="sidebar">了解StorageGRID设备</block>
   <block id="b7cd29c1531745149a88d6056a6c42c4" category="sidebar">设备节点克隆</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概述</block>
@@ -5762,4 +5760,5 @@
   <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">查看*Shelf*下拉列表右侧的风扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>图标，确定哪个设备的风扇箱出现故障。</block>
   <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">升级驱动器固件(SG6160联机方法)</block>
   <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">升级驱动器固件(SG6160脱机方法)</block>
+  <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">StorageGRID设备文档</block>
 </blocks>
