@@ -23,9 +23,6 @@ summary: 在安装完成之前， StorageGRID 设备安装程序会提供状态�
 "Monitor Installation" 页面将显示安装进度。
 
 +
-image::../media/monitor_installation_configure_storage.gif[监控器安装页面]
-
-+
 蓝色状态栏指示当前正在进行的任务。绿色状态条表示已成功完成的任务。
 
 +
@@ -45,11 +42,8 @@ NOTE: 安装程序可确保先前安装中完成的任务不会重新运行。�
 +
 在此阶段，安装程序会将 StorageGRID 的基本操作系统映像复制到设备。
 
-. 继续监控安装进度，直到 * 安装 StorageGRID 网格管理器 * 阶段暂停，并且嵌入式控制台上显示一条消息，提示您使用网格管理器在管理节点上批准此节点。继续执行下一步。
-+
-image::../media/monitor_installation_install_sgws.gif[监控器安装页面]
-
-. 转至主管理节点的网格管理器，批准待定存储节点并完成 StorageGRID 安装过程。
+. 继续监控安装进度，直到*安装StorageGRID*阶段暂停并且嵌入式控制台上出现一条消息，提示您使用网格管理器在管理节点上批准此节点；然后，转到下一步。
+. https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["转到网格管理器"^]主管理节点，批准待处理的存储节点，并完成StorageGRID安装过程。
 +
 在网格管理器中单击 * 安装 * 后，第 3 阶段完成，第 4 阶段 * 完成安装 * 开始。阶段 4 完成后，控制器将重新启动。
 
@@ -60,12 +54,9 @@ image::../media/monitor_installation_install_sgws.gif[监控器安装页面]
 --
 .服务设备
 --
-. 要监控安装进度，请单击菜单栏中的 * 监控安装 * 。
+. 要监控安装进度，请单击 * 监控安装 * 。
 +
 "Monitor Installation" 页面将显示安装进度。
-
-+
-image::../media/monitor_installation_services_appl.png[监控器安装—服务设备]
 
 +
 蓝色状态栏指示当前正在进行的任务。绿色状态条表示已成功完成的任务。
@@ -76,26 +67,24 @@ NOTE: 安装程序可确保先前安装中完成的任务不会重新运行。�
 
 . 查看前两个安装阶段的进度。
 +
-** * 。配置存储 *
+* 。配置存储 *
+
 +
 在此阶段，安装程序将从设备中的驱动器中清除任何现有配置，并配置主机设置。
 
-** * 。安装 OS*
++
+* 。安装 OS*
+
 +
 在此阶段，安装程序会将 StorageGRID 的基本操作系统映像复制到设备。
 
-
-
 . 继续监控安装进度，直到出现以下过程之一：
 +
-** 对于除主管理节点之外的所有设备节点，“Install StorageGRID”(安装节点)阶段将暂停，并且嵌入式控制台上将显示一条消息，提示您使用批准管理节点上的此节点 https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["网格管理器"^]。转至下一步。
+** 对于除主管理节点之外的所有设备节点，“安装StorageGRID”阶段将暂停，并且嵌入式控制台上会出现一条消息，提示您使用 https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["网格管理器"^]；然后，转到下一步。
 ** 对于设备主管理节点安装、您无需批准此节点。设备将重新启动。您可以跳过下一步。
 +
 
 NOTE: 在安装设备主管理节点期间、第五阶段将显示为加载StorageGRID安装程序(示例屏幕截图仅显示前四个阶段)。如果加载StorageGRID安装程序(第五阶段)的时间超过10分钟、请手动刷新网页。
-
-+
-image::../media/monitor_installation_install_sgws.gif[监控器安装页面]
 
 
 

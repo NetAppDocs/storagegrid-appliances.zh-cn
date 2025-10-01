@@ -24,6 +24,7 @@ summary: 自动化安装和配置对于部署多个 StorageGRID 实例或一个�
 ** 端口绑定模式
 ** 网络绑定模式
 ** 链路速度
+** LACP传输哈希策略和PDU速率
 
 
 
@@ -81,16 +82,13 @@ NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使�
 
 .步骤
 . 在StorageGRID 设备安装程序中，选择*高级*>*更新设备配置*。此时将显示更新设备配置页面。
-. 浏览并选择包含要上传的配置的JSON文件。
+. 在“上传 JSON”部分中，浏览并选择要上传的 JSON 配置文件。
 +
 已上传并验证此文件。验证过程完成后，文件名会显示在绿色复选标记旁边。
 
 +
 
 NOTE: 如果JSON文件中的配置包含的部分、则可能会断开与设备的连接 `link_config`， `networks`或两者。如果您未在1分钟内重新连接、请使用分配给设备的其他IP地址之一重新输入设备URL。
-
-+
-image::../media/update_appliance_configuration_valid_json.png[已上传更新设备配置 JSON]
 
 +
 此时将使用 JSON 文件中定义的顶级节点名称填充 * 节点名称 * 下拉列表。

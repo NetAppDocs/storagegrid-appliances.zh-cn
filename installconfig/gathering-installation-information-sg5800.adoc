@@ -423,6 +423,5 @@ NOTE: 如果您选择使用的端口少于四个，请注意，安装 StorageGRI
 
 .相关信息
 * link:cabling-appliance.html["电缆设备(SG(EG9))"]
-* link:gathering-installation-information-sg5800.html#port-bond-modes["端口绑定模式(SG波特 性控制器)"]
 * link:configuring-hardware.html["配置硬件(SGs太 少)"]
 

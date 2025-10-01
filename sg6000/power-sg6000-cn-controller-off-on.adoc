@@ -20,8 +20,7 @@ summary: 您可以关闭SG6000-CN控制器并重新打开其电源以执行维�
 关闭 SG6000-CN 控制器以执行硬件维护。
 
 .开始之前
-* 您已将需要维护的 SG6000-CN 控制器物理定位在数据中心。请参见 link:locating-controller-in-data-center.html["在数据中心中找到控制器"]。
-
+您已将需要维护的 SG6000-CN 控制器物理定位在数据中心。请参见 link:locating-controller-in-data-center.html["在数据中心中找到控制器"]。
 
 .关于此任务
 要防止服务中断，请在可以接受服务中断期间的计划维护窗口期间关闭控制器或关闭控制器之前，确认所有其他存储节点均已连接到网格。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
@@ -84,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 电源控制页面
 
 
 
-== 打开 SG6000-CN 控制器的电源并验证其运行情况
+== [[poweron]]打开 SG6000-CN 控制器并验证操作
 
 完成维护后，打开控制器电源。
 

@@ -11,6 +11,8 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: 升级SANtricity
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: 升级驱动器固件（自动重启方式）
+      url: "../sg5700/upgrading-drive-firmware-using-auto-reboot.html"
     - title: 升级驱动器固件(联机方法)
       url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: 升级驱动器固件(脱机方法)

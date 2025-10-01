@@ -35,10 +35,10 @@ NOTE: 此操作步骤*不支持热插拔。在断开电缆连接并卸下NIC之�
 
 
 .关于此任务
-为了防止服务中断、请在开始更换网络接口卡(Network Interface Card、NIC)之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内可接受服务中断期间更换NIC。请参阅有关的信息link:https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"]。
+为防止服务中断，请在开始更换网络接口卡 (NIC) 之前确认所有其他存储节点都已连接到电网，或者在可以接受服务中断时间的计划维护时段内更换 NIC。查看有关 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 
 
-CAUTION: 如果您使用的ILM规则仅为对象创建一个副本、则必须在计划的维护时段更换NIC、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参阅有关的信息link:https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"]。
+CAUTION: 如果您使用的ILM规则仅为对象创建一个副本、则必须在计划的维护时段更换NIC、因为在此操作步骤期间、您可能会暂时无法访问这些对象。请参阅有关的信息 https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"^]。
 
 
 

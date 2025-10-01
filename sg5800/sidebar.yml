@@ -17,8 +17,10 @@ entries:
       url: "/sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html"
     - title: 使用维护模式升级E4000控制器上的SANtricity操作系统
       url: "/sg5800/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html"
-  - title: 使用 SANtricity 系统管理器升级驱动器固件
+  - title: 升级驱动器固件
     entries:
+    - title: 设备重启期间自动升级 SG5800 驱动器固件
+      url: "/sg5800/upgrading-drive-firmware-using-auto-reboot.html"
     - title: 使用SANtricity系统管理器联机方法升级SG582驱动器固件
       url: "/sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: 使用SANtricity系统管理器脱机方法升级SG582驱动器固件

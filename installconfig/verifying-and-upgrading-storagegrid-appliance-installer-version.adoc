@@ -23,10 +23,7 @@ StorageGRID 设备出厂时预安装了 StorageGRID 设备安装程序。如果�
 
 .步骤
 . 从 StorageGRID 设备安装程序中，选择 * 高级 * > * 升级固件 * 。
-. 将当前固件版本与 StorageGRID 系统上安装的软件版本进行比较。（从网格管理器的顶部，选择帮助图标并选择 * 关于 * 。）
-+
-两个版本中的第二位数字应匹配。例如，如果您的 StorageGRID 系统运行的是 11.* 6* 。 _x_._y_ ，则 StorageGRID 设备安装程序版本应为 3.* 6* 。 _z_ 。
-
+. 确保当前固件版本与StorageGRID系统上安装的软件版本相匹配。  （从网格管理器的顶部，选择帮助图标并选择*关于*。）
 . 如果设备安装了StorageGRID 设备安装程序的低级版本、请转到 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 +
 使用您的 NetApp 帐户的用户名和密码登录。

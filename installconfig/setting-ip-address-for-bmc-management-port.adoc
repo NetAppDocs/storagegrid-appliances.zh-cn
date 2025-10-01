@@ -78,21 +78,15 @@ NOTE: 您只能将此端口连接到安全，可信的内部管理网络。如�
 
 . 选择 * 配置硬件 * > * BMC 配置 * 。
 +
-image::../media/bmc_configuration_page.gif[显示 " 高级 ">"BMC 配置 " 选项的屏幕截图]
-
-+
 此时将显示 Baseboard Management Controller Configuration 页面。
 
-. 记下自动显示的 IPv4 地址。
+. 在 LAN IP 设置中，记下自动显示的 IPv4 地址。
 +
 DHCP 是为该端口分配 IP 地址的默认方法。
 
 +
 
 NOTE: 显示 DHCP 值可能需要几分钟的时间。
-
-+
-image::../media/bmc_configuration_dhcp_address.gif[显示 DHCP 地址的 " 底层管理控制器配置 " 页面]
 
 . 也可以为 BMC 管理端口设置静态 IP 地址。
 +
@@ -103,9 +97,6 @@ NOTE: 您应该为 BMC 管理端口分配静态 IP ，或者为 DHCP 服务器�
 .. 选择 * 静态 * 。
 .. 使用 CIDR 表示法输入 IPv4 地址。
 .. 输入默认网关。
-+
-image::../media/bmc_configuration_static_ip.gif[Baseboard Management Controller Configuration Static 选项]
-
 .. 单击 * 保存 * 。
 +
 应用所做的更改可能需要几分钟的时间。

@@ -109,9 +109,6 @@ image::../media/sg6100_admin_network_port.png[SGF6112上的管理网络端口]
 +
 此时将显示 StorageGRID 设备安装程序主页页面。首次访问此页面时显示的信息和消息取决于设备当前与 StorageGRID 网络的连接方式。可能会显示错误消息，这些消息将在后续步骤中解决。
 
-+
-image::../media/appliance_installer_home_5700_5600.png[StorageGRID设备安装程序主页顶部的屏幕截图]
-
 
 
 . 如果无法使用DHCP获取IP地址、则可以使用链路本地连接。
@@ -205,7 +202,4 @@ NOTE: 如果无法通过链路本地连接访问主页、请将服务笔记本�
 link:verifying-and-upgrading-storagegrid-appliance-installer-version.html["验证并升级 StorageGRID 设备安装程序版本"]
 
 * 查看 StorageGRID 设备安装程序主页页面上显示的所有消息，并根据需要配置链路配置和 IP 配置。
-+
-image::../media/appliance_installer_home_services_appliance.png[设备安装程序主页]
-
 

@@ -15,11 +15,13 @@ entries:
       url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
     - title: 使用维护模式升级SG6160控制器上的SANtricity操作系统
       url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html"
-  - title: 使用SANtricity系统管理器升级驱动器固件(SG6160)
+  - title: 升级驱动器固件（SG6160）
     entries:
-    - title: 使用SANtricity系统管理器联机方法升级SG6100驱动器固件
+    - title: 设备重启期间自动升级 SG6160 驱动器固件
+      url: "/sg6100/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: 使用SANtricity System Manager 在线方法升级 SG6160 驱动器固件
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
-    - title: 使用SANtricity系统管理器脱机方法升级SG6100驱动器固件
+    - title: 使用SANtricity System Manager 离线方法升级 SG6160 驱动器固件
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 对驱动器固件升级错误进行故障排除
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
@@ -58,9 +60,9 @@ entries:
       url: "/sg6100/replace-6160-drives-60.html"
   - title: 更换NIC
     entries:
-    - title: 内部NIC (SGF6112和SG6160)
+    - title: 内部网卡（SGF6112 或 SG6100-CN）
       url: "/sg6100/replace-nic-in-sgf6112.html"
-    - title: 外部NIC (SG6160)
+    - title: 外部网卡 (SG6100-CN)
       url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: 更换CMOS电池
     url: "/sg6100/replace-cmos-in-sgf6112.html"

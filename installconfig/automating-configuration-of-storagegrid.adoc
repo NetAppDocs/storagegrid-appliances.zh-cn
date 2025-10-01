@@ -38,6 +38,9 @@ summary: 安装并配置网格节点后、您可以自动配置StorageGRID 系�
 * 您已创建 `configure-storagegrid.json` 配置文件。要创建此文件、您可以修改示例配置文件 (`configure-storagegrid.sample.json`)或空白配置文件 (`configure-storagegrid.blank.json`）。
 
 
+
+CAUTION: 存储修改后的密码部分的管理密码和配置密码 `configure-storagegrid.json`配置文件保存在安全的位置。安装、扩展和维护过程都需要这些密码。您还应该备份修改后的 `configure-storagegrid.json`配置文件并将其存储在安全的位置。
+
 .关于此任务
 您可以使用 `configure-storagegrid.py` Python脚本和 `configure-storagegrid.json` 用于自动配置StorageGRID 系统的配置文件。
 

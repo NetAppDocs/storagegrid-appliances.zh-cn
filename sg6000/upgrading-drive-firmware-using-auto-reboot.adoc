@@ -1,0 +1,35 @@
+---
+permalink: sg6000/upgrading-drive-firmware-using-auto-reboot.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
+summary: StorageGRID设备安装程序会在设备重启期间自动安装最新的 E 系列驱动器固件文件。 
+---
+= 设备重启期间自动升级 SG6000 驱动器固件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID设备安装程序会在设备重启期间自动安装最新的 E 系列驱动器固件文件。
+
+E 系列驱动器固件文件包含在StorageGRID软件中。每当StorageGRID设备重新启动时，都会自动安装这些更新：
+
+* 进入link:../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html["维护模式"]
+* 作为 https://docs.netapp.com/us-en/storagegrid/maintain/rolling-reboot-procedure.html["滚动重启"]
+* 在 https://docs.netapp.com/us-en/storagegrid/upgrade/performing-upgrade.html["StorageGRID版本升级"]或者 https://docs.netapp.com/us-en/storagegrid/maintain/applying-hotfix.html["修补程序安装"]
+* 在link:../sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["SANtricity操作系统升级"]使用维护模式
+
+
+
+CAUTION: 对于状态为“需要注意”的节点，不会尝试升级驱动器固件。
+
+
+NOTE: 当设备重新启动时，存储控制器的 I/O（输入/输出）活动将停止。
+
+您还可以使用SANtricity System Manager 手动安装驱动器固件升级link:upgrading-drive-firmware-using-santricity-system-manager-online.html["联机"]或者link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["脱机"]方法：
+
+* 在将新驱动器固件升级打包到StorageGRID软件之前应用它
+* 如果自动驱动器固件升级失败
+* 使用SANtricity System Managerlink:upgrading-drive-firmware-using-santricity-system-manager-online.html["在线驱动器固件升级"]从网格管理器而不是重新启动节点
+

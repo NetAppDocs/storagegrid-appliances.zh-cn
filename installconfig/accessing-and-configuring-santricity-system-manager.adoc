@@ -121,7 +121,7 @@ image::../media/sam_home_page.gif[SANtricity System Manager 主页的屏幕截�
 --
 .SG6060
 --
-对于SG6060存储设备、只有在安装此存储设备之前配置了密钥管理后、才能在SSD驱动器上自动启用驱动器安全性。
+对于 SG6060 存储设备，只有在安装存储设备之前配置了密钥管理，才能在 SSD 驱动器上自动启用驱动器安全性。
 
 .. 为存储阵列配备支持安全的驱动器(FD驱动器或FIPS驱动器)。
 +
@@ -130,7 +130,7 @@ image::../media/sam_home_page.gif[SANtricity System Manager 主页的屏幕截�
 *** FD驱动器不能添加到纯FIPS卷组或池中、也不能用作备用磁盘。
 
 
-.. 对于E4000控制器架、创建安全密钥(控制器和驱动器共享的字符串、用于进行读写访问)。
+.. 对于 E2800 控制器架，创建一个安全密钥（控制器和驱动器共享的用于读写访问的一串字符串）。
 +
 *** 您可以使用控制器的永久性内存、也可以 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["创建内部密钥"^]使用密钥管理服务器提供的外部密钥。
 *** 要使用密钥管理服务器提供的外部密钥、必须首先 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["使用密钥管理服务器建立身份验证"^]在SANtricity系统管理器中使用。
@@ -250,9 +250,6 @@ DHCP 是为存储控制器管理端口分配 IP 地址的默认方法。
 
 NOTE: 显示 DHCP 值可能需要几分钟的时间。
 
-+
-image::../media/storage_controller_network_config_ipv4.gif[存储控制器网络配置 IPv4]
-
 . （可选）设置存储控制器管理端口的静态 IP 地址。
 +
 
@@ -262,9 +259,6 @@ NOTE: 您应该为管理端口分配静态 IP ，或者为 DHCP 服务器上的�
 .. 选择 * 静态 * 。
 .. 使用 CIDR 表示法输入 IPv4 地址。
 .. 输入默认网关。
-+
-image::../media/storage_controller_ipv4_and_def_gateway.gif[存储控制器网络配置 IPv4 和默认网关]
-
 .. 单击 * 保存 * 。
 +
 应用所做的更改可能需要几分钟的时间。

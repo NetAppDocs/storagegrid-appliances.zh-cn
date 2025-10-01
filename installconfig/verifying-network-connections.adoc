@@ -18,9 +18,6 @@ summary: 您应确认可以从设备访问所使用的 StorageGRID 网络。要�
 +
 此时将显示 Ping 和 MTU 测试页面。
 
-+
-image::../media/ping_test_start.png[StorageGRID 设备安装程序中的 Ping 和 MTU 测试选项的屏幕截图]
-
 . 从 * 网络 * 下拉框中，选择要测试的网络：网格，管理员或客户端。
 . 输入该网络上某个主机的 IPv4 地址或完全限定域名（ FQDN ）。
 +
@@ -33,9 +30,6 @@ image::../media/ping_test_start.png[StorageGRID 设备安装程序中的 Ping �
 . 单击 * 测试连接 * 。
 +
 如果网络连接有效，则会显示 "Ping test passed" 消息，并列出 ping 命令输出。
-
-+
-image::../media/ping_test_passed.png[StorageGRID设备安装程序中ping测试结果的屏幕截图]
 
 
 

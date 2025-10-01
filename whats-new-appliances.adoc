@@ -4,7 +4,7 @@ permalink: whats-new-appliances.html
 keywords: storagegrid, appliance, whats new 
 summary: 了解此文档站点中的新增功能。 
 ---
-= 设备新增功能
+= StorageGRID设备的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,40 @@ summary: 了解此文档站点中的新增功能。
 
 
 [role="lead"]
-了解StorageGRID设备的新增功能。
+了解StorageGRID设备的新功能。
+
+
+
+== 客户端网络无需 IP 地址即可配置
+
+现在您可以启用客户端网络而无需指定 IP 地址。这允许客户端网络在StorageGRID中配置 VLAN 接口，而无需为接口本身提供额外的 IP 地址。请参阅link:.//installconfig/setting-ip-configuration.html["配置 StorageGRID IP 地址"] 。
+
+
+
+== StorageGRID软件和 Appliance Installer 的版本号已对齐
+
+对于 StorgeGRID 版本 12.0， StorageGRID Appliance Installer 的版本号与StorageGRID软件的版本相匹配。用户不再需要弄清楚哪些版本可以一起使用。请参阅link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["验证并升级 StorageGRID 设备安装程序版本"] 。
 
 
 
 == BMC信息
 
-有关使用StorageGRID设备BMC界面的详细信息现已发布。请参阅。 link:./commonhardware/use-bmc.html["使用StorageGRID设备基板管理控制器(BMC)"]
+有关使用StorageGRID设备BMC接口的详细信息现已提供。请参阅link:./commonhardware/use-bmc.html["使用StorageGRID设备基板管理控制器(BMC)"] 。
 
 
 
 == SG5812和SG5860设备
 
-新的StorageGRID SG5812和SG5860设备是集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。请参见link:./installconfig/hardware-description-sg5800.html["SG工具：概述"]以了解更多信息。
+StorageGRID SG5812 和 SG5860 设备是集成存储和计算平台，可作为StorageGRID网格中的存储节点运行。请参阅link:./installconfig/hardware-description-sg5800.html["SG工具：概述"]了解更多信息。
 
 
 
 == SG6160设备
 
-新的StorageGRID SG6160设备包括一个计算控制器和一个存储控制器架、其中包含两个存储控制器和60个驱动器、以及两个用于缓存的NVMe SSD驱动器。或者、也可以向SG6160添加60个驱动器的扩展架。请参见link:./installconfig/hardware-description-sg6100.html["SGF6100设备：概述"]了解更多信息。
+新的StorageGRID SG6160 设备包括一个计算控制器和一个存储控制器架，其中包含两个存储控制器和 60 个驱动器，以及两个用于缓存的 NVMe SSD 驱动器。可选地，可以为 SG6160 添加 60 个驱动器扩展架。参考link:./installconfig/hardware-description-sg6100.html["SGF6100设备：概述"]了解更多信息。
 
 
 
 == SG110和SG1100服务设备
 
-全新的StorageGRID SG110和SG1100服务设备是一项不断发展的硬件更新、可提高管理和负载平衡性能。请参见 link:./installconfig/hardware-description-sg110-and-1100.html["SG110和SG1100服务设备：概述"]。
+新的StorageGRID SG110 和 SG1100 服务设备是革命性的硬件更新，可提供改进的管理和负载平衡性能。请参阅link:./installconfig/hardware-description-sg110-and-1100.html["SG110和SG1100服务设备：概述"] 。

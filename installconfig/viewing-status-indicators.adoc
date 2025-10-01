@@ -817,7 +817,7 @@ off ：控制器与连接的设备之间没有链路。
 
 
 .相关信息
-link:https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 
 --
 .SG6000

@@ -552,7 +552,6 @@ I
 .相关信息
 * link:../installconfig/hardware-description-sg6000.html#sg6000-controllers["SG6000控制器"]
 * link:../installconfig/reviewing-appliance-network-connections.html["确定设备网络连接"]
-* link:../installconfig/gathering-installation-information-sg6000.html#port-bond-modes["端口绑定模式(SG6000-CN控制器)"]
 * link:cabling-appliance.html["电缆设备"]
 * link:../installconfig/setting-ip-configuration.html["配置 StorageGRID IP 地址"]
 

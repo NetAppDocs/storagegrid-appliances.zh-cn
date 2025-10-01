@@ -464,6 +464,5 @@ image::../media/e5700sg_bonded_management_ports.gif[E5700SG 绑定管理端口]
 
 .相关信息
 * link:cabling-appliance-sg5700.html["缆线设备（ SG5700 ）"]
-* link:gathering-installation-information-sg5700.html#port-bond-modes["端口绑定模式(E5700SG控制器)"]
 * link:configuring-hardware.html["配置硬件（ SG5700 ）"]
 

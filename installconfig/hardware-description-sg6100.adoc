@@ -32,6 +32,7 @@ NOTE: 根据您配置的ILM策略、对本地不可用对象的请求可以由�
 
 * 在使用期间、可从SSD故障中完全恢复、但此故障不会对存放节点根卷的RAID (StorageGRID 操作系统)造成极端损坏。
 * 如果多个SSD故障导致本地数据丢失、则可以从其他节点上的副本或删除编码块自动还原对象数据。
+* 能够作为 https://docs.netapp.com/us-en/storagegrid/admin/managing-load-balancing.html["具有缓存的网关节点"^]。
 
 
 SG6160提供以下数据保护功能：

@@ -17,6 +17,10 @@ summary: 安装和配置存储设备后，您可以将其部署为 StorageGRID �
 * 如果要克隆设备节点、请继续执行以下操作 link:../commonhardware/appliance-node-cloning-procedure.html["设备节点克隆"] 流程。
 * 此设备已安装在机架或机柜中，并已连接到您的网络并已启动。
 * 已使用 StorageGRID 设备安装程序为此设备配置网络链路， IP 地址和端口重新映射（如果需要）。
++
+
+NOTE: 对端口重新映射的支持已弃用，并将在未来的版本中删除。要删除重新映射的端口，请参阅 https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["删除StorageGRID设备上的端口重新映射"^]。
+
 * 您知道分配给设备计算控制器的一个 IP 地址。您可以对任何已连接的 StorageGRID 网络使用此 IP 地址。
 * 已部署 StorageGRID 系统的主管理节点。
 * StorageGRID 设备安装程序的 IP 配置页面上列出的所有网格网络子网均已在主管理节点上的网格网络子网列表中定义。
@@ -57,7 +61,7 @@ NOTE: 只能在设备部署期间选择仅元数据。如果选择"仅元数据"
 
 . 在*Node name*字段中，提供要用于此设备节点的系统名称，然后单击*Save*。
 +
-此处显示的名称将是设备节点的系统名称。内部StorageGRID 操作需要系统名称、并且无法更改。
+此处显示的名称将是设备节点的系统名称。系统名称是内部StorageGRID操作所必需的，并且不能更改。要更改设备节点的显示名称，请参阅 https://docs.netapp.com/us-en/storagegrid/maintain/rename-grid-site-node.html#how-to-rename-grid-sites-or-nodes["如何重命名网格、站点或节点"^]。
 
 . 在 * 主管理节点连接 * 部分中，确定是否需要指定主管理节点的 IP 地址。
 +
