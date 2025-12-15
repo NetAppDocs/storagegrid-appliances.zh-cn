@@ -16,7 +16,7 @@ summary: 要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6
 .开始之前
 * 您必须具有配置密码短语。
 * 您必须运行 StorageGRID 11.4 或更高版本。
-* 每个扩展架都有扩展架和两根 SAS 缆线。
+* 每个扩展架配有四个 SAS 电缆。
 * 您已将要在数据中心中添加扩展架的存储设备物理定位。
 +
 link:locating-controller-in-data-center.html["在数据中心中找到控制器"]

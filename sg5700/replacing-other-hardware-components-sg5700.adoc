@@ -35,14 +35,14 @@ summary: 您可能需要更换 StorageGRID 设备中的控制器电池，驱动�
  a| 
 驱动器
  a| 
-更换 E2800 12 驱动器或 24 驱动器磁盘架中的驱动器
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["更换 E2800 12 驱动器或 24 驱动器磁盘架中的驱动器"^]
 
 
 
  a| 
 电源风扇箱
  a| 
-更换 E2800 磁盘架中的电源风扇箱
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["更换 E2800 磁盘架中的电源风扇箱"^]
 
 |===
 
@@ -57,27 +57,27 @@ summary: 您可能需要更换 StorageGRID 设备中的控制器电池，驱动�
  a| 
 驱动器
  a| 
-更换 E2860 磁盘架中的驱动器
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["更换 E2860 磁盘架中的驱动器"^]
 
 
 
  a| 
 动力箱
  a| 
-更换 E2860 磁盘架中的电源箱
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-60-replace-power-task.html["更换 E2860 磁盘架中的电源箱"^]
 
 
 
  a| 
 风扇箱
  a| 
-更换 E2860 磁盘架中的风扇箱
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["更换 E2860 磁盘架中的风扇箱"^]
 
 
 
  a| 
 Drive drawer
  a| 
-更换 E2860 磁盘架中的驱动器抽盒
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-60-supertask-task.html["更换 E2860 磁盘架中的驱动器抽盒"^]
 
 |===
