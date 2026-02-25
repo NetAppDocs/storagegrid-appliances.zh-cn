@@ -23,6 +23,8 @@ indexpage:
       url: "../sg5800/replace-controller-5800sg.html"
     - title: 更换E4000存储控制器
       url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: 更换CMOS电池
+      url: "../sg5800/replace-cmos-battery-sg5800.html"
     - title: 更换风扇罐
       url: "../sg5800/replace-fan-canister.html"
     - title: 更换动力箱

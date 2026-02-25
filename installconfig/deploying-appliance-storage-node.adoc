@@ -119,3 +119,6 @@ NOTE: 如果需要手动访问监控器安装页面，请单击 * 监控安装 *
 NOTE: 如果您需要一次部署多个设备存储节点、可以使用以下链接自动执行安装过程：../installconfig/Automate-Appliance安装和配置.html#Automate-with配置sga-py-script[`configure-sga.py` 设备安装脚本]。
 
 
+
+.下一步是什么？
+了解 link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["配置网格并完成安装"^] 和 link:monitoring-appliance-installation.html["监控设备安装"]。

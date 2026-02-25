@@ -184,3 +184,6 @@ NOTE: 如果需要手动访问监控器安装页面，请单击菜单栏中的 *
 
 . 如果网格包含多个设备节点，请对每个设备重复上述步骤。
 
+
+.下一步是什么？
+了解 link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["配置网格并完成安装"^] 和 link:monitoring-appliance-installation.html["监控设备安装"]。

@@ -32,10 +32,12 @@ entries:
 - title: 硬件过程
   pdf-filename: 硬件流程- SGs太 少
   entries:
-  - title: 更换SG酒店 的控制器
+  - title: 更换 SG5800 控制器
     url: "/sg5800/replace-controller-5800sg.html"
   - title: 更换E4000控制器
     url: "/sg5800/replace-controller-e4000-simplex.html"
+  - title: 更换CMOS电池
+    url: "/sg5800/replace-cmos-battery-sg5800.html"
   - title: 更换风扇(SG5860)
     url: "/sg5800/replace-fan-canister.html"
   - title: 更换电源(SG5812)

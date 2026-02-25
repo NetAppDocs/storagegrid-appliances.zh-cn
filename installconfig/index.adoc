@@ -77,3 +77,7 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 * link:deploying-appliance-storage-node.html["部署设备存储节点"]
 * link:deploying-services-appliance-node.html["部署服务设备节点"]
 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 配置
+[role="quick-margin-para"]
+部署所有节点后，请使用 Grid Manager link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["配置网格并完成安装"^]。
