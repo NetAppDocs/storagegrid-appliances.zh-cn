@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, storage controller shelf, Battery, Drive, Power canister, power supply, Fan canister, fan, Drive drawer 
 summary: 如果发生硬件问题，您可能需要更换存储控制器架中的组件。 
 ---
-= 更换SG6000存储控制器架中的硬件组件
+= 更换 SG6000 存储控制器架中的硬件组件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -73,4 +73,4 @@ E 系列：更换风扇箱（ 60 个驱动器）
 E 系列：更换驱动器抽盒（ 60 个驱动器）
 
 |===
-更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。

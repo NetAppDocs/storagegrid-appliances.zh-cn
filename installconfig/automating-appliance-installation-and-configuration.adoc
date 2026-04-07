@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: automate, automating, automation, automatic, install, installation, configuration, configure 
 summary: 自动化安装和配置对于部署多个 StorageGRID 实例或一个大型复杂的 StorageGRID 实例非常有用。 
 ---
-= 自动安装和配置设备
+= 自动化 StorageGRID 设备安装和配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

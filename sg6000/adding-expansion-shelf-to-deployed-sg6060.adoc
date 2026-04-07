@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, expansion shelf, expansion, drive, disk, install, installing, installation, add, adding, expand 
 summary: 要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6060 添加一个或两个扩展架。 
 ---
-= 将扩展架添加到已部署的 SG6060
+= 向已部署的 SG6060 设备添加扩展架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -185,7 +185,7 @@ NOTE: 要在扩展架配置失败时重试此配置，请转到 StorageGRID 设�
 
 . 验证设备存储节点和新扩展架的状态。
 +
-.. 在网格管理器中，选择*N节点*并验证设备存储节点是否具有绿色复选标记图标。
+.. 在 Grid Manager 中，选择 *Nodes* 并验证设备存储节点是否带有绿色复选标记图标。
 +
 绿色复选标记图标表示没有处于活动状态的警报、并且节点已连接到网格。有关节点图标的说明，请参见 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
 

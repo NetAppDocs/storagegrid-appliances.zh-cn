@@ -27,6 +27,8 @@ sidebar:
         url: "/installconfig/hardware-description-sg100-and-1000.html"
       - title: SG110和SG1100服务设备
         url: "/installconfig/hardware-description-sg110-and-1100.html"
+      - title: SG120 和 SG1200 服务设备
+        url: "/installconfig/hardware-description-sg120-and-1200.html"
       - title: SG5700 存储设备
         url: "/installconfig/hardware-description-sg5700.html"
       - title: SG工具
@@ -35,6 +37,8 @@ sidebar:
         url: "/installconfig/hardware-description-sg6000.html"
       - title: SG6100存储设备
         url: "/installconfig/hardware-description-sg6100.html"
+      - title: SG6200 存储设备
+        url: "/installconfig/hardware-description-sg6200.html"
   - section: installconfig
   - title: 维护设备硬件
     url: "/landing-maintain-hdwr/index.html"
@@ -51,11 +55,13 @@ sidebar:
         url: "/commonhardware/appliance-node-cloning-procedure.html"
     - section: sg100-1000
     - section: sg110-1100
+    - section: sg120-1200
     - section: sg5600
     - section: sg5700
     - section: sg5800
     - section: sg6000
     - section: sg6100
+    - section: sg6200
   - title: StorageGRID解决方案和资源
     url: "/storagegrid-enable.html"
   - title: 法律声明

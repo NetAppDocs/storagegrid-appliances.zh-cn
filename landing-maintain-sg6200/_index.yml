@@ -1,0 +1,67 @@
+---
+indexpage:
+  title: 维护 SG6200 存储设备硬件
+  summary: 维护 SG6200 存储设备的硬件。
+  keywords: maintain storagegrid sg6200
+  lead: 维护 SG6200 存储设备的硬件。
+  tiles:
+  - title: 经常执行的过程
+    links:
+    - title: 升级SANtricity
+      url: "../sg6200/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6260.html"
+    - title: 升级驱动器固件（SG6200 - 自动重启方法）
+      url: "../sg6200/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: 升级驱动器固件（SG6200 - 在线方法）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升级驱动器固件（SG6200 - 离线方法）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 打开或关闭识别LED
+      url: "../sg6200/turning-sg6200-identify-led-on-and-off.html"
+    - title: 在数据中心内找到设备
+      url: "../sg6200/locating-sg6200-in-data-center.html"
+    - title: 关闭和打开设备电源
+      url: "../sg6200/power-sg6200-off-on.html"
+    - title: 更改链路配置
+      url: "../sg6200/changing-link-configuration-of-sg6200-appliance.html"
+    - title: 验证要更换的组件
+      url: "../sg6200/verify-component-to-replace.html"
+  - title: 机架过程
+    links:
+    - title: 替换 SGF6212 设备
+      url: "../sg6200/replacing-sgf6212-appliance.html"
+    - title: 更换 SG6200-CN 控制器（SG6260）
+      url: "../sg6200/replacing-sg6200-cn-controller.html"
+    - title: 更换存储控制器控制器 (SG6260)
+      url: "../sg6200/replace-controller-e4000-duplex.html"
+    - title: 在机架中重新定位 SGF6212 或 SG6200-CN
+      url: "../sg6200/reinstalling-sg6200-into-cabinet-or-rack.html"
+  - title: 硬件过程
+    links:
+    - title: 更换盖板（SGF6212 或 SG6200-CN）
+      url: "../sg6200/reinstalling-sg6200-cover.html"
+    - title: 更换电源（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replacing-one-or-more-power-supplies-in-sg6200-appliance.html"
+    - title: 更换存储控制器架或扩展架中的电源（SG6260）
+      url: "../sg6200/replace-e4000-power-canister.html"
+    - title: 更换 SGF6212 或 SG6200-CN (SG6260) 中的风扇
+      url: "../sg6200/replacing-fan-in-sg6200.html"
+    - title: 更换存储控制器架或扩展架中的风扇 (SG6260)
+      url: "../sg6200/replace-e4000-fan-canister.html"
+    - title: 更换 SGF6212 中的驱动器
+      url: "../sg6200/replacing-drive-in-sgf6212.html"
+    - title: 更换 SG6200-CN 中的驱动器
+      url: "../sg6200/replace-drive-sg6200-cn.html"
+    - title: 更换存储控制器架或扩展架中的驱动器（SG6260）
+      url: "../sg6200/replace-6260-drives-60.html"
+    - title: 更换内部网卡（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replace-nic-in-sg6200.html"
+    - title: 更换外部网卡 (SG6200-CN)
+      url: "../sg6200/replace-ocp-nic-sg6200-cn.html"
+    - title: 更换存储控制器架 (SG6260) 中的 DIMM
+      url: "../sg6200/replace-dimms-e4000.html"
+    - title: 更换存储控制器架（SG6260）中的电池
+      url: "../sg6200/replace-battery-e4000.html"
+    - title: 更换 CMOS 电池（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replace-cmos-in-sg6200.html"
+    - title: 将扩展架添加到已部署的 SG6260
+      url: "../sg6200/adding-expansion-shelf-to-deployed-sg6260.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 查看E4000罐的类型和要求。 
 ---
-= 更换存储控制器架或扩展架中的风扇箱(SG6160)
+= 更换 SG6160 存储控制器或扩展架中的风扇罐
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
 summary: 您可以在机柜或机架中为EF570控制器架安装一组导轨、然后将阵列滑入导轨上。 
 ---
-= 安装包含24个驱动器的磁盘架(GF6024)
+= 为 SGF6024 安装 24 驱动器托架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

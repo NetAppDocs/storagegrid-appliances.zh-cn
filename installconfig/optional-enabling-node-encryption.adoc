@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: node encryption, encryption, kms, key management server, drive encryption, self-encrypting drives, sed, full-disk encryption, fde 
 summary: 您可以在节点和磁盘级别启用加密、以防止设备中的磁盘物理丢失或从站点中删除。 
 ---
-= 可选：启用节点或驱动器加密
+= 为 StorageGRID 设备启用节点或驱动器加密
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -92,11 +92,11 @@ NOTE: 设备最初会配置一个随机的非 KMS 加密密钥，该密钥会分
 
 在写入和读取过程中、驱动器加密在自加密驱动器(SED)硬件上进行管理。对这些驱动器上数据的访问由用户定义的密码短语控制。
 
-驱动器加密可用于SG100、SG1000、SG110、SG1100、SGF6112、 或SG6100-CN计算节点或控制器。
+驱动器加密可用于安装在 SG100、SG1000、SG110、SG1100、SG120、SG1200、SGF6112、SGF6212、SG6100-CN 或 SG6200-CN 计算节点或控制器中的任何 SED SSD。
 
 * 对于服务设备、SSD是节点根磁盘。
-* 在SG6100-CN控制器中、SSD用于缓存。
-* 在SGF6112中、SSD是节点根磁盘、用于对象数据的主存储。
+* 在 SG6100-CN 或 SG6200-CN 控制器中，SSD 用于缓存。
+* 在 SGF6112 或 SGF6212 中，SSD 是节点根磁盘，用于对象数据的主存储。
 
 
 当设备关闭或从设备中删除驱动器时、加密的SRD会自动锁定。加密的SED在恢复供电后保持锁定状态、直到输入正确的密码短语为止。要允许在不手动重新输入密码短语的情况下访问驱动器、此密码短语会存储在StorageGRID设备上、以便在设备重新启动时解锁设备中保留的加密驱动器。知道SED密码短语的任何人都可以访问使用SED密码短语加密的驱动器。

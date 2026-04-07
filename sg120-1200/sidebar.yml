@@ -1,0 +1,40 @@
+---
+section: sg120-1200
+title: 维护 SG120 和 SG1200 硬件
+url: "/landing-maintain-sg1200-120/index.html"
+entries:
+- title: 概述
+  pdf-filename: SG120 和 SG1200 硬件维护
+  url: "/sg120-1200/index.html"
+- title: 维护配置过程
+  pdf-filename: 维护配置程序 - SG120 和 SG1200
+  entries:
+  - title: 打开和关闭识别LED
+    url: "/sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html"
+  - title: 在数据中心内找到设备
+    url: "/sg120-1200/locating-sg120-and-sg1200-in-data-center.html"
+  - title: 关闭并打开产品电源
+    url: "/sg120-1200/power-sg120-and-sg1200-off-on.html"
+  - title: 更改链路配置
+    url: "/sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html"
+- title: 硬件维护过程
+  pdf-filename: 硬件维护程序 - SG120 和 SG1200
+  entries:
+  - title: 验证要更换的组件
+    url: "/sg120-1200/verify-component-to-replace.html"
+  - title: 更换一个或多个电源
+    url: "/sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html"
+  - title: 更换风扇
+    url: "/sg120-1200/replacing-fan-in-sg120-and-sg1200.html"
+  - title: 更换驱动器
+    url: "/sg120-1200/replacing-drive-in-sg120-and-sg1200.html"
+  - title: 更换NIC
+    url: "/sg120-1200/replace-nic-in-sg120-and-sg1200.html"
+  - title: 更换CMOS电池
+    url: "/sg120-1200/replace-cmos-in-sg120-and-sg1200.html"
+  - title: 装回护盖
+    url: "/sg120-1200/reinstalling-sg120-and-sg1200-cover.html"
+  - title: 更换产品
+    url: "/sg120-1200/replacing-sg120-and-sg1200-appliance.html"
+  - title: 将设备重新放置在机架中
+    url: "/sg120-1200/reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal, locate, identify, find 
 summary: 如果光纤通道HBA未以最佳状态运行或发生故障、您可能需要更换它。 
 ---
-= 更换SG6000中的光纤通道HBA
+= 更换 SG6000-CN 控制器中的光纤通道 HBA
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -29,7 +29,7 @@ NOTE: 如果包含要更换的光纤通道 HBA 的存储设备的序列号以字
 
 
 .步骤
-. 在网格管理器中，选择 * 节点 * 。
+. 在网格管理器中，选择 *节点* 。
 . 从节点页面上的表中，选择设备存储节点。
 . 选择 * 硬件 * 选项卡。
 +
@@ -96,7 +96,7 @@ image::../media/sg6060_fc_hba_location.jpg[SG6060 光纤通道 HBA 位于提升�
 .完成后
 link:reinstalling-fibre-channel-hba.html["安装替代光纤通道HBA"]。
 
-更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。
 
 
 

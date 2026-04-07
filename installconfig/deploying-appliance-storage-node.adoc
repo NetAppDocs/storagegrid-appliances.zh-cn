@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
 summary: 安装和配置存储设备后，您可以将其部署为 StorageGRID 系统中的存储节点。将设备部署为存储节点时，您可以使用设备上随附的 StorageGRID 设备安装程序。 
 ---
-= 部署设备存储节点
+= 部署 StorageGRID 设备存储节点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

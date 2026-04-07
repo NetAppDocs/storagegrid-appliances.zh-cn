@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, setup, set up, IP, IP address 
 summary: 您可以使用StorageGRID 设备安装程序配置用于StorageGRID 网格、管理和客户端网络上的服务设备或设备存储节点的IP地址和路由信息。 
 ---
-= 配置 StorageGRID IP 地址
+= 配置 StorageGRID 设备 IP 地址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -22,10 +22,12 @@ summary: 您可以使用StorageGRID 设备安装程序配置用于StorageGRID �
 
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["更改SG100或SG1000服务设备的链路配置"]
 * link:../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html["更改SG110或SG1100服务设备的链路配置"]
+* link:../sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html["更改 SG120 或 SG1200 服务设备的链路配置"]
 * link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["更改 E5700SG 控制器的链路配置"]
 * link:../sg5800/changing-link-configuration-of-sg5800-controller.html["更改SG可能性 控制器的链路配置"]
 * link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["更改SG6000-CN控制器的链路配置"]
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["更改SG6100设备的链路配置"]
+* link:../sg6200/changing-link-configuration-of-sg6200-appliance.html["更改 SG6200 设备的链接配置"]
 
 
 [NOTE]

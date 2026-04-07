@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
 summary: StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理节点运行、以便在StorageGRID系统中提供高可用性负载平衡服务。这两个设备可以同时用作网关节点和管理节点（主节点或非主节点）。 
 ---
-= SG110和SG1100设备：概述
+= StorageGRID SG110 和 SG1100 设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,7 +72,7 @@ image::../media/q2024_rear_leds.png[背面LED SG110和SG1100]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===

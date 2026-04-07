@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mtu, change, changing 
 summary: 您可以更改在为设备节点配置 IP 地址时分配的 MTU 设置。 
 ---
-= 更改 MTU 设置
+= 更改 StorageGRID 设备的 MTU 设置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -55,7 +55,7 @@ NOTE: 为了获得最佳网络性能，应在所有节点的网格网络接口�
 设备重新启动并重新加入电网最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 
 +
-... 在网格管理器中，选择*NODES*。
+... 在 Grid Manager 中，选择 *Nodes* 。
 ... 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 

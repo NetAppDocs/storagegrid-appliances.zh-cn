@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: status, indicators, lights, leds, light, led, display, switch , button, power, reset, identify, alarm, ssd, indicator, boot codes, boot, code, start, startup, start up, start-up, progress 
 summary: 设备和控制器包括一些指示灯、可帮助您确定设备组件的状态。 
 ---
-= 查看状态指示灯和代码
+= 查看 StorageGRID 设备上的状态指示灯和代码
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -118,7 +118,7 @@ image::../media/q2023_rear_leds.png[背面LED SG100和SG1000]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===
@@ -289,7 +289,7 @@ image::../media/q2024_rear_leds.png[背面LED SG110和SG1100]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===
@@ -315,6 +315,176 @@ SSD 指示灯::
 +
 --
 下图显示了SG110和SG1100设备上的SSD指示灯。
+
+image::../media/ssd_indicators.png[SSD 指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| LED | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+驱动器状态 / 故障
+ a| 
+* 蓝色（实心）：驱动器已联机
+* 琥珀色(稳定亮起)：驱动器出现故障
+* off ：插槽为空
+
+
+
+
+ a| 
+2.
+ a| 
+驱动器处于活动状态
+ a| 
+蓝色（闪烁）：正在访问驱动器
+
+|===
+--
+
+
+--
+.SG120 和 SG1200
+--
+此设备包含一些指示灯、可帮助您确定设备控制器和SSD的状态：
+
+* <<appliance_indicators_sg120_sg1200,设备指示灯和按钮>>
+* <<general_boot_codes_sg120_sg1200,常规启动代码>>
+* <<ssd_indicators_sg120_sg1200,SSD 指示灯>>
+
+
+使用此信息来帮助 link:troubleshooting-hardware-installation-sg120-and-sg1200.html["SG120 和 SG1200 硬件安装故障排除"]。
+
+[[appliance_indicators_sg120_sg1200]]
+设备指示灯和按钮::
++
+--
+下图显示了 SG120 和 SG1200 设备正面的指示灯和按钮。
+
+image::../media/sg120_sg1200_front_indicators.png[前部指示灯 - SG120 和 SG1200]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：设备已启动。
+* off ：设备已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+使用BMC、可以将此按钮设置为闪烁、亮起(稳定亮起)或熄灭。
+
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+
+
+ a| 
+4.
+ a| 
+状态LED
+ a| 
+* 琥珀色，稳定亮起：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+
+
+ a| 
+5.
+ a| 
+。
+ a| 
+SG120 和 SG1200 设备未使用此指示灯，因此保持关闭状态。
+
+|===
+--
+
+
+下图显示了电源的位置，并标识了 SG120 和 SG1200 背面的 LED。其他状态和活动指示灯位于设备端口上。这些 LED 可能因设备型号而异。
+
+image::../media/sg120_sg1200_rear_leds.png[后部 LED SG120 和 SG1200]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
+
+
+|===
+[[general_boot_codes_sg120_sg1200]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[ssd_indicators_sg120_sg1200]]
+SSD 指示灯::
++
+--
+下图显示了 SG120 和 SG1200 设备上的 SSD 指示灯。
 
 image::../media/ssd_indicators.png[SSD 指示灯]
 
@@ -926,7 +1096,7 @@ image::../media/q2023_rear_leds.png[背面LED SG6000-CN]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===
@@ -1091,7 +1261,7 @@ image::../media/q2024_rear_leds.png[背面LED SGF6112和SG6100-CN]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===
@@ -1136,6 +1306,181 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 
 
 *注意：*如果将新的正常工作的SSD插入到正常工作的SGF6112或SG6160 StorageGRID节点中、SSD上的LED最初应闪烁、但一旦系统确定驱动器具有足够的容量且正常工作、则会停止闪烁。
+
+
+
+ a| 
+2.
+ a| 
+驱动器处于活动状态
+ a| 
+蓝色（闪烁）：正在访问驱动器
+
+|===
+--
+
+
+.相关信息
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+
+--
+.SG6200
+--
+此设备包含一些指示灯、可帮助您确定设备控制器和SSD的状态：
+
+* <<appliance_indicators_SG6200,设备指示灯和按钮>>
+* <<general_boot_codes_SG6200,常规启动代码>>
+* <<ssd_indicators_SG6200,SSD 指示灯>>
+
+
+使用此信息来帮助 link:troubleshooting-hardware-installation-sg6200.html["SG6200 硬件安装故障排除"]。
+
+[[appliance_indicators_SG6200]]
+设备指示灯和按钮::
++
+--
+下图显示了 SG6200 设备正面的指示灯和按钮。
+
+image::../media/s25_front_indicators.png[前指示灯 - SG6200]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：设备已启动。
+* off ：设备已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+使用BMC、可以将此按钮设置为闪烁、亮起(稳定亮起)或熄灭。
+
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* off ：无法在机柜或机架中直观地识别设备。
+
+
+
+
+ a| 
+4.
+ a| 
+状态LED
+ a| 
+* 琥珀色，稳定亮起：发生错误。
++
+*注：*要查看启动和错误代码， link:accessing-bmc-interface.html["访问BMC界面"]。
+
+* off ：不存在任何错误。
+
+
+
+
+ a| 
+5.
+ a| 
+。
+ a| 
+此灯不被 SG6200 设备使用，并且保持关闭状态。
+
+|===
+--
+
+
+下图显示了电源的位置，并标识了 SGF6212 和 SG6200-CN 背面的 LED。其他状态和活动指示灯位于设备端口上。这些 LED 可能因设备型号而异。
+
+image::../media/s25_rear_leds.png[后部 LED SGF6212 和 SG6200-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Callout | LED | State 
+
+
+ a| 
+1.
+ a| 
+电源指示灯
+ a| 
+* 绿色、稳定亮起：设备已通电、电源按钮已打开。
+* 绿色、闪烁：设备已通电、电源按钮已关闭。
+* 熄灭：设备未通电。
+* 琥珀色：电源故障。
+
+
+
+
+ a| 
+2.
+ a| 
+识别LED
+ a| 
+* 蓝色，闪烁：表示机柜或机架中的设备。
+* 蓝色，实心：表示机柜或机架中的设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
+
+
+|===
+[[general_boot_codes_SG6200]]
+常规启动代码::
++
+--
+在启动期间或设备硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码、 link:accessing-bmc-interface.html["访问BMC界面"]。
+
+
+
+--
+
+
+[[ssd_indicators_SG6200]]
+SSD 指示灯::
++
+--
+下图显示了 SGF6212 或 SG6260 设备上的 SSD 指示灯。
+
+image::../media/ssd_indicators.png[SSD 指示灯]
+
+[cols="1a,2a,2a"]
+|===
+| LED | 显示 | State 
+
+
+ a| 
+1.
+ a| 
+驱动器状态 / 故障
+ a| 
+* 蓝色（实心）：驱动器已联机
+* 琥珀色(稳定亮起)：驱动器出现故障
+* off ：插槽为空
+
+
+*注意：*如果将新的工作 SSD 插入工作 SGF6212 或 SG6260 StorageGRID 节点，SSD 上的 LED 最初应闪烁，但在系统确定驱动器有足够容量且正常工作后立即停止闪烁。
 
 
 

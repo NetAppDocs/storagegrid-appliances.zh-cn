@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Installation, deployment, Install, deploy, Installing, deploying 
 summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其部署为StorageGRID 系统中的节点。 
 ---
-= 设备安装快速入门
+= StorageGRID 设备安装快速入门
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,10 +33,12 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 +
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100和SG1000"]
 ** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110和SG1100"]
+** link:installing-appliance-in-cabinet-or-rack-sg120-and-sg1200.html["SG120 和 SG1200"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5800.html["SGs了"]
 ** link:installing-hardware-sg6000.html["SG6000"]
 ** link:installing-hardware-sg6100.html["SG6100"]
+** link:installing-hardware-sg6200.html["SG6200"]
 
 
 . link:cabling-appliance.html["电缆设备"]
@@ -58,12 +60,12 @@ summary: 按照以下简要步骤安装和设置StorageGRID 设备、并将其�
 ** link:verifying-port-level-network-connections.html["验证端口级别的网络连接"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG6160、SG5700、SG5700和SG6000)
-. link:configuring-bmc-interface.html["配置BMC接口"] (SG6100、SG6000和服务设备)
+. link:accessing-and-configuring-santricity-system-manager.html["访问并配置SANtricity 系统管理器"] (SG6260、SG6160、SG5700、SG5800 和 SG6000)
+. link:configuring-bmc-interface.html["配置BMC接口"] (SG6200、SG6100、SG6000 和服务设备)
 . 执行可选的设置步骤
 +
 ** link:optional-enabling-node-encryption.html["启用节点或驱动器加密"]
-** link:optional-changing-raid-mode.html["更改RAID模式(SG6160、SG6000、SG5860和SG5760)"]
+** link:optional-changing-raid-mode.html["更改 RAID 模式"] (SG6260、SG6160、SG6000、SG5860 和 SG5760)
 ** link:optional-remapping-network-ports-for-appliance.html["重新映射网络端口"]
 
 

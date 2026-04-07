@@ -1,0 +1,59 @@
+---
+permalink: sg6200/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6260.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6260, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
+summary: 对于当前使用 SANtricity 操作系统版本早于 08.42.20.00 的存储控制器 \ （ 11.42\ ），您必须使用维护模式操作步骤 应用升级。 
+---
+= 使用维护模式升级 SG6260 存储控制器上的 SANtricity 操作系统
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用维护模式在 SG6260 控制器上升级 SANtricity 操作系统。
+
+
+NOTE: 对于当前使用高于 08.42.20.00 (11.42) 的 SANtricity 操作系统的存储控制器，建议 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6260.html["使用网格管理器应用升级"]。但是，如果您愿意或技术支持人员指示，您可以使用维护模式程序。
+
+.关于此任务
+请勿一次在多个StorageGRID设备上升级存储控制器中的SANtricity操作系统或NVSstorage.
+
+
+CAUTION: 一次升级多个 StorageGRID 设备可能会导致发生原因 数据不可用，具体取决于您的部署模式和 ILM 策略。
+
+.开始之前
+* 您已查阅 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
+* 您必须将 SG6260 控制器放入link:../commonhardware/placing-appliance-into-maintenance-mode.html["维护模式"]，这将停止对 E4000 存储控制器的所有 I/O。
++
+
+NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。
+
+
+
+.步骤
+. 确认设备已进入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["维护模式"]。
+. 从服务笔记本电脑访问 SANtricity 系统管理器并登录。
+. 将新的 SANtricity OS 软件文件和 NVSRAM 文件下载到管理客户端。
++
+
+CAUTION: NVSRAM 是特定于 StorageGRID 设备的。请勿使用标准NVSRAM下载。
+
+. 按照或SANtricity系统管理器联机帮助中的说明 https://docs.netapp.com/us-en/e-series-santricity/sm-support/upgrade-controller-software-and-firmware.html["_正在 升级SANtricity OS_指南"^]升级固件和NV严格 执行。
++
+
+NOTE: 立即激活升级文件。不要推迟激活。
+
+. 如果此操作步骤 已成功完成，并且您在节点处于维护模式时还需要执行其他过程，请立即执行。完成后，或者如果遇到任何故障并希望重新启动，请选择 * 高级 * > * 重新启动控制器 * ，然后选择以下选项之一：
++
+** 选择 * 重新启动到 StorageGRID *
+** 选择 * 重新启动至维护模式 * 以重新启动控制器，同时使节点仍处于维护模式。  如果您在操作步骤 期间遇到任何故障并希望重新启动，请选择此选项。  节点重新启动至维护模式后，从出现故障的操作步骤 中的相应步骤重新启动。
++
+设备最多可能需要 20 分钟才能重新启动并重新加入网格。要确认重新启动已完成且节点已重新加入网格，请返回 Grid Manager。Nodes 页面应显示设备节点的正常状态（节点名称左侧的绿色复选标记图标 image:../media/icon_alert_green_checkmark.png["绿色复选标记"]），指示没有处于活动状态的警报，并且该节点已连接到网格。
+
+
+
+
+
+.相关信息
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6260.html["使用网格管理器升级存储控制器上的 SANtricity 操作系统"]

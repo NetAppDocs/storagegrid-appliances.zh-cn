@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 维护SG8600设备
+= 维护 SG5800 设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

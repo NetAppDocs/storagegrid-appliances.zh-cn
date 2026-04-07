@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, storage node, install, installing, installation, cabinet, rack, rail, rails 
 summary: 您可以在机柜或机架中为设备安装一组滑轨、然后将设备滑入滑轨上。 
 ---
-= 安装到机柜或机架中(SG110或SG1100)
+= 将 SG110 或 SG1100 安装到机柜或机架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

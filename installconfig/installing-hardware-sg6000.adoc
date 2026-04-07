@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
 summary: 对于SG6060和SGF6024、您可以在机柜或机架中安装导轨、然后将控制器架、所有扩展架和计算控制器滑入导轨上。对于SG6060、请勿在每个磁盘架中安装驱动器、除非安装了这些磁盘架。 
 ---
-= 安装到机柜或机架中(SG6000)
+= 将 SG6000 安装到机柜或机架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

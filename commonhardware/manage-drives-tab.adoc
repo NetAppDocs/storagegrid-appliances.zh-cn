@@ -1,10 +1,10 @@
 ---
 permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+keywords: sgf6112, sg110, sg1100, sg6160, sg6200, sg6260, sgf6212 manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 您可以使用网格管理器中的管理驱动器选项卡对支持此功能的设备的驱动器执行故障排除和维护任务。 
 ---
-= 使用管理驱动器选项卡(SG110、SG1100、SGF6112和SG6160)
+= 使用 SG110、SG120、SG1100、SG1200、SG6100 和 SG6200 StorageGRID 设备的管理驱动器选项卡
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -50,7 +50,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 要在设备中物理定位驱动器、请执行以下操作：
 
-. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 在 Grid Manager 中，选择 *Nodes* > *_data center_*。
 . 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
 +
 此时将显示驱动器详细信息面板。
@@ -70,7 +70,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 如果存储设备中的驱动器需要重建或重新初始化：
 
-. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 在 Grid Manager 中，选择 *Nodes* > *_data center_*。
 . 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
 +
 此时将显示驱动器详细信息面板。
@@ -87,7 +87,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 要进行故障排除、您可以手动对怀疑有故障的驱动器进行"故障排除"。然后、系统将在没有该驱动器的情况下运行。
 
-. 在网格管理器中，选择*N节点*>*_data centre_*。
+. 在 Grid Manager 中，选择 *Nodes* > *_data center_*。
 . 选择*_Appliance storage NODE_*>*Manage drives*>*Layout*>*_dee_*。
 +
 此时将显示驱动器详细信息面板。

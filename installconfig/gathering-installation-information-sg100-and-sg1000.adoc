@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, independent, active-backup, active backup, management, management port, management ports 
 summary: 使用表记录连接到设备的每个网络所需的信息。安装和配置硬件需要这些值。 
 ---
-= 收集网络信息(SG100和SG1000)
+= 为 SG100 和 SG1000 收集网络信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

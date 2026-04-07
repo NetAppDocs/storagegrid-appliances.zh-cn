@@ -1,0 +1,43 @@
+---
+permalink: sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: sg120, sg1200, locate, find, locating, finding, identify, blue led, blue light 
+summary: 可以打开设备正面和背面的蓝色识别LED指示灯、以帮助在数据中心内定位设备。 
+---
+= 打开和关闭 SG120 或 SG1200 识别 LED
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+可以打开设备正面和背面的蓝色识别LED指示灯、以帮助在数据中心内定位设备。
+
+.开始之前
+您知道要标识的设备的BMC IP地址。
+
+.步骤
+. link:../installconfig/accessing-bmc-interface.html["访问设备BMC界面"]。
+. 选择 * 服务器标识 * 。
++
+已选择识别LED的当前状态。
+
+. 选择 *ON*、*OFF* 或 *BLINK*，然后选择 *Perform Action*。
++
+选择 *ON* 时，设备前后蓝色识别 LED 指示灯亮起。
+
++
+image::../media/s25_front_identify_led.png[正面识别 LED —亮起]
+
++
+
+NOTE: 如果控制器上安装了挡板，则可能很难看到正面的识别 LED 。
+
++
+后部标识 LED 位于设备中心的 Micro-SD 插槽旁边。
+
+. 根据需要打开和关闭识别LED。
+
+
+.相关信息
+link:locating-sg120-and-sg1200-in-data-center.html["在数据中心内找到设备"]

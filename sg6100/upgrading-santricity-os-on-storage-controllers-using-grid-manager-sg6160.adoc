@@ -2,16 +2,16 @@
 permalink: sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html 
 sidebar: sidebar 
 keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
-summary: '对于当前正在使用SANtricity OS 08.42.20.00 \(11.42\)或更高版本的存储控制器、您可以使用网格管理器或维护模式应用升级。' 
+summary: 您可以使用 Grid Manager 或维护模式应用升级。 
 ---
-= 使用网格管理器升级SG6100存储控制器上的SANtricity操作系统
+= 使用 Grid Manager 升级 SG6160 存储控制器上的 SANtricity 操作系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-对于当前使用SANtricity OS 08.42.20.00 (11.42)或更高版本的存储控制器、您可以使用网格管理器或维护模式应用升级。
+您可以使用 Grid Manager 或维护模式应用升级。
 
 .开始之前
 * 如果您未获得要从中升级到的SANtricity操作系统版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]，您已咨询过 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"^] 确认用于升级的SANtricity 操作系统版本与您的设备兼容。
@@ -114,7 +114,7 @@ CAUTION: 请勿批准设备存储节点的SANtricity 操作系统升级、除非
 
 NOTE: 如果节点的升级顺序非常重要、请逐个批准节点或节点组、并等待每个节点完成升级、然后再批准下一个节点。
 
-** 选择一个或多个 * 批准 * 按钮将一个或多个节点添加到 SANtricity OS 升级队列。如果状态不是标称值，则禁用*Approve*按钮。
+** 选择一个或多个 *Approve* 按钮将一个或多个节点添加到 SANtricity 操作系统升级队列。如果 Status 不是 Nominal，则 *Approve* 按钮被禁用。
 +
 选择 * 批准 * 后，升级过程将确定是否可以升级此节点。如果某个节点可以升级，则会将其添加到升级队列中。
 
@@ -160,14 +160,14 @@ NOTE: 只有在所有列出的存储节点上批准 SANtricity 操作系统升�
 
 
  a| 
-SANtricity 操作系统升级不适用于此节点。
+SANtricity OS 升级不适用于此节点。
  a| 
 此节点没有可由StorageGRID 系统管理的存储控制器。完成升级过程，而不升级显示此消息的节点。
 
 
 
  a| 
-SANtricity 操作系统文件与此节点不兼容。
+SANtricity OS 文件与此节点不兼容。
  a| 
 此节点所需的SANtricity 操作系统文件与您选择的文件不同。
 完成当前升级后，下载适用于此节点的正确 SANtricity OS 文件，然后重复升级过程。

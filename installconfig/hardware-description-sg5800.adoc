@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg5800, sg5812, sg5860, storage appliance 
 summary: 'SG田间 工作台(StorageGRID)设备是一个集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟 \ （基于软件的 \ ）存储节点相结合。' 
 ---
-= SG工具：概述
+= StorageGRID SG5800 设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

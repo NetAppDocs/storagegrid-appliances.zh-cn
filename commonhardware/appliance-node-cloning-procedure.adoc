@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
 summary: 克隆过程可能需要几天时间才能在源节点（正在更换的设备）和目标设备（新设备）之间传输数据。 
 ---
-= 克隆设备节点
+= 克隆 StorageGRID 设备节点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: 使用 1-GbE 管理网络进行克隆数据传输会导致克隆速度变�
 配置并验证目标设备后，在 "Installation" 部分中，源节点上会启用 * 开始克隆 * 。
 
 +
-如果存在阻止克隆的问题，则不会启用 * 启动克隆 * ，必须解决的问题将列为 * 连接状态 * 。源节点和目标设备的 StorageGRID 设备安装程序主页均列出了这些问题。一次仅显示一个问题描述 ，状态会随着条件的变化自动更新。解决所有克隆问题以启用 * 开始克隆 * 。
+如果存在阻止克隆的问题，则未启用 *开始克隆*，并且必须解决的问题将列为 *连接状态*。这些问题列在源节点和目标设备的 StorageGRID Appliance Installer 主页上。一次只显示一个问题，状态会随着条件的变化而自动更新。解决所有克隆问题以启用 *开始克隆*。
 
 +
 启用 * 开始克隆 * 后， * 当前状态 * 将指示为克隆流量选择的 StorageGRID 网络以及有关使用该网络连接的信息。请参见 link:considerations-and-requirements-for-appliance-node-cloning.html["设备节点克隆的注意事项和要求"]。

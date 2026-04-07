@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remap appliance ports, network, internal to external port mapping 
 summary: 您可以选择将设备节点上的内部端口重新映射到不同的外部端口。例如，由于使用了防火墙问题描述 ，您可能需要重新映射端口。 
 ---
-= 可选：重新映射设备的网络端口
+= 为 StorageGRID 设备重新映射网络端口
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

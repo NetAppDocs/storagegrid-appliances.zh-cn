@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, appliance models, appliance features, specifications 
 summary: StorageGRID SG6100系列设备作为StorageGRID系统中的存储节点运行。  与所有StorageGRID设备一样、它们可以在一个部署中与其他设备型号和纯软件节点自由混合使用。 
 ---
-= SG6100设备：概述
+= StorageGRID SG6100 设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -59,7 +59,7 @@ SGF6112设备包括以下组件：
 * 两个2.1/2.6 GHz 165 W处理器、提供48个核心(96个线程)
 * 256 GB RAM
 * 2×1/10 GBase-T端口
-* 4×1025 GbE以太网端口、用于网格/客户端网络流量
+* 4 × 10/25 GbE 以太网端口，用于 Grid/Client 网络流量（或使用可选的 100G NIC SKU 最多 4 × 100 GbE）
 * 1×256 GB内置启动驱动器(包括StorageGRID 软件)
 * 可简化硬件管理的基板管理控制器（ BMC ）
 * 冗余电源和风扇
@@ -229,7 +229,7 @@ image::../media/q2024_rear_leds.png[后部LED SGF6112]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===
@@ -438,7 +438,7 @@ image::../media/q2023_rear_leds.png[背面LED SG6100-CN]
  a| 
 * 蓝色，闪烁：表示机柜或机架中的设备。
 * 蓝色，实心：表示机柜或机架中的设备。
-* off ：无法在机柜或机架中直观地识别设备。
+* 关闭：设备在机柜或机架中无法在视觉上识别。
 
 
 |===

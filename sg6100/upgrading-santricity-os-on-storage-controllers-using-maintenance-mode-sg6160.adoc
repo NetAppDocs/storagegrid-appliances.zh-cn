@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6160, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: 对于当前使用 SANtricity 操作系统版本早于 08.42.20.00 的存储控制器 \ （ 11.42\ ），您必须使用维护模式操作步骤 应用升级。 
 ---
-= 使用维护模式升级SG6160存储控制器上的SANtricity操作系统
+= 使用维护模式升级 SG6160 存储控制器上的 SANtricity 操作系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: 对于当前使用 SANtricity 操作系统版本早于 08.42.20.00 的�
 
 [role="lead"]
 您可以使用维护模式升级SG6160控制器上的SANtricity操作系统。
-
-对于当前使用的 SANtricity 操作系统版本早于 08.42.20.00 （ 11.42 ）的存储控制器，您必须使用维护模式操作步骤 来应用升级。
 
 
 NOTE: 对于当前使用的SANtricity操作系统版本高于08.42.20.00 (11.42)的存储控制器、建议使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["使用网格管理器应用升级"]。但是、如果您愿意使用维护模式操作步骤、也可以按照技术支持的指示使用此模式。
@@ -54,7 +52,7 @@ NOTE: 立即激活升级文件。不要推迟激活。
 设备重新启动并重新加入电网最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 
 +
-... 在网格管理器中，选择*NODES*。
+... 在 Grid Manager 中，选择 *Nodes* 。
 ... 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 

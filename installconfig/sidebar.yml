@@ -23,6 +23,8 @@ entries:
       url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
     - title: SG110和SG1100
       url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
+    - title: SG120 和 SG1200
+      url: "/installconfig/gathering-installation-information-sg120-and-sg1200.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
     - title: SGs了
@@ -31,6 +33,8 @@ entries:
       url: "/installconfig/gathering-installation-information-sg6000.html"
     - title: SG6100
       url: "/installconfig/gathering-installation-information-sg6100.html"
+    - title: SG6200
+      url: "/installconfig/gathering-installation-information-sg6200.html"
 - title: 自动安装和配置设备
   url: "/installconfig/automating-appliance-installation-and-configuration.html"
 - title: 自动执行StorageGRID 配置
@@ -48,6 +52,8 @@ entries:
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
     - title: SG110和SG1100
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
+    - title: SG120 和 SG1200
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg120-and-sg1200.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
     - title: SGs了
@@ -76,6 +82,17 @@ entries:
         url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
       - title: 安装SG6100-CN控制器(SG6160)
         url: "/installconfig/sg6100-cn-installing-into-cabinet-or-rack.html"
+    - title: SG6200
+      entries:
+      - title: 概述
+        pdf-filename: 将 SG6200 安装到机柜或机架中
+        url: "/installconfig/installing-hardware-sg6200.html"
+      - title: 安装 60 驱动器架 (SG6260)
+        url: "/installconfig/sg6260-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安装 12 驱动器架（SGF6212）
+        url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6212.html"
+      - title: 安装 SG6200-CN 控制器（SG6260）
+        url: "/installconfig/sg6200-cn-installing-into-cabinet-or-rack.html"
   - title: 电缆设备
     url: "/installconfig/cabling-appliance.html"
   - title: 连接并接通电源
@@ -100,9 +117,9 @@ entries:
       url: "/installconfig/verifying-network-connections.html"
     - title: 验证端口级别的网络连接
       url: "/installconfig/verifying-port-level-network-connections.html"
-  - title: 设置SANtricity系统管理器(SG5700、SG5700、SG6000和SG6100)
+  - title: 设置 SANtricity System Manager
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
-  - title: 配置BMC接口(SG100、SG110、SG1000、SG1100、SG6000、 和SG6100)
+  - title: 配置BMC接口
     entries:
     - title: 概述
       url: "/installconfig/configuring-bmc-interface.html"
@@ -116,11 +133,11 @@ entries:
       url: "/installconfig/configuring-snmp-settings-for-bmc.html"
     - title: 设置电子邮件通知
       url: "/installconfig/setting-up-email-notifications-for-alerts.html"
-  - title: 可选：启用节点或驱动器加密
+  - title: 启用节点或驱动器加密（可选）
     url: "/installconfig/optional-enabling-node-encryption.html"
-  - title: 可选：更改RAID模式(SG5760、SG5860、SG6000和SG6160)
+  - title: 更改 RAID 模式（可选）
     url: "/installconfig/optional-changing-raid-mode.html"
-  - title: 可选：重新映射网络端口
+  - title: 重新映射网络端口（可选）
     url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
 - title: 部署设备节点
   url: "/landing-deploy-appliance/index.html"
@@ -137,7 +154,11 @@ entries:
     url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
   - title: 排除安装故障(SG110和SG1100)
     url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
+  - title: 安装故障排除（SG120 和 SG1200）
+    url: "/installconfig/troubleshooting-hardware-installation-sg120-and-sg1200.html"
   - title: 排除安装故障(SG5700或SG6000)
     url: "/installconfig/troubleshooting-hardware-installation.html"
   - title: 排除安装故障(SG6100或SG6100)
     url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"
+  - title: 安装故障排除（SG6200）
+    url: "/installconfig/troubleshooting-hardware-installation-sg6200.html"

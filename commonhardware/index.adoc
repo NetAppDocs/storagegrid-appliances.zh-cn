@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance 
 summary: 按照以下说明维护StorageGRID 系统。 
 ---
-= 节点维护的通用过程：概述
+= StorageGRID 设备的常见维护程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,10 +38,12 @@ NOTE: 在这些说明中，“`Linux`”是指Red Hat®Enterprise Linux®、Ubun
 
 每种类型的StorageGRID 设备的特定维护过程请参见设备维护部分：
 
+* link:../sg6200/index.html["维护 SG6200 设备"]
 * link:../sg6100/index.html["维护SG6100设备"]
 * link:../sg6000/index.html["维护 SG6000 设备"]
-* link:../sg5800/index.html["维护SG8600设备"]
 * link:../sg5700/index.html["维护 SG5700 设备"]
-* link:../sg110-1100/index.html["维护SG110和SG1100设备"]
+* link:../sg5800/index.html["维护SG8600设备"]
 * link:../sg100-1000/index.html["维护SG100和SG1000设备"]
+* link:../sg110-1100/index.html["维护SG110和SG1100设备"]
+* link:../sg120-1200/index.html["维护 SG120 和 SG1200 设备"]
 

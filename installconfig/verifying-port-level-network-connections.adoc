@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
 summary: 要确保 StorageGRID 设备安装程序与其他节点之间的访问不会受到防火墙的阻碍，请确认 StorageGRID 设备安装程序可以连接到指定 IP 地址或地址范围内的特定 TCP 端口或端口集。 
 ---
-= 验证端口级别的网络连接
+= 验证 StorageGRID 设备上的端口级网络连接
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

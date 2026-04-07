@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
 summary: 您可以在机柜或机架中为E4000控制器架安装一组导轨、然后将控制器架滑入导轨上。如果您要安装 60 个驱动器扩展架，则需要使用相同的操作步骤 。 
 ---
-= 安装包含60个驱动器的磁盘架(SG6160)
+= 安装 SG6160 的 60 驱动器架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

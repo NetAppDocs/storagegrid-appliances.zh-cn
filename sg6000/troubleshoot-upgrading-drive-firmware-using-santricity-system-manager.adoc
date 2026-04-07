@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, troubleshoot, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 对使用SANtricity系统管理器升级设备中驱动器上的固件时可能出现的错误进行故障排除。 
 ---
-= 对驱动器固件升级错误进行故障排除
+= SG6000 驱动器固件升级错误故障排除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

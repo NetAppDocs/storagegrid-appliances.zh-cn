@@ -13,13 +13,13 @@ summary: 设备上的 StorageGRID 设备安装程序版本必须与 StorageGRID 
 [role="lead"]
 设备上的 StorageGRID 设备安装程序版本必须与 StorageGRID 系统上安装的软件版本匹配，以确保所有 StorageGRID 功能均受支持。
 
-.开始之前
-您已访问 StorageGRID 设备安装程序。
-
 .关于此任务
 StorageGRID 设备出厂时预安装了 StorageGRID 设备安装程序。如果要将设备添加到最近升级的 StorageGRID 系统，则可能需要先手动升级 StorageGRID 设备安装程序，然后再将设备安装为新节点。
 
 升级到新的 StorageGRID 版本时， StorageGRID 设备安装程序会自动升级。您无需升级已安装设备节点上的StorageGRID 设备安装程序。只有在安装包含早期版本的 StorageGRID 设备安装程序的设备时，才需要此操作步骤 。
+
+.开始之前
+您已访问 StorageGRID 设备安装程序。
 
 .步骤
 . 从 StorageGRID 设备安装程序中，选择 * 高级 * > * 升级固件 * 。

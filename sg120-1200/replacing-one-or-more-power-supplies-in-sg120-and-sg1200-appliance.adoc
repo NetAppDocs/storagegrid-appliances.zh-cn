@@ -1,0 +1,66 @@
+---
+permalink: sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: SG120 和 SG1200 设备具有两个冗余电源。如果其中一个电源出现故障，则必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源必须具有相同的型号和功率。 
+---
+= 更换 SG120 或 SG1200 中的一个或两个电源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG120 和 SG1200 设备具有两个冗余电源。如果其中一个电源出现故障，则必须尽快更换，以确保设备具有冗余电源。设备中运行的两个电源必须具有相同的型号和功率。
+
+.关于此任务
+图中显示了 SG120 和 SG1200 的两个电源单元。可从设备背面接入电源。
+
+image::../media/sg120_sg1200_power_supplies.png[SG120/Sg1200 背面，带两个电源]
+
+.开始之前
+* 您有link:locating-sg120-and-sg1200-in-data-center.html["已物理定位设备"]需要更换电源。
+* 您已拥有 link:verify-component-to-replace.html["已确定要更换的电源的位置"]。
+* 如果仅更换一个电源：
++
+** 您已卸载更换用的电源设备，并确保其型号和功率与要更换的电源设备相同。
+** 您已确认另一个电源已安装且正在运行。
+
+
+* 如果要同时更换两个电源，请确保它们的型号和功率相同。
+
+
+.步骤
+. 如果只更换一个电源，则无需关闭设备。转到 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前 link:power-sg120-and-sg1200-off-on.html#shut-down-the-sg120-or-sg1200-appliance["关闭设备"]。
+. 【拔掉电源线， start=2]] 从要更换的每个电源中拔下电源线。
++
+从产品背面看，电源A (PSU0)位于右侧，电源B (PSU1)位于左侧。
+
+. 提起要更换的第一个耗材的手柄。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起手柄以卸下PSU]
+
+. 按下蓝色闩锁并拉出电源。
++
+image::../media/sg6000_cn_remove_power_supply.gif[卸下电源设备]
+
+. 使蓝色闩锁位于右侧，将替代电源滑入机箱。
++
+
+IMPORTANT: 安装的两个电源必须具有相同的型号和功率。
+
++
+在中滑动更换部件时，请确保蓝色闩锁位于右侧。
+
++
+当电源锁定到位时、您会感觉到卡嗒声。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[滑动电源输入]
+
+. 向下按压手柄、使其紧靠PSU主体。
+. 如果要更换这两个电源，请重复步骤 2 到 6 以更换第二个电源。
+. link:../installconfig/connecting-power-cords-and-applying-power.html["将电源线连接到更换的设备并接通电源"]。
+
+
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。

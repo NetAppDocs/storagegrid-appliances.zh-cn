@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, service appliance, services appliance, gateway Node, admin node, reboot, restart 
 summary: 您可能需要在StorageGRID 设备安装程序运行时重新启动设备。例如、如果安装失败、您可能需要重新启动设备。 
 ---
-= 在StorageGRID 设备安装程序运行期间重新启动设备
+= 在 StorageGRID 设备安装程序运行时重新启动设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

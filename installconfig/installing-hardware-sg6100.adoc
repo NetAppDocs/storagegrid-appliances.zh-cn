@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
 summary: 对于SG6160和SGF6112、您可以在机柜或机架中安装导轨、然后将控制器架、所有扩展架和计算控制器滑入导轨上。 
 ---
-= 安装到机柜或机架中(SG6100)
+= 将 SG6100 安装到机柜或机架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

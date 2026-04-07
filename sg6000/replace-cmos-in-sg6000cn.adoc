@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, Replacing, replace, CMOS, battery 
 summary: 使用此操作步骤 更换系统板上的CMOS币形电池。 
 ---
-= 更换SG6000-CN CMOS电池
+= 更换 SG6000-CN CMOS 电池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

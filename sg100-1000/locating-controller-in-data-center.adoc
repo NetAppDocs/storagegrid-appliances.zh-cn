@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
 summary: 找到控制器，以便执行硬件维护或升级。 
 ---
-= 在数据中心中找到SG100或SG1000
+= 在数据中心中定位 SG100 或 SG1000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

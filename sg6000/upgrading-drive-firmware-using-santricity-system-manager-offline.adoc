@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 您可以升级驱动器固件，以确保具有所有最新功能和错误修复。 
 ---
-= 使用SANtricity系统管理器和脱机方法升级SG6000驱动器固件
+= 使用 SANtricity System Manager 离线方法升级 SG6000 驱动器固件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -43,7 +43,7 @@ NOTE: 如果要升级缓存组中SSD驱动器中的固件、则必须确保在�
 . 使用以下方法之一访问 SANtricity System Manager ：
 +
 ** 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *
-** 使用网格管理器并选择*N节点*>*_Storage N点SANtricity 系统管理器*
+** 使用网格管理器并选择 *节点* > *_存储节点_* > *SANtricity System Manager*
 ** 通过浏览到存储控制器IP来使用SANtricity系统管理器：
 +
 `*https://_Storage_Controller_IP_*`
@@ -152,7 +152,7 @@ link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html[
 设备重新启动并重新加入电网最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 
 +
-... 在网格管理器中，选择*NODES*。
+... 在 Grid Manager 中，选择 *Nodes* 。
 ... 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 

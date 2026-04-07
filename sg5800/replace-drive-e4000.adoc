@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 在更换E4000驱动器之前、请查看要求和注意事项。 
 ---
-= 更换SG与 驱动器概览
+= SG5800 驱动器更换要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

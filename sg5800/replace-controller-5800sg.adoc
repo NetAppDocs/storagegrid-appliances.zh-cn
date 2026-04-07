@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更换StorageGRID SG5800 控制器
+= 更换 SG5800 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

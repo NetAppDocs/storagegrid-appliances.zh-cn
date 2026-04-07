@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更换E4000存储控制器(SG6160)
+= 更换 SG6160 中的 E4000 存储控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -313,7 +313,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 . 如果您在此过程中将设备置于维护模式，请退出维护模式并等待节点重新启动并重新加入电网。此过程最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 +
-.. 在网格管理器中，选择*NODES*。
+.. 在 Grid Manager 中，选择 *Nodes* 。
 .. 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 
@@ -322,4 +322,4 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 .下一步是什么？
 控制器更换已完成。您可以恢复正常操作。
 
-更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。

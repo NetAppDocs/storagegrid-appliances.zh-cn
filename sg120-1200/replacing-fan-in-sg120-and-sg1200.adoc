@@ -1,0 +1,117 @@
+---
+permalink: sg120-1200/replacing-fan-in-sg120-and-sg1200.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, admin appliance, replacing, replace, fan, remove, removing, removal, install, installing 
+summary: SG120 或 SG1200 设备有八个冷却风扇。如果其中一个风扇发生故障，则必须尽快更换，以确保设备具有适当的冷却功能。 
+---
+= 更换 SG120 或 SG1200 中的风扇
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG120 或 SG1200 设备有七个冷却风扇。如果其中一个风扇发生故障，则必须尽快更换，以确保设备具有适当的冷却功能。
+
+.关于此任务
+为了防止服务中断、请在开始更换风扇之前确认所有其他存储节点均已连接到网格、或者在计划的维护时段内更换风扇、此时可以接受服务中断。请参见有关的信息 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["监控节点连接状态"^]。
+
+更换风扇时，无法访问设备节点。
+
+从设备上取下顶盖后，即可接触到冷却风扇。
+
+
+NOTE: 两个电源设备中的每个设备都包含一个风扇。此操作步骤 不包括电源风扇。
+
+.开始之前
+* 您拥有正确的更换风扇。
+* 您已拥有 link:verify-component-to-replace.html["已确定要更换的风扇的位置"]。
+* 您有link:locating-sg120-and-sg1200-in-data-center.html["物理定位 SG120 或 SG1200 设备"]，您正在数据中心中更换风扇。
++
+
+NOTE: 从机架上卸下设备之前，需要link:power-sg120-and-sg1200-off-on.html#shut-down-the-sg120-or-sg1200-appliance["受控关闭设备"]。
+
+* 您已断开所有电缆和 link:reinstalling-sg120-and-sg1200-cover.html["已卸下产品盖"] 的连接。
+* 您已确认其他风扇已安装并正在运行。
+
+
+.步骤
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 找到需要更换的风扇。
++
+七个风扇在机箱中处于以下位置（显示了移除顶盖的 StorageGRID 设备的前半部分）：
+
++
+image::../media/drw_fan_position_ieops-2614.svg[StorageGRID 设备机箱中的风扇位置]
+
++
+|===
+| 机箱位置 | 风扇单元 
+
+
+ a| 
+1.
+ a| 
+FAN_SYS
+
+
+
+ a| 
+2.
+ a| 
+FAN_SYS1
+
+
+
+ a| 
+3.
+ a| 
+FAN_SYS2
+
+
+
+ a| 
+4.
+ a| 
+FAN_SYS3
+
+
+
+ a| 
+5.
+ a| 
+FAN_SYS4
+
+
+
+ a| 
+6.
+ a| 
+FAN_SYS5
+
+
+
+ a| 
+7.
+ a| 
+FAN_SYS6
+
+|===
+. 使用风扇上的蓝色卡舌、将故障风扇从机箱中提出。
++
+image:../media/drw_s2025_fan_replace_ieops-2552.svg["从机箱中卸下风扇"]
+
+. 将替代风扇滑入机箱中的打开插槽。
++
+将风扇上的连接器与电路板上的插座对齐。
+
+. 将风扇连接器稳固地按入电路板。
+. link:reinstalling-sg120-and-sg1200-cover.html["将顶盖放回产品上"]，然后按下闩锁以将盖子固定到位。
+. link:power-sg120-and-sg1200-off-on.html["打开产品电源"] 并监控设备 LED 和启动代码。
++
+使用 BMC 界面监控启动状态。
+
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。

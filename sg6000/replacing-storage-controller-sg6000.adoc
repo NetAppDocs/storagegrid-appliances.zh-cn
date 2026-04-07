@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, storage controller, e2800, ef570, controller, remove, removing, removal, install, installing, installation 
 summary: 如果 E2800 控制器或 EF570 控制器运行不正常或出现故障，您可能需要更换该控制器。 
 ---
-= 更换SG6000中的存储控制器
+= 更换 SG6000 中的存储控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -238,14 +238,14 @@ image::../media/e2800_remove_battery.gif[电池闩锁]
 . 将控制器翻转，以确认电池安装正确。
 +
 
-CAUTION: * 可能的硬件损坏 * —电池正面的金属法兰必须完全插入控制器上的插槽（如第一图所示）。如果电池安装不正确（如图 2 所示），则金属法兰可能会接触控制器板，从而导致损坏。
+CAUTION: *可能的硬件损坏* -- 电池正面的金属法兰必须完全插入控制器上的插槽中（如第一个图所示）。如果电池安装不正确（如第二张图所示），金属法兰可能会接触控制器板，造成损坏。
 
 +
 ** *正确—电池的金属法兰已完全插入控制器上的插槽：*
 +
 image::../media/e2800_battery_flange_ok.gif[电池法兰正确]
 
-** * 不正确 - 电池的金属法兰未插入控制器上的插槽： *
+** *不正确 -- 电池的金属法兰未插入控制器的插槽中：*
 +
 image::../media/e2800_battery_flange_not_ok.gif[电池法兰不正确]
 
@@ -395,4 +395,4 @@ NOTE: 如果原始控制器未使用 DHCP 作为 IP 地址，则新控制器将�
 . 确认新控制器处于最佳状态，并收集支持数据。
 
 
-更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。

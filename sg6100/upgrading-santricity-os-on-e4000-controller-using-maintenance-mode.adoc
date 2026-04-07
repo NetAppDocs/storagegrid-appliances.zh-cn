@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, controller, e4000, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: 您可以使用维护模式升级E4000控制器上的SANtricity操作系统。 
 ---
-= 使用维护模式升级E4000控制器上的SANtricity操作系统(SG6160)
+= 在维护模式下升级 SG6160 E4000 上的 SANtricity 操作系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: 立即激活升级文件。不要推迟激活。
 设备重新启动并重新加入电网最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 
 +
-... 在网格管理器中，选择*NODES*。
+... 在 Grid Manager 中，选择 *Nodes* 。
 ... 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 

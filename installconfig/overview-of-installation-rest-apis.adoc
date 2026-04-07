@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
 summary: StorageGRID 提供了两个用于执行安装任务的 REST API ： StorageGRID 安装 API 和 StorageGRID 设备安装程序 API 。 
 ---
-= 安装 REST API 概述
+= StorageGRID 安装 REST API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

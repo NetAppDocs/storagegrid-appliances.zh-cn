@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100 storage appliance, SGF6112 storage appliance, maintain, maintaining, hardware, procedures, tasks 
 summary: 您可能需要在设备上执行维护过程。本节将介绍维护SG6100设备的特定过程。 
 ---
-= 维护SG6100设备
+= 维护 SG6100 设备
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更换E4000 (SG4008)中的电池
+= 在 SG5800 中更换 E4000 控制器中的电池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,7 +23,7 @@ summary:
 * 用于标识连接到控制器箱的每个缆线的标签。
 * 访问SANtricity系统管理器：
 +
-** 在网格管理器中，选择*NODE*>*_Appliance NODE_*> SANtricity System Manager*。控制器信息位于上 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]。
+** 从网格管理器中，选择*节点* > *_设备节点_* > *SANtricity System Manager*。控制器信息位于 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity系统管理器选项卡"]上。
 ** 将Management Station中的浏览器指向控制器的域名或IP地址。
 
 
@@ -245,7 +245,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 . 确认重启已完成并且节点已重新加入网格：
 +
-.. 在网格管理器中，选择*NODES*。
+.. 在 Grid Manager 中，选择 *Nodes* 。
 .. 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 +
 

@@ -119,7 +119,7 @@ NOTE: 在安装过程的某些阶段、服务-笔记本电脑连接可能不可�
 . 确认设备节点显示在网格管理器中且未显示任何警报。
 
 
-更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
+更换零件后，将故障零件退回 NetApp，如套件附带的 RMA 说明中所述。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货  更换"^]页面。
 
 .相关信息
 * link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["将SG6000-CN安装到机柜或机架中"]

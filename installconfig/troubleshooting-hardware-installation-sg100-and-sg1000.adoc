@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, error codes, errors, error, codes, bmc, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
 summary: 如果您在安装期间遇到问题，查看与硬件设置和连接问题相关的故障排除信息可能会很有帮助。 
 ---
-= 硬件安装故障排除（ SG100 和 SG1000 ）
+= SG100 和 SG1000 硬件安装故障排除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

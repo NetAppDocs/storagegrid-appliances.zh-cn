@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 您可以升级驱动器固件，以确保具有所有最新功能和错误修复。 
 ---
-= 使用SANtricity系统管理器联机方法升级SG582驱动器固件
+= 使用 SANtricity System Manager 在线方法升级 SG5800 驱动器固件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,7 +33,7 @@ CAUTION: 请勿一次升级多个StorageGRID 设备上的驱动器固件。这�
 . 使用以下方法之一访问 SANtricity System Manager ：
 +
 ** 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *
-** 使用网格管理器并选择*N节点*>*_Storage N点SANtricity 系统管理器*
+** 使用网格管理器并选择 *节点* > *_存储节点_* > *SANtricity System Manager*
 ** 通过浏览到存储控制器IP来使用SANtricity系统管理器：
 +
 `*https://_Storage_Controller_IP_*`

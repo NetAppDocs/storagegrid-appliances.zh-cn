@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, sg5812, sg5860, install, cabinet, rack, rails, drives 
 summary: 您可以在机柜或机架中安装一组导轨、然后将设备滑入导轨上。如果您使用的是SG5760、请在安装设备后安装驱动器。 
 ---
-= 安装到机柜或机架中(SGinet)
+= 将 SG5800 安装到机柜或机架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

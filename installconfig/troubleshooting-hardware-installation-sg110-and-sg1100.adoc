@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
 summary: 如果您在安装期间遇到问题，查看与硬件设置和连接问题相关的故障排除信息可能会很有帮助。 
 ---
-= 排除硬件安装故障(SG110和SG1100)
+= SG110 和 SG1100 硬件安装故障排除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

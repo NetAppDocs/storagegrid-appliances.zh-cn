@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery, sg6160 
 summary: 使用此操作步骤 更换系统板上的CMOS币形电池。 
 ---
-= 更换SGF6112或SG6100-CN CMOS电池
+= 更换 SGF6112 或 SG6100-CN 中的 CMOS 电池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

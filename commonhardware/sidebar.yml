@@ -13,7 +13,7 @@ entries:
   url: "/commonhardware/checking-dns-server-configuration.html"
 - title: 更新MAC地址引用(SG100、SG1000、SGF6024和SG6060)
   url: "/commonhardware/locate-mac-address.html"
-- title: 管理驱动器(SG110、SG1100、SGF6112和SG6160)
+- title: 管理驱动器（SG110、SG120、SG1100、SG1200、SGF6100 和 SG6260）
   url: "/commonhardware/manage-drives-tab.html"
 - title: 监控维护模式下的节点加密
   url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"

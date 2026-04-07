@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: DNS, server, servers, check, checking, change, changing, modify, modifying, modification 
 summary: 您可以检查并临时更改此设备节点当前正在使用的DNS服务器。 
 ---
-= 检查 DNS 服务器配置
+= 检查 StorageGRID 设备的 DNS 服务器配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: 当节点重新启动并重新加入网格时，它将使用网格管理�
 设备重新启动并重新加入电网最多可能需要 20 分钟。要确认重启已完成且节点已重新加入网格：
 
 +
-... 在网格管理器中，选择*NODES*。
+... 在 Grid Manager 中，选择 *Nodes* 。
 ... 验证设备节点是否处于正常状态（绿色复选标记图标image:../media/icon_alert_green_checkmark.png["绿色复选标记"]（在节点名称左侧），这表示没有活动警报并且该节点已连接到电网。
 
 

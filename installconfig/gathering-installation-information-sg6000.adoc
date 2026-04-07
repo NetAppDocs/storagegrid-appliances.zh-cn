@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance StorageGRID, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup 
 summary: 使用表记录连接到设备的每个网络所需的信息。安装和配置硬件需要这些值。 
 ---
-= 收集网络信息(SG6000)
+= 为 SG6000 收集网络信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace 60-drive power canister, replacing E4000 power canister, E4000, E-Series, eseries 
 summary: 更换一个包含 60 个驱动器的控制器架或驱动器架，其中包括两个电源箱，以实现电源冗余。 
 ---
-= 更换SG5860中的电源箱
+= 更换 SG5860 中的电源罐
 :allow-uri-read: 
 :experimental: 
 :icons: font

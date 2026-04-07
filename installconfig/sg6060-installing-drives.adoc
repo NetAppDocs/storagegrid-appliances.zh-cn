@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
 summary: 将包含60个驱动器的磁盘架安装到机柜或机架中后、将所有60个驱动器安装到该磁盘架中。E2860 控制器架的发货包含两个 SSD 驱动器，您应将其安装在控制器架的顶部抽屉中。每个可选扩展架都包含 60 个 HDD 驱动器，而不包含 SSD 驱动器。 
 ---
-= 安装驱动器(SG6060)
+= 将驱动器安装到 SG6060 驱动器架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

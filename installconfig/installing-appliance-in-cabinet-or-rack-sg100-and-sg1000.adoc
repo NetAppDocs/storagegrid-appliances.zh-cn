@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installing, installation, cabinet, rack, rail, rails 
 summary: 您可以在机柜或机架中为设备安装一组滑轨、然后将设备滑入滑轨上。 
 ---
-= 安装到机柜或机架中(SG100和SG1000)
+= 将 SG100 或 SG1000 安装到机柜或机架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

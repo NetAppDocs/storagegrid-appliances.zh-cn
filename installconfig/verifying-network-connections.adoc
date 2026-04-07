@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, mtu, test, testing 
 summary: 您应确认可以从设备访问所使用的 StorageGRID 网络。要验证通过网络网关的路由，您应测试 StorageGRID 设备安装程序与不同子网上的 IP 地址之间的连接。您还可以验证 MTU 设置。 
 ---
-= 验证网络连接
+= 验证 StorageGRID 设备上的网络连接
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

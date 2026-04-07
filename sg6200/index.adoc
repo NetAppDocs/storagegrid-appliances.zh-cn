@@ -1,0 +1,45 @@
+---
+permalink: sg6200/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200 storage appliance, SGF6212 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要对设备执行维护程序。本节将介绍维护 sg6200 设备的特定步骤。 
+---
+= 维护 SG6200 设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要对设备执行维护程序。本节将提供有关维护 SG6200 设备的特定步骤。
+
+本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
+
+*维护配置过程*使用设备安装程序、网格管理器或BMC界面执行。这些过程包括：
+
+* link:turning-sg6200-identify-led-on-and-off.html["打开和关闭设备识别LED"]
+* link:locating-sg6200-in-data-center.html["在数据中心内找到设备"]
+* link:power-sg6200-off-on.html["关闭设备"]
+* link:changing-link-configuration-of-sg6200-appliance.html["更改设备的链接配置"]
+
+
+*硬件维护程序* 需要对特定 SGF6212 或 SG6260 组件进行物理操作。
+
+
+
+== 驱动器固件升级
+
+每次重新启动设备时，都会自动检查 SG6260 中驱动器上的固件。必要时，固件会自动升级到当前 StorageGRID 版本所需的版本。通常，固件升级发生在 StorageGRID 软件升级期间。现有 StorageGRID 版本的任何必要驱动器固件升级都将包含在修补程序中。按照每个修补程序提供的说明，确保将升级应用于可能从中受益的所有驱动器。
+
+此外，SG6260 中的驱动器可以通过 SANtricity 使用 link:upgrading-drive-firmware-using-santricity-system-manager-online.html["SANtricity System Manager 在线"] 或 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["SANtricity System Manager 离线"] 程序进行更新。
+
+
+NOTE: 无需 SANtricity System Manager 来维护 SGF6212 设备。
+
+
+
+== 常规维护程序
+
+请参见 link:../commonhardware/index.html["通用维护流程"] 适用于所有设备的相同过程、例如应用修补程序、恢复节点或站点以及执行网络维护。
+
+请参见 link:../installconfig/configuring-hardware.html["设置设备硬件"] 用于在初始设备安装和配置期间执行的设备维护过程。

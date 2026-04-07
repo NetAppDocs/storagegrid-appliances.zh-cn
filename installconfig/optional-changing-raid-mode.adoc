@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
 summary: 在某些型号的设备上、您可以更改为设备上的其他RAID模式、以满足您的存储和恢复要求。您只能在部署设备存储节点之前更改此模式。 
 ---
-= 可选：更改RAID模式(SG5760、SG5860、SG6000和SG6160)
+= 更改 SG5760、SG5860、SG6000、SG6160 或 SG6260 的 RAID 模式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,16 @@ summary: 在某些型号的设备上、您可以更改为设备上的其他RAID�
 在某些型号的设备上、您可以更改为设备上的其他RAID模式、以满足您的存储和恢复要求。您只能在部署设备存储节点之前更改此模式。
 
 如果使用ConfigBuilder生成JSON文件、则可以自动更改RAID模式。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
+
+您可以在以下设备上更改 RAID 模式：
+
+* SG5760
+* SG5860
+* SGF6024
+* SG6060
+* SG6160
+* SG6260
+
 
 .关于此任务
 如果您的设备支持、您可以选择以下卷配置选项之一：
@@ -25,7 +35,7 @@ NOTE: 卷大小在所有DDP和RAID类型之间不一致。DDP和RAID6运行方�
 +
 ** 与RAID 6相比、DDP可提供更高的系统性能、减少驱动器发生故障后的重建时间、并简化管理。
 ** 每个存储设备或扩展架会创建一个磁盘池。
-** DDP可在SG5760、SG5860和SG6160设备中提供抽盒丢失保护。
+** DDP 在 SG5760、SG5860、SG6160 和 SG6260 设备中提供抽屉丢失保护。
 +
 
 NOTE: 由于使用两个SSD、DDP无法在SG6060设备中提供抽盒丢失保护。对于添加到SG6060中的任何扩展架、抽屉丢失保护功能均有效。
@@ -120,6 +130,30 @@ CAUTION: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAI
 
 --
 .SG6160
+--
+.开始之前
+* 您正在使用可以连接到 StorageGRID 的任何客户端。
+* 客户端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+
+
+.步骤
+. 打开浏览器，然后输入设备计算控制器的 IP 地址之一。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是三个StorageGRID 网络中任何一个网络上计算控制器(而不是存储控制器)的IP地址。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
+. 选择 * 高级 * > * RAID 模式 * 。
+. 在 * 配置 RAID 模式 * 页面上，从模式下拉列表中选择所需的 RAID 模式。
+. 单击 * 保存 * 。
+
+
+--
+.SG6260
 --
 .开始之前
 * 您正在使用可以连接到 StorageGRID 的任何客户端。

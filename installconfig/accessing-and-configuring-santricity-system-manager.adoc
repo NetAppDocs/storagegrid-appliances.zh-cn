@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
 summary: 您可以使用 SANtricity 系统管理器监控存储控制器，存储磁盘和存储控制器架中其他硬件组件的状态。此外，您还可以为 E 系列 AutoSupport 配置代理，使您能够在不使用管理端口的情况下从设备发送 AutoSupport 消息。 
 ---
-= 配置SANtricity系统管理器(SG6160、SG6000、SG5700和SG5700)
+= 为 SG6260、SG6160、SG6000、SG5700 和 SG5800 StorageGRID 设备配置 SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,24 +13,45 @@ summary: 您可以使用 SANtricity 系统管理器监控存储控制器，存�
 [role="lead"]
 您可以使用 SANtricity 系统管理器监控存储控制器，存储磁盘和存储控制器架中其他硬件组件的状态。此外，您还可以为 E 系列 AutoSupport 配置代理，使您能够在不使用管理端口的情况下从设备发送 AutoSupport 消息。
 
+以下 StorageGRID 设备可以访问 SANtricity System Manager：
+
+* SG5712
+* SG5760
+* SG5812
+* SG5860
+* SGF6024
+* SG6060
+* SG6160
+* SG6260
+
+
+您可以使用 SANtricity 系统管理器监控以下内容：
+
+* 存储阵列级别性能， I/O 延迟， CPU 利用率和吞吐量等性能数据
+* 硬件组件状态
+* 支持的功能包括查看诊断数据
+
+
+您可以使用 SANtricity 系统管理器配置以下设置：
+
+* 存储控制器架中组件的电子邮件警报， SNMP 警报或系统日志警报
+* 存储控制器架中组件的 E 系列 AutoSupport 设置。
++
+有关E系列AutoSupport的更多详细信息，请参见 https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E系列文档"^]。
+
+* 驱动器安全密钥，用于解锁安全驱动器
++
+
+NOTE: 如果您的设备启用了驱动器安全功能，则必须设置并有权访问 SANtricity System Manager。
+
+* 用于访问 SANtricity 系统管理器的管理员密码
+
+
 
 
 == 设置并访问 SANtricity 系统管理器
 
 您可能需要访问存储控制器上的 SANtricity 系统管理器来监控存储控制器架中的硬件或配置 E 系列 AutoSupport 。
-
-.开始之前
-* 您正在使用 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
-* 要通过网格管理器访问SANtricity 系统管理器、您已安装StorageGRID 、并且具有存储设备管理员权限或root访问权限。
-* 要使用SANtricity 设备安装程序访问StorageGRID 系统管理器、您必须具有SANtricity 系统管理器管理员用户名和密码。
-* 要使用Web浏览器直接访问SANtricity 系统管理器、您具有SANtricity 系统管理器管理员用户名和密码。
-
-
-
-NOTE: 要使用网格管理器或 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须安装 SANtricity 固件 8.70 或更高版本。您可以使用 StorageGRID 设备安装程序并选择 * 帮助 * > * 关于 * 来检查固件版本。
-
-
-NOTE: 从网格管理器或设备安装程序访问 SANtricity 系统管理器通常仅用于监控硬件和配置 E 系列 AutoSupport 。SANtricity 系统管理器中的许多功能和操作(例如升级固件)不适用于监控StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。
 
 .关于此任务
 根据您所处的安装和配置过程的阶段，有三种方法可以访问 SANtricity System Manager ：
@@ -67,11 +88,24 @@ NOTE: 使用网格管理器或 StorageGRID 设备安装程序，您可以访问 
 * 用于访问 SANtricity 系统管理器的管理员密码
 
 
+.开始之前
+* 您正在使用 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支持的 Web 浏览器"^]。
+* 要通过网格管理器访问SANtricity 系统管理器、您已安装StorageGRID 、并且具有存储设备管理员权限或root访问权限。
+* 要使用SANtricity 设备安装程序访问StorageGRID 系统管理器、您必须具有SANtricity 系统管理器管理员用户名和密码。
+* 要使用Web浏览器直接访问SANtricity 系统管理器、您具有SANtricity 系统管理器管理员用户名和密码。
+
+
+
+NOTE: 要使用网格管理器或 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须安装 SANtricity 固件 8.70 或更高版本。您可以使用 StorageGRID 设备安装程序并选择 * 帮助 * > * 关于 * 来检查固件版本。
+
+
+NOTE: 从网格管理器或设备安装程序访问 SANtricity 系统管理器通常仅用于监控硬件和配置 E 系列 AutoSupport 。SANtricity 系统管理器中的许多功能和操作(例如升级固件)不适用于监控StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。
+
 .步骤
 . 执行以下操作之一：
 +
 ** 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *
-** 使用网格管理器并选择*N节点*> `*_appliance Storage Node_*` >* SANtricity 系统管理器*
+** 使用网格管理器并选择 *节点* > `*_appliance Storage Node_*` > *SANtricity System Manager*
 
 
 +
@@ -157,6 +191,22 @@ SG6100-CN计算控制器和E4000控制器架均可为SG6160存储设备配备FIP
 
 
 --
+.SG6260
+--
+SG6260 存储设备可以在 SG6200-CN 计算控制器和 E4000 控制器架中配备符合 FIPS 的驱动器。驱动器加密分别为 SG6200-CN 驱动器和 E4000 驱动器配置。
+
+.. link:optional-enabling-node-encryption.html#drive-encryption["启用驱动器加密"] 适用于安装在 SG6200-CN 计算节点中的 SED SSD。
+.. 创建安全密钥(控制器和驱动器共享的字符串、用于进行读/写访问)。
++
+*** 您可以使用控制器的永久性内存、也可以 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["创建内部密钥"^]使用密钥管理服务器提供的外部密钥。
+*** 要使用密钥管理服务器提供的外部密钥、必须首先 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["使用密钥管理服务器建立身份验证"^]在SANtricity系统管理器中使用。
+
+
+.. link:deploying-appliance-storage-node.html["开始安装"]产品。
+.. 安装完成后、 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["启用驱动器安全性"^]在SANtricity系统管理器中为所有磁盘池或卷组创建。
+
+
+--
 ====
 
 
@@ -226,7 +276,7 @@ image::../media/sam_hardware_controllers_a_and_b.gif[SANtricity 系统管理器�
 DHCP 分配的地址可以随时更改。为控制器分配静态 IP 地址，以确保一致的可访问性。
 
 
-NOTE: 只有当您无法从SANtricity 设备安装程序(*高级*>* SANtricity 系统管理器*)或网格管理器(*节点*>* SANtricity 系统管理器*)访问StorageGRID 系统管理器时，才应遵循此操作步骤。
+NOTE: 仅当您无法从 StorageGRID Appliance Installer（*Advanced* > *SANtricity System Manager*）或 Grid Manager（*Nodes* > *SANtricity System Manager*）访问 SANtricity System Manager 时，才执行此过程。
 
 .步骤
 . 在客户端中、输入StorageGRID 设备安装程序的URL：+

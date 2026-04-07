@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unpack, unbox, prepare, inventory, components, contents 
 summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。 
 ---
-= 打开包装箱
+= 拆开 StorageGRID 设备箱的包装
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,6 +72,42 @@ image::../media/rail_kit.gif[导轨套件]
 image::../media/sgf_6112_front_bezel.png[前挡板]
 
 --
+
+
+* *电源线*
++
+
+TIP: 您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
++
+您所在国家/地区的两条电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+
+
+
+
+--
+.SG120 和 SG1200
+--
+* * 硬件 *
++
+SG120 或 SG1200::
++
+--
+image::../media/sg120_front_view.png[前置驱动器 SG120 和 SG1200 设备]
+
+--
+带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+前挡板（未显示）::
 
 
 * *电源线*
@@ -518,6 +554,128 @@ image::../media/rail_kit.gif[导轨套件]
 image::../media/sgf_6112_front_bezel.png[前挡板]
 
 --
+
+
+* *电源线*
++
+
+TIP: 您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
++
+您所在国家/地区的两条电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+
+
+
+
+--
+.SG6200
+--
+* *SG6260 硬件*
++
+SG6200-CN 控制器::
++
+--
+image::../media/s25_front_with_ssds.png[SG6200-CN 控制器]
+
+--
+E4000控制器架未安装驱动器::
++
+--
+image::../media/de460c_table_size.gif[E4000 4U 控制器]
+
+--
+两个前挡板（未显示）::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+60 个 NL-SAS 驱动器::
++
+--
+image::../media/sg5760_drive.gif[60 个 NL-SAS 驱动器]
+
+--
+四个手柄::
++
+--
+image::../media/handles.gif[E4000 手柄]
+
+--
+用于方孔机架安装的后支架和固定螺母::
++
+--
+image::../media/back_brackets_table_size.gif[用于SG5860的后支架和固定螺母]
+
+--
+一根100 GbE到4x25GbE分支互连缆线::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100 GbE到4x25GbE分支缆线]
+
+--
+您所在国家/地区的四根电源线::
++
+--
+image::../media/power_cords.gif[电源线]
+
+--
+
+
+* *SG6260 扩展架*
++
+扩展架未安装驱动器::
++
+--
+image::../media/de460c_table_size.gif[E4000 4U 控制器]
+
+--
+前挡板（未显示）::
++
+--
+image::../media/sg5760_drive.gif[驱动器]
+
+--
+一个带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+四个手柄::
++
+--
+image::../media/handles.gif[E4000 手柄]
+
+--
+用于方孔机架安装的后支架和固定螺母::
++
+--
+image::../media/back_brackets_table_size.gif[用于SG5860的后支架和固定螺母]
+
+--
+
+
+* *SGF6212 硬件*
++
+SGF6212::
++
+--
+image::../media/s25_front_with_ssds.png[前置驱动器 SGF6212 设备]
+
+--
+带说明的导轨套件::
++
+--
+image::../media/rail_kit.gif[导轨套件]
+
+--
+前挡板（未显示）::
 
 
 * *电源线*

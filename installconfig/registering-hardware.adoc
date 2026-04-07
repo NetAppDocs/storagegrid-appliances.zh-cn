@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, registering, registration, support 
 summary: 注册设备硬件具有支持优势。 
 ---
-= 注册硬件
+= 注册 StorageGRID 设备硬件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
