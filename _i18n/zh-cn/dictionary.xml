@@ -5498,7 +5498,6 @@
   <block id="05d13b5d561ee02e05de7ea4f7169cee" category="list-text"><block ref="6f88de86b8743bbe23202c83b893e250" category="inline-link-rx"></block>主管理节点，批准待处理的存储节点，并完成StorageGRID安装过程。</block>
   <block id="376bb4454cc4f54c591b8f4ae07ae743" category="list-text">对于除主管理节点之外的所有设备节点，“安装StorageGRID”阶段将暂停，并且嵌入式控制台上会出现一条消息，提示您使用<block ref="e9b839af5117614531eec6994f76d987" category="inline-link-rx"></block>；然后，转到下一步。</block>
   <block id="3ac50f2a980e2a0dd9d6fa781710632a" category="inline-link">选择安全策略</block>
-  <block id="2111243c6011996eba7d5df0a47ac508" category="paragraph">此外，在启用节点加密后启用 FIPS 模式时， NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模块用于静态数据加密。参考<block ref="0e91844ad7f820ecc514bcaae0035f92" category="inline-link-rx"></block>了解更多信息。</block>
   <block id="7c64a0ffe12c24b27b1dd68957dd18aa" category="admonition">当安装启用节点加密的设备时，会分配一个临时密钥。在设备连接到密钥管理系统 (KMS) 并设置 KMS 安全密钥之前，设备上的数据不受保护。请参阅<block ref="1b141fe85ee275193be0bd326245089d" category="inline-link-rx"></block>了解更多信息。</block>
   <block id="51ec0745d9ba491bcc4f5f242c8c0d31" category="paragraph">当您为具有 FIPS 驱动器的StorageGRID设备启用驱动器加密时，FIPS 驱动器提供的 FIPS 加密将用于静态数据的加密。</block>
   <block id="ff6fefc7a96e8115d9c98e950380cb1b" category="paragraph">您可以在加载 Grid Manager 之前在初始设备安装期间启用驱动器加密。您还可以通过将设备置于维护模式来启用驱动器加密或更改密码。</block>
@@ -5559,7 +5558,6 @@
   <block id="9e71171ece37d79d6a9ea0b46f4f2e83" category="list-text">页面顶部显示的横幅指示检测到的扩展架总数。</block>
   <block id="287d3c085da3b5779cf076e1815c7217" category="list-text">页面底部的消息表明扩展已准备好开始。</block>
   <block id="d927c8996626c51de70a8dfc5704162b" category="paragraph">重启完成后，将显示“*任务*”选项卡，其中显示重启节点或将设备置于维护模式的选项。</block>
-  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]打开 SG6000-CN 控制器并验证操作</block>
   <block id="eb147bbc308036fe81fabc831fb029ad" category="summary">SG6000-CN 计算控制器有八个冷却风扇。如果其中一个风扇出现故障，则必须尽快更换它以确保控制器正常冷却。</block>
   <block id="58e9871c73652215d8793286f86ac1fb" category="paragraph">更换风扇时，存储节点将无法访问。</block>
   <block id="e7a2bf1d05b1975e8efb0afe9d894d7c" category="paragraph">照片展示了 SG6000-CN 计算控制器的风扇。取下控制器的顶盖后即可看到冷却风扇。</block>
@@ -6587,4 +6585,5 @@
   <block id="e878dffa8e66e8c25ff8e57de8cc1e29" category="sidebar">外部网卡 (SG6260)</block>
   <block id="2ba40bc143304c6482f4d84aed967cc7" category="sidebar">SG6200-CN 控制器 (SG6260)</block>
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">E4000 控制器 (SG6260)</block>
+  <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">此外，在启用节点加密后启用 FIPS 模式时，NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模块用于加密静态数据。有关详细信息，请参见<block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -83,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 电源控制页面
 
 
 
-== [[poweron]]打开 SG6000-CN 控制器并验证操作
+== 打开 SG6000-CN 控制器的电源并验证其运行情况
 
 完成维护后，打开控制器电源。
 

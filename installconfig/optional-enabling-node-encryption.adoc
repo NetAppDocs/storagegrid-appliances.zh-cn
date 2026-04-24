@@ -29,7 +29,7 @@ summary: 您可以在节点和磁盘级别启用加密、以防止设备中的�
 
 如果使用ConfigBuilder生成JSON文件、则可以自动启用节点加密。请参见 link:automating-appliance-installation-and-configuration.html["自动安装和配置设备"]。
 
-此外，在启用节点加密后启用 FIPS 模式时， NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模块用于静态数据加密。参考 https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-tls-ssh-policy.html#select-a-security-policy["选择安全策略"^]了解更多信息。
+此外，在启用节点加密后启用 FIPS 模式时，NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模块用于加密静态数据。有关详细信息，请参见 https://docs.netapp.com/us-en/storagegrid/admin/manage-tls-ssh-policy.html#select-a-security-policy["选择安全策略"^]。
 
 .开始之前
 查看有关的信息 https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["正在配置KMS"^]。
