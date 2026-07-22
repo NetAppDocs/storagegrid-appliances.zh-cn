@@ -15,6 +15,7 @@ summary: 如果您在安装期间遇到问题，查看与硬件设置和连接�
 
 
 
+[[view-boot-codesview-boot-up-codes-sgf6212-and-sg6260-only]]
 == [[view-boot-codes]]查看启动代码（仅限 SGF6212 和 SG6260）
 
 在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。
@@ -188,6 +189,7 @@ StorageGRID 正在运行。
 
 
 
+[[view-error-codesview-error-codes-sgf6212-and-sg6260-only]]
 == [[view-error-codes]]查看错误代码（仅限 SGF6212 和 SG6260）
 
 如果在设备启动时发生硬件错误， BMC 将记录一个错误代码。您可以根据需要使用设备串行端口查看这些错误代码、然后与技术支持联系以解决此问题。
@@ -560,6 +562,8 @@ MRC ： err_interlef_failure
 
 
 
+[[hardware-setup-appears-to-hang]]
+[[hardware-setup-hangs]]
 == 硬件设置似乎挂起
 
 如果硬件故障或布线错误阻止 StorageGRID 设备完成启动处理，则此设备安装程序可能不可用。
@@ -571,10 +575,12 @@ MRC ： err_interlef_failure
 
 
 
+[[connection-issues]]
 == 连接问题
 
 
 
+[[expansion-shelves-dont-appear-in-appliance-installer-sg6260]]
 === 扩展盘架未出现在 Appliance Installer (SG6260) 中
 
 如果您已安装扩展架、但它们未显示在StorageGRID设备安装程序中、则应验证这些扩展架是否已完全安装并打开电源。
@@ -599,6 +605,7 @@ image::../media/expansion_shelf_home_page_msg.png[扩展架消息]
 
 
 
+[[unable-to-connect-to-appliance]]
 === 无法连接到设备
 
 如果无法连接到此存储设备、则可能存在网络问题描述、或者硬件安装可能未成功完成。

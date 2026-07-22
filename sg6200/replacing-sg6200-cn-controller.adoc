@@ -83,6 +83,9 @@ CAUTION: 为防止性能下降、请勿扭曲、折叠、挤压或踩踏缆线�
 +
 ... 要还原BMC配置以使用静态IP、网络掩码和网关、请输入以下命令：
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +

@@ -17,6 +17,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[why-clone-an-appliance-node]]
 == 为何克隆设备节点？
 
 如果需要，您可以克隆设备节点：
@@ -30,6 +31,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[which-storagegrid-network-is-used]]
 == 使用的是哪个 StorageGRID 网络？
 
 克隆可通过三个 StorageGRID 网络中的任何一个将数据从源节点直接传输到目标设备。通常使用网格网络，但如果源设备连接到这些网络，您也可以使用管理网络或客户端网络。选择用于克隆流量的网络，该网络可在不降低 StorageGRID 网络性能或数据可用性的情况下提供最佳数据传输性能。
@@ -38,6 +40,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[what-information-is-not-cloned]]
 == 哪些信息不会克隆？
 
 以下设备配置不会在克隆期间传输到替代设备。您必须在初始设置替代设备期间对其进行配置。
@@ -51,20 +54,27 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[what-issues-prevent-cloning]]
 == 哪些问题会阻止克隆？
 
 如果在克隆时遇到以下任何问题，则克隆过程将暂停并生成错误消息：
 
+* 克隆已在进行中
 * 网络配置错误
+* 目标设备无法访问主管理节点
 * 源设备与目标设备之间缺乏连接
 * 源设备和目标设备不兼容
-* 对于存储节点，是指容量不足的替代设备
+* 源设备和目标设备处于不同的维护模式状态
+* 源设备和目标设备上的 StorageGRID Appliance Installer 版本不匹配
+* 对于存储节点，目标设备的存储不兼容或容量不足
+* 目标设备未就绪
 
 
 要继续克隆，必须解析每个问题描述 。
 
 
 
+[[target-appliance-compatibility]]
 == 目标设备兼容性
 
 替代设备的类型必须与要替换的源节点相同，并且这两个设备都必须属于同一逻辑 StorageGRID 站点。
@@ -73,6 +83,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[general-services-appliance-cloning-considerations]]
 === 常规服务设备克隆注意事项
 
 * 替代服务设备的型号可能与要替换的管理节点或网关节点不同。
@@ -81,6 +92,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[general-storage-appliance-cloning-considerations]]
 === 存储设备克隆的一般注意事项
 
 * 更换用的存储设备必须比要更换的存储节点具有更大的容量。
@@ -109,12 +121,14 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg100-appliance-cloning-information-and-restrictions]]
 === SG100设备克隆信息和限制
 
 您可以将SG100源节点设备克隆到SG110、SG1000或SG1100服务目标设备。将SG100克隆到SG1000或SG1100服务目标设备可为管理节点或网关节点提供更大的功能。
 
 
 
+[[sg110-appliance-cloning-information-and-restrictions]]
 === SG110设备克隆信息和限制
 
 您可以将SG110源节点设备克隆到SG1100服务设备目标、以便为管理节点或网关节点提供更大的功能。
@@ -123,6 +137,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg120-appliance-cloning-information-and-restrictions]]
 === SG120 设备克隆信息和限制
 
 您可以将 SG120 源节点设备克隆到 SG1200 服务设备目标，以赋予 Admin Node 或 Gateway Node 更大的功能。
@@ -131,6 +146,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg1000-appliance-cloning-information-and-restrictions]]
 === SG1000设备克隆信息和限制
 
 您可以将SG1000源节点设备克隆到SG100、SG110或SG1100服务目标设备。
@@ -141,6 +157,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg1100-appliance-cloning-information-and-restrictions]]
 === SG1100设备克隆信息和限制
 
 您可以将SG1100源节点设备克隆到SG110服务目标设备。
@@ -153,6 +170,7 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg1200-appliance-cloning-information-and-restrictions]]
 === SG1200 设备克隆信息和限制
 
 您可以将 SG1200 源节点设备克隆到 SG120 服务目标设备。
@@ -165,12 +183,14 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg5712-appliance-cloning-information-and-restrictions]]
 === SG5712设备克隆信息和限制
 
 您可以将配置了DDP的SG5712源节点设备克隆到SG5812存储目标设备。
 
 
 
+[[sg5760-appliance-cloning-information-and-restrictions]]
 === SG5760设备克隆信息和限制
 
 * 您可以将配置了DDP16的SG5760源节点设备克隆到配置了DDP16的SG5860存储目标设备。
@@ -180,18 +200,21 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sg5812-appliance-cloning-information-and-restrictions]]
 === SG5812设备克隆信息和限制
 
 您可以成功将SG5812设备克隆为源或目标。
 
 
 
+[[sg5860-appliance-cloning-information-and-restrictions]]
 === SG5860设备克隆信息和限制
 
 您可以成功将SG5860设备克隆为源或目标、但需遵守一些限制(在设备克隆信息和每个源的限制中列出)。
 
 
 
+[[sg6060-appliance-cloning-information-and-restrictions]]
 === SG6060设备克隆信息和限制
 
 * 您可以将配置了DDP或DDP16的SG6060源节点设备克隆到具有匹配RAID模式的SG5860存储目标设备。
@@ -201,12 +224,14 @@ summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新�
 
 
 
+[[sgf6112-appliance-cloning-information-and-restrictions]]
 === SGF6112 设备克隆信息和限制
 
 不支持从没有节点加密的 SGF6112 源节点设备克隆到具有节点加密的 SGF6112 或 SGF6212 设备目标。
 
 
 
+[[sg6160-and-sg6260-appliance-cloning-information-and-restrictions]]
 === SG6160 和 SG6260 设备克隆信息和限制
 
 您可以成功将SG6160设备克隆为源或目标、但需遵守一些限制(列于设备克隆信息和每个源的限制中)。

@@ -80,6 +80,7 @@ image::../media/one-slot-assembly-sgf6112.png[单插槽提升板部件中的NIC]
 
 
 
+[[reinstall-the-internal-nic]]
 == 重新安装内部NIC
 
 将更换用的NIC安装到与已卸下的NIC相同的位置。

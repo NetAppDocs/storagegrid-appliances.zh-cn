@@ -27,6 +27,7 @@ summary: 您可能需要在设备上执行维护过程。本节将介绍维护SG
 
 
 
+[[drive-firmware-upgrade]]
 == 驱动器固件升级
 
 每次重新启动设备时、系统都会自动检查SGF6112中驱动器上的固件。必要时、固件会自动升级到当前StorageGRID 版本所需的版本。通常、固件升级会在StorageGRID 软件升级期间进行。修补程序中将包括现有StorageGRID 版本所需的任何驱动器固件升级。按照每个修补程序提供的说明进行操作、确保升级应用于可从中受益的所有驱动器。
@@ -36,6 +37,7 @@ NOTE: 无需使用SANtricity System Manager来维护SGF6112设备。
 
 
 
+[[general-maintenance-procedures]]
 == 常规维护程序
 
 请参见 link:../commonhardware/index.html["通用维护流程"] 适用于所有设备的相同过程、例如应用修补程序、恢复节点或站点以及执行网络维护。

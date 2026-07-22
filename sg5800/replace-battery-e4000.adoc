@@ -31,6 +31,7 @@ summary:
 
 
 
+[[step-1-prepare-to-replace-battery]]
 == 步骤1：准备更换电池
 
 关闭控制器架电源、以便安全地取出发生故障的电池。
@@ -101,6 +102,7 @@ summary:
 
 
 
+[[step-2-remove-e4000-controller-canister]]
 == 步骤2：卸下E4000控制器箱
 
 您需要从控制器架中取出控制器箱，以便取出电池。
@@ -125,6 +127,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 
 
+[[step-3-install-the-new-battery]]
 == 第3步：安装新电池
 
 您必须取出故障电池并进行更换。
@@ -181,6 +184,7 @@ image::../media/legend_icon_02.png[标注参考2.]
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 更换控制器箱中的组件后、将其重新安装到机箱中。
@@ -213,6 +217,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
 
 
+[[step-5-complete-battery-replacement]]
 == 第5步：完成电池更换
 
 打开控制器电源。

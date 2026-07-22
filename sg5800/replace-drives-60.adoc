@@ -36,6 +36,7 @@ StorageGRID网格管理器可监控设备状态、并在发生驱动器故障时
 
 
 
+[[step-1-prepare-to-replace-drive]]
 == 第 1 步：准备更换驱动器
 
 检查 SANtricity System Manager 中的恢复 Guru 并完成所有前提步骤，以便准备更换驱动器。然后，您可以找到故障组件。
@@ -75,6 +76,7 @@ The drive drawer's Attention LED (amber) blinks so you can open the correct driv
 
 
 
+[[step-2-remove-failed-drive]]
 == 第 2 步：删除故障驱动器
 
 删除故障驱动器以更换为新驱动器。
@@ -103,6 +105,7 @@ NOTE: 如果您意外删除了活动驱动器，请至少等待 30 秒，然后�
 
 
 
+[[step-3-install-new-drive]]
 == 第 3 步：安装新驱动器
 
 安装新驱动器以更换故障驱动器。
@@ -129,6 +132,7 @@ The green Activity LED for the replaced drive on the front of the drive drawer c
 
 
 
+[[step-4-complete-drive-replacement]]
 == 第 4 步：完成驱动器更换
 
 确认新驱动器运行正常。

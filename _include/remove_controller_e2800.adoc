@@ -4,6 +4,7 @@
 
 
 
+[[step-3-remove-the-controller]]
 == 第3步：卸下控制器
 
 从设备中删除故障控制器。

@@ -25,6 +25,8 @@ CAUTION: 切勿使用电源开关关闭产品。
 
 
 
+[[step-1-remove-sg120-or-sg1200-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 步骤 1：从机柜或机架中取出 SG120 或 SG1200
 
 .步骤
@@ -51,6 +53,7 @@ NOTE: 如果要从机柜或机架上完全卸下设备，请按照滑轨套件�
 
 
 
+[[step-2-reinstall-sg120-or-sg1200-into-cabinet-or-rack]]
 == 步骤 2：将 SG120 或 SG1200 重新安装到机柜或机架中
 
 .步骤

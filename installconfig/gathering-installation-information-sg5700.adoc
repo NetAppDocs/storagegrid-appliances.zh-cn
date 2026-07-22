@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5700.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 使用表记录连接到设备的每个网络所需的信息。安装和配置硬件需要这些值。 
 ---
 = 为 SG5700 收集网络信息
@@ -18,6 +18,7 @@ TIP: 请使用随ConfigBuilder提供的工作簿、而不是使用这些表。�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e2800-controller]]
 == 连接到 E2800 控制器上的 SANtricity System Manager 所需的信息
 
 将E2800系列控制器连接到要用于SANtricity System Manager的管理网络。
@@ -90,6 +91,7 @@ IP 地址格式
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-admin-network]]
 == 将 E5700SG 控制器连接到管理网络所需的信息
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用 E5700SG 控制器上的 1-GbE 管理端口连接到管理网络。
@@ -162,6 +164,7 @@ DHCP 为管理端口 1 分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-e5700sg-controller]]
 == 在 E5700SG 控制器上连接和配置 10/25/GbE 端口所需的信息
 
 E5700SG 控制器上的四个 10/225-GbE 端口连接到 StorageGRID 网格网络和客户端网络。
@@ -223,6 +226,7 @@ NOTE: 请参见 link:gathering-installation-information-sg5700.html#port-bond-mo
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-grid-network]]
 == 将 E5700SG 控制器连接到网格网络所需的信息
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。此设备使用 E5700SG 控制器上的 10/225-GbE 端口连接到网格网络。
@@ -295,6 +299,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-client-network]]
 == 将 E5700SG 控制器连接到客户端网络所需的信息
 
 适用于 StorageGRID 的客户端网络是一个可选网络，通常用于提供对网格的客户端协议访问。设备使用 E5700SG 控制器上的 10/225-GbE 端口连接到客户端网络。
@@ -370,12 +375,14 @@ DHCP 为客户端网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[port-bond-modes]]
 == 端口绑定模式
 
 时间 link:configuring-network-links.html["正在配置网络链路"] 对于E5700SG控制器、您可以对连接到网格网络和可选客户端网络的1025GbE端口以及连接到可选管理网络的1-GbE管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。
 
 
 
+[[network-bond-modes-for-1025-gbe-ports]]
 === 10/225-GbE 端口的网络绑定模式
 
 E5700SG 控制器上的 10/225-GbE 网络端口支持网格网络和客户端网络连接的固定端口绑定模式或聚合端口绑定模式。
@@ -449,6 +456,7 @@ NOTE: 如果您选择使用的端口少于四个，请注意，安装 StorageGRI
 
 
 
+[[network-bond-modes-for-1-gbe-management-ports]]
 === 1-GbE 管理端口的网络绑定模式
 
 对于 E5700SG 控制器上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。

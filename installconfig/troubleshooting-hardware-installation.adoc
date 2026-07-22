@@ -15,6 +15,8 @@ summary: 如果您在安装期间遇到问题，查看与硬件设置和连接�
 
 
 
+[[view-boot-up-codes-sg6000-cn-controller]]
+[[view-boot-codes]]
 == 查看启动代码(SG6000-CN控制器)
 
 在为设备接通电源时， BMC 会为 SG6000-CN 控制器记录一系列启动代码。您可以通过多种方式查看这些代码。
@@ -188,6 +190,8 @@ StorageGRID 正在运行。
 
 
 
+[[view-error-codes-sg6000-cn-controller]]
+[[error-codes]]
 == 查看错误代码(SG6000-CN控制器)
 
 如果在 SG6000-CN 控制器启动时发生硬件错误，则 BMC 会记录一个错误代码。您可以根据需要使用BMC界面或设备串行端口查看这些错误代码、然后与技术支持联系以解决此问题。
@@ -584,6 +588,8 @@ MRC ： err_interlef_failure
 
 
 
+[[hardware-setup-appears-to-hang-sg6000-or-sg5700]]
+[[hardware-setup-hangs]]
 == 硬件设置似乎挂起(SG6000或SG5700)
 
 如果硬件故障或布线错误导致存储控制器或设备控制器无法完成启动处理、则StorageGRID 设备安装程序可能不可用。
@@ -647,12 +653,15 @@ https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["_E5700 和 E
 ====
 
 
+[[connection-issues-sg5700-or-sg6000]]
+[[connection-issues]]
 == 连接问题(SG5700或SG6000)
 
 如果您在 StorageGRID 设备安装期间遇到连接问题，应执行列出的更正操作步骤。
 
 
 
+[[unable-to-connect-to-sg6000-appliance]]
 === 无法连接到SG6000设备
 
 如果无法连接到设备、则可能存在网络问题描述 、或者硬件安装可能未成功完成。
@@ -703,6 +712,7 @@ https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["_E5700 和 E
 
 
 
+[[sg6060-expansion-shelves-dont-appear-in-appliance-installer]]
 === SG6060扩展架未显示在设备安装程序中
 
 如果您已为SG6060安装了扩展架、但它们未显示在StorageGRID 设备安装程序中、则应验证这些扩展架是否已完全安装并打开电源。
@@ -729,6 +739,7 @@ image::../media/expansion_shelves_shown_by_num_of_drives.png[驱动器数量]
 
 
 
+[[unable-to-connect-to-sg5700-appliance]]
 === 无法连接到SG5700设备
 
 如果无法连接到设备、则可能存在网络问题描述 、或者硬件安装可能未成功完成。
@@ -778,6 +789,8 @@ image::../media/expansion_shelves_shown_by_num_of_drives.png[驱动器数量]
 
 
 
+[[he-error-error-synchronizing-with-santricity-os-software-sg5700]]
+[[he-error]]
 == HE错误：与SANtricity OS软件同步时出错(SG5700)
 
 如果StorageGRID 设备安装程序无法与SANtricity OS软件同步、计算控制器上的七段显示屏将显示HE错误代码。

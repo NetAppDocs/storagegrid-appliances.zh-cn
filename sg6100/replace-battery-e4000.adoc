@@ -32,6 +32,7 @@ summary:
 
 
 
+[[step-1-prepare-to-replace-battery]]
 == 步骤1：准备更换电池
 
 您必须将受影响的控制器置于脱机状态、才能安全地取出发生故障的电池。未置于脱机状态的控制器必须处于联机状态（处于最佳状态）。
@@ -100,6 +101,7 @@ NOTE: 如果您正在使用尝试脱机的控制器访问 SANtricity 系统管�
 
 
 
+[[step-2-remove-e4000-controller-canister]]
 == 步骤2：卸下E4000控制器箱
 
 您需要从控制器架中取出控制器箱，以便取出电池。
@@ -124,6 +126,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 
 
+[[step-3-install-the-new-battery]]
 == 第3步：安装新电池
 
 您必须取出故障电池并进行更换。
@@ -180,6 +183,7 @@ image::../media/legend_icon_02.png[标注参考2.]
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 更换控制器箱中的组件后、将其重新安装到机箱中。
@@ -212,6 +216,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
 
 
+[[step-5-complete-battery-replacement]]
 == 第5步：完成电池更换
 
 将控制器置于联机状态。

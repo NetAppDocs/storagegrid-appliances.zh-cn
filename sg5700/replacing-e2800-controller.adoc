@@ -45,6 +45,7 @@ NOTE: 大多数设备型号中的存储控制器不包括主机接口卡(Host In
 
 
 
+[[step-1-prepare-to-remove-the-controller]]
 == 第1步：准备卸下控制器
 
 这些图显示了E2800A控制器和E2800B控制器。用于更换E2800系列控制器和EF570控制器的操作步骤 是相同的。
@@ -115,6 +116,7 @@ NOTE: 在更换组件前后收集支持数据可确保在更换组件无法解�
 
 
 
+[[step-2-take-the-controller-offline]]
 == 第2步：使控制器脱机
 
 使控制器脱机并确认所有操作均已完成。
@@ -132,6 +134,7 @@ NOTE: 在更换组件前后收集支持数据可确保在更换组件无法解�
 
 
 
+[[step-3-remove-the-controller]]
 == 第3步：卸下控制器
 
 从设备中删除故障控制器。
@@ -155,6 +158,7 @@ CAUTION: 请始终用双手支撑控制器的重量。
 
 
 
+[[step-4-move-battery-to-the-new-controller]]
 == 第4步：将电池移至新控制器
 
 从发生故障的控制器中取出电池、然后将其安装到更换用的控制器中。
@@ -242,6 +246,7 @@ image::../media/e2800_battery_flange_not_ok.gif[电池法兰不正确]
 
 
 
+[[step-5-move-hic-to-new-controller-if-needed]]
 == 第5步：根据需要将HIC移至新控制器
 
 如果故障控制器包含主机接口卡(HIC)、请将HIC从故障控制器移至更换控制器。
@@ -350,6 +355,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[E2800A面板�
 ====
 
 
+[[step-6-replace-controller]]
+[[step6_replace_controller]]
 == 第6步：更换控制器
 
 安装替代控制器并验证它是否已重新加入网格。

@@ -11,6 +11,7 @@ image:../media/drw_s2025_cover_replace_ieops-2559.svg["解锁和取下设备盖"
 
 
 
+[[step-2-reinstall-cover]]
 == 步骤 2：重新安装盖板
 
 .步骤

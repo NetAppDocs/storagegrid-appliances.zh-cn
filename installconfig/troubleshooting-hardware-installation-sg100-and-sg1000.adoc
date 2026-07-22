@@ -15,6 +15,8 @@ summary: 如果您在安装期间遇到问题，查看与硬件设置和连接�
 
 
 
+[[view-boot-up-codes]]
+[[view-boot-codes]]
 == 查看启动代码
 
 在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。
@@ -179,6 +181,7 @@ StorageGRID 正在运行。
 
 
 
+[[view-error-codes]]
 == 查看错误代码
 
 如果在设备启动时发生硬件错误， BMC 将记录一个错误代码。您可以根据需要使用BMC界面或设备串行端口查看这些错误代码、然后与技术支持联系以解决此问题。
@@ -575,6 +578,8 @@ MRC ： err_interlef_failure
 
 
 
+[[hardware-setup-appears-to-hang]]
+[[hardware-setup-hangs]]
 == 硬件设置似乎挂起
 
 如果硬件故障或布线错误阻止 StorageGRID 设备完成启动处理，则此设备安装程序可能不可用。
@@ -586,6 +591,7 @@ MRC ： err_interlef_failure
 
 
 
+[[connection-issues]]
 == 连接问题
 
 如果无法连接到服务设备、则可能存在网络问题描述 、或者硬件安装可能未成功完成。

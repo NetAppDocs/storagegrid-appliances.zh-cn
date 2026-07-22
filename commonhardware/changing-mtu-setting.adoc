@@ -26,6 +26,7 @@ NOTE: 为了获得最佳网络性能，应在所有节点的网格网络接口�
 
 
 
+[[change-the-mtu-setting-using-the-change-ip-tool]]
 == 使用更改 IP 工具更改 MTU 设置
 
 .开始之前
@@ -36,6 +37,7 @@ NOTE: 为了获得最佳网络性能，应在所有节点的网格网络接口�
 
 
 
+[[change-the-mtu-setting-using-maintenance-mode]]
 == 使用维护模式更改 MTU 设置
 
 如果无法使用更改 IP 工具访问这些设置，请使用维护模式更改 MTU 设置。

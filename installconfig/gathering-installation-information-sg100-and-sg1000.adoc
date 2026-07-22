@@ -18,6 +18,7 @@ TIP: 请使用随ConfigBuilder提供的工作簿、而不是使用这些表。�
 
 
 
+[[check-storagegrid-version]]
 == 检查StorageGRID 版本
 
 在安装SG100或SG1000服务设备之前、请确认您的StorageGRID 系统正在使用所需版本的StorageGRID 软件。
@@ -42,6 +43,7 @@ SG100
 |===
 
 
+[[administration-and-maintenance-ports]]
 == 管理和维护端口
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用设备上的以下 1-GbE 管理端口连接到管理网络。
@@ -130,6 +132,7 @@ DHCP 为管理网络端口分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[networking-ports]]
 == 网络端口
 
 设备上的四个网络端口连接到 StorageGRID 网格网络和可选客户端网络。
@@ -198,6 +201,7 @@ DHCP 为管理网络端口分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[grid-network-ports]]
 == 网格网络端口
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。此设备使用四个网络端口连接到网格网络。
@@ -269,6 +273,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[client-network-ports]]
 == 客户端网络端口
 
 适用于 StorageGRID 的客户端网络是一个可选网络，通常用于提供对网格的客户端协议访问。此设备使用四个网络端口连接到客户端网络。
@@ -339,6 +344,7 @@ DHCP 为客户端网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[bmc-management-network-ports]]
 == BMC 管理网络端口
 
 您可以使用图中圈出的 1-GbE 管理端口访问服务设备上的 BMC 接口。此端口支持使用智能平台管理接口（ Intelligent Platform Management Interface ， IPMI ）标准通过以太网远程管理控制器硬件。
@@ -386,12 +392,14 @@ image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理端口]
 |===
 
 
+[[port-bond-modes]]
 == 端口绑定模式
 
 在为 SG100 和 SG1000 设备配置网络链路时，您可以对连接到网格网络和可选客户端网络的端口以及连接到可选管理网络的 1-GbE 管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。
 
 
 
+[[network-bond-modes]]
 === 网络绑定模式
 
 服务设备上的网络端口支持网格网络和客户端网络连接的固定端口绑定模式或聚合端口绑定模式。
@@ -477,6 +485,7 @@ NOTE: 如果您选择使用的网络端口少于四个，请注意，在安装�
 
 
 
+[[network-bond-modes-for-management-ports]]
 === 管理端口的网络绑定模式
 
 对于服务设备上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。这些图显示了设备上的管理端口如何在管理网络的网络绑定模式下绑定。

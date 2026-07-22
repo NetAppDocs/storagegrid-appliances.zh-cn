@@ -36,11 +36,14 @@ summary: '某些StorageGRID设备包括底板管理控制器(BMC)、可用于对
 
 
 
+[[bmc-use-for-storagegrid-appliances]]
 == BMC用于StorageGRID设备
 
 以下BMC过程已记录下来、可用于受支持的StorageGRID设备：
 
 * link:../installconfig/accessing-bmc-interface.html["访问BMC信息板"]
+* https://docs.netapp.com/us-en/storagegrid/harden/hardening-guidelines-for-storagegrid-nodes.html#change-appliance-bmc-password["在 Grid Manager 中更改设备 BMC 密码"^]
+* https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings["配置 BMC LAN IP 设置"^]
 * link:../installconfig/configuring-snmp-settings-for-bmc.html["配置BMC SNMP设置"]
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["设置电子邮件警报通知"]
 * 排除硬件安装故障：
@@ -77,6 +80,7 @@ summary: '某些StorageGRID设备包括底板管理控制器(BMC)、可用于对
 
 
 
+[[bmc-features-not-supported-for-storagegrid-appliances]]
 == StorageGRID设备不支持BMC功能
 
 以下BMC功能与StorageGRID专用配置冲突、不应使用。

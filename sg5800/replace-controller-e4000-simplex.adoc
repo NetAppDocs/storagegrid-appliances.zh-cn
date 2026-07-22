@@ -44,6 +44,7 @@ NOTE: 请勿依靠E系列说明来更换StorageGRID 设备中的控制器、因�
 
 
 
+[[step-1-prepare-to-replace-controller]]
 == 第 1 步：准备更换控制器
 
 准备通过保存驱动器安全密钥，备份配置和收集支持数据来更换控制器箱。然后，您可以停止主机 I/O 操作并关闭控制器架。
@@ -105,6 +106,7 @@ CAUTION: *可能无法访问数据*—如果存储阵列中的所有驱动器均
 
 
 
+[[step-2-place-the-controller-offline]]
 == 第2步：将控制器置于脱机状态
 
 使控制器脱机并确认所有操作均已完成。
@@ -127,6 +129,7 @@ CAUTION: *可能无法访问数据*—如果存储阵列中的所有驱动器均
 
 
 
+[[step-3-remove-e4000-controller-canister]]
 == 步骤3：卸下E4000控制器箱
 
 卸下E4000控制器箱。
@@ -146,6 +149,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 
 
+[[step-4-determine-parts-to-transfer-to-replacement-controller]]
 == 第4步：确定要传输到更换控制器的部件
 
 更换用的控制器可能预装了部件。确定必须将哪些部件转移到更换用的控制器箱。
@@ -162,6 +166,8 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 
 
+[[step-5-remove-the-battery]]
+[[step5_remove_battery]]
 == 第5步：取出电池
 
 已从受损控制器中取出电池、并将其安装在更换用的控制器中。
@@ -200,6 +206,8 @@ image::../media/legend_icon_02.png[标注参考2.]
 
 
 
+[[step-6-move-the-dimms]]
+[[step6_remove_dimm]]
 == 第6步：移动DIMM
 
 从受损控制器箱中取出DIMM、然后将其安装到更换用的控制器箱中。
@@ -258,6 +266,8 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 
 
+[[step-7-install-the-battery]]
+[[step7_install_battery]]
 == 第7步：安装电池
 
 将电池安装到更换用的控制器箱中。
@@ -274,6 +284,8 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 
 
+[[step-8-replace-controller]]
+[[step8_replace_controller]]
 == 第8步：更换控制器
 
 安装替代控制器并验证节点是否已重新加入网格。

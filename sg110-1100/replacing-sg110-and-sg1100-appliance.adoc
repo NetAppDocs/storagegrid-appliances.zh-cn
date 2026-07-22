@@ -120,6 +120,9 @@ WARNING: 如果设备安装程序指示需要更改物理硬件(例如将磁盘�
 +
 ... 要还原BMC配置以使用静态IP、网络掩码和网关、请输入以下命令：
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +

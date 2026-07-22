@@ -2,7 +2,7 @@
 permalink: commonhardware/appliance-node-cloning-procedure.html 
 sidebar: sidebar 
 keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
-summary: 克隆过程可能需要几天时间才能在源节点（正在更换的设备）和目标设备（新设备）之间传输数据。 
+summary: 克隆过程可能需要几天时间才能在源节点（正在更换的设备）和目标（新）设备之间传输数据。 
 ---
 = 克隆 StorageGRID 设备节点
 :allow-uri-read: 
@@ -19,6 +19,7 @@ summary: 克隆过程可能需要几天时间才能在源节点（正在更换�
 * 您已配置目标设备，包括配置 StorageGRID 连接， SANtricity 系统管理器（仅限存储设备）和 BMC 接口。
 +
 ** 配置 StorageGRID 连接时，请使用临时 IP 地址。
+** 如果在源节点上配置为静态的目标节点的任何端口上启用 DHCP，请确保没有任何源节点 MAC 地址的永久 DHCP 租约。否则，可能会在克隆过程结束时导致 IP 地址冲突。
 ** 配置网络链路时，请使用最终的链路配置。
 
 
@@ -88,6 +89,10 @@ NOTE: 使用 1-GbE 管理网络进行克隆数据传输会导致克隆速度变�
 * 源节点和目标节点交换 IP 地址：
 +
 ** 现在，目标节点将使用最初分配给源节点的网格网络，管理网络和客户端网络 IP 地址。
++
+
+NOTE: 如果在克隆过程结束时遇到 IP 地址冲突，请确保没有为源节点上具有静态 IP 且在目标节点上启用了 DHCP 的端口的任何 MAC 地址分配永久 DHCP 租约。删除或更新 DHCP 服务器上的永久 DHCP 租约以解决此冲突。
+
 ** 现在，源节点将使用最初分配给目标节点的临时 IP 地址。
 
 

@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg5700.html 
 sidebar: sidebar 
 keywords: sg5700, sg5712, sg5712x, sg5760, sg5760x, storage appliance 
-summary: SG5700 StorageGRID 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟 \ （基于软件的 \ ）存储节点相结合。 
+summary: SG5700 StorageGRID 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟（基于软件的）存储节点相结合。 
 ---
 = StorageGRID SG5700 设备
 :allow-uri-read: 
@@ -26,6 +26,7 @@ SG5700设备有四种型号：SG5712和SG5712X以及SG5760和SG5760X。除了存
 
 
 
+[[sg5700-components]]
 == SG5700组件
 
 SG5700型号包括以下组件：
@@ -77,10 +78,12 @@ SG5700型号包括以下组件：
 
 
 
+[[sg5700-diagrams]]
 == SG5700示意图
 
 
 
+[[sg5712-front-and-rear-views]]
 === SG5712正面图和背面图
 
 图中显示了SG5712的正面和背面、SG5712是一个2U机箱、可容纳12个驱动器。
@@ -89,6 +92,7 @@ image::../media/sg5712_front_and_back_views.gif[SG5712 设备的正面和背面]
 
 
 
+[[sg5712-components]]
 === SG5712组件
 
 SG5712 包括两个控制器和两个电源风扇箱。
@@ -122,6 +126,7 @@ E5700SG 控制器（计算控制器）
 |===
 
 
+[[sg5712x-front-and-rear-views]]
 === SG5712X正面图和背面图
 
 图中显示了SG5712X的正面和背面、SG5712X是一个2U机箱、可容纳12个驱动器。
@@ -130,6 +135,7 @@ image::../media/sg5712x_front_and_back_views.gif[SG5712X设备的正面和背面
 
 
 
+[[sg5712x-components]]
 === SG5712X组件
 
 SG5712X包括两个控制器和两个电源风扇箱。
@@ -163,6 +169,7 @@ E5700SG 控制器（计算控制器）
 |===
 
 
+[[sg5760-front-and-rear-views]]
 === SG5760正面图和背面图
 
 图中显示了SG5760型号的正面和背面、SG5760是一个4U机箱、可在5个驱动器抽盒中容纳60个驱动器。
@@ -171,6 +178,7 @@ image::../media/sg5760_front_and_back_views.gif[SG5760 设备的正面和背面]
 
 
 
+[[sg5760-components]]
 === SG5760组件
 
 SG5760 包括两个控制器，两个风扇箱和两个电源箱。
@@ -211,6 +219,7 @@ E5700SG 控制器（计算控制器）
 |===
 
 
+[[sg5760x-front-and-rear-views]]
 === SG5760X正面图和背面图
 
 图中显示了SG5760X型号的正面和背面、SG5760X是一个4U机箱、可在5个驱动器抽盒中容纳60个驱动器。
@@ -219,6 +228,7 @@ image::../media/sg5760x_front_and_back_views.gif[SG5760X设备的正面和背面
 
 
 
+[[sg5760x-components]]
 === SG5760X组件
 
 SG5760X包括两个控制器、两个风扇箱和两个电源箱。
@@ -259,6 +269,7 @@ E5700SG 控制器（计算控制器）
 |===
 
 
+[[sg5700-controllers]]
 == SG5700控制器
 
 StorageGRID 设备的12驱动器SG5712和SG5712X以及60驱动器SG5760和SG5760X型号都包括一个E5700SG计算控制器和一个E系列E2800存储控制器。
@@ -271,6 +282,7 @@ E2800A和E2800B控制器的规格和功能完全相同、只是互连端口的�
 
 
 
+[[e5700sg-compute-controller]]
 === E5700SG计算控制器
 
 * 用作设备的计算服务器。
@@ -369,6 +381,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG 控制器上的连�
 |===
 
 
+[[e2800-storage-controller]]
 === E2800存储控制器
 
 SG5700设备中使用了两个版本的E2800存储控制器：E2800A和E2800B。E2800A没有HIC、E2800B有四端口HIC。这两个控制器版本的规格和功能相同、但互连端口的位置除外。

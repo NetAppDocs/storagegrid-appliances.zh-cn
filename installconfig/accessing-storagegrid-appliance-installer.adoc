@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-storagegrid-appliance-installer.html 
 sidebar: sidebar 
 keywords: appliance installer, installer, access, accessing, start, starting 
-summary: 您必须访问 StorageGRID 设备安装程序以验证安装程序版本，并配置设备与以下三个 StorageGRID 网络之间的连接：网格网络，管理网络（可选）和客户端网络（可选）。 
+summary: 您必须访问 StorageGRID 设备安装程序，以验证安装程序版本并配置设备与三个 StorageGRID 网络（网格网络、管理网络（可选）和客户端网络（可选））之间的连接。 
 ---
 = 访问 StorageGRID 设备安装程序
 :allow-uri-read: 

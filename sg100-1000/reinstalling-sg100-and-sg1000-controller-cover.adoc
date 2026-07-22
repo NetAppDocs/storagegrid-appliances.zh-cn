@@ -15,6 +15,7 @@ summary: 卸下产品盖板以接触内部组件进行维护，完成后更换�
 
 
 
+[[remove-sg100-or-sg1000-appliance-cover]]
 == 卸下SG100或SG1000设备护盖
 
 卸下产品盖板，以便检修内部组件。
@@ -40,6 +41,7 @@ CAUTION: 将ESD腕带的腕带端缠绕在手腕上，并将扣具端固定到�
 
 
 
+[[reinstall-sg100-or-sg1000-appliance-cover]]
 == 重新安装SG100或SG1000设备护盖
 
 内部硬件维护完成后、重新安装设备盖。

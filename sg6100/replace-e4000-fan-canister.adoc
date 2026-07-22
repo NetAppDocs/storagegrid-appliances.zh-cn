@@ -32,6 +32,7 @@ CAUTION: * 可能的设备损坏 * - 如果在打开电源的情况下执行此�
 
 
 
+[[step-1-prepare-to-replace-fan-canister]]
 == 第 1 步：准备更换风扇箱
 
 通过收集有关设备的支持数据并找到故障组件、准备更换风扇箱。
@@ -77,6 +78,7 @@ NOTE: 如果产品中的第二个风扇箱没有*最佳*状态，请勿尝试热
 
 
 
+[[step-2-remove-failed-fan-canister-and-install-new-one]]
 == 第 2 步：拆下发生故障的风扇箱并安装新的风扇箱
 
 拆下发生故障的风扇箱，以便用新的风扇箱进行更换。
@@ -96,6 +98,7 @@ Save all packing material for use when returning the failed fan.
 
 
 
+[[step-3-complete-fan-canister-replacement]]
 == 第 3 步：完成风扇箱更换
 
 确认新的风扇箱工作正常，收集支持数据并恢复正常运行。

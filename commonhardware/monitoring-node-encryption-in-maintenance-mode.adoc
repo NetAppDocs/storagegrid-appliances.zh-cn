@@ -2,7 +2,7 @@
 permalink: commonhardware/monitoring-node-encryption-in-maintenance-mode.html 
 sidebar: sidebar 
 keywords: kms, key management server, monitor, monitoring, status, encryption 
-summary: 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器 \ （ KMS\ ）详细信息。 
+summary: 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器（ KMS ）详细信息。 
 ---
 = 在维护模式下监控 StorageGRID 设备的节点加密
 :allow-uri-read: 
@@ -59,6 +59,7 @@ CAUTION: 清除 KMS 配置将从设备中删除数据，从而使其永远无法
 
 
 
+[[clear-key-management-server-configuration]]
 == 清除密钥管理服务器配置
 
 清除密钥管理服务器（ KMS ）配置将禁用设备上的节点加密。清除 KMS 配置后，设备上的数据将被永久删除，并且无法再访问。此数据不可恢复。

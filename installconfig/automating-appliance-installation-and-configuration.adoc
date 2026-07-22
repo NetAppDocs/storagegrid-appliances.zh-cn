@@ -31,11 +31,12 @@ summary: 自动化安装和配置对于部署多个 StorageGRID 实例或一个�
 
 
 
+[[automation-options]]
 == 自动化选项
 
 要自动安装和配置设备、请使用以下一个或多个选项：
 
-* 生成包含配置详细信息的JSON文件。请咨询NetApp专业服务顾问以使用 link:https://configbuilder.netapp.com/index.aspx["NetApp ConfigBuilder工具"^] 要完成以下步骤：
+* 生成包含配置详细信息的 JSON 文件。与您的 NetApp 专业服务顾问合作，使用 link:https://configbuilder.netapp.com/Index.aspx["NetApp ConfigBuilder工具"^]（需要登录）完成以下步骤：
 +
 .. 请咨询NetApp专业服务以获取销售订单号。
 .. 从ConfigBuilder获取工作簿。
@@ -69,6 +70,8 @@ NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使�
 
 
 
+[[automate-appliance-configuration-using-storagegrid-appliance-installer]]
+[[automate-with-appliance-installer]]
 == 使用 StorageGRID 设备安装程序自动配置设备
 
 生成JSON文件后、您可以使用StorageGRID 设备安装程序上传JSON文件、从而自动配置一个或多个设备。
@@ -109,6 +112,8 @@ NOTE: 如果文件无效，则文件名将显示为红色，并在黄色横幅�
 
 
 
+[[automate-appliance-installation-and-configuration-using-configure-sga-py-script]]
+[[automate-with-configure-sga-py-script]]
 == 使用configure-sga.py脚本自动安装和配置设备
 
 如果您是高级用户、则可以使用 `configure-sga.py` 用于自动执行StorageGRID 设备节点的许多安装和配置任务的脚本、包括安装和配置主管理节点。如果要配置大量设备，此脚本可能会很有用。

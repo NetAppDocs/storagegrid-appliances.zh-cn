@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg5800.html 
 sidebar: sidebar 
 keywords: sg5800, sg5812, sg5860, storage appliance 
-summary: 'SG田间 工作台(StorageGRID)设备是一个集成的存储和计算平台、可作为StorageGRID网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟 \ （基于软件的 \ ）存储节点相结合。' 
+summary: SG5800 StorageGRID 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。该设备可用于结合了设备存储节点和虚拟（基于软件）存储节点的混合网格环境中。 
 ---
 = StorageGRID SG5800 设备
 :allow-uri-read: 
@@ -26,6 +26,7 @@ SG58800设备有两种型号：SG5812和SG5860。
 
 
 
+[[sg5800-components]]
 == SG与SG的 连接
 
 SG型 包含以下组件：
@@ -57,10 +58,12 @@ SG型 包含以下组件：
 
 
 
+[[sg5800-diagrams]]
 == SG与SG的 图表
 
 
 
+[[sg5812-front-and-rear-views]]
 === SG5812正面图和背面图
 
 图中显示了SG5812的正面和背面、SG5812是一个2U机箱、可容纳12个驱动器。
@@ -69,6 +72,7 @@ image::../media/sg5812_front_and_back_views.png[SG5812设备的正面和背面]
 
 
 
+[[sg5812-components]]
 === SG5812组件
 
 SG5812包括两个控制器和两个电源风扇箱。
@@ -102,6 +106,7 @@ SG可能性(计算控制器)
 |===
 
 
+[[sg5860-front-and-rear-views]]
 === SG5860正面图和背面图
 
 图中显示了SG5860型号的正面和背面、SG5860是一个4U机箱、可在5个驱动器抽盒中容纳60个驱动器。
@@ -110,6 +115,7 @@ image::../media/sg5860_front_and_back_views.png[SG5860设备的正面和背面]
 
 
 
+[[sg5860-components]]
 === SG5860组件
 
 SG5860包括两个控制器、两个风扇箱和两个电源箱。
@@ -150,12 +156,14 @@ SG可能性(计算控制器)
 |===
 
 
+[[sg5800-controller]]
 == SGs了 控制器
 
 StorageGRID设备的12驱动器SG5812和60驱动器SG5860型号均包含一个SG58800计算控制器和一个E系列E4000存储控制器。
 
 
 
+[[sg5800-compute-controller]]
 === SG成本 控制器
 
 * 用作设备的计算服务器。
@@ -238,6 +246,7 @@ image::../media/sg5800_controller_with_callouts.png[SG小型 连接器]
 |===
 
 
+[[e4000-storage-controller]]
 === E4000存储控制器
 
 E4000系列存储控制器具有以下规格：

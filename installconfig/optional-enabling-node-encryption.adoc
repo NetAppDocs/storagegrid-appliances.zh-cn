@@ -23,6 +23,7 @@ summary: 您可以在节点和磁盘级别启用加密、以防止设备中的�
 
 
 
+[[enable-node-encryption]]
 == 启用节点加密
 
 如果启用了节点加密，则可以通过安全密钥管理服务器（ KMS ）加密来保护设备中的磁盘，防止物理丢失或从站点中删除。您必须在设备安装期间选择并启用节点加密。在KMS加密过程启动后、您无法禁用节点加密。
@@ -88,6 +89,7 @@ NOTE: 设备最初会配置一个随机的非 KMS 加密密钥，该密钥会分
 
 
 
+[[drive-encryption]]
 == 驱动器加密
 
 在写入和读取过程中、驱动器加密在自加密驱动器(SED)硬件上进行管理。对这些驱动器上数据的访问由用户定义的密码短语控制。
@@ -118,6 +120,7 @@ CAUTION: 请确保将驱动器加密密码短语存储在安全位置。如果�
 
 
 
+[[enable-drive-encryption]]
 === 启用驱动器加密
 
 . 访问StorageGRID设备安装程序。
@@ -156,6 +159,7 @@ NOTE: 在对驱动器进行初始加密时、密码短语会设置为默认空�
 
 
 
+[[view-drive-encryption-status]]
 === 查看驱动器加密状态
 
 . link:../commonhardware/placing-appliance-into-maintenance-mode.html["将设备置于维护模式"]。
@@ -164,6 +168,7 @@ NOTE: 在对驱动器进行初始加密时、密码短语会设置为默认空�
 
 
 
+[[access-an-encrypted-drive]]
 === 访问加密驱动器
 
 在更换计算节点或将驱动器移至新计算节点后、您必须输入密码短语才能访问加密驱动器。
@@ -196,6 +201,7 @@ NOTE: 如果为密码短语和密码短语显示文本输入值、而这些值�
 
 
 
+[[change-the-drive-encryption-passphrase]]
 === 更改驱动器加密密码短语
 
 . 访问StorageGRID设备安装程序。
@@ -227,6 +233,7 @@ CAUTION: 设置新密码短语后、如果不使用新密码短语和密码短�
 
 
 
+[[disable-drive-encryption]]
 === 禁用驱动器加密
 
 . 访问StorageGRID设备安装程序。

@@ -4,6 +4,7 @@
 
 
 
+[[step-1-remove-the-nic]]
 == 步骤 1：卸下 NIC
 
 [role="tabbed-block"]
@@ -48,6 +49,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["从 Riser 卡组件中�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == 步骤 2：重新安装内部 NIC
 
 将更换用的NIC安装到与已卸下的NIC相同的位置。

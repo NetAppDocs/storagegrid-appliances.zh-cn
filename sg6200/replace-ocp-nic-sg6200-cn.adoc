@@ -2,7 +2,7 @@
 permalink: sg6200/replace-ocp-nic-sg6200-cn.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6200, storage node, storage appliance, Replacing, replace, NIC, network interface card 
-summary: '如果 SG6200-CN 中的网络接口卡 (NIC) 无法正常工作或出现故障，则可能需要更换它。' 
+summary: '如果 SG6200-CN 中的网络接口卡 (NIC) 无法正常工作或出现故障，则可能需要更换该卡。' 
 ---
 = 更换 SG6200-CN 中的外部 NIC
 :allow-uri-read: 
@@ -36,6 +36,7 @@ NOTE: 此过程*不*支持热插拔。在断开电缆和卸下 NIC 之前，需�
 
 
 
+[[step-1-remove-the-external-nic]]
 == 步骤 1：卸下外部 NIC
 
 .步骤
@@ -50,6 +51,7 @@ CAUTION: 此操作步骤*不支持热插拔。在卸下NIC之前、必须先断�
 
 
 
+[[step-2-reinstall-the-external-nic]]
 == 步骤 2：重新安装外部 NIC
 
 .步骤

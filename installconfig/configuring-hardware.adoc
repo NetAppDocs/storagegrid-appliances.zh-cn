@@ -15,10 +15,12 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 
 
+[[required-hardware-configurations]]
 == 所需硬件配置
 
 
 
+[[network-connections]]
 === 网络连接
 
 您必须配置并验证所有设备所需的网络连接：
@@ -30,6 +32,7 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 
 
+[[bmc-interface]]
 === BMC 接口
 
 如果要安装以下设备之一，则必须 link:../installconfig/configuring-bmc-interface.html["配置基板管理控制器（BMC）接口"]：
@@ -54,10 +57,12 @@ summary: 为设备通电后、您可以配置StorageGRID 要使用的网络连�
 
 
 
+[[optional-hardware-configurations]]
 == 可选硬件配置
 
 
 
+[[santricity-system-manager]]
 === SANtricity 系统管理器
 
 如果您拥有以下设备之一，则可以 link:../installconfig/accessing-and-configuring-santricity-system-manager.html["配置 SANtricity System Manager"]：
@@ -81,12 +86,14 @@ SANtricity System Manager 软件允许您：
 
 
 
+[[enable-node-or-drive-encryption]]
 === 启用节点或驱动器加密
 
 您可以link:../installconfig/optional-enabling-node-encryption.html["启用节点或驱动器加密"]保护设备中的驱动器和磁盘。
 
 
 
+[[change-raid-mode]]
 === 更改 RAID 模式
 
 您可以link:../installconfig/optional-changing-raid-mode.html["更改存储设备的 RAID 模式"]以满足您的存储和恢复需求。
@@ -103,6 +110,7 @@ SANtricity System Manager 软件允许您：
 
 
 
+[[remap-network-ports]]
 === 重新映射网络端口
 
 您可以link:../installconfig/optional-remapping-network-ports-for-appliance.html["重新映射设备上的网络端口"]优化网络连接。

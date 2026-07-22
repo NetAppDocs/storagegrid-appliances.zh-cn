@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg110-and-1100.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
-summary: StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理节点运行、以便在StorageGRID系统中提供高可用性负载平衡服务。这两个设备可以同时用作网关节点和管理节点（主节点或非主节点）。 
+summary: StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理节点运行、以便在StorageGRID系统中提供高可用性负载平衡服务。这两个设备可以同时作为网关节点和管理节点（主节点或非主节点）运行。 
 ---
 = StorageGRID SG110 和 SG1100 设备
 :allow-uri-read: 
@@ -15,6 +15,7 @@ StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理
 
 
 
+[[appliance-features]]
 == 设备功能
 
 这两种型号的服务设备均可提供以下功能：
@@ -33,6 +34,7 @@ StorageGRID SG110服务设备和SG1100服务设备可作为网关节点和管理
 
 
 
+[[sg110-and-sg1100-diagrams]]
 == SG110和SG1100图表
 
 此图显示了卸下挡板的SG110和SG1100的正面。从正面看，除了挡板上的产品名称之外，这两个设备是相同的。
@@ -78,6 +80,7 @@ image::../media/q2024_rear_leds.png[背面LED SG110和SG1100]
 |===
 
 
+[[sg110-connectors]]
 == SG110连接器
 
 此图显示了SG110的背面、包括端口、风扇和电源。
@@ -154,6 +157,7 @@ BMC 管理端口
 |===
 
 
+[[sg1100-connectors]]
 == SG1100连接器
 
 此图显示了SG1100背面的连接器。
@@ -230,6 +234,7 @@ BMC 管理端口
 |===
 
 
+[[sg110-and-sg1100-applications]]
 == SG110和SG1100应用程序
 
 您可以通过各种方式配置 StorageGRID 服务设备，以提供网关服务以及某些网格管理服务的冗余。

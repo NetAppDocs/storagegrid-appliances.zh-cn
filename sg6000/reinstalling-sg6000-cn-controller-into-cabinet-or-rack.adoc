@@ -15,6 +15,7 @@ summary: 从机柜或机架中卸下SG6000-CN控制器、以便检修顶盖或�
 
 
 
+[[remove-sg6000-cn-controller-from-cabinet-or-rack]]
 == 从机柜或机架中卸下 SG6000-CN 控制器
 
 从机柜或机架中卸下 SG6000-CN 控制器，以便检修顶盖或将控制器移至其他位置。
@@ -55,6 +56,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
 
 
 
+[[reinstall-sg6000-cn-controller-into-cabinet-or-rack]]
 == 将 SG6000-CN 控制器重新安装到机柜或机架中
 
 硬件维护完成后，将控制器重新安装到机柜或机架中。

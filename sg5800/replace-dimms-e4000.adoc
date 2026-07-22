@@ -41,6 +41,7 @@ NOTE: 在此操作步骤的某些步骤中、您可能无法使用网格管理�
 
 
 
+[[step-1-determine-if-you-need-to-replace-a-dimm]]
 == 第 1 步：确定是否需要更换 DIMM
 
 在更换 DIMM 之前，请验证控制器的缓存大小。
@@ -53,6 +54,7 @@ NOTE: 在此操作步骤的某些步骤中、您可能无法使用网格管理�
 
 
 
+[[step-2-power-down-the-controller-shelf]]
 == 第2步：关闭控制器架
 
 关闭控制器电源、以便可以安全地卸下和更换DIMM。
@@ -109,6 +111,7 @@ NOTE: 在此操作步骤的某些步骤中、您可能无法使用网格管理�
 
 
 
+[[step-3-remove-controller-canister]]
 == 步骤3：卸下控制器箱
 
 从系统中卸下控制器箱、然后卸下控制器箱盖。
@@ -130,6 +133,7 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打开控�
 
 
 
+[[step-4-replace-the-dimms]]
 == 步骤4：更换DIMM
 
 找到控制器内的DIMM、将其卸下并更换。
@@ -201,6 +205,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 
 
+[[step-5-reinstall-the-controller-canister]]
 == 步骤5：重新安装控制器箱
 
 将控制器箱重新安装到机箱中。
@@ -234,6 +239,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
 
 
+[[step-6-complete-dimms-replacement]]
 == 第6步：完成DIMM更换
 
 将控制器置于联机状态，收集支持数据并恢复操作。

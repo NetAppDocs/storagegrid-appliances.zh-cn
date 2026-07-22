@@ -2,7 +2,7 @@
 permalink: installconfig/overview-of-installation-rest-apis.html 
 sidebar: sidebar 
 keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
-summary: StorageGRID 提供了两个用于执行安装任务的 REST API ： StorageGRID 安装 API 和 StorageGRID 设备安装程序 API 。 
+summary: StorageGRID 提供两个用于执行安装任务的 REST API：StorageGRID Installation API 和 StorageGRID Appliance Installer API。 
 ---
 = StorageGRID 安装 REST API
 :allow-uri-read: 
@@ -22,6 +22,7 @@ CAUTION: 使用 API 文档网页执行的任何 API 操作均为实时操作。�
 
 
 
+[[storagegrid-installation-api]]
 == StorageGRID 安装 API
 
 StorageGRID 安装API仅在最初配置StorageGRID 系统时以及需要执行主管理节点恢复时可用。可以从网格管理器通过 HTTPS 访问安装 API 。
@@ -37,10 +38,12 @@ StorageGRID 安装 API 包括以下部分：
 * *恢复*：主管理节点恢复操作。您可以重置信息，上传恢复软件包，启动恢复以及查看恢复操作的状态。
 * *恢复包*：用于下载恢复软件包的操作。
 * *站点*：站点级配置操作。您可以创建，查看，删除和修改站点。
+* *temporary-password*：在安装过程中对临时密码执行操作，以保护 mgmt-api。
 
 
 
 
+[[storagegrid-appliance-installer-api]]
 == StorageGRID 设备安装程序 API
 
 可以从通过HTTPS访问StorageGRID 设备安装程序API `_Controller_IP_:8443`。

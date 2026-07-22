@@ -15,6 +15,8 @@ summary: 从机柜或机架中卸下SG110或SG1100以检修顶盖或将设备移
 
 
 
+[[remove-sg110-or-sg1100-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 从机柜或机架中卸下SG110或SG1100
 
 .开始之前
@@ -50,6 +52,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG110或SG1100机架固定螺�
 
 
 
+[[reinstall-sg110-or-sg1100-into-cabinet-or-rack]]
 == 将SG110或SG1100重新安装到机柜或机架中
 
 .开始之前

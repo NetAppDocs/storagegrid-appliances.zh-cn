@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5800.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 使用表记录连接到设备的每个网络所需的信息。安装和配置硬件需要这些值。 
 ---
 = 为 SG5800 收集网络信息
@@ -18,6 +18,7 @@ TIP: 请使用随ConfigBuilder提供的工作簿、而不是使用这些表。�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e4000-controller]]
 == 连接到E4000控制器上的SANtricity系统管理器所需的信息
 
 您将使用SANtricity系统管理器将E4000系列控制器连接到管理网络。
@@ -90,6 +91,7 @@ IP 地址格式
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-admin-network]]
 == 将SG可能性 控制器连接到管理网络所需的信息
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。该设备使用SG波特 控制器上的1-GbE管理端口连接到管理网络。
@@ -145,6 +147,7 @@ DHCP 为管理端口 1 分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg5800-controller]]
 == 连接和配置SG在于 控制器上的10/C5-GbE端口所需的信息
 
 SG在于 控制器上的四个10/C5-GbE端口连接到StorageGRID网格网络和客户端网络。
@@ -205,6 +208,7 @@ NOTE: 请参见 link:gathering-installation-information-sg5800.html#port-bond-mo
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-grid-network]]
 == 将SG信 标(SG）控制器连接到网格网络所需的信息
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。该设备使用SG在于 控制器上的10/C5-GbE端口连接到网格网络。
@@ -275,6 +279,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-client-network]]
 == 将SG信 控器连接到客户端网络所需的信息
 
 适用于 StorageGRID 的客户端网络是一个可选网络，通常用于提供对网格的客户端协议访问。该设备使用SG在于 控制器上的10/C5-GbE端口连接到客户端网络。
@@ -350,12 +355,14 @@ DHCP 为客户端网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[port-bond-modes]]
 == 端口绑定模式
 
 时间 link:configuring-network-links.html["正在配置网络链路"] 对于SG5、您可以对连接到网格网络和可选客户端网络的10/C5-GbE端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。对于网格网络和客户端网络连接、SGish-she控制器上的10/C5-GbE网络端口支持固定端口绑定模式或聚合端口绑定模式。
 
 
 
+[[fixed-port-bond-mode]]
 === 固定端口绑定模式
 
 固定模式是 10/225-GbE 网络端口的默认配置。
@@ -391,6 +398,7 @@ NOTE: 如果不需要冗余连接、则每个网络只能使用一个端口。�
 
 
 
+[[aggregate-port-bond-mode]]
 === 聚合端口绑定模式
 
 聚合端口绑定模式可显著提高每个 StorageGRID 网络的吞吐量，并提供额外的故障转移路径。

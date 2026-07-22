@@ -17,10 +17,12 @@ StorageGRID SG6260 设备包括一个计算控制器，其中一对 NVMe SSD 用
 
 
 
+[[appliance-features]]
 == 设备功能
 
 
 
+[[general-features]]
 === 常规功能
 
 SGF6212 和 SG6260 设备具有以下特点：
@@ -32,6 +34,7 @@ SGF6212 和 SG6260 设备具有以下特点：
 
 
 
+[[data-protection-features]]
 === 数据保护功能
 
 SGF6212 具有以下数据保护功能：
@@ -57,10 +60,12 @@ SG6260 具有以下数据保护功能：
 
 
 
+[[sg6200-hardware-components]]
 == SG6200 硬件组件
 
 
 
+[[sgf6212-appliance]]
 === SGF6212 设备
 
 SGF6212 设备包括以下组件：
@@ -68,8 +73,9 @@ SGF6212 设备包括以下组件：
 计算和存储平台:: 单机架单元(1U)服务器、包括：
 +
 --
+* 一个 AMD 3.55 GHz 处理器，提供 32 核（64 线程）
 * 256 GB RAM
-* 240 GB 内部启动驱动器（包括 StorageGRID 软件）
+* 256 GB 内部启动驱动器（包括 StorageGRID 软件）
 * 2×1/10 GBase-T端口
 * 4 个 10/25/40/100GbE 以太网端口，用于 Grid/Client 网络流量（或 4 个 200GbE，可选 200 GbE NIC）
 * 12 个 NVMe SSD 用于数据存储
@@ -82,6 +88,7 @@ SGF6212 设备包括以下组件：
 
 
 
+[[sg6260-appliance]]
 === SG6260 设备
 
 SG6260 设备包含以下组件：
@@ -89,8 +96,9 @@ SG6260 设备包含以下组件：
 计算控制器:: SG6200-CN 控制器是一款单机架单元（1U）服务器，包括：
 +
 --
+* 一个 AMD 3.55 GHz 处理器，提供 32 核（64 线程）
 * 256 GB RAM
-* 240 GB 内部启动驱动器（包括 StorageGRID 软件）
+* 256 GB 内部启动驱动器（包括 StorageGRID 软件）
 * 2×1/10 GBase-T端口
 * 4 个 10/25/40/100GbE 以太网端口，用于 Grid/Client 网络流量（或 4 个 200GbE，可选 200 GbE NIC）
 * 1 个 100 GbE 存储互连端口
@@ -124,10 +132,12 @@ E系列DE460C机箱是一个4U磁盘架、其中包括：
 
 
 
+[[sgf6212-and-sg6260-diagrams]]
 == SGF6212 和 SG6260 示意图
 
 
 
+[[sgf6212-front-view]]
 === SGF6212 正视图
 
 此图显示了 SGF6212 的正面（不带挡板）。该设备包括一个包含 12 个 SSD 驱动器的 1U 计算和存储平台。
@@ -136,6 +146,7 @@ image::../media/s25_front_with_ssds.png[SGF6212 正视图]
 
 
 
+[[sgf6212-rear-view]]
 === SGF6212 后视图
 
 此图显示了 SGF6212 的背面，包括端口、风扇和电源。
@@ -246,6 +257,7 @@ image::../media/s25_rear_leds.png[后部 LED SGF6212]
 |===
 
 
+[[sg6260-front-view]]
 === SG6260 前视图
 
 此图显示了 SG6260 的正面，其中包括一个 1U 计算控制器和一个 4U 机架，该机架包含两个存储控制器和五个驱动器抽屉中的 60 个驱动器。
@@ -272,6 +284,7 @@ image::../media/sg6260_front_view_without_bezels.png[SG6260 正视图]
 |===
 
 
+[[sg6260-rear-view]]
 === SG6260 后视图
 
 此图显示了 SG6260 的背面，包括计算和存储控制器、风扇和电源。
@@ -307,7 +320,7 @@ E4000控制器架的风扇(图1)
  a| 
 4.
  a| 
-E 系列 E400 存储控制器（1/2）和连接器
+E系列E4000存储控制器（1/2）和连接器
 
 
 
@@ -319,10 +332,12 @@ E4000控制器架的电源(图1)
 |===
 
 
+[[sg6200-controllers]]
 == SG6200 控制器
 
 
 
+[[sg6200-cn-compute-controller]]
 === SG6200-CN 计算控制器
 
 * 为设备提供计算资源。
@@ -452,6 +467,7 @@ image::../media/s25_rear_leds.png[后面 LED SG6200-CN]
 |===
 
 
+[[sg6260-e4000-storage-controller]]
 === SG6260：E4000 存储控制器
 
 * 两个控制器，用于提供故障转移支持。
@@ -527,6 +543,7 @@ SG6200-CN 控制器有四个连接（每个 E4000 两个）。
 |===
 
 
+[[sg6260-ioms-for-optional-expansion-shelves]]
 === SG6260：可选扩展架的 IOM
 
 扩展架包含两个输入 / 输出模块（ IOM ），这些模块连接到存储控制器或其他扩展架。

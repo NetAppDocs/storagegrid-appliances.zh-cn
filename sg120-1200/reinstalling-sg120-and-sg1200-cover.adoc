@@ -15,6 +15,7 @@ summary: 卸下产品盖板以接触内部组件进行维护，完成后更换�
 
 
 
+[[step-1-remove-cover]]
 == 步骤 1：取下盖子
 
 .步骤
@@ -31,6 +32,7 @@ image:../media/drw_s2025_cover_replace_ieops-2559.svg["解锁和取下设备盖"
 
 
 
+[[step-2-reinstall-cover]]
 == 步骤 2：重新安装盖板
 
 .步骤

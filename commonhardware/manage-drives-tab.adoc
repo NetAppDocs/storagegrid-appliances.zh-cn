@@ -46,6 +46,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 
 
+[[turn-locator-light-on-or-off]]
 == 打开或关闭定位灯
 
 要在设备中物理定位驱动器、请执行以下操作：
@@ -66,6 +67,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 
 
+[[logically-replace-drivelogically-replace-drive]]
 == [[逻辑 替换驱动器]]逻辑替换驱动器
 
 如果存储设备中的驱动器需要重建或重新初始化：
@@ -83,6 +85,7 @@ image:../media/manage_drives_tab_details.png["管理驱动器选项卡驱动器�
 
 
 
+[[fail-drive]]
 == 驱动器发生故障
 
 要进行故障排除、您可以手动对怀疑有故障的驱动器进行"故障排除"。然后、系统将在没有该驱动器的情况下运行。

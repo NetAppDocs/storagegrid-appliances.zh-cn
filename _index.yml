@@ -69,8 +69,10 @@ indexpage:
       url: "/landing-maintain-sg6200/index.html"
   - title: StorageGRID 软件
     links:
-    - title: StorageGRID 12.0 文档
+    - title: StorageGRID 12.1 文档
       url: https://docs.netapp.com/us-en/storagegrid/index.html
+    - title: StorageGRID 12.0 文档
+      url: https://docs.netapp.com/us-en/storagegrid-120/index.html
     - title: StorageGRID 11.9文档
       url: https://docs.netapp.com/us-en/storagegrid-119/index.html
     - title: StorageGRID 1.18文档

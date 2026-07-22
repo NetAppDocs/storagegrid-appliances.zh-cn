@@ -2,7 +2,7 @@
 permalink: sg6200/replace-nic-in-sg6200.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6200, storage node, storage appliance, Replacing, replace, NIC, network interface card 
-summary: '如果 SGF6212 中的网络接口卡 (NIC) 无法正常工作或出现故障，则可能需要更换。' 
+summary: '如果 SGF6212 中的网络接口卡 (NIC) 无法正常工作或出现故障，则可能需要更换该卡。' 
 ---
 = 更换 SGF6212 或 SG6200-CN 中的内部网卡
 :allow-uri-read: 
@@ -34,10 +34,47 @@ NOTE: 从机架上卸下设备之前，需要link:power-sg6200-off-on.html#shut-
 +
 image:../media/drw_s2025_io_numbers_ieops-2554.svg["设备中 NIC 的位置"]
 
++
+[cols="1a,3a,5a"]
+|===
+|  | 设备或部件名称 | Description 
+
+
+ a| 
+1.
+ a| 
+单槽提升板组件中的 NIC 1
+ a| 
+用于网格和客户端网络的 10/25-GbE 以太网端口
+
+
+
+ a| 
+2.
+ a| 
+单槽提升板组件中的 NIC 2
+ a| 
+用于管理网络的 1/10-GbE 以太网端口
+
+
+
+ a| 
+3.
+ a| 
+单槽提升板组件中的 NIC 3
+ a| 
+用于网格和客户端网络的 10/25-GbE 以太网端口
+
+|===
++
+
+NOTE: 某些设备支持更高速度的网络端口，并可能安装了更高速度的 NIC。
 
 
 
 
+
+[[step-1-remove-the-nic]]
 == 步骤 1：卸下 NIC
 
 [role="tabbed-block"]
@@ -82,6 +119,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["从 Riser 卡组件中�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == 步骤 2：重新安装内部 NIC
 
 将更换用的NIC安装到与已卸下的NIC相同的位置。

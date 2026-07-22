@@ -34,6 +34,7 @@ summary: 更换一个包含 60 个驱动器的控制器架或驱动器架，其�
 
 
 
+[[step-1-prepare-to-replace-power-canister]]
 == 第 1 步：准备更换电源箱
 
 准备更换 60 驱动器控制器架或驱动器架中的电源箱。
@@ -80,6 +81,7 @@ NOTE: 您还可以在 Recovery Guru 的 Details 区域中找到有关发生故�
 
 
 
+[[step-2-remove-failed-power-canister]]
 == 第 2 步：拆下发生故障的电源箱
 
 拆下发生故障的动力箱，以便用新的动力箱进行更换。
@@ -102,6 +104,7 @@ CAUTION: 拆除电源箱时，请始终用双手支撑其重量。
 
 
 
+[[step-3-install-new-power-canister]]
 == 第 3 步：安装新的电源箱
 
 安装新的电源箱以更换发生故障的电源箱。
@@ -120,6 +123,7 @@ CAUTION: 将电源箱滑入系统时，请勿用力过大；否则可能会损�
 
 
 
+[[step-4-complete-power-canister-replacement]]
 == 第 4 步：完全更换电源箱
 
 确认新的电源箱正常工作，收集支持数据并恢复正常运行。

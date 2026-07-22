@@ -21,6 +21,7 @@ summary: 使用此操作步骤 更换系统板上的CMOS币形电池。
 
 
 
+[[remove-the-cmos-battery]]
 == 卸下CMOS电池
 
 .开始之前
@@ -70,6 +71,7 @@ image::../media/sg6060_riser_assembly_location.jpg[提升板部件的位置]
 
 
 
+[[reinstall-the-cmos-battery]]
 == 重新安装CMOS电池
 
 将更换用的CMOS电池安装到系统板上的插槽中。

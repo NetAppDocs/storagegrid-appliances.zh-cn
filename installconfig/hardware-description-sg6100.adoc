@@ -45,10 +45,12 @@ SG6160提供以下数据保护功能：
 
 
 
+[[sg6100-hardware-components]]
 == SG6100硬件组件
 
 
 
+[[sgf6112-appliance]]
 === GF6112设备
 
 SGF6112设备包括以下组件：
@@ -70,6 +72,7 @@ SGF6112设备包括以下组件：
 
 
 
+[[sg6160-appliance]]
 === SG6160设备
 
 SG6160设备包括以下组件：
@@ -114,10 +117,12 @@ E系列DE460C机箱是一个4U磁盘架、其中包括：
 
 
 
+[[sgf6112-and-sg6160-diagrams]]
 == SGF6112和SG6160图表
 
 
 
+[[sgf6112-front-view]]
 === GF6112正视图
 
 此图显示了不带挡板的GF6112的正面。该设备包括一个1U计算和存储平台、其中包含12个SSD驱动器。
@@ -126,6 +131,7 @@ image::../media/sgf6112_front_with_ssds.png[GF6112正视图]
 
 
 
+[[sgf6112-rear-view]]
 === GF6112背面图
 
 此图显示了SGF6112的背面、包括端口、风扇和电源。
@@ -235,6 +241,7 @@ image::../media/q2024_rear_leds.png[后部LED SGF6112]
 |===
 
 
+[[sg6160-front-view]]
 === SG6160正面图
 
 此图显示了SG6160的正面、其中包括一个1U计算控制器和一个4U磁盘架、该磁盘架在五个驱动器抽盒中包含两个存储控制器和60个驱动器。
@@ -261,6 +268,7 @@ image::../media/sg6160_front_view_without_bezels.png[SG6160正面图]
 |===
 
 
+[[sg6160-rear-view]]
 === SG6160背面图
 
 此图显示了SG6160的背面、包括计算和存储控制器、风扇和电源。
@@ -308,10 +316,12 @@ E4000控制器架的电源(图1)
 |===
 
 
+[[sg6100-controllers]]
 == SG6100控制器
 
 
 
+[[sg6100-cn-compute-controller]]
 === SG6100-CN计算控制器
 
 * 为设备提供计算资源。
@@ -444,6 +454,7 @@ image::../media/q2023_rear_leds.png[背面LED SG6100-CN]
 |===
 
 
+[[sg6160-e4000-storage-controller]]
 === SG6160：E4000存储控制器
 
 * 两个控制器，用于提供故障转移支持。
@@ -519,6 +530,7 @@ SG6100-CN控制器有四个连接(每个E4000有两个连接)。
 |===
 
 
+[[sg6160-ioms-for-optional-expansion-shelves]]
 === SG6160：用于可选扩展架的IOM
 
 扩展架包含两个输入 / 输出模块（ IOM ），这些模块连接到存储控制器或其他扩展架。

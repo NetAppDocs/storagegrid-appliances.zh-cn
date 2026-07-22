@@ -15,6 +15,7 @@ summary: 安装StorageGRID 设备之前、请确认您已具备所需的所有�
 
 
 
+[[all-appliances]]
 == 所有设备
 
 要安装和配置所有设备、您需要以下设备。
@@ -53,6 +54,7 @@ NOTE: 某些端口可能不支持 10/100 以太网速度。
 
 
 
+[[appliance-specific-equipment-and-tools]]
 == 设备专用设备和工具
 
 [role="tabbed-block"]

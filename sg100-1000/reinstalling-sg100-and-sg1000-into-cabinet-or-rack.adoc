@@ -15,6 +15,7 @@ summary: 从机柜或机架中卸下SG100或SG1000以检修顶盖或将设备移
 
 
 
+[[remove-sg100-or-sg1000-from-cabinet-or-rack]]
 == 从机柜或机架中卸下SG100或SG1000
 
 从机柜或机架中取出SG100或SG1000、以便检修顶盖或将设备移至其他位置。
@@ -55,6 +56,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
 
 
 
+[[reinstall-sg100-or-sg1000-into-cabinet-or-rack]]
 == 将SG100或SG1000重新安装到机柜或机架中
 
 硬件维护完成后、将设备重新安装到机柜或机架中。

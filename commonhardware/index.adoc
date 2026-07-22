@@ -15,6 +15,7 @@ summary: 按照以下说明维护StorageGRID 系统。
 
 
 
+[[about-these-instructions]]
 == 关于这些说明
 
 这些说明介绍了所有节点通用的过程、例如、如何应用软件修补程序、恢复网格节点、恢复故障站点、停用网格节点或整个站点、执行网络维护、执行主机级和中间件维护过程以及执行网格节点过程。
@@ -24,6 +25,7 @@ NOTE: 在这些说明中，“`Linux`”是指Red Hat®Enterprise Linux®、Ubun
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 * 您对 StorageGRID 系统有着广泛的了解。
@@ -34,6 +36,7 @@ NOTE: 在这些说明中，“`Linux`”是指Red Hat®Enterprise Linux®、Ubun
 
 
 
+[[maintenance-procedures-for-appliances]]
 == 设备的维护过程
 
 每种类型的StorageGRID 设备的特定维护过程请参见设备维护部分：
